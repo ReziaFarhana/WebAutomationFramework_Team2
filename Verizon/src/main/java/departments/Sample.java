@@ -1,4 +1,4 @@
-package sample;
+package departments;
 
 public class Sample {
 }
