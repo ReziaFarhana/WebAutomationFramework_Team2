@@ -53,7 +53,7 @@
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
                 <version>7.1.0</version>
-                <!--            <scope>test</scope>-->
+                <!--            <scope>test_page</scope>-->
             </dependency>
 
             <!--            Others Related Dependencies-->
@@ -147,9 +147,9 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>target/test-classes/AmazonTestRunner.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>target/test-classes/CNNTestRunner.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>target/test-classes/CignaTestRunner.xml</suiteXmlFile>-->
+                        <suiteXmlFile>target/test_page-classes/AmazonTestRunner.xml</suiteXmlFile>
+                        <!--  <suiteXmlFile>target/test_page-classes/CNNTestRunner.xml</suiteXmlFile>-->
+                        <!--  <suiteXmlFile>target/test_page-classes/CignaTestRunner.xml</suiteXmlFile>-->
 
                     </suiteXmlFiles>
 

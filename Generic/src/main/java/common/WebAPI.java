@@ -426,7 +426,12 @@ public class WebAPI {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
+        // added on hover and crick
+    public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
+        Actions selecrMenu = new Actions(driver1);
+        selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
 
+    }
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -643,6 +648,14 @@ public class WebAPI {
         String exp = expValue; // exp is coming from Requirement or Mock-up
         Assert.assertEquals(act, exp);
     }
+
+    public void assertEqualBycssLocator(String loc, String expValue) {
+        String act = driver.findElement(By.cssSelector(loc)).getText();
+        // act is coming from Domain -- the one developer build and release
+        String exp = expValue; // exp is coming from Requirement or Mock-up
+        Assert.assertEquals(act, exp);
+    }
+
 
     // Slider Handlaing
     // https://stackoverflow.com/questions/15171745/how-to-slidemove-slider-in-selenium-webdriver
