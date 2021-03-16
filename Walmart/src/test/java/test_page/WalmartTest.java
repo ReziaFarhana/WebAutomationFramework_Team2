@@ -5,6 +5,7 @@ import home_page.WalmartHome;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static home_page.WalmartWebElement.*;
@@ -19,7 +20,7 @@ public class WalmartTest extends WebAPI {
     }
 
         // this method is to verify I am on walmart home page
-    @Test()
+    @Test
     public void verifyWalmartHomePage(){
         String expected = "https://www.walmart.com/";
         String actual = getCurrentPageUrl();
@@ -36,4 +37,23 @@ public class WalmartTest extends WebAPI {
         home.workingOnBenefitsSelection();
         assertEqualByXpath(allBenefitsText,"Explore all benefits");
     }
+
+    @Test
+    public void verifyFreeShippingInBenefits(){
+        home.clickOnFreeShippingInBenefits();
+        assertEqualByXpath(freeShippingText,"Free shipping, no order minimum");
+    }
+
+    @Test
+    public void verifyMobileScanAndGoLinkInBenefits(){
+        home.mobileScanAndGoInBenefits();
+        assertEqualByXpath(mobileScanAndGoText,"Mobile scan & go");
+    }
+    @Test
+    public void verifyLandedOnGroceryPickupAndDelivery(){
+        home.clickOnGroceryPickupAndDelivery();
+        assertEqualBycssLocator(groceryPickupAndDeliveryText,"Pickup & delivery");
+    }
+
+
 }

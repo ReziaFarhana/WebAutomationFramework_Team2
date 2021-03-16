@@ -18,6 +18,9 @@ public class WalmartHome extends WebAPI {
     @FindBy(xpath = allBenefitsOption)
     WebElement allBenefitsClick;
 
+    @FindBy(css = mobileScanAndGo)
+    WebElement mobileScanAndGoLink;
+
 
 
     // helper method to scroll down to the footer Walmart page
@@ -36,6 +39,22 @@ public class WalmartHome extends WebAPI {
         clickOnWalmartPlusLink();
         hoverAndClick(driver,benefitLinkToHoverOn,allBenefitsClick);
     }
+
+    public void clickOnFreeShippingInBenefits(){
+        workingOnBenefitsSelection();
+        clickByCss(freeShippingInAllBenefits);
+    }
+
+    public void mobileScanAndGoInBenefits(){
+        clickOnWalmartPlusLink();
+        hoverAndClick(driver,benefitLinkToHoverOn,mobileScanAndGoLink);
+    }
+
+    public void clickOnGroceryPickupAndDelivery(){
+        scrollDown();
+        clickByXpath(groceryPickupAndDelivery);
+    }
+
 
 
 
