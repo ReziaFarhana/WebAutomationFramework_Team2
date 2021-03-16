@@ -36,7 +36,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class WebAPI {
+public class WebAPI{
     // Config class :
 
     //ExtentReport
