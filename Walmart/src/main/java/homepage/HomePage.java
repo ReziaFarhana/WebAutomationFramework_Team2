@@ -11,6 +11,8 @@ import static homepage.HomePageWebElements.*;
 
 public class HomePage extends WebAPI {
     @FindBy(how= How.XPATH, using=cultureDropDownXpath) public WebElement cultureDropDown;
+//    @FindBy(how= How.CSS, using=covidReadMoreOptionId) public WebElement covidReadMore;
+    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
 
 
     public void scrollDown(){
@@ -32,6 +34,58 @@ public class HomePage extends WebAPI {
         windowHandle();
         hoverOver(driver,cultureDropDown);
 
+    }
+//uncommitted
+    public void accessibilityOption(){
+        scrollDown();
+        clickByXpath(accessibilityoptionXpath);
+        clickById(covidReadMoreOptionId);
+        clickByXpath(xbtnXp);
+    }
+    public void trampolineOption(){
+        scrollDown();
+        clickByLinkText(trampolineOptionLinkText);
+    }
+    public void trampolinePageGiftElibileCheckBox(){
+        trampolineOption();
+        tryCheckbox(giftEligibleCheckBoxID);
+    }
+    public void contactUsOption(){
+        scrollDown();
+        clickByXpath(contactUsOptionXpath);
+        clickByCss(contactUsButtonCss);
+        typeOnInputBox(chatwWalmartchatBoxCss, chatBoxValue);
+        clickByXpath(chatBoxSendButtonXP);
+    }
+    public void walmartEBooksLogo(){
+        scrollDown();
+        clickByCss(walmartEBookLogoCSS);
+    }
+    public void allsWellLogo(){
+        scrollDown();
+        clickByCss(allswellLogoCss);
+        cancelAlert();
+    }
+    public void feedBackButton(){
+        scrollDown();
+        clickOnElement(feedbackButtonClass);
+        clickByXpath(feedback4StarRatingXP);
+        typeOnInputBox(feedbackButtonClass,feedbackcommentsInputValue);
+        clickByXpath(feedbackcommentsSubmitButtonXP);
+    }
+    public void ps4Option(){
+        scrollDown();
+        clickByXpath(ps4Xp);
+        cancelAlert();
+        clickByXpath(maddenNfl21GameResultXp);
+        scrollDown();
+        clickByXpath(seeAllReviewsButtonXp);
+        clickByCss(mostRelevantDropDownCss);
+        dropDown(mostRelevantDropDownCss,dropDownValue);
+
+
 
     }
+
+
 }
