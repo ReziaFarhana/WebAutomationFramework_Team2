@@ -353,6 +353,9 @@ public class WebAPI {
     public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
+public void typeByXpathNEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
 
     public void typeByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
@@ -364,6 +367,9 @@ public class WebAPI {
 
     public void clearInputField(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
+    }
+    public void clearInputFieldByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).clear();
     }
 
     public List<WebElement> getListOfWebElementsById(String locator) {
@@ -454,6 +460,11 @@ public class WebAPI {
         return st;
     }
 
+    public String getTextByLinktext(String locator) {
+        String st = driver.findElement(By.linkText(locator)).getText();
+        return st;
+    }
+
 
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
@@ -467,6 +478,11 @@ public class WebAPI {
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
+    }
+
+    public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
+        Actions selecrMenu = new Actions(driver1);
+        selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
     }
 
     public void mouseHoverByCSS(String locator) {
@@ -594,6 +610,14 @@ public class WebAPI {
 
     public void keysInput(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
+    }
+
+    //new window handle
+    public void windowHandle(){
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
     }
 
     //Handling New Tabs

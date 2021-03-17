@@ -66,114 +66,19 @@ public class BeautyCategoryWebElement {
     public static final String undoRemove = "//span[normalize-space()='Undo']";
 
     //Test Webelements
+    public static final String buttonTitle = "//div[@class='p_a bm_a'][normalize-space()='Beauty']";
+    public static final String optionTitle = "//button[normalize-space()='Gift eligible']";
+    public static final String pageTitle = "//h1[normalize-space()='Premium Beauty']" ;
+    public static final String pageTitle1 ="//h1[normalize-space()='Black Owned Hair Products']";
+    public static final String headerText = "//h1[normalize-space()='Personal Care']";
+    public static final String productTitle = "//*[text()='Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz']";
+    public static final String option = "//*[text()='See gift option in cart']";
     public static final String giftingFilter = "//*[text()='Gifting']";
     public static final String ratingsCount = "//*[@class='reviews-sort-bar-label-text-wrapper']";
     public static final String cartUpdate = "cart-active-cart-heading";
     public static final String cartUpdateAfterRemovingItem ="//*[text()='0 items in your cart']";
     public static final String undoItemTitle = "//a[contains(text(),'Find Your Happy Place Moisturizing Body Lotion, Ho')]";
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-
+    public static final String filterDeliveryOption = "//*[@aria-label ='Remove filter: delivery and pickup Deliver to home']";
+    public static final String filterBrand = "//*[@aria-label ='Remove filter: brand Aveeno']";
 
 }

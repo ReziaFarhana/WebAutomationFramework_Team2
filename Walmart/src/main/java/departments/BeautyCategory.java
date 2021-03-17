@@ -2,7 +2,6 @@ package departments;
 
 import common.WebAPI;
 import databases.ConnectToSqlDB;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -98,12 +97,12 @@ public class BeautyCategory extends WebAPI {
         selectOptionByVisibleText(increasingQuantityFromCart, cartQuantityAmmount);
     }
 
-    public void removingItemFromShoppingCart(){
+    public void removingItemFromShoppingCart() {
         updatingItemQuantityFromShoppingCart();
         clickByXpath(removeItemFromCart);
     }
 
-    public void undoRemovingItem(){
+    public void undoRemovingItem() {
         removingItemFromShoppingCart();
         clickByXpath(undoRemove);
     }
@@ -121,7 +120,7 @@ public class BeautyCategory extends WebAPI {
 
     }
 
-    public void clearAllFilter(){
+    public void clearAllFilter() {
         filteringBathAndBodyItem();
         clickByXpath(clearFilter);
     }
@@ -147,27 +146,23 @@ public class BeautyCategory extends WebAPI {
         clickById(pickUpFree);
         clickByXpath(editAddressInCheckoutPage);
         clickByXpath(pickupLocation);
-        Thread.sleep(5000);
+        waitTimeExplicit(continueButton);
         clickByXpath(continueButton);
     }
 
-    public void exclusivesTab(){
+    public void exclusivesTab() {
         beautyButtonLocate();
         clickByXpath(exclusives);
     }
 
-    public void newArrivalsTab(){
+    public void newArrivalsTab() {
         beautyButtonLocate();
         clickByXpath(newArrivals);
     }
 
-    public void bestSellersTab(){
+    public void bestSellersTab() {
         beautyButtonLocate();
         clickByXpath(bestSellers);
     }
-
-    public void featureBrandTab(){
-    }
-
 
 }

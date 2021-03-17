@@ -26,8 +26,8 @@
         <!--        </groups>-->
 
         <classes>
-            <!--            <class name="homepagetest.HomePageTest"></class>-->
-            <class name="departmenttest.BeautyCategoryTest"></class>
+<!--            <class name="departmenttest.BeautyCategoryTest"></class>-->
+            <class name="pickupanddeliverytest.PickupAndDeliverytest"></class>
         </classes>
     </test>
 </suite>

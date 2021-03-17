@@ -28,16 +28,16 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void beautyButtonLocateTest(){
 //        beautyCategory.beautyButtonLocate();
 //        String expectedText ="Beauty";
-//        String actualText = getTextByXpath("//div[@class='p_a bm_a'][normalize-space()='Beauty']");
+//        String actualText = getTextByXpath(buttonTitle);
 //        Assert.assertEquals(actualText,expectedText,"Text did not match");
 //
 //    }
-//
+
 //    @Test(priority = 2) //passed
 //    public void shopAllBeautyGiftEligibleTest() {
 //        beautyCategory.shopAllBeautyGiftEligible();
 //        String expectedText = "Gift eligible";
-//        String actualText = getTextByXpath("//button[normalize-space()='Gift eligible']");
+//        String actualText = getTextByXpath(optionTitle);
 //        Assert.assertEquals(actualText, expectedText, "Text did not match");
 //    }
 
@@ -45,7 +45,7 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void shopAllPremiumBeautyTest() {
 //        beautyCategory.shopAllPremiumBeauty();
 //        String expectedText = "Premium Beauty";
-//        String actualText = getTextByXpath("//h1[normalize-space()='Premium Beauty']");
+//        String actualText = getTextByXpath(pageTitle);
 //        Assert.assertEquals(actualText, expectedText, "Text did not match");
 //
 //    }
@@ -54,7 +54,7 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void blackOwnedBeautyNavigateBackAndForwardTest() {
 //        beautyCategory.blackOwnedBeautyNavigateBackAndForward();
 //        String expectedText = "Black Owned Hair Products";
-//        String actualText = getTextByXpath("//h1[normalize-space()='Black Owned Hair Products']");
+//        String actualText = getTextByXpath(pageTitle1);
 //        Assert.assertEquals(actualText, expectedText, "Text did not match");
 //    }
 
@@ -70,7 +70,7 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void personalCareOptionTest(){
 //        beautyCategory.personalCareOption();
 //        String expectedText = "Personal Care";
-//        String actualText = getTextByXpath("//h1[normalize-space()='Personal Care']");
+//        String actualText = getTextByXpath(headerText);
 //        Assert.assertEquals(actualText, expectedText, "Text did not match");
 //    }
 
@@ -78,14 +78,14 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void storingPersonalCareOptionListsInDatabaseTest(){
 //        beautyCategory.storingPersonalCareOptionListsInDatabase();
 //        List<String> expectedArrayList = Arrays.asList("Personal Care", "Bath & Body", "Oral Care", "Shaving", "Hair Care & Hair Tools", "Men's Essentials", "Personal Health", "Savings Spotlight");
-//        Assert.assertEquals(getTextFromWebElements(personalCareOptionList), expectedArrayList, "Wrong number of list");
+//        Assert.assertEquals(getTextFromWebElementsByCss(personalCareOptionList), expectedArrayList, "Wrong number of list");
 //    }
 
 //    @Test(priority = 8)//passed
 //    public void personalCareByBrandFindYourHappyPlaceTest(){
 //        beautyCategory.personalCareByBrandFindYourHappyPlace();
 //        String expectedTitle = "Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz";
-//        String actaulTitle = getTextByXpath("//*[text()='Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz']");
+//        String actaulTitle = getTextByXpath(productTitle);
 //        Assert.assertEquals(actaulTitle,expectedTitle,"Title did not match");
 //    }
 
@@ -93,7 +93,7 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void addingLotionToCartTest() {
 //        beautyCategory.addingLotionToCart();
 //        String expectedText = "See gift option in cart";
-//        String actualText = getTextByXpath("//*[text()='See gift option in cart']");
+//        String actualText = getTextByXpath(option);
 //        Assert.assertEquals(actualText,expectedText,"Text did not match");
 //    }
 //
@@ -125,14 +125,15 @@ public class BeautyCategoryTest extends WebAPI {
 //    public void filterDeliveryTest() {
 //        beautyCategory.filteringBathAndBodyItem();
 //        String expectedText = "Deliver to home";
-//        String actualText = getTextByXpath("//*[@aria-label ='Remove filter: delivery and pickup Deliver to home']");
+//        String actualText = getTextByXpath(filterDeliveryOption);
 //        Assert.assertEquals(actualText,expectedText,"Text did not match");
 //    }
+//
 //    @Test(priority = 14)
 //    public void filterProductTest(){
 //        beautyCategory.filteringBathAndBodyItem();
 //        String expectedText = "Aveeno";
-//        String actualText = getTextByXpath("//*[@aria-label ='Remove filter: brand Aveeno']");
+//        String actualText = getTextByXpath(filterBrand);
 //        Assert.assertEquals(actualText,expectedText,"Text did not match");
 //    }
 
@@ -183,14 +184,14 @@ public class BeautyCategoryTest extends WebAPI {
 //
 //    }
 //
-    @Test(priority = 21)
-    public void featureBrandTabTest(){
-        
-        String expectedText = "Feature Brands - Walmart.com";
-        String actualText = driver.getTitle();
-        Assert.assertEquals(actualText,expectedText,"Text did not match");
-
-    }
+//    @Test(priority = 21)
+//    public void featureBrandTabTest(){
+//
+//        String expectedText = "Feature Brands - Walmart.com";
+//        String actualText = driver.getTitle();
+//        Assert.assertEquals(actualText,expectedText,"Text did not match");
+//
+//    }
 
 //    @Test(priority = 1)
 //    public void bathAndBodyItemCheckoutTabTest() throws InterruptedException {
