@@ -29,7 +29,11 @@ public class HelpCenter extends WebAPI {
        searchBoxButton.click();
     }
     public void frequentlyAskedQuestions(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,4000);");
+        clickByLinkText(helpcenterlocator);
         clickByXpath(frequentlyAskedQuestionsxPath);
+
     }
     public void wheresMyOrder(){
         frequentlyAskedQuestions();

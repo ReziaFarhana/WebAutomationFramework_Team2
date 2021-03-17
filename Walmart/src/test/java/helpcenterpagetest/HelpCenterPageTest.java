@@ -21,7 +21,7 @@ public class HelpCenterPageTest extends WebAPI {
         helpcenter = PageFactory.initElements(driver, HelpCenter.class);
     }
 
-    @Test
+
     public void searchBoxHelpTest(){
         helpcenter.searchHelpBox();
         String expectedText = "Refunds";
@@ -30,6 +30,7 @@ public class HelpCenterPageTest extends WebAPI {
 
     }
 
+    @Test
     public void frequentlyAskedQuestionsTest(){
     helpcenter.frequentlyAskedQuestions();
     String expectedText = frequentlyAskedQuestionsTitle;
