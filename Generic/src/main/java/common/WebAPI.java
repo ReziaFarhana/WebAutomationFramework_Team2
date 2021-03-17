@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,27 +18,55 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
+    public JavascriptExecutor jscript;
+    static Properties properties;
+
     // Config class :
+
+    //properties class
+    public static Properties loadProperties() throws IOException {
+        properties = new Properties();
+        InputStream inputStream = new FileInputStream("../Generic/src/main/secret.properties");
+        properties.load(inputStream);
+        return properties;
+    }
+
+    public void windowsFullPageScrollDown(){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+    public void windowsFullPageScrollUp(){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+    }
+    public void windowsFullPageScrollSideBar(WebElement element){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);",element);
+    }
+
+    public void windowHalfPageScroll(){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("window.scrollBy(0,350)", "");
+    }
+    public void windowHalfPageScrollUp(){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("window.scrollBy(0,-350)", "");
+    }
 
     //ExtentReport
     public static ExtentReports extent;
@@ -119,8 +148,8 @@ public class WebAPI {
 
     // Browser Setup
     public static WebDriver driver = null;
-    public static String browserStack_userName = "demo579";
-    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
+    public static String browserStack_userName = "yinexer1";
+    public static String browserStack_accessKey = "cGNspLpJzkiqpTqQnZQK";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
@@ -199,7 +228,7 @@ public class WebAPI {
         return driver;
     }
 
-    @AfterMethod(alwaysRun = true)
+   // @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();
@@ -343,7 +372,7 @@ public class WebAPI {
         return list;
     }
 
-    public static List<String> getTextFromWebElements(String locator) {
+    public static List<String> getTextFromWebElementsByCss(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
         element = driver.findElements(By.cssSelector(locator));
@@ -351,6 +380,18 @@ public class WebAPI {
             String st = web.getText();
             text.add(st);
         }
+        System.out.println(text);
+        return text;
+    }
+    public static List<String> getTextFromWebElementsByXpath(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+        }
+        System.out.println(text);
         return text;
     }
 
@@ -419,6 +460,7 @@ public class WebAPI {
         for (WebElement element : list) {
             items.add(element.getText());
         }
+        System.out.println(items);
         return items;
     }
 
@@ -436,7 +478,7 @@ public class WebAPI {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
+            action.moveToElement(element).build().perform();
         }
     }
 
@@ -452,6 +494,45 @@ public class WebAPI {
             action.moveToElement(element).perform();
         }
     }
+    //new hoverover method
+    public void mouseHoverByXpath1(String locator) {
+        try {
+            WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
+            Actions hover = action.moveToElement(element);
+        } catch (Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
+            action.moveToElement(element.findElement(By.xpath(locator))).build().perform();
+        }
+    }public void mouseHoverByXpath2(String locator) {
+        try {
+            WebElement element = driver.findElement(By.xpath(locator));
+            JavascriptExecutor executor = (JavascriptExecutor)driver;
+            executor.executeScript("arguments[0].click();", element);
+        } catch (Exception ex) {
+            System.out.println("First attempt has been done, This is second try");
+            WebElement element = driver.findElement(By.xpath(locator));
+            JavascriptExecutor executor = (JavascriptExecutor)driver;
+            executor.executeScript("arguments[0].click();", element);
+        }
+    }
+    public void mouseHoverByXpathParentAndChildLocator(String parentLocator, String childLocator) {
+        WebElement mainMenu = driver.findElement(By.xpath(parentLocator));
+//Create object 'action' of an Actions class
+        Actions actions = new Actions(driver);
+//To mouseover on main menu
+        actions.moveToElement(mainMenu);
+
+//Sub Menu
+        WebElement subMenu = driver.findElement(By.linkText(childLocator));
+//To mouseover on sub menu
+        actions.moveToElement(subMenu);
+//build() method is used to compile all the actions into a single step
+        actions.click().build().perform();
+    }
+
 
     //handling Alert
     public void okAlert() {
@@ -626,6 +707,9 @@ public class WebAPI {
 
     public void clickById(String loc) {
         driver.findElement(By.id(loc)).click();
+    }
+    public void clickByClass(String loc) {
+        driver.findElement(By.className(loc)).click();
     }
 
     public void clickByName(String loc) {
