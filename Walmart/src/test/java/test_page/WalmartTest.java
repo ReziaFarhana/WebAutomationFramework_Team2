@@ -73,7 +73,7 @@ public class WalmartTest extends WebAPI {
         Assert.assertEquals(actuelTitle,expectedTitle,"Test failed - titles doesn't match ");
     }
 
- //   @Test        // 8  keeps failing need to be revised in open mind
+ //   @Test        //  keeps failing need to be revised in open mind
     public void verifyBillPauLink(){
         home.clickOnBillPay();
         assertEqualBycssLocator(billPayText,"Bill Pay");
@@ -90,6 +90,27 @@ public class WalmartTest extends WebAPI {
         String expected = "Walmart Gift Cards - Walmart.com";
         String actual   = driver.getTitle();
     }
+    @Test  // 10
+    public void verifyGiftEligibleIsApplied(){
+        home.filterByGiftEligible();
+        boolean found = isPopUpWindowDisplayed(driver,e_GiftCardText);
+        Assert.assertEquals(found,true,"Test failed - filter is not applied");
+    }
+    @Test  // 11
+    public void verifyOccasionFilterIsApplied(){
+        home.filterByOccasion();
+        boolean found = isPopUpWindowDisplayed(driver,giftLigibleSelected);
+        Assert.assertEquals(found,true,"Test failed - filter is not applied");
+    }
+
+ @Test  // 12
+    public void verifyGiftBrandFilterIsApplied(){
+        home.filterByGiftBrandName();
+        boolean found = isPopUpWindowDisplayed(driver,filterWalmartSelected);
+        Assert.assertEquals(found,true,"Test failed - filter is not applied");
+    }
+
+
 
 
 

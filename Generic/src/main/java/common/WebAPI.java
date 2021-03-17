@@ -202,7 +202,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-        driver.quit();
+    //    driver.quit();
     }
 
 

@@ -19,9 +19,10 @@ public class WalmartWebElement {
     public static final String giftCardLink="li:nth-child(3) h2:nth-child(1) a:nth-child(1)";
     public static final String e_GiftCard="div[class='CategoryApp-topModules CategoryApp-topModules--no-top-padding'] li:nth-child(5)";
     public static final String walmartEGiftCard="//a[normalize-space()='Walmart gift cards']";
+
     public static final String giftCheckBox="#Gift-eligible-0-Gifting";
-    public static final String occasionGraduation="#Graduation-6-occasion";
-    public static final String giftCardBrand="#Walmart-0-brand";
+    public static final String occasionGraduation="#Congratulations-4-occasion";
+    public static final String giftCardBrand="input[id*='Walmart-0-brand']";
     public static final String priceInGifrCard="//*[@id=\"$0---$500-0-price\"]";
 //    public static final String x="";
 
@@ -35,5 +36,8 @@ public class WalmartWebElement {
     public static final String billPayText="h1[class='Title-heading font-normal']";
     public static final String shopWalmartGiftCare="div[class='EditorialPanels-main-title text-center l-margin-top']";
     public static final String e_GiftCardText="h1[class='breadcrumb-leaf heading-a']";
-//    public static final String x="";
+    public static final String giftLigibleSelected="button[class*='item' ]";
+    public static final String filterWalmartSelected="button[class*='item']";
+    public static final String filterGraduationSelected="//button[normalize-space()='Graduation']";
+    public static final String filter0_500Selected="//button[normalize-space()='$0 - $500']";
 }

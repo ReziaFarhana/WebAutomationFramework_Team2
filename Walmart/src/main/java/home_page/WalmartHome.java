@@ -42,6 +42,12 @@ public class WalmartHome extends WebAPI {
         executor.executeScript("window.scrollBy(0,4000);");
     }
 
+         public void scrolDown(String num){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+
+        executor.executeScript("window.scrollBy(0,"+num+");");
+    }
+
         // Method to click on Walmart+
     public void clickOnWalmartPlusLink(){
         scrollDown();
@@ -91,7 +97,36 @@ public class WalmartHome extends WebAPI {
 
     public void useVisaE_GiftCardLink(){
         useGiftCardLink();
+        try {
+            sleepFor(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         clickByXpath(walmartEGiftCard);
+    }
+
+    public void filterByGiftEligible(){
+        useVisaE_GiftCardLink();
+        clickByCss(giftCheckBox);
+    }
+
+    public void filterByOccasion(){
+        useVisaE_GiftCardLink();
+        scrolDown("500");
+        clickByCss(occasionGraduation);
+    }
+
+    public void filterByGiftBrandName() {
+        useVisaE_GiftCardLink();
+        scrolDown("500");
+        clickByCss(giftCardBrand);
+    }
+
+
+public void filterByGiftPrice() {
+        useVisaE_GiftCardLink();
+        scrolDown("500");
+        clickByCss(priceInGifrCard);
     }
 
 

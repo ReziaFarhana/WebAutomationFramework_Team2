@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="WalmartTestSuit" parallel="none" thread-count="2">
+<suite name="WalmartTestSuit" parallel="none" thread-count="1">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserStack"/>
@@ -24,11 +24,21 @@
         <classes>
 
             <class name="test_page.WalmartTest">
-<!--                <methods>-->
+                <methods>
 <!--                                   Test case include or exclude-->
-<!--                                   <exclude name="testSearchbox"></exclude>-->
+                           <exclude name="verifyWalmartPlusIsClicked"/>
+                           <exclude name="verifyAllBenefitsIsSelected"/>
+                           <exclude name="verifyFreeShippingInBenefits"/>
+                           <exclude name="verifyMobileScanAndGoLinkInBenefits"/>
+                           <exclude name="verifyLandedOnGroceryPickupAndDelivery"/>
+                           <exclude name="verifyCreditCardLinkFromMoneyCenterHamburger"/>
+                           <exclude name="verifyMoneyCenterLink"/>
+                           <exclude name="verifyGiftCardLink"/>
+                           <exclude name="verifyWalmartE_GiftCard"/>
+                           <exclude name="verifyGiftEligibleIsApplied"/>
+                           <exclude name="verifyOccasionFilterIsApplied"/>
 <!--                                   <include name="testLogin"></include>-->
-<!--                </methods>-->
+                </methods>
 
             </class>
 
