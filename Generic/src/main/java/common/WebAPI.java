@@ -768,4 +768,12 @@ public class WebAPI {
         return url;
     }
 
+    //new window handle by Easha
+    public void windowHandle(){
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+    }
+
 }

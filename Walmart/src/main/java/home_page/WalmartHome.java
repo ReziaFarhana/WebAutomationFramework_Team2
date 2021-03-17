@@ -21,6 +21,19 @@ public class WalmartHome extends WebAPI {
     @FindBy(css = mobileScanAndGo)
     WebElement mobileScanAndGoLink;
 
+    @FindBy(css = menuButtonInMoneyCenter)
+    WebElement menuButtonHover;
+
+    @FindBy(css = billPayInmenuButtonInMoneyCenter)
+    WebElement billPayLinkForClick;
+
+//
+//    @FindBy(css = e_GiftCard)
+//    WebElement hoverOverE_GiftCard;
+//
+//    @FindBy(xpath = walmartEGiftCard)
+//    WebElement clickOnWalmartE_Card;
+
 
 
     // helper method to scroll down to the footer Walmart page
@@ -54,6 +67,34 @@ public class WalmartHome extends WebAPI {
         scrollDown();
         clickByXpath(groceryPickupAndDelivery);
     }
+
+    public void clickOnMoneyCenter(){
+        scrollDown();
+        clickByLinkText(MoneyCenter);
+    }
+
+    public void hamburgerMenuOfMoneyCenter(){
+        clickOnMoneyCenter();
+        clickByCss(hamburgerMenuInMoneyCenter);
+        clickByCss(walmartCreditCardInhamburgerMenuInMoneyCenter);
+    }
+            // failing need to be refined
+    public void clickOnBillPay(){
+        clickOnMoneyCenter();
+        hoverAndClick(driver,menuButtonHover,billPayLinkForClick);
+    }
+
+    public void useGiftCardLink(){
+        clickOnMoneyCenter();
+        clickByCss(giftCardLink);
+    }
+
+    public void useVisaE_GiftCardLink(){
+        useGiftCardLink();
+        clickByXpath(walmartEGiftCard);
+    }
+
+
 
 
 
