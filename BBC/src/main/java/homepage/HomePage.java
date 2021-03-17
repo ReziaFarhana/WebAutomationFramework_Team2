@@ -16,6 +16,9 @@ public class HomePage extends WebAPI {
     @FindBy(how= How.CSS,using = HomePageWebElement.searchBoxLocator) public WebElement searchBox;//new reference variable is searchBox,
     // WebElement is a Type of data
     @FindBy(how= How.CSS,using = HomePageWebElement.searchButtonLocator) public WebElement searchButton;//new reference variable is searchButton.
+    @FindBy(how=How.XPATH,using = visitRealButtonXpathLocator) public WebElement visitRealButton;
+    @FindBy(how=How.XPATH, using = aboutBBCXpathLocator) public WebElement aboutBBC;
+    @FindBy(how=How.ID, using =signInIDLocator) public WebElement signIn;
 
 //    //Find By Annotation- 2nd approach, using public
 //    @FindBy(id=searchBoxLocator)public WebElement searchBox1;
@@ -41,4 +44,19 @@ public class HomePage extends WebAPI {
         searchButton.click();
 
     }
+//    public void checkLatestBusinessNews(){
+//        latestBusinessNews.click();
+//    }
+
+    public void checkVisitReal() {
+        visitRealButton.click();
+    }
+    public void checkAboutBBC(){
+        aboutBBC.click();
+    }
+    public void checkSignIn(){
+       signIn.click();
+    }
+
+
 }
