@@ -11,7 +11,8 @@ public class HelpCenterWebElements {
     public static final String trackYourOrderButtonxPath = " //a[@href='https://www.walmart.com/account/trackorder']";
     public static final String trackYourOrderTitleCSSSelector = ".page-title";
     public static final String emailInputId = "email";
+    public static final String emailInputValue = "walmart@test.org";
     public static final String orderNumInputId="fullOrderId";
-    public static final String viewOrderStatusButtonCSSSelector = ".spin-button-children";
-    public static final String trackOrderFormErrorMessageClass = "message active message-warning message-block";
+    public static final String orderNumInputValue="1234567891238";
+    public static final String trackOrderPageTitleCssSelector = ".page-title";
 }

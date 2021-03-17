@@ -46,18 +46,18 @@ public class HelpCenterPageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 
-    @Test
+
     public void trackOrderButtonTest(){
         helpcenter.trackOrderButton();
         String expectedText = "Track your order";
         String actualText = getTextByCss(trackYourOrderTitleCSSSelector);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-
+    @Test
     public void trackOrderTest(){
         helpcenter.trackOrder();
-        String expectedText ="Our system could not find any information related to the email address and order number.";
-        WebElement actualText = driver.findElement(By.className(trackOrderFormErrorMessageClass));
+        String expectedText ="Track your order";
+        String actualText = getTextByCss(trackOrderPageTitleCssSelector);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 

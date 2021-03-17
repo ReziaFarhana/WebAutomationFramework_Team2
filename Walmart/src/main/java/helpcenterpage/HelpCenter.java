@@ -48,9 +48,9 @@ public class HelpCenter extends WebAPI {
         frequentlyAskedQuestions();
         wheresMyOrder();
         trackOrderButton();
-        typeOnInputField(emailInputId,"walmarttest@test.org");
-        typeOnInputField(orderNumInputId,"1234567891238");
-        clickByCss(viewOrderStatusButtonCSSSelector);
+        typeOnInputField(emailInputId,emailInputValue);
+        typeOnInputField(orderNumInputId,orderNumInputValue);
+
 
     }
 
