@@ -23,7 +23,7 @@ public class WalmartWebElement {
     public static final String giftCheckBox="#Gift-eligible-0-Gifting";
     public static final String occasionGraduation="#Congratulations-4-occasion";
     public static final String giftCardBrand="input[id*='Walmart-0-brand']";
-    public static final String priceInGifrCard="//*[@id=\"$0---$500-0-price\"]";
+    public static final String priceInGifrCard="input[id*='$0---$500-0-price']";
 //    public static final String x="";
 
         // looking for texts or title for verification or validation of the page
@@ -36,8 +36,8 @@ public class WalmartWebElement {
     public static final String billPayText="h1[class='Title-heading font-normal']";
     public static final String shopWalmartGiftCare="div[class='EditorialPanels-main-title text-center l-margin-top']";
     public static final String e_GiftCardText="h1[class='breadcrumb-leaf heading-a']";
-    public static final String giftLigibleSelected="button[class*='item' ]";
-    public static final String filterWalmartSelected="button[class*='item']";
+    public static final String itemSelectedDisplayed="button[class*='item' ]";
+ //   public static final String filterWalmartSelected="button[class*='item']";
     public static final String filterGraduationSelected="//button[normalize-space()='Graduation']";
     public static final String filter0_500Selected="//button[normalize-space()='$0 - $500']";
 }

@@ -9,8 +9,6 @@ import static home_page.WalmartWebElement.*;
 
 public class WalmartHome extends WebAPI {
 
-//    @FindBy(xpath = allBenefitsOption)
-//    WebElement benefit;
 
     @FindBy(xpath = benefitsLink)
     WebElement benefitLinkToHoverOn;
@@ -27,75 +25,116 @@ public class WalmartHome extends WebAPI {
     @FindBy(css = billPayInmenuButtonInMoneyCenter)
     WebElement billPayLinkForClick;
 
-//
-//    @FindBy(css = e_GiftCard)
-//    WebElement hoverOverE_GiftCard;
-//
-//    @FindBy(xpath = walmartEGiftCard)
-//    WebElement clickOnWalmartE_Card;
 
-
-
-    // helper method to scroll down to the footer Walmart page
-    public void scrollDown(){
+    /**
+     * helper method to scroll down fixed amount to the footer Walmart page
+     */
+    public void scrollDown() {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("window.scrollBy(0,4000);");
     }
 
-         public void scrolDown(String num){
+    /**
+     * Helper method to scroll dynamically - applying overloading
+      * @param num
+     */
+    public void scrollDown(String num) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-
-        executor.executeScript("window.scrollBy(0,"+num+");");
+        executor.executeScript("window.scrollBy(0," + num + ");");
     }
 
-        // Method to click on Walmart+
-    public void clickOnWalmartPlusLink(){
+    /**
+     * This method will look for Walmart+ form Walmart Services
+     * which are found under the footer of Walmart Home Page :
+     *  =>The followings are all the lists in Walmart Services
+     *      Walmart+, Grocery Pickup & Delivery , MoneyCenter
+     *      Walmart Credit Card, Walmart Pay , Weekly Ad, Other Services
+     */
+    public void clickOnWalmartPlusLink() {
         scrollDown();
         clickByXpath(walmartPlusLink);
     }
 
-    public void workingOnBenefitsSelection(){
+    /**
+     * This method will click on All Benefits once we landed on walmart+ from the Benefits
+     * selection option. Used the Action method to hover over before click on the element
+     */
+    public void workingOnBenefitsSelection() {
         clickOnWalmartPlusLink();
-        hoverAndClick(driver,benefitLinkToHoverOn,allBenefitsClick);
+        hoverAndClick(driver, benefitLinkToHoverOn, allBenefitsClick);
     }
 
-    public void clickOnFreeShippingInBenefits(){
+    /**
+     * This method will click on a Free shipping, no order minimum link inside
+     * All Benefits link - on the 17th of March 2021 it had a tag labeled new in Yellow
+     */
+    public void clickOnFreeShippingInBenefits() {
         workingOnBenefitsSelection();
         clickByCss(freeShippingInAllBenefits);
     }
 
-    public void mobileScanAndGoInBenefits(){
+    /**
+     * This method will click on the Mobile Scan & Go selection option in Benefits
+     */
+    public void mobileScanAndGoInBenefits() {
         clickOnWalmartPlusLink();
-        hoverAndClick(driver,benefitLinkToHoverOn,mobileScanAndGoLink);
+        hoverAndClick(driver, benefitLinkToHoverOn, mobileScanAndGoLink);
     }
 
-    public void clickOnGroceryPickupAndDelivery(){
+    /**
+     * This method will look for Grocery Pickup & Delivery form Walmart Services
+     * which are found under the footer of Walmart Home Page :
+     *  =>The followings are all the lists in Walmart Services
+     *      Walmart+, Grocery Pickup & Delivery , MoneyCenter
+     *      Walmart Credit Card, Walmart Pay , Weekly Ad, Other Services
+     */
+    public void clickOnGroceryPickupAndDelivery() {
         scrollDown();
         clickByXpath(groceryPickupAndDelivery);
     }
 
-    public void clickOnMoneyCenter(){
+    /**
+     * This method will look for MoneyCenter form Walmart Services
+     * which are found under the footer of Walmart Home Page :
+     *  =>The followings are all the lists in Walmart Services
+     *      Walmart+, Grocery Pickup & Delivery , MoneyCenter
+     *      Walmart Credit Card, Walmart Pay , Weekly Ad, Other Services
+     */
+    public void clickOnMoneyCenter() {
         scrollDown();
         clickByLinkText(MoneyCenter);
     }
 
-    public void hamburgerMenuOfMoneyCenter(){
+    /**
+     * This method is will find the Walmart Credit Card option under the
+     * hamburger menu once the money center page is loaded
+     */
+    public void hamburgerMenuOfMoneyCenter() {
         clickOnMoneyCenter();
         clickByCss(hamburgerMenuInMoneyCenter);
         clickByCss(walmartCreditCardInhamburgerMenuInMoneyCenter);
     }
-            // failing need to be refined
-    public void clickOnBillPay(){
+
+    // failing need to be refined
+    public void clickOnBillPay() {
         clickOnMoneyCenter();
-        hoverAndClick(driver,menuButtonHover,billPayLinkForClick);
+        hoverAndClick(driver, menuButtonHover, billPayLinkForClick);
     }
 
-    public void useGiftCardLink(){
+    /**
+     * This is a method that will open the Gift Cards link which is found
+     * in Money Center page in the menu bar
+     */
+    public void useGiftCardLink() {
         clickOnMoneyCenter();
         clickByCss(giftCardLink);
     }
 
-    public void useVisaE_GiftCardLink(){
+    /**
+     * This is a method to open the Walmart gift Cards menu bare list
+     * once we landed on new page of the Gift cards link
+     */
+    public void useVisaE_GiftCardLink() {
         useGiftCardLink();
         try {
             sleepFor(2);
@@ -105,35 +144,44 @@ public class WalmartHome extends WebAPI {
         clickByXpath(walmartEGiftCard);
     }
 
-    public void filterByGiftEligible(){
+    /**
+     * This method will apply the Gift eligible check box filter
+     * inside the Walmart Gift Cards - Walmart.com page
+     */
+    public void filterByGiftEligible() {
         useVisaE_GiftCardLink();
         clickByCss(giftCheckBox);
     }
 
-    public void filterByOccasion(){
+    /**
+     * This method will apply the graduation check box filter under Occasions option
+     * inside the Walmart Gift Cards - Walmart.com page
+     */
+    public void filterByOccasion() {
         useVisaE_GiftCardLink();
-        scrolDown("500");
+        scrollDown("500");
         clickByCss(occasionGraduation);
     }
 
+    /**
+     * This method will apply the Brand check box filter
+     * inside the Walmart Gift Cards - Walmart.com page
+     */
     public void filterByGiftBrandName() {
         useVisaE_GiftCardLink();
-        scrolDown("500");
+        scrollDown("500");
         clickByCss(giftCardBrand);
     }
 
-
-public void filterByGiftPrice() {
+    /**
+     * This method will apply the price options check box filter
+     * inside the Walmart Gift Cards - Walmart.com page
+     */
+    public void filterByGiftPrice() {
         useVisaE_GiftCardLink();
-        scrolDown("500");
+        scrollDown("500");
         clickByCss(priceInGifrCard);
     }
-
-
-
-
-
-
 
 
 }

@@ -37,6 +37,9 @@
                            <exclude name="verifyWalmartE_GiftCard"/>
                            <exclude name="verifyGiftEligibleIsApplied"/>
                            <exclude name="verifyOccasionFilterIsApplied"/>
+                           <exclude name="verifyGiftBrandFilterIsApplied"/>
+                           <exclude name="verifyGiftPriceFilterIsApplied"/>
+
 <!--                                   <include name="testLogin"></include>-->
                 </methods>
 

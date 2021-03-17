@@ -99,15 +99,22 @@ public class WalmartTest extends WebAPI {
     @Test  // 11
     public void verifyOccasionFilterIsApplied(){
         home.filterByOccasion();
-        boolean found = isPopUpWindowDisplayed(driver,giftLigibleSelected);
+        boolean found = isPopUpWindowDisplayed(driver,itemSelectedDisplayed);
         Assert.assertEquals(found,true,"Test failed - filter is not applied");
     }
 
  @Test  // 12
     public void verifyGiftBrandFilterIsApplied(){
         home.filterByGiftBrandName();
-        boolean found = isPopUpWindowDisplayed(driver,filterWalmartSelected);
+        boolean found = isPopUpWindowDisplayed(driver,itemSelectedDisplayed);
         Assert.assertEquals(found,true,"Test failed - filter is not applied");
+    }
+
+    @Test  // 13
+    public void verifyGiftPriceFilterIsApplied() {
+        home.filterByGiftPrice();
+        boolean found = isPopUpWindowDisplayed(driver, itemSelectedDisplayed);
+        Assert.assertEquals(found, true, "Test failed - filter is not applied");
     }
 
 
