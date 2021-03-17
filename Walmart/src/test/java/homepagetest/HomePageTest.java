@@ -41,18 +41,18 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void trampolineOptionTest(){
         homepage.trampolineOption();
         String expectedText = "Trampolines - Walmart.com";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text did not match");
     }
-
+    @Test
     public void trampolinePageGiftElibileCheckBoxTest(){
         homepage.trampolinePageGiftElibileCheckBox();
         String expectedText ="Gift eligible";
-        String actualText = getTextByCss(giftEligibletextCss);
+        WebElement actualText = driver.findElement(By.xpath(giftEligibleResXp));
     }
     public void walmartEBooksLogoTest(){
         homepage.walmartEBooksLogo();

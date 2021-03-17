@@ -12,7 +12,7 @@ public class HomePageWebElements {
     public static final String xbtnXp ="//button[@class='button icon-button modal-close']//span[@class='elc-icon elc-icon-remove elc-icon-18']";
     public static final String trampolineOptionLinkText="Trampoline";
     public static final String giftEligibleCheckBoxID="Gift-eligible-0-Gifting";
-    public static final String giftEligibletextCss="Gift-eligible-0-Gifting";
+    public static final String giftEligibleResXp="//span[.='My First 36-Inch Trampolines with Handlebar']";
     public static final String contactUsOptionXpath="//a[.='Contact Us']";
     public static final String contactUsButtonCss="button#contact-us > .button-wrapper > span";
     public static final String chatwWalmartchatBoxCss=".wc-textbox";
