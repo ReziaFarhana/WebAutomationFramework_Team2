@@ -10,20 +10,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class GeicoAutoInsuranceExcel {
-    private static final String FILE_NAME = "../WebAutomationFramework_Team2/ExcelData/GeicoAccountInfo.xlsx";
+    static int min = 50;
+    static int max = 100;
+    //Generate random integer value from 50 to 100
+    static int random_integer = (int) (Math.random() * (max - min + 1) + min);
+    static String email = "yinyan" + random_integer + "@gmail.com";
 
     public static void writeExcel(String fileName) {
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("AccountInfo");
-        Object[][] stDetails = {
-                { "FirstName", "LastName", "ContactNumber", "Email", "Password","BirthDay","BirthMonth","BirthYear","Date of Birth","Zipcode", "Address"},
-                { "Anika", "islam", "897598759"},
-                { "Mahid", "Samad", "997598759"},
-                { "Mezba", "Ahmed", "797598759"},
+        XSSFSheet sheet = workbook.createSheet("BBCRegistrationAccountInfo");
+        Object[][] accountDetails = {
+                { "BirthDay","BirthMonth","BirthYear","Email", "Password"},
+                { "24", "12","1987", email,"ABcDe123"},
+                { "7", "9","1989", email ,"ABcDe123"},
+                { "13", "6","1980", email,"ABcDe123"},
+
         };
         int rowNum = 0;
         System.out.println("Excel file Created");
-        for (Object[] std : stDetails) {
+        for (Object[] std : accountDetails) {
             Row row = sheet.createRow(rowNum++);
             int colNum = 0;
             for (Object field : std) {

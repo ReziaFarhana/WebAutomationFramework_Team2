@@ -2,6 +2,7 @@ package departments;
 
 import common.WebAPI;
 import databases.ConnectToSqlDB;
+import datadriven.DataSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +13,6 @@ import java.util.List;
 import static departments.BeautyCategoryWebElement.*;
 
 public class BeautyCategory extends WebAPI {
-    ConnectToSqlDB connect;
     @FindBy(how = How.XPATH, using = beautyButtonLocator)
     public WebElement beautyButton;
     @FindBy(how = How.XPATH, using = sortByLocator)
@@ -59,8 +59,12 @@ public class BeautyCategory extends WebAPI {
         clickByXpath(premiumBeauty);
         List<WebElement> element = getListOfWebElementsByXpath(premiumBeautyListOfCategory);
         List<String> list = getListOfString(element);
-        //List<String> personalCareOptions = getTextFromWebElements1(premiumBeautyListOfCategory);
+        List<String> premiumBeautyOptions = getTextFromWebElementsByXpath(premiumBeautyListOfCategory);
+        DataSource.insertDataIntoDB(premiumBeautyOptions,"premiumBeauty","premiumOptions");
 
+    }
+    public void readPremiumBeautyTableFromDB() throws Exception {
+        DataSource.getItemsListFromDB("premiumBeauty","premiumOptions");
     }
 
     public void personalCareOption() {
@@ -73,6 +77,12 @@ public class BeautyCategory extends WebAPI {
         personalCareOption();
         List<String> personalCareOptions = getTextFromWebElementsByCss(personalCareOptionList);
         //connect.insertDataFromArrayListToSqlTable(personalCareOptions,"personal care","options");
+        DataSource.insertDataIntoDB(personalCareOptions,"personalCare","options");
+    }
+
+    public void readPersonalCareTableFromDB() throws Exception {
+        storingPersonalCareOptionListsInDatabase();
+        DataSource.getItemsListFromDB("personalCare","Options");
     }
 
     public void personalCareByBrandFindYourHappyPlace() {

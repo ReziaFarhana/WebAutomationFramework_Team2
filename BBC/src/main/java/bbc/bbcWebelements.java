@@ -14,11 +14,11 @@ public class bbcWebelements {
     public static final String howWeLive = "//p[normalize-space()='How We Live']";
     public static final String hamburgerMenu = "//div[@class='burger-nav gelicon--menu burger-nav--worklife']";
     public static final String howWeThink = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='How We Think']";
-    public static final String equalityMatters = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='Equality Matters']";
-    public static final String remoteControl = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='Remote Control']";
+    public static final String equalityMatters = "//p[@class='nav-label b-reith-sans-font'][normalize-space()='Equality Matters']";
+    public static final String remoteControl = "//a[@href='/worklife/remote-control/']";
     public static final String readMore = "//a[normalize-space()='Read More']";
     public static final String termsOfUseLocator = "//a[normalize-space()='Terms of Use']";
-    public static final String accessingBBC = "//h3[@id='accessing-the-bbc']";
+    public static final String accessingBBC = "//h3[@id='accessing-the-bbc']//a[@title='Accessing the BBC'][normalize-space()='Accessing the BBC']";
     public static final String joiningIn = "//h3[@id='joining-in']";
     public static final String registrationIcon = "//a[@id='idcta-link']";
     public static final String registerNowLink = "//a[@class='link link--primary']";
@@ -30,7 +30,7 @@ public class bbcWebelements {
     public static final String emailAddress = "user-identifier-input"; //id
     public static final String passwordField = "password-input"; //id
     public static final String showPassword = "toggle-password-type"; //id
-    public static final String rules = "//h1[normalize-space()='What are the rules for commenting and uploading?']";
+    public static final String rules = "//a[normalize-space()='What are the rules for commenting and uploading?']";
     public static final String fullVersionOfRules = "//a[normalize-space()='View the full version of the BBC Terms of Use']";
     public static final String downloadRulesAsPDF = "//a[normalize-space()='Download the BBC Terms of Use as a PDF']";
     public static final String bbcAccessibility = "//li[@class='orb-footer-accessibility']//a[normalize-space()='Accessibility Help']";
@@ -39,7 +39,7 @@ public class bbcWebelements {
     public static final String searchText = "the video has no sound";
     public static final String searchButton = "edit-submit-faq-search";
     public static final String troubleShoot = "//a[contains(text(),'Troubleshooting problems with downloads on a mobil')]";
-//    public static final String
+    public static final String bbcSoundsLink = "//a[normalize-space()='BBC Sounds, Ouch!']";
 //    public static final String
 //    public static final String
 //    public static final String

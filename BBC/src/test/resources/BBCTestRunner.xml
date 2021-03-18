@@ -14,15 +14,15 @@
     <test name="BBC Automation Test Script using chrome">
 
         <classes>
-            <class name="bbctest.ReelTest"></class>
-            <class name="bbctest.RegistrationTest">
+<!--            <class name="bbctest.ReelTest"></class>-->
+<!--            <class name="bbctest.RegistrationTest">-->
+            <class name="bbctest.WorklifeTest">
                 <methods>
                     <exclude name="reelTabTest"/>
                     <exclude name="editorsPickTest"/>
                     <exclude name="playlistsTest"/>
                     <exclude name="longShotsTest"/>
-                    <exclude name="registrationTest">
-                    </exclude>
+<!--                    <exclude name="registrationTest"/>-->
                 </methods>
 
             </class>

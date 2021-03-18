@@ -55,10 +55,12 @@ public class Worklife extends WebAPI {
         windowHalfPageScroll();
         clickByXpath(accessingBBC);
         navigateBack();
+        windowHalfPageScroll();
         clickByXpath(joiningIn);
     }
 
     public void fullVersionOfBBCTermsOfUse(){
+        termsOfUsePage();
         windowTwoThirdPageScroll();
         clickByXpath(fullVersionOfRules);
         clickByXpath(downloadRulesAsPDF);
@@ -76,8 +78,15 @@ public class Worklife extends WebAPI {
     }
 
     public void searchResultsPage(){
-        BBCAccessibilityHelpPage();
+        accessibilityIPlayerPage();
         clickByXpath(troubleShoot);
+    }
+
+    public void programmersAndAccessibility(){
+        BBCAccessibilityHelpPage();
+        windowHalfPageScroll();
+        clickByXpath(bbcSoundsLink);
+
     }
 
 

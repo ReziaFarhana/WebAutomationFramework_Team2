@@ -824,7 +824,7 @@ public class WebAPI {
                 driver.findElement(By.xpath(locator)).sendKeys(value);
             } catch (Exception ex1) {
                 try {
-                    driver.findElement(By.id(locator)).sendKeys(value);
+
                 } catch (Exception ex2) {
                     try {
                         driver.findElement(By.name(locator)).sendKeys(value);
@@ -838,6 +838,9 @@ public class WebAPI {
                 }
             }
         }
+    }
+    public void typeOnElementNew(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value);
     }
 
 

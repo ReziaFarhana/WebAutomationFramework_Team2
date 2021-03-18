@@ -27,7 +27,7 @@
 
         <classes>
             <class name="departmenttest.BeautyCategoryTest"></class>
-            <class name="pickupanddeliverytest.PickupAndDeliverytest"></class>
+<!--            <class name="pickupanddeliverytest.PickupAndDeliverytest"></class>-->
         </classes>
     </test>
 </suite>
