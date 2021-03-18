@@ -15,7 +15,7 @@ public class HomePageWebElements {
     public static final String giftEligibleResXp="//span[.='My First 36-Inch Trampolines with Handlebar']";
     public static final String contactUsOptionXpath="//a[.='Contact Us']";
     public static final String contactUsButtonCss="button#contact-us > .button-wrapper > span";
-    public static final String chatwWalmartchatBoxCss=".wc-textbox";
+    public static final String chatwWalmartchatBoxCss=".wc-shellinput";
     public static final String chatBoxValue="home delivery question";
     public static final String chatBoxSendButtonXP="//span[.='Send']";
     public static final String walmartEBookLogoCSS="//span[.='Send']";

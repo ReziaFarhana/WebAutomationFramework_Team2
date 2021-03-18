@@ -54,7 +54,8 @@ public class HomePage extends WebAPI {
         scrollDown();
         clickByXpath(contactUsOptionXpath);
         clickByCss(contactUsButtonCss);
-        typeOnInputBox(chatwWalmartchatBoxCss, chatBoxValue);
+//        typeOnInputBox(chatwWalmartchatBoxCss, chatBoxValue);
+        typeOnInputField(chatwWalmartchatBoxCss, chatBoxValue);
         clickByXpath(chatBoxSendButtonXP);
     }
     public void walmartEBooksLogo(){
