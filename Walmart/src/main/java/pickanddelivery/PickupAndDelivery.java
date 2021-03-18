@@ -6,21 +6,22 @@ import org.testng.annotations.Test;
 import static pickanddelivery.PickupAndDeliveryWebElement.*;
 
 public class PickupAndDelivery extends WebAPI {
-@Test
+
     public void pickupAndDeliveryTab(){
         clickByXpath(pickupAndDeliveryTab);
         clickByXpath(popUp);
         //handling new tab
-        //handleNewTab(driver);
-    }
-@Test
-    public void quickIntro(){
-        pickupAndDeliveryTab();
-        windowHalfPageScroll();
-        clickByClass(startShoppingBanner);
+        handleNewTab(driver);
     }
 
-    public void pickupFrom(){
+    public void quickIntro() throws InterruptedException {
+        pickupAndDeliveryTab();
+        Thread.sleep(5000);
+        windowTwoThirdPageScroll();
+        clickByXpath(startShoppingBanner);
+    }
+
+    public void pickupFrom() throws InterruptedException {
         quickIntro();
         clickByXpath(pickupAddress);
         clearField1(zipCodeSearchBox);
@@ -33,7 +34,7 @@ public class PickupAndDelivery extends WebAPI {
 //doesnt work--> check all methods
     public void learnMoreLink() throws InterruptedException {
         quickIntro();
-        //handleNewTab(driver);
+        handleNewTab(driver);
         clickByXpath(learnMore);
 
 

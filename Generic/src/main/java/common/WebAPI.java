@@ -59,9 +59,15 @@ public class WebAPI {
         jscript.executeScript("arguments[0].scrollIntoView(true);",element);
     }
 
+    public void windowTwoThirdPageScroll(){
+        jscript = (JavascriptExecutor)driver;
+        jscript.executeScript("window.scrollBy(0,950)", "");
+    }
+
     public void windowHalfPageScroll(){
         jscript = (JavascriptExecutor)driver;
-        jscript.executeScript("window.scrollBy(0,350)", "");
+      jscript.executeScript("window.scrollBy(0,350)", "");
+
     }
     public void windowHalfPageScrollUp(){
         jscript = (JavascriptExecutor)driver;

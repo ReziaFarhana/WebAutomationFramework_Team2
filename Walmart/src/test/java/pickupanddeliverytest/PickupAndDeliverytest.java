@@ -18,30 +18,30 @@ public class PickupAndDeliverytest extends WebAPI {
         pickupAndDelivery = PageFactory.initElements(driver,PickupAndDelivery.class);
     }
 
-//    @Test
-//    public void pickupAndDeliveryTabTest(){
-//        pickupAndDelivery.pickupAndDeliveryTab();
-//        String expectedText = "Let us do the shopping for you";
-//        String actualText = getTextByXpath(welcomeText);
-//        Assert.assertEquals(actualText,expectedText,"Text did not match");
-//    }
+    @Test
+    public void pickupAndDeliveryTabTest(){
+        pickupAndDelivery.pickupAndDeliveryTab();
+        String expectedText = "Let us do the shopping for you";
+        String actualText = getTextByXpath(welcomeText);
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+    }
 
 
-//    @Test
-//    public void quickIntroTest(){
-//        pickupAndDelivery.quickIntro();
-//        String expectedText = "Walmart Grocery";
-//        String actualText = driver.getTitle();
-//        Assert.assertEquals(actualText,expectedText,"Text did not match");
-//    }
+    @Test
+    public void quickIntroTest() throws InterruptedException {
+        pickupAndDelivery.quickIntro();
+        String expectedText = "Walmart Grocery";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+    }
 
-//    @Test
-//    public void pickupFromTest(){
-//        pickupAndDelivery.pickupFrom();
-//        String expectedText = "Walmart Germantown Store,";
-//        String actualText = getTextByXpath(changedAddress);
-//        Assert.assertEquals(actualText,expectedText,"Text did not match");
-//    }
+    @Test
+    public void pickupFromTest() throws InterruptedException {
+        pickupAndDelivery.pickupFrom();
+        String expectedText = "Walmart Germantown Store,";
+        String actualText = getTextByXpath(changedAddress);
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+    }
 
     @Test
     public void learnMoreLinkTest() throws InterruptedException {

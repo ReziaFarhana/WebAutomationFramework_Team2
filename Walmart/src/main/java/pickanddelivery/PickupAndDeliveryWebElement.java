@@ -3,7 +3,7 @@ package pickanddelivery;
 public class PickupAndDeliveryWebElement {
     public static final String pickupAndDeliveryTab = "//a[@title='Pickup & delivery']";
     public static final String popUp = "//*[text()='Get started']";
-    public static final String startShoppingBanner = "SkinnyBanner ResponsiveContainer";
+    public static final String startShoppingBanner = "/html/body/div[1]/div[1]/div/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[3]/div/a";
     public static final String pickupAddress = "//button[normalize-space()='Change']";
     //public static final String zipCodeSearchBox = "//input[@name='postalCode']";
     public static final String zipCodeSearchBox = "/html/body/div/div[2]/div[1]/section[2]/div/div[1]/div/div[1]/div/form/div/input";
