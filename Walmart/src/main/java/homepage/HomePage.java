@@ -1,7 +1,9 @@
 package homepage;
 
 import common.WebAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +19,8 @@ public class HomePage extends WebAPI {
 
     public void scrollDown(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,5000);");
+        js.executeScript("window.scrollBy(0,8000);");
+//        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
     public void helpCenterOption(){
         scrollDown();
@@ -59,8 +62,9 @@ public class HomePage extends WebAPI {
         clickByXpath(chatBoxSendButtonXP);
     }
     public void walmartEBooksLogo(){
-        scrollDown();
-        clickByCss(walmartEBookLogoCSS);
+        ;
+//        scrollDown();
+        clickByCss(walmartEBookLogoCss);
     }
     public void allsWellLogo(){
         scrollDown();

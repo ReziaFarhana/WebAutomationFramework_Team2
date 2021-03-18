@@ -55,14 +55,14 @@ public class HomePageTest extends WebAPI {
         WebElement actualText = driver.findElement(By.xpath(giftEligibleResXp));
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-    @Test
+
     public void contactUSOptionTest(){
         homepage.contactUsOption();
         String expectedText ="https://www.walmart.com/help";
         String actualText =getCurrentPageUrl();
         Assert.assertEquals(actualText, expectedText, "Text not passed");
     }
-
+    @Test
     public void walmartEBooksLogoTest(){
         homepage.walmartEBooksLogo();
         String expectedText ="Kobo has millions of eBooks. Sign up today and get a $5 acco";

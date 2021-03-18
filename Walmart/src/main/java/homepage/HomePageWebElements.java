@@ -18,8 +18,12 @@ public class HomePageWebElements {
     public static final String chatwWalmartchatBoxCss=".wc-shellinput";
     public static final String chatBoxValue="home delivery question";
     public static final String chatBoxSendButtonXP="//span[.='Send']";
-    public static final String walmartEBookLogoCSS="//span[.='Send']";
-    public static final String walmartEBookPagetitleClass="//span[.='Send']";
+//    public static final String walmartEBookLogoxP="//*[@class='p_a p_n p_y bi_c'][7]";
+    public static final String walmartEBookLogoxP="//a[@title='Walmart eBooks by Rakuten kobo']";
+    public static final String walmartEBookLogoCss="a[title='Walmart eBooks by Rakuten kobo']";
+
+
+    public static final String walmartEBookPagetitleClass="header-title";
     public static final String allswellLogoCss="[alt='Shop at Allswell dot com']";
     public static final String allswellPageCovidAlertXP="//i[@class='close animation']";
     public static final String feedbackButtonClass="am_a";
