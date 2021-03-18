@@ -69,7 +69,7 @@ public class HomePageTest extends WebAPI {
         String actualText = getTextByClass(walmartEBookPagetitleClass);
         Assert.assertEquals(actualText, expectedText, "Text not match");
     }
-    @Test
+
     public void allswellLogoTest(){
         homepage.allsWellLogo();
         String expectedText="https://allswellhome.com/";
@@ -77,10 +77,11 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text not match");
 
     }
-    public void feedBackButtonTest(){
+    @Test
+    public void feedBackButtonTest() throws InterruptedException {
         homepage.feedBackButton();
-        String expectedText="Thank you!";
-        String actualText =getTextByCss(thankYouMessageCss);
+        String expectedText="Walmart.com | Save Money. Live Better.";
+        String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 

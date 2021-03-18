@@ -14,7 +14,7 @@ import static homepage.HomePageWebElements.*;
 public class HomePage extends WebAPI {
     @FindBy(how= How.XPATH, using=cultureDropDownXpath) public WebElement cultureDropDown;
 //    @FindBy(how= How.CSS, using=covidReadMoreOptionId) public WebElement covidReadMore;
-    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
+//    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
 
 
     public void scrollDown(){
@@ -70,11 +70,14 @@ public class HomePage extends WebAPI {
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
         clickByCss(allswellLogoCss);
     }
-    public void feedBackButton(){
+    public void feedBackButton() throws InterruptedException {
         scrollDown();
         clickOnElement(feedbackButtonClass);
+        Thread.sleep(2000);
         clickByXpath(feedback4StarRatingXP);
-        typeOnInputBox(feedbackButtonClass,feedbackcommentsInputValue);
+//        typeOnInputBox(feedbackButtonClass,feedbackcommentsInputValue);
+        driver.findElement(By.name(feedbackcommentsInputBoxName)).sendKeys(feedbackcommentsInputValue);
+        Thread.sleep(3000);
         clickByXpath(feedbackcommentsSubmitButtonXP);
     }
     public void ps4Option(){
