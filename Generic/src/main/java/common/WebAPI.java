@@ -202,7 +202,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-        driver.quit();
+     //   driver.quit();
     }
 
 
@@ -432,6 +432,7 @@ public class WebAPI {
         selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
 
     }
+
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -775,5 +776,44 @@ public class WebAPI {
             driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
         }
     }
+
+
+    /**
+     * helper method to scroll down fixed amount to the footer Walmart page
+     */
+    public void scrollDown() {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("window.scrollBy(0,4000);");
+    }
+
+    /**
+     * Helper method to scroll dynamically - applying overloading
+     * @param num
+     */
+    public void scroll(String num) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("window.scrollBy(0," + num + ");");
+    }
+
+    public void scrollTo(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+        // scrollIntoView(true)
+    }
+
+    public void moveAway(int x, int y){
+        Actions move = new Actions(driver);
+        move.moveByOffset(x,y);
+    }
+
+    /**
+     * move to the bottom of th page
+     */
+    public void scrollToBottomPage(){
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+
+
 
 }

@@ -5,6 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import javax.swing.*;
+
 import static home_page.WalmartWebElement.*;
 
 public class WalmartHome extends WebAPI {
@@ -25,23 +27,6 @@ public class WalmartHome extends WebAPI {
     @FindBy(css = billPayInmenuButtonInMoneyCenter)
     WebElement billPayLinkForClick;
 
-
-    /**
-     * helper method to scroll down fixed amount to the footer Walmart page
-     */
-    public void scrollDown() {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0,4000);");
-    }
-
-    /**
-     * Helper method to scroll dynamically - applying overloading
-      * @param num
-     */
-    public void scrollDown(String num) {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0," + num + ");");
-    }
 
     /**
      * This method will look for Walmart+ form Walmart Services
@@ -134,7 +119,7 @@ public class WalmartHome extends WebAPI {
      * This is a method to open the Walmart gift Cards menu bare list
      * once we landed on new page of the Gift cards link
      */
-    public void useVisaE_GiftCardLink() {
+    public void useWalmartGiftCardsLink() {
         useGiftCardLink();
         try {
             sleepFor(2);
@@ -149,7 +134,7 @@ public class WalmartHome extends WebAPI {
      * inside the Walmart Gift Cards - Walmart.com page
      */
     public void filterByGiftEligible() {
-        useVisaE_GiftCardLink();
+        useWalmartGiftCardsLink();
         clickByCss(giftCheckBox);
     }
 
@@ -158,8 +143,8 @@ public class WalmartHome extends WebAPI {
      * inside the Walmart Gift Cards - Walmart.com page
      */
     public void filterByOccasion() {
-        useVisaE_GiftCardLink();
-        scrollDown("500");
+        useWalmartGiftCardsLink();
+        scroll("500");
         clickByCss(occasionGraduation);
     }
 
@@ -168,8 +153,8 @@ public class WalmartHome extends WebAPI {
      * inside the Walmart Gift Cards - Walmart.com page
      */
     public void filterByGiftBrandName() {
-        useVisaE_GiftCardLink();
-        scrollDown("500");
+        useWalmartGiftCardsLink();
+        scroll("500");
         clickByCss(giftCardBrand);
     }
 
@@ -178,9 +163,25 @@ public class WalmartHome extends WebAPI {
      * inside the Walmart Gift Cards - Walmart.com page
      */
     public void filterByGiftPrice() {
-        useVisaE_GiftCardLink();
-        scrollDown("500");
+        useWalmartGiftCardsLink();
+        scroll("500");
         clickByCss(priceInGifrCard);
+    }
+
+    /**
+     * This is a method that will open to sort with top brands
+     * inside the Walmart Gift Cards - Walmart.com page
+     */
+    public void useSortByTopBrand() throws InterruptedException {
+        useWalmartGiftCardsLink();
+        clickByXpath(sortByTopBrands);
+        sleepFor(3);
+        clickByXpath(sellecrSamsclaubAsBrand);
+        sleepFor(3);
+        scrollToBottomPage();
+        scroll("0");
+
+
     }
 
 

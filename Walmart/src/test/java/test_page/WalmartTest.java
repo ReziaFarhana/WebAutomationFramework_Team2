@@ -86,7 +86,7 @@ public class WalmartTest extends WebAPI {
     }
     @Test  // 9
     public void verifyWalmartE_GiftCard(){
-        home.useVisaE_GiftCardLink();
+        home.useWalmartGiftCardsLink();
         String expected = "Walmart Gift Cards - Walmart.com";
         String actual   = driver.getTitle();
     }
@@ -115,6 +115,14 @@ public class WalmartTest extends WebAPI {
         home.filterByGiftPrice();
         boolean found = isPopUpWindowDisplayed(driver, itemSelectedDisplayed);
         Assert.assertEquals(found, true, "Test failed - filter is not applied");
+    }
+
+    @Test
+    public void verifySamesClubIsSelected() throws InterruptedException {
+        home.useSortByTopBrand();
+        String expected = "Sam's Club Walmart Gift Cards - Walmart.com";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual,expected,"Test failed ");
     }
 
 

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="BBCTestSuit" parallel="none" thread-count="2">
-<!--    parallel="none"  Working Fine-->
-<!--    parallel="classes"  Working Fine-->
-<!--    parallel="tests"  Working Fine but have issue-->
-
+<suite name="BBC Test Suit" parallel="none" thread-count="1">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserStack"/>
@@ -13,49 +9,55 @@
     <parameter name="os_version" value="10"/>
     <!--    <parameter name="OS" value="OS X"/>-->
     <!--    <parameter name="os_version" value="Sierra"/>-->
-<!--    <parameter name="browserName" value="chrome"/>-->
-<!--    <parameter name="browserVersion" value="89"/>-->
-    <!--        <parameter name="browserName" value="firefox"/>-->
-    <!--        <parameter name="browserVersion" value="76.0"/>-->
+    <!--    <parameter name="browserName" value="chrome"/>-->
+    <!--    <parameter name="browserVersion" value="89"/>-->
+    <!--    <parameter name="browserName" value="firefox"/>-->
+    <!--    <parameter name="browserVersion" value="76.0"/>-->
     <parameter name="url" value="https://www.bbc.com/"/>
 
 
-<!--    <test_page name="BBC Automation Test Script using chrome">-->
-<!--        <parameter name="browserName" value="chrome"/>-->
-<!--        <parameter name="browserVersion" value="89"/>-->
-<!--        <classes>-->
-            <!--        Calling Test class-->
-<!--            <class name="homepagetest.HomePageTest">-->
-<!--                <methods>-->
-                    <!--               Test case include or exclude-->
-                    <!--               <exclude name="testSearchbox"></exclude>-->
-                    <!--               <include name="testLogin"></include>-->
-<!--                </methods>-->
+    <test name="BBC Automation Test Script using multiple Browser Option">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="browserVersion" value="86"/>
+        <!--    <parameter name="browserName" value="chrome"/>-->
+        <!--    <parameter name="browserVersion" value="89"/>-->
+        <classes>
 
-<!--            </class>-->
+            <class name="test_page.BBCTest">
+                <methods>
+<!--                   <exclude name="verifyWeLandedOnBBCHomePage"/>-->
+<!--                   <exclude name="verifyCulturePageIsDisplayed"/>-->
+<!--                   <exclude name="verifyAFilmLinkIsOpened"/>-->
+<!--                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>-->
+<!--                   <exclude name="verifyArtLinkIsPerformed"/>-->
+<!--                   <exclude name="verifyToOpenDetailMasterpiece"/>-->
+<!--                   <exclude name="verifyWhatDoYourDreamMeans"/>-->
+<!--                   <exclude name="verifyLookingForBooks"/>-->
+<!--                   <exclude name="clickOnLiteratureLink"/>-->
+<!--                   <exclude name="verifyClickOnLiteratureLink"/>-->
+<!--                   <exclude name="verifyOpenMoreTab"/>-->
+<!--                   <exclude name="verifyMusicTab"/>-->
+<!--                   <exclude name="verifyTVTab"/>-->
+<!--                   <exclude name="verifyPhotographyTab"/>-->
+<!--                   <exclude name="verifyStyleTab"/>-->
+<!--                   <exclude name="verifyIdentitiesTab"/>-->
+<!--                   <exclude name="verifyCollectionTab"/>-->
+<!--                   <exclude name="verifyCollectionPageWithText"/>-->
+<!--                   <exclude name="verifyWhatYouDidnotKnowAboutColour"/>-->
 
-            <!--        Add more Test classes-->
+<!--                                   <include name="testLogin"/>-->
+                </methods>
 
-<!--        </classes>-->
+            </class>
 
-<!--    </test_page>-->
+        </classes>
 
-<!--    <test_page name="BBC Automation Test Script using Firefox">-->
-<!--                <parameter name="browserName" value="firefox"/>-->
-<!--                <parameter name="browserVersion" value="86.0"/>-->
-<!--        <classes>-->
-<!--            <class name="homepagetest.HomePageTest">-->
-<!--                <methods>-->
-<!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <exclude name="testSearchbox"></exclude>&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <include name="testLogin"></include>&ndash;&gt;-->
-<!--                </methods>-->
-
-<!--            </class>-->
+    </test>
 
 
-<!--        </classes>-->
-<!--    </test_page>-->
+    <test name="new page ">
+<!--        if needed we can add tests -->
+    </test>
 
 </suite>
 

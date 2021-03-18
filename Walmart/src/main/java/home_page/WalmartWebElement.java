@@ -24,6 +24,8 @@ public class WalmartWebElement {
     public static final String occasionGraduation="#Congratulations-4-occasion";
     public static final String giftCardBrand="input[id*='Walmart-0-brand']";
     public static final String priceInGifrCard="input[id*='$0---$500-0-price']";
+    public static final String sortByTopBrands="//button[normalize-space()='Top Brands']";
+    public static final String sellecrSamsclaubAsBrand="//*[@id=\"search-util-bar-brand-1\"]";
 //    public static final String x="";
 
         // looking for texts or title for verification or validation of the page

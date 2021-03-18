@@ -7,16 +7,16 @@
     <parameter name="cloudEnvName" value="browserStack"/>
     <parameter name="OS" value="windows"/>
     <parameter name="os_version" value="10"/>
-<!--        <parameter name="OS" value="OS X"/>-->
-<!--        <parameter name="os_version" value="Sierra"/>-->
-<!--    <parameter name="browserName" value="chrome"/>-->
-<!--    <parameter name="browserVersion" value="89"/>-->
+    <!--        <parameter name="OS" value="OS X"/>-->
+    <!--        <parameter name="os_version" value="Sierra"/>-->
+    <!--    <parameter name="browserName" value="chrome"/>-->
+    <!--    <parameter name="browserVersion" value="89"/>-->
     <!--        <parameter name="browserName" value="firefox"/>-->
     <!--        <parameter name="browserVersion" value="76.0"/>-->
     <parameter name="url" value="https://www.walmart.com/"/>
 
 
-    <test name="Walmart Automation Test Script using chrome">
+    <test name="Walmart Automation Test Script using multiple Browser Option">
         <parameter name="browserName" value="firefox"/>
         <parameter name="browserVersion" value="86"/>
 <!--            <parameter name="browserName" value="firefox"/>-->
@@ -26,19 +26,19 @@
             <class name="test_page.WalmartTest">
                 <methods>
 <!--                                   Test case include or exclude-->
-                           <exclude name="verifyWalmartPlusIsClicked"/>
-                           <exclude name="verifyAllBenefitsIsSelected"/>
-                           <exclude name="verifyFreeShippingInBenefits"/>
-                           <exclude name="verifyMobileScanAndGoLinkInBenefits"/>
-                           <exclude name="verifyLandedOnGroceryPickupAndDelivery"/>
-                           <exclude name="verifyCreditCardLinkFromMoneyCenterHamburger"/>
-                           <exclude name="verifyMoneyCenterLink"/>
-                           <exclude name="verifyGiftCardLink"/>
-                           <exclude name="verifyWalmartE_GiftCard"/>
-                           <exclude name="verifyGiftEligibleIsApplied"/>
-                           <exclude name="verifyOccasionFilterIsApplied"/>
-                           <exclude name="verifyGiftBrandFilterIsApplied"/>
-                           <exclude name="verifyGiftPriceFilterIsApplied"/>
+<!--                           <exclude name="verifyWalmartPlusIsClicked"/>-->
+<!--                           <exclude name="verifyAllBenefitsIsSelected"/>-->
+<!--                           <exclude name="verifyFreeShippingInBenefits"/>-->
+<!--                           <exclude name="verifyMobileScanAndGoLinkInBenefits"/>-->
+<!--                           <exclude name="verifyLandedOnGroceryPickupAndDelivery"/>-->
+<!--                           <exclude name="verifyCreditCardLinkFromMoneyCenterHamburger"/>-->
+<!--                           <exclude name="verifyMoneyCenterLink"/>-->
+<!--                           <exclude name="verifyGiftCardLink"/>-->
+<!--                           <exclude name="verifyWalmartE_GiftCard"/>-->
+<!--                           <exclude name="verifyGiftEligibleIsApplied"/>-->
+<!--                           <exclude name="verifyOccasionFilterIsApplied"/>-->
+<!--                           <exclude name="verifyGiftBrandFilterIsApplied"/>-->
+<!--                           <exclude name="verifyGiftPriceFilterIsApplied"/>-->
 
 <!--                                   <include name="testLogin"></include>-->
                 </methods>
@@ -52,8 +52,8 @@
     </test>
 
 <!--    <test_page name="Walmart Automation Test Script using Firefox">-->
-<!--                <parameter name="browserName" value="firefox"/>-->
-<!--                <parameter name="browserVersion" value="86.0"/>-->
+    <!--                <parameter name="browserName" value="firefox"/>-->
+    <!--                <parameter name="browserVersion" value="86.0"/>-->
 <!--        <classes>-->
 <!--            <class name="homepagetest.HomePageTest">-->
     <!--                <methods>-->
