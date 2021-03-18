@@ -31,12 +31,16 @@ public class HomePageWebElements {
     public static final String feedbackcommentsInputBoxName="feedback-comments";
     public static final String feedbackcommentsInputValue="You suck";
     public static final String feedbackcommentsSubmitButtonXP="//button[@id='hf-feedback-bubble-submit']//span[@class='p_a p_ar p_y p_ai']";
-    public static final String thankYouMessageCss=".al_a";
     public static final String ps4Xp="//a[.='PS4']";
     public static final String maddenNfl21GameResultXp="//a[@href='/ip/Madden-NFL-21-Electronic-Arts-PlayStation-4-PlayStation-5/224138894']";
-    public static final String seeAllReviewsButtonXp="//span[.='See all reviews']";
+    public static final String closeOutps5PopupCss=".elc-icon-remove";
+    public static final String seeAllReviewsButtonXp="//select[@aria-label='Sort by']";
     public static final String mostRelevantDropDownCss=".field-input";
     public static final String dropDownValue="submission-desc";
+    public static final String qtyDownXp="//select[@aria-label='Quantity']";
+    public static final String heartButtonXp="//i[@aria-label='Save this item to your lists']";
+    public static final String loginInPageTextXp="/html/body/div[1]/div/h1/span[1]/span";
+
 
 
 

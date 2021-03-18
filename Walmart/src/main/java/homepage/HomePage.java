@@ -83,12 +83,9 @@ public class HomePage extends WebAPI {
     public void ps4Option(){
         scrollDown();
         clickByXpath(ps4Xp);
-        cancelAlert();
+        clickByCss(closeOutps5PopupCss);
         clickByXpath(maddenNfl21GameResultXp);
-        scrollDown();
-        clickByXpath(seeAllReviewsButtonXp);
-        clickByCss(mostRelevantDropDownCss);
-        dropDown(mostRelevantDropDownCss,dropDownValue);
+        clickByXpath(heartButtonXp);
 
 
 

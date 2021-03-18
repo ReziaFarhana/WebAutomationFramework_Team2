@@ -77,12 +77,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text not match");
 
     }
-    @Test
+
     public void feedBackButtonTest() throws InterruptedException {
         homepage.feedBackButton();
         String expectedText="Walmart.com | Save Money. Live Better.";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
+    }
+    @Test
+    public void ps4OptionTest(){
+        homepage.ps4Option();
+        String expectedText="Sign in to your Walmart account";
+        String actualText= getTextByXpath(loginInPageTextXp);
+        Assert.assertEquals(actualText, expectedText,"Text doesnt match");
     }
 
 
