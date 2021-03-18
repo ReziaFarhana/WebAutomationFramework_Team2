@@ -1,10 +1,11 @@
-package bbcheaderreel;
+package bbc;
 
 import common.WebAPI;
+import org.openqa.selenium.By;
 
-import static bbcheaderreel.bbcWebelements.*;
+import static bbc.bbcWebelements.*;
 
-public class worklife extends WebAPI {
+public class Worklife extends WebAPI {
 
     public void worklifeTab(){
         clickByXpath(workLifeLocator);
@@ -40,6 +41,25 @@ public class worklife extends WebAPI {
         worklifeTab();
         clickByXpath(remoteControl);
     }
+
+    public void workLifeReadMore(){
+        worklifeTab();
+        clickByXpath(readMore);
+    }
+
+    public void termsOfUse(){
+        windowsFullPageScrollDown();
+        clickByXpath(termsOfUseLocator);
+    }
+
+    public void click(){
+        clickByXpath(registrationIcon);
+        clickByXpath(registerNowLink);
+        waitUntilClickAble(By.xpath("//a[@data-bbc-result='/register/details/age']"));
+
+        clickByXpath("//a[@data-bbc-result='/register/details/age']");
+    }
+
 
 
 }

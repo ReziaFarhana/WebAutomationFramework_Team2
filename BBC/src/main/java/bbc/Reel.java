@@ -1,8 +1,8 @@
-package bbcheaderreel;
+package bbc;
 
 import common.WebAPI;
 
-import static bbcheaderreel.bbcWebelements.*;
+import static bbc.bbcWebelements.*;
 
 public class Reel extends WebAPI {
 
@@ -27,6 +27,11 @@ public class Reel extends WebAPI {
         clickByXpath(longShotsButton);
         windowHalfPageScroll();
         clickByXpath(longShotNewLink);
+    }
+
+    public void termsofUse(){
+        windowsFullPageScrollDown();
+
     }
 
 

@@ -13,7 +13,7 @@
 
     <test name="BBC Automation Test Script using chrome">
         <classes>
-            <class name="bbcheaderreeltest.ReelTest">
+            <class name="bbctest.RegistrationTest">
 
             </class>
         </classes>

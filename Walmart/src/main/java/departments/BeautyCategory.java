@@ -165,4 +165,9 @@ public class BeautyCategory extends WebAPI {
         clickByXpath(bestSellers);
     }
 
+    public void featureBrandsTab(){
+        beautyButtonLocate();
+        clickByXpath("//a[normalize-space()='Trending in Beauty']");
+    }
+
 }

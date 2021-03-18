@@ -277,7 +277,6 @@ public class WebAPI {
 
     public static void typeOnElementNEnter(String locator, String value) {
         try {
-            driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         } catch (Exception ex1) {
             try {
                 System.out.println("First Attempt was not successful");
@@ -743,6 +742,8 @@ public void typeByXpathNEnter(String locator, String value) {
     public void clickByLinkText(String loc) {
         driver.findElement(By.linkText(loc)).click();
     }
+
+
 
     // ---------------- RADIO BUTTON
     public void assertEqualByXpath(String loc, String expValue) {

@@ -11,7 +11,7 @@ import java.util.Iterator;
 
 public class ReadExcel {
 
-    private static final String FILE_NAME = System.getProperty("user.dir") + "/DataTest/TestExcelFile.xlsx";
+    private static final String FILE_NAME = "../WebAutomationFramework_Team2/ExcelData/BBCRegistrationExcel.xlsx";
 
     /**
      * This method is to read Excel file based on sheet Index Number
@@ -32,7 +32,7 @@ public class ReadExcel {
                         System.out.print(currentCell.getStringCellValue() + " ");
 
                     } else if (currentCell.getCellType() == CellType.NUMERIC) {
-                        System.out.print(currentCell.getNumericCellValue());
+                        System.out.print(currentCell.getNumericCellValue()+ " ");
                     }
                 }
                 System.out.println();

@@ -57,7 +57,7 @@ public class BeautyCategoryWebElement {
     public static final String exclusives = "//a[normalize-space()='Exclusives']";
     public static final String newArrivals = "//a[contains(text(),'New Arrivals')]";
     public static final String bestSellers = "//a[normalize-space()='Bestsellers']";
-    public static final String featuredBrand = "//*[@id=\"dept-deKWalqi-children\"]/div[2]/div[1]/div[7]/div/span/a";
+    public static final String featuredBrand = "//body/div[@class='js-content']/div[@class='page-wrapper']/div[@class='page-full-wrapper']/div[@class='js-header-content']/section/section[@aria-label='header']/div[@id='js-global-header-wrapper']/div[@class='bq_a']/div[@id='hf-header']/div[@id='header-tabs-sparkmenu']/div[@id='header-spark-menu']/div[@class='l_c l_a']/div[@id='spark-menu-department-flyout']/div[@id='dept-deKWalqi-children']/div[@class='p_a p_e b_a b_t']/div[@class='p_a p_ag bm_b']/div[7]/div[1]";
     public static final String featuredBrandsListOfCategory = "section[class='dept-8qQqY8bV-children'] ul[class='k_a b_a b_f']";
     public static final String premiumBeauty = "//a[normalize-space()='Premium Beauty']";
     public static final String premiumBeautyListOfCategory = "//*[@class='CategoryTopNav-nav-button display-inline-block u-text-truncate']";

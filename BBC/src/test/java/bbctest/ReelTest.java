@@ -1,6 +1,6 @@
-package bbcheaderreeltest;
+package bbctest;
 
-import bbcheaderreel.Reel;
+import bbc.Reel;
 import common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;

@@ -1,22 +1,23 @@
 package pickanddelivery;
 
 import common.WebAPI;
+import org.testng.annotations.Test;
 
 import static pickanddelivery.PickupAndDeliveryWebElement.*;
 
 public class PickupAndDelivery extends WebAPI {
-
+@Test
     public void pickupAndDeliveryTab(){
         clickByXpath(pickupAndDeliveryTab);
         clickByXpath(popUp);
         //handling new tab
-        handleNewTab(driver);
+        //handleNewTab(driver);
     }
-
+@Test
     public void quickIntro(){
         pickupAndDeliveryTab();
         windowHalfPageScroll();
-        clickByXpath(startShoppingBanner);
+        clickByClass(startShoppingBanner);
     }
 
     public void pickupFrom(){
@@ -29,10 +30,10 @@ public class PickupAndDelivery extends WebAPI {
         clickByXpath(changeButton);
 
     }
-
-    public void learnMoreLink(){
+//doesnt work--> check all methods
+    public void learnMoreLink() throws InterruptedException {
         quickIntro();
-        handleNewTab(driver);
+        //handleNewTab(driver);
         clickByXpath(learnMore);
 
 

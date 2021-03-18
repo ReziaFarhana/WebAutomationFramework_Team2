@@ -44,7 +44,7 @@ public class PickupAndDeliverytest extends WebAPI {
 //    }
 
     @Test
-    public void learnMoreLinkTest(){
+    public void learnMoreLinkTest() throws InterruptedException {
         pickupAndDelivery.learnMoreLink();
         String expectedText = "Express deilvery";
         String actualText = getTextByXpath(title);

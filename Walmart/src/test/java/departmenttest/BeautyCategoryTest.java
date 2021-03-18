@@ -184,14 +184,14 @@ public class BeautyCategoryTest extends WebAPI {
 //
 //    }
 //
-//    @Test(priority = 21)
-//    public void featureBrandTabTest(){
-//
-//        String expectedText = "Feature Brands - Walmart.com";
-//        String actualText = driver.getTitle();
-//        Assert.assertEquals(actualText,expectedText,"Text did not match");
-//
-//    }
+    @Test(priority = 21)
+    public void featureBrandTabTest(){
+        beautyCategory.featureBrandsTab();
+        String expectedText = "Feature Brands - Walmart.com";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+
+    }
 
 //    @Test(priority = 1)
 //    public void bathAndBodyItemCheckoutTabTest() throws InterruptedException {
