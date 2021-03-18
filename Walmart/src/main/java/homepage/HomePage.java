@@ -15,6 +15,7 @@ public class HomePage extends WebAPI {
     @FindBy(how= How.XPATH, using=cultureDropDownXpath) public WebElement cultureDropDown;
 //    @FindBy(how= How.CSS, using=covidReadMoreOptionId) public WebElement covidReadMore;
 //    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
+//    @FindBy(how= How.XPATH, using=listsXp)public WebElement listOption;
 
 
     public void scrollDown(){
@@ -86,9 +87,16 @@ public class HomePage extends WebAPI {
         clickByCss(closeOutps5PopupCss);
         clickByXpath(maddenNfl21GameResultXp);
         clickByXpath(heartButtonXp);
+    }
+    public void hamburgermenu() throws InterruptedException {
 
+        clickByXpath(hamburgermenuXp);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+      js.executeScript("window.scrollBy(0,3000);");
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
-
+        clickByXpath(easterOptionXp);
+        clickByXpath(easterOption2Xp);
     }
 
 

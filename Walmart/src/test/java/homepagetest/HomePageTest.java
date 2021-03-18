@@ -84,12 +84,19 @@ public class HomePageTest extends WebAPI {
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-    @Test
+
     public void ps4OptionTest(){
         homepage.ps4Option();
         String expectedText="Sign in to your Walmart account";
         String actualText= getTextByXpath(loginInPageTextXp);
         Assert.assertEquals(actualText, expectedText,"Text doesnt match");
+    }
+    @Test
+    public void hamburgerMenuTest() throws InterruptedException {
+        homepage.hamburgermenu();
+        String expectedText ="Build beautiful baskets";
+        String actualText=getTextByXpath(easterpageTextXp);
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 
 

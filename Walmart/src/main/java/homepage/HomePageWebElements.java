@@ -40,6 +40,12 @@ public class HomePageWebElements {
     public static final String qtyDownXp="//select[@aria-label='Quantity']";
     public static final String heartButtonXp="//i[@aria-label='Save this item to your lists']";
     public static final String loginInPageTextXp="/html/body/div[1]/div/h1/span[1]/span";
+    public static final String hamburgermenuXp="//button[@aria-label='Menu']//img[@alt='null']";
+//    public static final String listsXp="//div[@class='x_a x_i'][normalize-space()='Lists']";
+    public static final String easterOptionXp="//div[@aria-label='Main Menu']//button[3]";
+    public static final String easterOption2Xp="//div[@data-parent-dept-name='Easter']//a[@class='j_a j_c'][normalize-space()='Easter']";
+    public static final String easterpageTextXp="//h2[normalize-space()='Build beautiful baskets']";
+
 
 
 
