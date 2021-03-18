@@ -45,6 +45,8 @@ public class HomePageWebElements {
     public static final String easterOptionXp="//div[@aria-label='Main Menu']//button[3]";
     public static final String easterOption2Xp="//div[@data-parent-dept-name='Easter']//a[@class='j_a j_c'][normalize-space()='Easter']";
     public static final String easterpageTextXp="//h2[normalize-space()='Build beautiful baskets']";
+    public static final String decorXp="//a[normalize-space()='Décor']";
+    public static final String partysuppliesXp="//a[normalize-space()='Décor']";
 
 
 

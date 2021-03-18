@@ -16,6 +16,7 @@ public class HomePage extends WebAPI {
 //    @FindBy(how= How.CSS, using=covidReadMoreOptionId) public WebElement covidReadMore;
 //    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
 //    @FindBy(how= How.XPATH, using=listsXp)public WebElement listOption;
+    @FindBy(how= How.XPATH, using=decorXp)public WebElement decorOp;
 
 
     public void scrollDown(){
@@ -97,6 +98,13 @@ public class HomePage extends WebAPI {
 
         clickByXpath(easterOptionXp);
         clickByXpath(easterOption2Xp);
+    }
+    public void navigateToDecorPage() throws InterruptedException {
+        hamburgermenu();
+        hoverOver(driver,decorOp);
+        clickByXpath(partysuppliesXp);
+
+
     }
 
 

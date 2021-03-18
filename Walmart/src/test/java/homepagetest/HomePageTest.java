@@ -91,11 +91,18 @@ public class HomePageTest extends WebAPI {
         String actualText= getTextByXpath(loginInPageTextXp);
         Assert.assertEquals(actualText, expectedText,"Text doesnt match");
     }
-    @Test
+
     public void hamburgerMenuTest() throws InterruptedException {
         homepage.hamburgermenu();
         String expectedText ="Build beautiful baskets";
         String actualText=getTextByXpath(easterpageTextXp);
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+    @Test
+    public void navigateToDecorPageTest() throws InterruptedException {
+        homepage.navigateToDecorPage();
+        String expectedText="Easter Indoor Decor - Walmart.com";
+        String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 
