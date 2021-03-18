@@ -24,7 +24,7 @@ public class HomePageWebElements {
 
 
     public static final String walmartEBookPagetitleClass="header-title";
-    public static final String allswellLogoCss="[alt='Shop at Allswell dot com']";
+    public static final String allswellLogoCss="a[data-asset-id='912d82a0-47e2-11e8-a933-2b761ff8f3ff']";
     public static final String allswellPageCovidAlertXP="//i[@class='close animation']";
     public static final String feedbackButtonClass="am_a";
     public static final String feedback4StarRatingXP="//div[@id='hf-feedback-bubble-rating-scale']/button[4]";

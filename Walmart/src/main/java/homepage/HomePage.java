@@ -19,8 +19,9 @@ public class HomePage extends WebAPI {
 
     public void scrollDown(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,8000);");
-//        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+//        js.executeScript("window.scrollBy(0,8000);");
+////        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
     public void helpCenterOption(){
         scrollDown();
@@ -62,14 +63,12 @@ public class HomePage extends WebAPI {
         clickByXpath(chatBoxSendButtonXP);
     }
     public void walmartEBooksLogo(){
-        ;
-//        scrollDown();
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
         clickByCss(walmartEBookLogoCss);
     }
     public void allsWellLogo(){
-        scrollDown();
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
         clickByCss(allswellLogoCss);
-        cancelAlert();
     }
     public void feedBackButton(){
         scrollDown();

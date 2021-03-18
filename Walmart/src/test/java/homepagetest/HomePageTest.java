@@ -62,13 +62,14 @@ public class HomePageTest extends WebAPI {
         String actualText =getCurrentPageUrl();
         Assert.assertEquals(actualText, expectedText, "Text not passed");
     }
-    @Test
+
     public void walmartEBooksLogoTest(){
         homepage.walmartEBooksLogo();
         String expectedText ="Kobo has millions of eBooks. Sign up today and get a $5 acco";
         String actualText = getTextByClass(walmartEBookPagetitleClass);
         Assert.assertEquals(actualText, expectedText, "Text not match");
     }
+    @Test
     public void allswellLogoTest(){
         homepage.allsWellLogo();
         String expectedText="https://allswellhome.com/";
