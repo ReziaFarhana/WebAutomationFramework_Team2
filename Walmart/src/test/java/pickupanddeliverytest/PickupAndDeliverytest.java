@@ -44,10 +44,18 @@ public class PickupAndDeliverytest extends WebAPI {
     }
 
     @Test
-    public void learnMoreLinkTest() throws InterruptedException {
-        pickupAndDelivery.learnMoreLink();
-        String expectedText = "Express deilvery";
-        String actualText = getTextByXpath(title);
+    public void showMoreTest() throws InterruptedException {
+        pickupAndDelivery.showMore();
+        String expectedText = "Walmart curbside pickup & delivery";
+        String actualText = getTextByXpath(showText);
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+    }
+
+    @Test
+    public void reserveATimeSlotTest() throws InterruptedException {
+        pickupAndDelivery.reserveATimeSlot();
+        String expectedText = "Sign in to your Walmart account";
+        String actualText = getTextByXpath(signInText);
         Assert.assertEquals(actualText,expectedText,"Text did not match");
     }
 

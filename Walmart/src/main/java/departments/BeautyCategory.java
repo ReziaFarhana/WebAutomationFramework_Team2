@@ -2,6 +2,7 @@ package departments;
 
 import common.WebAPI;
 import databases.ConnectToSqlDB;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -136,7 +137,7 @@ public class BeautyCategory extends WebAPI {
         windowHalfPageScroll();
     }
 
-    public void checkout() throws InterruptedException {
+    public void checkout() {
         ratingsAndReviewsOfFilteredItem();
         windowsFullPageScrollUp();
         clickByXpath(backToItemButton);
@@ -167,7 +168,8 @@ public class BeautyCategory extends WebAPI {
 
     public void featureBrandsTab(){
         beautyButtonLocate();
-        clickByXpath("//a[normalize-space()='Trending in Beauty']");
+        waitUntilClickAble(By.xpath(beautyTutorialTab));
+        clickByXpath(beautyTutorialTab);
     }
 
 }

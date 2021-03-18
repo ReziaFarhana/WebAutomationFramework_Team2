@@ -234,7 +234,7 @@ public class WebAPI {
         return driver;
     }
 
-   // @AfterMethod(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();

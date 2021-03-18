@@ -1,13 +1,16 @@
 package pickanddelivery;
 
 import common.WebAPI;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.testng.annotations.Test;
 
 import static pickanddelivery.PickupAndDeliveryWebElement.*;
 
 public class PickupAndDelivery extends WebAPI {
 
-    public void pickupAndDeliveryTab(){
+    public void pickupAndDeliveryTab() {
         clickByXpath(pickupAndDeliveryTab);
         clickByXpath(popUp);
         //handling new tab
@@ -25,22 +28,28 @@ public class PickupAndDelivery extends WebAPI {
         quickIntro();
         clickByXpath(pickupAddress);
         clearField1(zipCodeSearchBox);
-        typeByXpathNEnter(zipCodeSearchBox,zipcode);
+        typeByXpathNEnter(zipCodeSearchBox, zipcode);
         clickByXpath(selectAddress);
         clickByXpath(continueButton);
         clickByXpath(changeButton);
 
     }
-//doesnt work--> check all methods
-    public void learnMoreLink() throws InterruptedException {
-        quickIntro();
-        handleNewTab(driver);
-        clickByXpath(learnMore);
 
+    public void showMore() throws InterruptedException {
+        quickIntro();
+        windowsFullPageScrollDown();
+        clickByXpath(showMore);
+        Thread.sleep(5);
+        windowsFullPageScrollDown();
+        Thread.sleep(5);
+        clickByXpath(showLess);
 
     }
 
+    public void reserveATimeSlot() throws InterruptedException {
+        quickIntro();
+        clickByXpath(seeTimesSlotTab);
 
-
+    }
 
 }
