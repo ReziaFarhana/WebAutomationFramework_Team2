@@ -3,6 +3,8 @@ package bbc;
 import common.WebAPI;
 import org.openqa.selenium.By;
 
+import java.util.List;
+
 import static bbc.bbcWebelements.*;
 
 public class Worklife extends WebAPI {
@@ -42,23 +44,42 @@ public class Worklife extends WebAPI {
         clickByXpath(remoteControl);
     }
 
-    public void workLifeReadMore(){
+    public void worklifeReadMore(){
         worklifeTab();
         clickByXpath(readMore);
     }
 
-    public void termsOfUse(){
+    public void termsOfUsePage(){
         windowsFullPageScrollDown();
         clickByXpath(termsOfUseLocator);
+        windowHalfPageScroll();
+        clickByXpath(accessingBBC);
+        navigateBack();
+        clickByXpath(joiningIn);
     }
 
-    public void click(){
-        clickByXpath(registrationIcon);
-        clickByXpath(registerNowLink);
-        waitUntilClickAble(By.xpath("//a[@data-bbc-result='/register/details/age']"));
-
-        clickByXpath("//a[@data-bbc-result='/register/details/age']");
+    public void fullVersionOfBBCTermsOfUse(){
+        windowTwoThirdPageScroll();
+        clickByXpath(fullVersionOfRules);
+        clickByXpath(downloadRulesAsPDF);
     }
+
+    public void BBCAccessibilityHelpPage(){
+        windowsFullPageScrollDown();
+        clickByXpath(bbcAccessibility);
+        clickByXpath(fAQS);
+    }
+
+    public void accessibilityIPlayerPage(){
+        BBCAccessibilityHelpPage();
+        typeByIdNEnter(searchBox,searchText);
+    }
+
+    public void searchResultsPage(){
+        BBCAccessibilityHelpPage();
+        clickByXpath(troubleShoot);
+    }
+
 
 
 

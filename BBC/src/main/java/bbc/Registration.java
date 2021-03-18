@@ -19,8 +19,7 @@ public class Registration extends WebAPI {
 
     public static void readFile() {
 
-        try
-        {
+        try {
             inputStream = new FileInputStream(file);
             workbook = new XSSFWorkbook(inputStream);
             sheet = workbook.getSheet("BBCRegistrationAccountInfo");
@@ -30,10 +29,14 @@ public class Registration extends WebAPI {
 
     }
 
-    public void firstStepOfRegistration() throws InterruptedException {
+    public void signInPageVerify() {
+        clickByXpath(registrationIcon);
+    }
+
+    public void registration() throws InterruptedException {
         WriteBBCRegistrationExcel.writeExcel();
         readFile();
-        clickByXpath(registrationIcon);
+        signInPageVerify();
         clickByXpath(registerNowLink);
         Thread.sleep(5000);
         clickByXpath(age);
@@ -41,12 +44,10 @@ public class Registration extends WebAPI {
         typeOnElement1(monthInput, sheet.getRow(1).getCell(1).getStringCellValue());
         typeOnElement1(yearInput, sheet.getRow(1).getCell(2).getStringCellValue());
         clickById(continueButton);
-    }
-
-    public void secondStepinRegistration(){
-       // ReadExcel.readExcelFile("C:\\Users\\israt\\IdeaProjects\\WebAutomationFramework_Team2\\ExcelData\\BBCRegistrationExcel.xlsx",0);
-        WriteBBCRegistrationExcel.writeExcel();
-
+        typeOnElement1(emailAddress, sheet.getRow(1).getCell(3).getStringCellValue());
+        typeOnElement1(passwordField, sheet.getRow(1).getCell(4).getStringCellValue());
+        clickById(showPassword);
+        clickById(continueButton);
     }
 
 

@@ -18,6 +18,7 @@ public class WriteBBCRegistrationExcel {
         Object[][] accountDetails = {
                 { "BirthDay","BirthMonth","BirthYear","Email", "Password"},
                 { "24", "12","1987", "yinexer598@990ys.com","ABcDe123"},
+                { "7", "9","1989", "facaya5680@990ys.com","ABcDe123"},
                 { "13", "6","1980", "isratretomoni@gmail.com","ABcDe123"},
 
         };

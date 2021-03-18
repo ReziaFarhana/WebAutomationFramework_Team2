@@ -46,31 +46,34 @@ public class WebAPI {
         return properties;
     }
 
-    public void windowsFullPageScrollDown(){
-        jscript = (JavascriptExecutor)driver;
+    public void windowsFullPageScrollDown() {
+        jscript = (JavascriptExecutor) driver;
         jscript.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
-    public void windowsFullPageScrollUp(){
-        jscript = (JavascriptExecutor)driver;
+
+    public void windowsFullPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
         jscript.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
     }
-    public void windowsFullPageScrollSideBar(WebElement element){
-        jscript = (JavascriptExecutor)driver;
-        jscript.executeScript("arguments[0].scrollIntoView(true);",element);
+
+    public void windowsFullPageScrollSideBar(WebElement element) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    public void windowTwoThirdPageScroll(){
-        jscript = (JavascriptExecutor)driver;
+    public void windowTwoThirdPageScroll() {
+        jscript = (JavascriptExecutor) driver;
         jscript.executeScript("window.scrollBy(0,950)", "");
     }
 
-    public void windowHalfPageScroll(){
-        jscript = (JavascriptExecutor)driver;
-      jscript.executeScript("window.scrollBy(0,350)", "");
+    public void windowHalfPageScroll() {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("window.scrollBy(0,350)", "");
 
     }
-    public void windowHalfPageScrollUp(){
-        jscript = (JavascriptExecutor)driver;
+
+    public void windowHalfPageScrollUp() {
+        jscript = (JavascriptExecutor) driver;
         jscript.executeScript("window.scrollBy(0,-350)", "");
     }
 
@@ -234,7 +237,7 @@ public class WebAPI {
         return driver;
     }
 
-  @AfterMethod(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
         driver.quit();
@@ -358,8 +361,13 @@ public class WebAPI {
     public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
-public void typeByXpathNEnter(String locator, String value) {
+
+    public void typeByXpathNEnter(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+    }
+
+    public void typeByIdNEnter(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
     }
 
     public void typeByXpath(String locator, String value) {
@@ -373,6 +381,7 @@ public void typeByXpathNEnter(String locator, String value) {
     public void clearInputField(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
     }
+
     public void clearInputFieldByXpath(String locator) {
         driver.findElement(By.xpath(locator)).clear();
     }
@@ -394,6 +403,7 @@ public void typeByXpathNEnter(String locator, String value) {
         System.out.println(text);
         return text;
     }
+
     public static List<String> getTextFromWebElementsByXpath(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -434,7 +444,6 @@ public void typeByXpathNEnter(String locator, String value) {
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-
 
 
     public String getCurrentPageUrl() {
@@ -515,6 +524,7 @@ public void typeByXpathNEnter(String locator, String value) {
             action.moveToElement(element).perform();
         }
     }
+
     //new hoverover method
     public void mouseHoverByXpath1(String locator) {
         try {
@@ -527,18 +537,21 @@ public void typeByXpathNEnter(String locator, String value) {
             Actions action = new Actions(driver);
             action.moveToElement(element.findElement(By.xpath(locator))).build().perform();
         }
-    }public void mouseHoverByXpath2(String locator) {
+    }
+
+    public void mouseHoverByXpath2(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
-            JavascriptExecutor executor = (JavascriptExecutor)driver;
+            JavascriptExecutor executor = (JavascriptExecutor) driver;
             executor.executeScript("arguments[0].click();", element);
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.xpath(locator));
-            JavascriptExecutor executor = (JavascriptExecutor)driver;
+            JavascriptExecutor executor = (JavascriptExecutor) driver;
             executor.executeScript("arguments[0].click();", element);
         }
     }
+
     public void mouseHoverByXpathParentAndChildLocator(String parentLocator, String childLocator) {
         WebElement mainMenu = driver.findElement(By.xpath(parentLocator));
 //Create object 'action' of an Actions class
@@ -618,7 +631,7 @@ public void typeByXpathNEnter(String locator, String value) {
     }
 
     //new window handle
-    public void windowHandle(){
+    public void windowHandle() {
         String parentHandle = driver.getWindowHandle();
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
@@ -669,7 +682,7 @@ public void typeByXpathNEnter(String locator, String value) {
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         for (int i = 0; i < linksList.size(); i++) {
-           // System.out.println(linksList.get(i).getAttribute("href"));
+            // System.out.println(linksList.get(i).getAttribute("href"));
             if (linksList.get(i).getAttribute("href") != null && (!linksList.get(i).getAttribute("href").contains("javascript") && (!linksList.get(i).getAttribute("href").contains("mailto")))) {
                 activeLinks.add(linksList.get(i));
             }
@@ -737,6 +750,7 @@ public void typeByXpathNEnter(String locator, String value) {
     public void clickById(String loc) {
         driver.findElement(By.id(loc)).click();
     }
+
     public void clickByClass(String loc) {
         driver.findElement(By.className(loc)).click();
     }
@@ -748,7 +762,6 @@ public void typeByXpathNEnter(String locator, String value) {
     public void clickByLinkText(String loc) {
         driver.findElement(By.linkText(loc)).click();
     }
-
 
 
     // ---------------- RADIO BUTTON

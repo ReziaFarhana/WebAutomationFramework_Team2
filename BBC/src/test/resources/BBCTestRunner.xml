@@ -12,8 +12,18 @@
 
 
     <test name="BBC Automation Test Script using chrome">
+
         <classes>
+            <class name="bbctest.ReelTest"></class>
             <class name="bbctest.RegistrationTest">
+                <methods>
+                    <exclude name="reelTabTest"/>
+                    <exclude name="editorsPickTest"/>
+                    <exclude name="playlistsTest"/>
+                    <exclude name="longShotsTest"/>
+                    <exclude name="registrationTest">
+                    </exclude>
+                </methods>
 
             </class>
         </classes>

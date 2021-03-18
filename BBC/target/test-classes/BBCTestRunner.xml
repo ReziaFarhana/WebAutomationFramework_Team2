@@ -12,8 +12,15 @@
 
 
     <test name="BBC Automation Test Script using chrome">
+
         <classes>
+
             <class name="bbctest.RegistrationTest">
+                <methods>
+                    <exclude name="registrationTest">
+                    </exclude>
+
+                </methods>
 
             </class>
         </classes>

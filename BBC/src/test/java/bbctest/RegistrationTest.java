@@ -17,11 +17,19 @@ public class RegistrationTest extends WebAPI {
         registration = PageFactory.initElements(driver, Registration.class);
     }
 
+    @Test
+    public void signInPageVerifyTest(){
+        registration.signInPageVerify();
+        String expectedText = "Sign in";
+        String actualText = getTextByXpath(signInText);
+        Assert.assertEquals(actualText,expectedText,"Text did not match");
+    }
+
     @Test //read and write excel
-    public void registerNowTest() throws InterruptedException {
-        registration.firstStepOfRegistration();
-        String expectedText = "Register with the BBC";
-        String actualText = getTextByXpath(registrationText);
+    public void registrationTest() throws InterruptedException {
+        registration.registration();
+        String expectedText = "OK you’re signed in. Now, want to keep up to date?";
+        String actualText = getTextByXpath(confirmRegistrationText);
         Assert.assertEquals(actualText,expectedText,"Text did not match");
     }
 }
