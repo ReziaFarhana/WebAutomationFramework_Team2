@@ -126,13 +126,14 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
-    @Test
+
     public void newsletterSignUp(){
         homepage.newsletterSignUp();
         String expectedText="Thank you for signing up!";
         String actualText=getTextById(signupThankYouPgTitleId);
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
+    @Test
     public void myItemsBtnTest(){
         homepage.myItemsBtn();
         String expectedText = "Login";
