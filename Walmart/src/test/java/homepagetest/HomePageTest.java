@@ -133,7 +133,7 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextById(signupThankYouPgTitleId);
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
-    @Test
+
     public void myItemsBtnTest(){
         homepage.myItemsBtn();
         String expectedText = "Login";
@@ -141,7 +141,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Test failed");
 
     }
-    @Test
+
     public void babyOptionTest() throws InterruptedException {
         homepage.babyOption();
         String expectedText = "Strollers - Walmart.com";
@@ -149,6 +149,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "test failed");
 
     }
+    @Test
     public void electronicsAndOfficeOption() throws InterruptedException {
         homepage.electronicsAndOfficeOption();
         String expectedText="Wearable Technology - Walmart.com - Walmart.com";
