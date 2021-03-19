@@ -149,14 +149,14 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "test failed");
 
     }
-
+    @Test
     public void electronicsAndOfficeOption() throws InterruptedException {
         homepage.electronicsAndOfficeOption();
         String expectedText="Wearable Technology - Walmart.com - Walmart.com";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void toyGamesVideoGamesTest() throws InterruptedException {
         homepage.toyGamesVideoGames();
         String expectedText="Outdoor Play - Walmart.com - Walmart.com";
