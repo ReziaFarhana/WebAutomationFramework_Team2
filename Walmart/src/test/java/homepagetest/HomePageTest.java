@@ -141,6 +141,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Test failed");
 
     }
+    @Test
     public void babyOptionTest() throws InterruptedException {
         homepage.babyOption();
         String expectedText = "Strollers - Walmart.com";
