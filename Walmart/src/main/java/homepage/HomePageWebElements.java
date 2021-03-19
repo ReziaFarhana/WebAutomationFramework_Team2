@@ -47,6 +47,31 @@ public class HomePageWebElements {
     public static final String easterpageTextXp="//h2[normalize-space()='Build beautiful baskets']";
     public static final String decorXp="//a[normalize-space()='Décor']";
     public static final String partysuppliesXp="//a[normalize-space()='Décor']";
+    public static final String storePickupCusXp="//a[text()='Store Pickup']";
+    public static final String storePickupDropDownXp="//iframe[@id='iframe-contentZone11']";
+    public static final String seeMorePlusCss="#seemore-less";
+    public static final String storePickupPageTitleXp="//h2[normalize-space()='Download the app']";
+    public static final String skateboardOptionCusXp="//a[text()='Skateboard']";
+    public static final String bestSellersSortClass="//a[text()='Skateboard']";
+    public static final String hightoLowSortXp="//a[text()='Skateboard']";
+    public static final String deliverToHomeRadiobtnXp="//label[@aria-label='Shipping & Pickup: Deliver to home']//input[@type='radio']";
+    public static final String searchBoxID="global-search-input";
+    public static final String searchProduct="mac laptop";
+    public static final String refineByPriceClass="mac laptop";
+    public static final String resultsQtyXp="//div[@role='status']";
+    public static final String signupEmailID="hf-email-input";
+    public static final String signupEmail="easha@testmail.org";
+    public static final String signupBtnXp="//span[normalize-space()='Sign up']";
+    public static final String signupThankYouPgTitleId="hf-email-modal-title";
+    public static final String myItemsBtnXp="//a[@aria-label='My Items']//img[@alt='null']";
+    public static final String signupCreateBtnClass="//a[normalize-space()='Sign in or create account']";
+    public static final String babyOptionXp="//button[10]";
+    public static final String strollersXp="//a[normalize-space()='Strollers']";
+    public static final String electronicsOfficeXp="//div[@aria-label='Main Menu']//button[4]";
+    public static final String wearableTechXp="//a[normalize-space()='Wearable Tech']";
+    public static final String toysgamesvidXp="//div[@aria-label='Main Menu']//button[7]";
+    public static final String outdoorPlayXp="//a[@class='j_a j_c'][normalize-space()='Outdoor Play']";
+
 
 
 

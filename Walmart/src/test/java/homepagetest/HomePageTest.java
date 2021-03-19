@@ -98,13 +98,66 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByXpath(easterpageTextXp);
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void navigateToDecorPageTest() throws InterruptedException {
         homepage.navigateToDecorPage();
         String expectedText="Easter Indoor Decor - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
+    @Test
+    public void storePickupOptionTest() throws InterruptedException {
+        homepage.storePickupOption();
+        String expectedText ="Download the app";
+        String actualText=getTextByXpath(storePickupPageTitleXp);
+        Assert.assertEquals(actualText, expectedText, "Text does not match");
+    }
+    public void skateboardOptionTest(){
+        homepage.skateboardOption();
+        String expectedText="Skateboards - Walmart.com";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+    public void searchBoxTest(){
+        homepage.searchBox();
+        String expectedText="1 - 201 to 20 of 1,000+ results";
+        String actualText= getTextByXpath(resultsQtyXp);
+        Assert.assertEquals(actualText,expectedText,"Test failed");
+    }
+    public void newsletterSignUp(){
+        homepage.newsletterSignUp();
+        String expectedText="Thank you for signing up!";
+        String actualText=getTextById(signupThankYouPgTitleId);
+        Assert.assertEquals(actualText,expectedText,"Test failed");
+    }
+    public void myItemsBtnTest(){
+        homepage.myItemsBtn();
+        String expectedText = "Login";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"Test failed");
+
+    }
+    public void babyOptionTest() throws InterruptedException {
+        homepage.babyOption();
+        String expectedText = "Strollers - Walmart.com";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "test failed");
+
+    }
+    public void electronicsAndOfficeOption() throws InterruptedException {
+        homepage.electronicsAndOfficeOption();
+        String expectedText="Wearable Technology - Walmart.com - Walmart.com";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+    public void toyGamesVideoGamesTest() throws InterruptedException {
+        homepage.toyGamesVideoGames();
+        String expectedText="Outdoor Play - Walmart.com - Walmart.com";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText,"text doesnt match");
+    }
+
+
 
 
 

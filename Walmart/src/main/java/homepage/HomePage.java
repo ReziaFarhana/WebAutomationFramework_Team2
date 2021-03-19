@@ -17,6 +17,9 @@ public class HomePage extends WebAPI {
 //    @FindBy(how= How.NAME, using=feedbackcommentsInputBoxName) public WebElement feedbackComments;
 //    @FindBy(how= How.XPATH, using=listsXp)public WebElement listOption;
     @FindBy(how= How.XPATH, using=decorXp)public WebElement decorOp;
+    @FindBy(how= How.CSS, using=seeMorePlusCss)public WebElement seeMorePlus;
+    @FindBy(how= How.ID, using=searchBoxID)public WebElement searchBox;
+    @FindBy(how= How.ID, using=signupEmailID)public WebElement signUp;
 
 
     public void scrollDown(){
@@ -104,7 +107,72 @@ public class HomePage extends WebAPI {
         hoverOver(driver,decorOp);
         clickByXpath(partysuppliesXp);
 
+    }
+    //uncommiited
+    public void storePickupOption() throws InterruptedException {
+        scrollDown();
+        clickByXpath(storePickupCusXp);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1500);");
+//        hoverOver(driver, seeMorePlus);
+        Thread.sleep(3000);
+//        clickByXpath(seeMorePlusCss);
+//        Thread.sleep(2000);
+        clickByXpath(storePickupDropDownXp);
 
+    }
+    public void skateboardOption(){
+        clickByXpath(skateboardOptionCusXp);
+        clickOnElement(bestSellersSortClass);
+        clickByXpath(hightoLowSortXp);
+        clickByXpath(deliverToHomeRadiobtnXp);
+
+    }
+    public void searchBox(){
+        inputValueInTextBoxByWebElement(searchBox,"mac laptop");
+        clickOnElement(refineByPriceClass);
+    }
+    public void newsletterSignUp(){
+        inputValueInTextBoxByWebElement(signUp,signupEmail);
+        clickByXpath(signupBtnXp);
+    }
+    public void myItemsBtn(){
+        clickByXpath(myItemsBtnXp);
+        clickOnElement(signupCreateBtnClass);
+
+    }
+    public void babyOption() throws InterruptedException {
+
+        clickByXpath(hamburgermenuXp);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,5000);");
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
+        clickByXpath(babyOptionXp);
+        clickByXpath(strollersXp);
+    }
+    public void electronicsAndOfficeOption() throws InterruptedException {
+
+        clickByXpath(hamburgermenuXp);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,5000);");
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
+        clickByXpath(electronicsOfficeXp);
+        clickByXpath(wearableTechXp);
+    }
+    public void toyGamesVideoGames() throws InterruptedException {
+
+        clickByXpath(hamburgermenuXp);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,5000);");
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
+        clickByXpath(toysgamesvidXp);
+        clickByXpath(outdoorPlayXp);
     }
 
 
