@@ -25,25 +25,25 @@
 
             <class name="test_page.BBCTest">
                 <methods>
-                   <exclude name="verifyWeLandedOnBBCHomePage"/>
-                   <exclude name="verifyCulturePageIsDisplayed"/>
-                   <exclude name="verifyAFilmLinkIsOpened"/>
-                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>
-                   <exclude name="verifyArtLinkIsPerformed"/>
-                   <exclude name="verifyToOpenDetailMasterpiece"/>
-                   <exclude name="verifyWhatDoYourDreamMeans"/>
-                   <exclude name="verifyLookingForBooks"/>
-                   <exclude name="clickOnLiteratureLink"/>
-                   <exclude name="verifyClickOnLiteratureLink"/>
-                   <exclude name="verifyOpenMoreTab"/>
-                   <exclude name="verifyMusicTab"/>
-                   <exclude name="verifyTVTab"/>
-                   <exclude name="verifyPhotographyTab"/>
-                   <exclude name="verifyStyleTab"/>
-                   <exclude name="verifyIdentitiesTab"/>
-                   <exclude name="verifyCollectionTab"/>
-                   <exclude name="verifyCollectionPageWithText"/>
-                   <exclude name="verifyWhatYouDidnotKnowAboutColour"/>
+<!--                   <exclude name="verifyWeLandedOnBBCHomePage"/>-->
+<!--                   <exclude name="verifyCulturePageIsDisplayed"/>-->
+<!--                   <exclude name="verifyAFilmLinkIsOpened"/>-->
+<!--                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>-->
+<!--                   <exclude name="verifyArtLinkIsPerformed"/>-->
+<!--                   <exclude name="verifyToOpenDetailMasterpiece"/>-->
+<!--                   <exclude name="verifyWhatDoYourDreamMeans"/>-->
+<!--                   <exclude name="verifyLookingForBooks"/>-->
+<!--                   <exclude name="clickOnLiteratureLink"/>-->
+<!--                   <exclude name="verifyClickOnLiteratureLink"/>-->
+<!--                   <exclude name="verifyOpenMoreTab"/>-->
+<!--                   <exclude name="verifyMusicTab"/>-->
+<!--                   <exclude name="verifyTVTab"/>-->
+<!--                   <exclude name="verifyPhotographyTab"/>-->
+<!--                   <exclude name="verifyStyleTab"/>-->
+<!--                   <exclude name="verifyIdentitiesTab"/>-->
+<!--                   <exclude name="verifyCollectionTab"/>-->
+<!--                   <exclude name="verifyCollectionPageWithText"/>-->
+<!--                   <exclude name="verifyWhatYouDidnotKnowAboutColour"/>-->
 
 <!--                                   <include name="testLogin"/>-->
                 </methods>

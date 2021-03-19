@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="377.194" tests="18" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Automation\WebAutomationFramework_Team2\BBC\target\test-classes;D:\Automation\WebAutomationFramework_Team2\BBC\target\classes;D:\Automation\WebAutomationFramework_Team2\Generic\target\classes;C:\Users\Alelign\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\Alelign\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alelign\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Alelign\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Alelign\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Alelign\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Alelign\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Alelign\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Alelign\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Alelign\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Alelign\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Alelign\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Alelign\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\Alelign\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Alelign\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\Alelign\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Alelign\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\Alelign\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Alelign\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Alelign\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Alelign\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Alelign\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Alelign\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Alelign\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Alelign\.m2\repository\mysql\mysql-connector-java\8.0.22\mysql-connector-java-8.0.22.jar;C:\Users\Alelign\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongo-java-driver\3.12.7\mongo-java-driver-3.12.7.jar;C:\Users\Alelign\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\Alelign\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Alelign\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Alelign\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Alelign\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Alelign\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Alelign\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
+    <property name="sun.java.command" value="C:\Users\Alelign\AppData\Local\Temp\surefire3314107547472813425\surefirebooter6561326773309029265.jar C:\Users\Alelign\AppData\Local\Temp\surefire3314107547472813425 2021-03-18T20-12-00_216-jvmRun1 surefire940771243144157755tmp surefire_26701371220161133243tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Automation\WebAutomationFramework_Team2\BBC\target\test-classes;D:\Automation\WebAutomationFramework_Team2\BBC\target\classes;D:\Automation\WebAutomationFramework_Team2\Generic\target\classes;C:\Users\Alelign\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\Alelign\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alelign\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Alelign\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Alelign\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Alelign\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Alelign\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Alelign\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Alelign\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Alelign\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Alelign\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Alelign\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Alelign\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\Alelign\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Alelign\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\Alelign\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Alelign\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\Alelign\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Alelign\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Alelign\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Alelign\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Alelign\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Alelign\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Alelign\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Alelign\.m2\repository\mysql\mysql-connector-java\8.0.22\mysql-connector-java-8.0.22.jar;C:\Users\Alelign\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongo-java-driver\3.12.7\mongo-java-driver-3.12.7.jar;C:\Users\Alelign\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\Alelign\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Alelign\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Alelign\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Alelign\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Alelign\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Alelign\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Alelign"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.9"/>
+    <property name="testng.dtd.http" value="true"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Automation\WebAutomationFramework_Team2\BBC"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alelign\AppData\Local\Temp\surefire3314107547472813425\surefirebooter6561326773309029265.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.9+7-LTS"/>
+    <property name="user.name" value="Alelign"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Alelign\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Alelign\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.9"/>
+    <property name="user.dir" value="D:\Automation\WebAutomationFramework_Team2\BBC"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="../Generic/BrowserDriver/windows/geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.9\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath\javae.exe;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Shared feature\120\DTS\Binn\;D:\Shared feature\Client SDK\ODBC\110\Tools\Binn\;D:\DShared feature X86\120\Tools\Binn\;D:\Shared feature\120\Tools\Binn\;D:\DShared feature X86\120\Tools\Binn\ManagementStudio\;D:\DShared feature X86\120\DTS\Binn\;C:\Program Files (x86)\HP\Unified Functional Testing\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;d:\Shared feature\130\Tools\Binn\;d:\Shared feature\Client SDK\ODBC\170\Tools\Binn\;D:\2020-2021 Selenium Training\command;D:\MuleSoft\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Alelign\.dotnet\tools;C:\Users\Alelign\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.9+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="verifyAFilmLinkIsOpened" classname="test_page.BBCTest" time="6.884">
+    <system-out><![CDATA[Extent Report DirectoryD:\Automation\WebAutomationFramework_Team2\BBC\target\surefire-reports\html
+]]></system-out>
+    <system-err><![CDATA[1616112727721	geckodriver	INFO	Listening on 127.0.0.1:48100
+1616112728347	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileILENN1"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112732410	Marionette	INFO	Listening on port 57136
+1616112732552	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:12:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyArtLinkIsPerformed" classname="test_page.BBCTest" time="6.977">
+    <system-err><![CDATA[1616112743703	geckodriver	INFO	Listening on 127.0.0.1:27336
+1616112744191	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile9HQzyf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112747622	Marionette	INFO	Listening on port 57345
+1616112747934	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:12:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyClickOnLiteratureLink" classname="test_page.BBCTest" time="14.356">
+    <system-err><![CDATA[1616112758383	geckodriver	INFO	Listening on 127.0.0.1:33478
+1616112758747	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilevcGhR0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112763205	Marionette	INFO	Listening on port 57556
+1616112763602	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:12:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCollectionPageWithText" classname="test_page.BBCTest" time="11.417">
+    <failure message="Given xpath expression &quot;div .more-articles__stories&quot; is invalid: SyntaxError: The expression is not a legal expression.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ALELIGN&apos;, ip: &apos;10.252.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 38896, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: cb4f9ff3-b68c-46e4-9467-4df887824b03&#10;*** Element info: {Using=xpath, value=div .more-articles__stories}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[org.openqa.selenium.InvalidSelectorException: 
+Given xpath expression "div .more-articles__stories" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ALELIGN', ip: '10.252.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 38896, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb4f9ff3-b68c-46e4-9467-4df887824b03
+*** Element info: {Using=xpath, value=div .more-articles__stories}
+	at test_page.BBCTest.verifyCollectionPageWithText(BBCTest.java:157)
+]]></failure>
+    <system-err><![CDATA[1616112781302	geckodriver	INFO	Listening on 127.0.0.1:32614
+1616112781775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilepvitpc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112785544	Marionette	INFO	Listening on port 57774
+1616112786012	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:13:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCollectionTab" classname="test_page.BBCTest" time="9.381">
+    <system-out><![CDATA[Screenshot captured
+]]></system-out>
+    <system-err><![CDATA[1616112801507	geckodriver	INFO	Listening on 127.0.0.1:8336
+1616112801868	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofiledWMlVO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112805386	Marionette	INFO	Listening on port 57990
+1616112805587	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:13:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCulturePageIsDisplayed" classname="test_page.BBCTest" time="7.368">
+    <system-err><![CDATA[1616112818719	geckodriver	INFO	Listening on 127.0.0.1:41460
+1616112819199	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile5unj7f"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112823024	Marionette	INFO	Listening on port 58211
+1616112823436	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:13:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyFilmBrokeSeveralTaboosIsOpened" classname="test_page.BBCTest" time="7.747">
+    <system-err><![CDATA[1616112834559	geckodriver	INFO	Listening on 127.0.0.1:39438
+1616112834899	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileTxyCMN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112838937	Marionette	INFO	Listening on port 58415
+1616112839119	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:13:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyIdentitiesTab" classname="test_page.BBCTest" time="11.203">
+    <system-err><![CDATA[1616112850856	geckodriver	INFO	Listening on 127.0.0.1:40674
+1616112851372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilelUiR0G"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112856483	Marionette	INFO	Listening on port 58634
+1616112856728	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:14:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLookingForBooks" classname="test_page.BBCTest" time="11.564">
+    <system-err><![CDATA[1616112871933	geckodriver	INFO	Listening on 127.0.0.1:14148
+1616112872341	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofiletyCFSF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112877196	Marionette	INFO	Listening on port 58873
+1616112877702	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:14:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyMusicTab" classname="test_page.BBCTest" time="10.7">
+    <system-err><![CDATA[1616112893512	geckodriver	INFO	Listening on 127.0.0.1:23100
+1616112893944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileGs3SBE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112898782	Marionette	INFO	Listening on port 59100
+1616112898826	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:14:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOpenMoreTab" classname="test_page.BBCTest" time="12.144">
+    <system-err><![CDATA[1616112913580	geckodriver	INFO	Listening on 127.0.0.1:21302
+1616112913988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileUvChxL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112919112	Marionette	INFO	Listening on port 59312
+1616112919343	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:15:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPhotographyTab" classname="test_page.BBCTest" time="11.372">
+    <system-err><![CDATA[1616112938476	geckodriver	INFO	Listening on 127.0.0.1:12903
+1616112938918	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile5pG7FE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112946807	Marionette	INFO	Listening on port 59558
+1616112946980	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:15:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyStyleTab" classname="test_page.BBCTest" time="8.944">
+    <failure message="Test failed  expected [Style - BBC Culture] but found [Home - BBC Culture]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Test failed  expected [Style - BBC Culture] but found [Home - BBC Culture]
+	at test_page.BBCTest.verifyStyleTab(BBCTest.java:135)
+]]></failure>
+    <system-err><![CDATA[1616112962815	geckodriver	INFO	Listening on 127.0.0.1:27401
+1616112963170	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileGJaDLO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112969630	Marionette	INFO	Listening on port 59795
+1616112970329	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:16:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://tpc.googlesyndication.com/sodar/Enqz_20U.html, line 35: NS_ERROR_NOT_INITIALIZED: 
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTVTab" classname="test_page.BBCTest" time="11.766">
+    <system-out><![CDATA[Screenshot captured
+]]></system-out>
+    <system-err><![CDATA[1616112984520	geckodriver	INFO	Listening on 127.0.0.1:16467
+1616112984812	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileCQDgRj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616112991020	Marionette	INFO	Listening on port 60009
+1616112991501	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:16:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyToOpenDetailMasterpiece" classname="test_page.BBCTest" time="13.003">
+    <system-err><![CDATA[1616113007447	geckodriver	INFO	Listening on 127.0.0.1:41834
+1616113007881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilevzaIKZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616113015080	Marionette	INFO	Listening on port 60227
+1616113015404	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:16:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdn.permutive.com/e488cdb0-e7cb-4d91-9648-60d437d8e491-web.js, line 1: Error: TypeError: Network request timed out
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWeLandedOnBBCHomePage" classname="test_page.BBCTest" time="0">
+    <system-err><![CDATA[1616113032838	geckodriver	INFO	Listening on 127.0.0.1:42823
+1616113033205	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileRg9cDL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616113039762	Marionette	INFO	Listening on port 60468
+1616113040250	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:17:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWhatDoYourDreamMeans" classname="test_page.BBCTest" time="16.37">
+    <system-err><![CDATA[1616113044394	geckodriver	INFO	Listening on 127.0.0.1:41068
+1616113044884	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileS8xcxh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616113052296	Marionette	INFO	Listening on port 60627
+1616113052445	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:17:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdn.permutive.com/e488cdb0-e7cb-4d91-9648-60d437d8e491-web.js, line 1: Error: TypeError: Network request timed out
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWhatYouDidnotKnowAboutColour" classname="test_page.BBCTest" time="17.549">
+    <system-err><![CDATA[1616113073189	geckodriver	INFO	Listening on 127.0.0.1:10377
+1616113073635	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilev7x4hd"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616113078929	Marionette	INFO	Listening on port 60927
+1616113079020	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 18, 2021 8:17:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/dd6efffd3d04d21e591688b467b3e645/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [BBC Test Suit]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="OS" value="windows"/>
+  <parameter name="os_version" value="10"/>
+  <parameter name="cloudEnvName" value="browserStack"/>
+  <parameter name="url" value="https://www.bbc.com/"/>
+  <test thread-count="1" name="BBC Automation Test Script using multiple Browser Option(failed)" verbose="0">
+    <parameter name="browserVersion" value="86"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="test_page.BBCTest">
+        <methods>
+          <include name="afterEachTestMethod"/>
+          <include name="verifyCollectionPageWithText"/>
+          <include name="setUp"/>
+          <include name="verifyStyleTab"/>
+          <include name="startExtent"/>
+          <include name="generateReport"/>
+          <include name="cleanUp"/>
+          <include name="getInIt"/>
+          <include name="extentSetup"/>
+        </methods>
+      </class> <!-- test_page.BBCTest -->
+    </classes>
+  </test> <!-- BBC Automation Test Script using multiple Browser Option(failed) -->
+</suite> <!-- Failed suite [BBC Test Suit] -->

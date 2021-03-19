@@ -120,7 +120,7 @@
 
                     <suiteXmlFiles>
                         <suiteXmlFile>target/test-classes/WalmartTestRunner.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>target/test_page-classes/VerizonTestRunner.xml</suiteXmlFile>-->
+                        <suiteXmlFile>target/test-classes/BBCTestRunner.xml</suiteXmlFile>
                         <!--                        <suiteXmlFile>target/test_page-classes/WalmartTestRunner.xml</suiteXmlFile>-->
                         <!--                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>-->
                         <!--                        <suiteXmlFile></suiteXmlFile>-->
