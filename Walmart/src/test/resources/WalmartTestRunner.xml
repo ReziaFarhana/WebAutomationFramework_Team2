@@ -20,25 +20,25 @@
     <parameter name="url" value="https://www.walmart.com/"/>
 
 
-<!--    <test name="Walmart Automation Test Script using chrome">-->
-<!--        <parameter name="browserName" value="chrome"/>-->
-<!--        <parameter name="browserVersion" value="89"/>-->
-<!--        <classes>-->
+    <test name="Walmart Automation Test Script using chrome">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="89"/>
+        <classes>
             <!--        Calling Test class-->
-<!--            <class name="homepagetest.HomePageTest">-->
+            <class name="homepagetest.HomePageTest">
 <!--                <methods>-->
                     <!--               Test case include or exclude-->
                     <!--               <exclude name="testSearchbox"></exclude>-->
                     <!--               <include name="testLogin"></include>-->
 <!--                </methods>-->
 
-<!--            </class>-->
+            </class>
 
             <!--        Add more Test classes-->
 
-<!--        </classes>-->
+        </classes>
 
-<!--    </test>-->
+    </test>
 
 <!--    <test name="Walmart Automation Test Script using Firefox">-->
 <!--                <parameter name="browserName" value="firefox"/>-->
