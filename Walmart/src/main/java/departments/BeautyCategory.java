@@ -76,7 +76,6 @@ public class BeautyCategory extends WebAPI {
     public void storingPersonalCareOptionListsInDatabase() {
         personalCareOption();
         List<String> personalCareOptions = getTextFromWebElementsByCss(personalCareOptionList);
-        //connect.insertDataFromArrayListToSqlTable(personalCareOptions,"personal care","options");
         DataSource.insertDataIntoDB(personalCareOptions,"personalCare","options");
     }
 

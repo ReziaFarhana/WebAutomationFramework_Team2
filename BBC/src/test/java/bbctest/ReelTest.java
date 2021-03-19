@@ -1,13 +1,13 @@
 package bbctest;
 
-import bbc.Reel;
+import bbchomepageheader.Reel;
 import common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static bbc.bbcWebelements.*;
+import static bbchomepageheader.BBCWebElements.*;
 
 public class ReelTest extends WebAPI {
 

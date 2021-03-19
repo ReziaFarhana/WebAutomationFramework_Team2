@@ -1,13 +1,13 @@
 package bbctest;
 
-import bbc.Registration;
+import registration.Registration;
 import common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static bbc.bbcWebelements.*;
+import static bbchomepageheader.BBCWebElements.*;
 
 public class RegistrationTest extends WebAPI {
     Registration registration;
