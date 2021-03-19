@@ -112,17 +112,18 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByXpath(storePickupPageTitleXp);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-    @Test
+
     public void skateboardOptionTest(){
         homepage.skateboardOption();
         String expectedText="Skateboards - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
+    @Test
     public void searchBoxTest(){
         homepage.searchBox();
-        String expectedText="1 - 201 to 20 of 1,000+ results";
-        String actualText= getTextByXpath(resultsQtyXp);
+        String expectedText="mac laptop - Walmart.com";
+        String actualText= driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
     public void newsletterSignUp(){
