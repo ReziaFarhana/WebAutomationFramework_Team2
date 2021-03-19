@@ -105,13 +105,14 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void storePickupOptionTest() throws InterruptedException {
         homepage.storePickupOption();
         String expectedText ="Download the app";
         String actualText=getTextByXpath(storePickupPageTitleXp);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
+    @Test
     public void skateboardOptionTest(){
         homepage.skateboardOption();
         String expectedText="Skateboards - Walmart.com";
