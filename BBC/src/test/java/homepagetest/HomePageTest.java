@@ -17,8 +17,8 @@ public class HomePageTest extends WebAPI {
     @BeforeMethod
     public void init(){ homepage= PageFactory.initElements(driver, HomePage.class); }
 
-    @Test
-    public void weatherOptionnNavBarTest() throws InterruptedException {
+
+    public void weatherOptionNavBarTest() throws InterruptedException {
         homepage.weatherOptionnNavBar();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,2000);");
@@ -28,4 +28,19 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByXpath(weatherPageLogoTitleXp);
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
+    @Test
+    public void musicOptionNavBarTest() throws InterruptedException {
+        homepage.musicOptionNavBar();
+        String expectedText=culturePageTitle;
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText,"Text doesnt match");
+
+    }
+    public void identitiesOptionCultureNavTest() throws InterruptedException {
+        homepage.identitiesOptionCultureNav();
+        String expectedText=gettyPgTitle;
+        String actualText= driver.getTitle();
+        Assert.assertEquals(expectedText, actualText, "Text does not match");
+    }
+
 }
