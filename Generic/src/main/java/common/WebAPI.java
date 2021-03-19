@@ -399,8 +399,10 @@ public class WebAPI {
         for (WebElement web : element) {
             String st = web.getText();
             text.add(st);
+
         }
         System.out.println(text);
+        System.out.println(text.size());
         return text;
     }
 
