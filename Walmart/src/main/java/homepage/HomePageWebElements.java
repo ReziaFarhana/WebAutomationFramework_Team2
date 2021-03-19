@@ -57,7 +57,12 @@ public class HomePageWebElements {
     public static final String deliverToHomeRadiobtnXp="//label[@aria-label='Shipping & Pickup: Deliver to home']//input[@type='radio']";
     public static final String searchBoxID="global-search-input";
     public static final String searchProduct="mac laptop";
-    public static final String refineByPriceClass="mac laptop";
+    public static final String priceMinXp="//div[@class='flowtip-flyout-modal flowtip-flyout-modal-bottom']//input[@placeholder='Min']";
+    public static final String priceMinValue="10";
+    public static final String priceMaxValue="50";
+    public static final String priceMaxCss="div[class='flowtip-flyout-modal flowtip-flyout-modal-bottom'] " +
+            "input[placeholder='Max']";
+    public static final String refineByPriceClassXp="//button[@aria-label='Refine by Price']";
     public static final String resultsQtyXp="//div[@role='status']";
     public static final String signupEmailID="hf-email-input";
     public static final String signupEmail="easha@testmail.org";

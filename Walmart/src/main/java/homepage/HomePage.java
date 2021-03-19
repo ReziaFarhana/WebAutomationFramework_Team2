@@ -20,6 +20,8 @@ public class HomePage extends WebAPI {
     @FindBy(how= How.CSS, using=seeMorePlusCss)public WebElement seeMorePlus;
     @FindBy(how= How.ID, using=searchBoxID)public WebElement searchBox;
     @FindBy(how= How.ID, using=signupEmailID)public WebElement signUp;
+//    @FindBy(how= How.XPATH, using=priceMinXp)public WebElement priceMin;
+//    @FindBy(how= How.XPATH, using=priceMaxCss)public WebElement priceMax;
 
 
     public void scrollDown(){
@@ -129,8 +131,11 @@ public class HomePage extends WebAPI {
 
     }
     public void searchBox(){
-        inputValueInTextBoxByWebElement(searchBox,"mac laptop");
-        clickOnElement(refineByPriceClass);
+//        inputValueInTextBoxByWebElement(searchBox,searchProduct);
+        typeOnInputBox(searchBoxID,searchProduct);
+        clickOnElement(refineByPriceClassXp);
+//        inputValueInTextBoxByWebElement(priceMin,priceMinValue);
+//        inputValueInTextBoxByWebElement(priceMax,priceMaxValue);
     }
     public void newsletterSignUp(){
         inputValueInTextBoxByWebElement(signUp,signupEmail);

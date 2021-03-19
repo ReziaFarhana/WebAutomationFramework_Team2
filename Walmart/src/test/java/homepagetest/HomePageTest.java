@@ -119,13 +119,14 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void searchBoxTest(){
         homepage.searchBox();
         String expectedText="mac laptop - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
+    @Test
     public void newsletterSignUp(){
         homepage.newsletterSignUp();
         String expectedText="Thank you for signing up!";
