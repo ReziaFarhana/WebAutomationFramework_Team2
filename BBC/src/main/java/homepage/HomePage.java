@@ -101,8 +101,18 @@ public class HomePage extends WebAPI {
         clickByXpath(moreOptionXp);
         sleepFor(5);
         clickByXpath(closeXP);
-
     }
+    public void futureNav() throws InterruptedException {
+        clickMoreandClose();
+        sleepFor(3);
+        clickByXpath(futureNavXp);
+    }
+    public void wheresBBCFutureNav() throws InterruptedException {
+        futureNav();
+        sleepFor(3);
+        clickByXpath(wheresBBCFutNvXP);
+    }
+
 
     public void searchBoxNav() throws InterruptedException {
         workLifeNav();

@@ -40,6 +40,9 @@ public class HomePageWebElement {
     public static final String whatIsWorkLifeTextXp="//div[@class='article-headline__text b-reith-sans-font b-font-weight-300']";
     public static final String howWeThinkTextXp="//p[@class='latest-articles__editor b-reith-sans-font latest-articles__editor--desktop']";
     public static final String remoteControlTextXp="//h2[normalize-space()='Remote Control']";
+    public static final String futureNavXp="//div[@class='orb-nav-section orb-nav-links orb-nav-focus']//a[normalize-space()='Future']";
+    public static final String wheresBBCFutNvXP="//p[normalize-space()='What is BBC Future?']";
+    public static final String wheresBBCFutTextClass="article-headline__text b-reith-sans-font b-font-weight-300";
 
 ;
 }
