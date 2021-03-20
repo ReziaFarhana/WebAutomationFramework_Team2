@@ -38,18 +38,13 @@ public class WalmartHomePageTest extends WebAPI {
         walmarthome.CareersLocations();
 
     }
-    @Test@Ignore
-    public void testBrokenLink() throws IOException {
-        walmarthome.brockenlink();
-
-
-    }
-
+//    @Test@Ignore
+//    public void testBrokenLink() throws IOException {
+//        walmarthome.brockenlink();
 
 
     @Test@Ignore
     public void testWlamrtplus() throws IOException ,IOException{
-
         clickOnElement(walmartplus);
     }
 
@@ -71,6 +66,31 @@ public class WalmartHomePageTest extends WebAPI {
     Assert.assertEquals(acResult,exResult,"text does not match");
 }
 
-
+@Test@Ignore
+    public void testfifteendaysofftab() throws InterruptedException {
+    walmarthome.fifteendaysofftab();
 
     }
+@Test@Ignore
+    public void testAllCareerAreaTab() throws InterruptedException {
+    walmarthome.allCarreerArea();
+    String exResult="";
+    String acResult=   walmarthome.allCareerArea.getText();
+    Assert.assertEquals(acResult,exResult,"text does not match");
+}
+@Test
+    public void testJobTitle() throws InterruptedException {
+    walmarthome.Jobtitle();
+
+}
+
+
+
+
+
+}
+
+
+
+
+

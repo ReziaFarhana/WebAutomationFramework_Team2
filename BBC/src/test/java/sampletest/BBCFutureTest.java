@@ -85,7 +85,7 @@ public class BBCFutureTest extends WebAPI {
 
 
 
-    @Test @Ignore
+    @Test
     public void TestBBCHome() throws InterruptedException {
         bbcFuture.homePage();
 
@@ -98,7 +98,7 @@ public class BBCFutureTest extends WebAPI {
     }
 
 
-////    @Test@Ignore
+//   @Test@Ignore
 //    public void testBBCSignInInf() throws InterruptedException {
 //        bbcFuture.signIn();
 //    }

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 
 import java.io.IOException;
 
-import static Sample.WalmartHomePageWebElements.*;
+import static sample.WalmartHomePageWebElements.*;
 
 public class WlamartHomePage extends WebAPI {
 
@@ -32,8 +32,16 @@ public class WlamartHomePage extends WebAPI {
     public WebElement Samscl;
     @FindBy(xpath = walmartplus)
     public WebElement wlmplus;
-@FindBy(xpath = walmrtplusText1)
+    @FindBy(xpath = walmrtplusText1)
     public WebElement wlmplus1;
+    @FindBy(xpath = fifteendaysoff)
+    public WebElement fiftenday;
+    @FindBy(xpath = allcareerarea)
+    public WebElement allCareerArea;
+    @FindBy(xpath = jobTitle)
+    public WebElement jobtitle;
+    @FindBy(xpath = jobtitle1)
+    public WebElement jobtitle2;
 
 
     //  @FindBy (how = How.XPATH, using =searchTextLocator ) public WebElement searchText;
@@ -66,6 +74,12 @@ public class WlamartHomePage extends WebAPI {
         sleepFor(20);
         careerLoc.click();
 
+    }
+
+
+    public void Careerstab() throws InterruptedException {
+        career.click();
+        Thread.sleep(5000);
     }
 
 
@@ -106,8 +120,27 @@ public class WlamartHomePage extends WebAPI {
         wlmplus.click();
         wait(10);
         wlmplus1.getText();
+    }
+
+    public void fifteendaysofftab() throws InterruptedException {
+        wlmplus.click();
+        wlmplus1.click();
+        fiftenday.click();
 
 
+    }
+
+    public void allCarreerArea() throws InterruptedException {
+        career.click();
+        Thread.sleep(5000);
+        allCareerArea.click();
+
+
+    }
+
+    public void Jobtitle() throws InterruptedException {
+        allCarreerArea();
+        jobtitle.sendKeys("cashier");
 
 
     }
