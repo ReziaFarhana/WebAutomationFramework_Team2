@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="21" total="22" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report Directory/Users/SAIF21/IdeaProjects/WebAutomationFramework_Team2/BBC/target/surefire-reports/html]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-03-17T21:31:52 EDT" name="BBCTestSuit" finished-at="2021-03-17T21:31:57 EDT" duration-ms="5774">
+    <groups>
+    </groups>
+    <test started-at="2021-03-17T21:31:52 EDT" name="BBC Automation Test " finished-at="2021-03-17T21:31:57 EDT" duration-ms="5774">
+      <class name="com.TestCareer.TestMainSportPage">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:51 EDT" name="extentSetup" finished-at="2021-03-17T21:31:52 EDT" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@379614be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report Directory/Users/SAIF21/IdeaProjects/WebAutomationFramework_Team2/BBC/target/surefire-reports/html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:52 EDT" name="setUp" finished-at="2021-03-17T21:31:55 EDT" duration-ms="3001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OS X]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sierra]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:55 EDT" name="startExtent" finished-at="2021-03-17T21:31:55 EDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.TestCareer.TestMainSportPage.validateCustomerIsAbleToCancelAdd()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="validateCustomerIsAbleToCancelAdd()[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:55 EDT" name="validateCustomerIsAbleToCancelAdd" finished-at="2021-03-17T21:31:57 EDT" duration-ms="2374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCustomerIsAbleToCancelAdd -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:57 EDT" name="afterEachTestMethod" finished-at="2021-03-17T21:31:57 EDT" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCustomerIsAbleToCancelAdd status=SUCCESS method=TestMainSportPage.validateCustomerIsAbleToCancelAdd()[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:57 EDT" name="cleanUp" finished-at="2021-03-17T21:31:57 EDT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.TestCareer.TestMainSportPage@11c9af63]" started-at="2021-03-17T21:31:57 EDT" name="generateReport" finished-at="2021-03-17T21:31:57 EDT" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.TestCareer.TestMainSportPage -->
+    </test> <!-- BBC Automation Test  -->
+  </suite> <!-- BBCTestSuit -->
+</testng-results>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [GeicoTestSuit]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="OS" value="OS X"/>
+  <parameter name="os_version" value="Sierra"/>
+  <parameter name="browserVersion" value="89"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="cloudEnvName" value="browserStack"/>
+  <parameter name="url" value="https://www.geico.com/"/>
+  <test thread-count="2" name="Geico Automation Test (failed)" verbose="0">
+    <classes>
+      <class name="com.TestCareer.TestCareerPage">
+        <methods>
+          <include name="afterEachTestMethod"/>
+          <include name="setUp"/>
+          <include name="validateTheUrlIsAsExpected"/>
+          <include name="startExtent"/>
+          <include name="generateReport"/>
+          <include name="cleanUp"/>
+          <include name="validateCustomerIsAbleToClickOnCareer"/>
+          <include name="extentSetup"/>
+        </methods>
+      </class> <!-- com.TestCareer.TestCareerPage -->
+    </classes>
+  </test> <!-- Geico Automation Test (failed) -->
+</suite> <!-- Failed suite [GeicoTestSuit] -->

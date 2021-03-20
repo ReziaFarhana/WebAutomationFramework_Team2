@@ -17,6 +17,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.log4testng.Logger;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -26,6 +27,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -37,6 +39,17 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
+
+    // Browser Setup
+    public static WebDriver driver;
+    public static String sauceUserName = "";
+    public static String sauceKey = "";
+    public static String browserStackUserName = "mohammadislam6";
+    public static String browserStackKey = "u5Gft7bgk7QjkDdWzznZ";
+    //http:// + username + : + key + specific url for cloud
+    public static String SAUCE_URL = "https://saif2021:14a862b227794681996b17ac5f5aba46@ondemand.us-west-1.saucelabs.com:443/wd/hub";
+    public static String BROWSERSTACK_URL = "https://" + browserStackUserName + ":" + browserStackKey + "@hub-cloud.browserstack.com/wd/hub";
+    private static Logger LOGGER = Logger.getLogger(WebAPI.class);
     // Config class :
 
     //ExtentReport
@@ -97,8 +110,8 @@ public class WebAPI {
     }
 
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        DateFormat df = new SimpleDateFormat("(yyMMddHHmmssZ)");
-        //DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        //DateFormat df = new SimpleDateFormat("(yyMMddHHmmssZ)");
+        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -117,84 +130,80 @@ public class WebAPI {
         return splitString;
     }
 
-    // Browser Setup
-    public static WebDriver driver = null;
-    public static String browserStack_userName = "demo579";
-    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
-    public static String sauceLabs_userName = "";
-    public static String sauceLabs_accessKey = "";
-
 
     @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.google.com/") String url) throws IOException {
+   // public void setUp(boolean useCloudEnv, String cloudEnvName, String OS, String os_version, String browserName, String browserVersion,String url) throws MalformedURLException {
+    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("OS X") String OS, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.geico.com/") String url) throws IOException, InterruptedException {
         // Platform: Local Machine/ Cloud Machine
-        if (useCloudEnv == true) {
-            if (cloudEnvName.equalsIgnoreCase("browserStack")) {
-                getCloudDriver(cloudEnvName, browserStack_userName, browserStack_accessKey, OS, os_version, browserName, browserVersion);
-            } else if (cloudEnvName.equalsIgnoreCase("sauceLabs")) {
-                getCloudDriver(cloudEnvName, sauceLabs_userName, sauceLabs_accessKey, OS, os_version, browserName, browserVersion);
-            }
+        if (useCloudEnv){
+
+            driver = getCloudDriver(browserName, browserVersion, OS,os_version, cloudEnvName);
+            driver.get(url);
+            driver.manage().window().maximize();
+
         } else {
             getLocalDriver(OS, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.get(url);
         driver.manage().window().maximize();
+        Thread.sleep(3000);
+
     }
 
-    public WebDriver getLocalDriver(String OS, String browserName) {
-        if (browserName.equalsIgnoreCase("chrome")) {
-            if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
-            } else if (OS.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+    public WebDriver getLocalDriver(String OS, String browserName){
+        if (browserName.equalsIgnoreCase("chrome")){
+            if (OS.equalsIgnoreCase("OS X")){
+                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("windows")){
+                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/windows/chromedriver.exe");
             }
-            driver = new ChromeDriver();
-        } else if (browserName.equalsIgnoreCase("chrome-options")) {
+            driver=new ChromeDriver();
+        } else if (browserName.equalsIgnoreCase("chrome-options")){
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
-            if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
-            } else if (OS.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+            if (OS.equalsIgnoreCase("OS X")){
+                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("windows")){
+                System.setProperty("webdriver.chrome.driver","../Generic/BrowserDriver/windows/chromedriver.exe");
             }
-            driver = new ChromeDriver(options);
-        } else if (browserName.equalsIgnoreCase("firefox")) {
-            if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/mac/geckodriver");
-            } else if (OS.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/windows/geckodriver.exe");
+            driver=new ChromeDriver(options);
+        } else if (browserName.equalsIgnoreCase("firefox")){
+            if (OS.equalsIgnoreCase("OS X")){
+                System.setProperty("webdriver.gecko.driver","../Generic/BrowserDriver/mac/geckodriver");
+            } else if (OS.equalsIgnoreCase("windows")){
+                System.setProperty("webdriver.gecko.driver","../Generic/BrowserDriver/windows/geckodriver.exe");
             }
-            driver = new FirefoxDriver();
-        } else if (browserName.equalsIgnoreCase("ie")) {
-            if (OS.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.ie.driver", "../Generic/BrowserDriver/windows/IEDriverServer.exe");
+            driver=new FirefoxDriver();
+        } else if (browserName.equalsIgnoreCase("ie")){
+            if (OS.equalsIgnoreCase("windows")){
+                System.setProperty("webdriver.ie.driver","../Generic/BrowserDriver/windows/IEDriverServer.exe");
             }
-            driver = new InternetExplorerDriver();
+            driver=new InternetExplorerDriver();
         }
 
         return driver;
     }
 
-    public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
-                                    String browserVersion) throws IOException {
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("browser", browserName);
-        cap.setCapability("browser_version", browserVersion);
-        cap.setCapability("os", os);
-        cap.setCapability("os_version", os_version);
+    public static WebDriver getCloudDriver(String browserName, String browserVersion, String OS, String os_version,
+                                           String cloudEnvName) throws MalformedURLException {
+        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+        desiredCapabilities.setCapability("resolution", "1920x1080");
+        desiredCapabilities.setCapability("os", OS);
+        desiredCapabilities.setCapability("os_version", os_version);
+        desiredCapabilities.setCapability("browser", browserName);
+        desiredCapabilities.setCapability("browser_version", browserVersion);
+        desiredCapabilities.setCapability("name", "Sample Test");
 
-        if (envName.equalsIgnoreCase("Saucelabs")) {
-            //resolution for Saucelabs
-            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
-        } else if (envName.equalsIgnoreCase("Browserstack")) {
-            cap.setCapability("resolution", "1024x768");
-            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@hub-cloud.browserstack.com/wd/hub"), cap);
+        if (cloudEnvName.equalsIgnoreCase("saucelabs")) {
+            driver = new RemoteWebDriver(new URL(SAUCE_URL), desiredCapabilities);
+            System.out.println("Tests run on Sauce Lab");
+        } else if (cloudEnvName.equalsIgnoreCase("browserstack")) {
+            driver = new RemoteWebDriver(new URL(BROWSERSTACK_URL), desiredCapabilities);
+            LOGGER.info("Tests run on Browser Stack");
         }
         return driver;
     }
