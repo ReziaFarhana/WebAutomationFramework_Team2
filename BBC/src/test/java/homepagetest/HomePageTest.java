@@ -112,11 +112,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Test failed");
 
     }
-    @Test
+
     public void remoteControlNavTest() throws InterruptedException {
         homepage.remoteControlNav();
         String expectedText="Remote Control";
         String actualText= getTextByXpath(remoteControlTextXp);
+        Assert.assertEquals(actualText, expectedText, "Test failed");
+
+    }
+    @Test
+    public void clickMoreandCloseTest() throws InterruptedException {
+        homepage.clickMoreandClose();
+        String expectedText="Home - BBC Worklife";
+        String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Test failed");
 
     }

@@ -1,4 +1,4 @@
-package sample;
+package homepage;
 
 public class Sample {
 }

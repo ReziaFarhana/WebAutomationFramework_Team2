@@ -99,7 +99,8 @@ public class HomePage extends WebAPI {
     public void clickMoreandClose() throws InterruptedException {
         workLifeNav();
         clickByXpath(moreOptionXp);
-        clickByClass(closeXClass);
+        sleepFor(5);
+        clickByXpath(closeXP);
 
     }
 
