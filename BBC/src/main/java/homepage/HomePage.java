@@ -60,9 +60,42 @@ public class HomePage extends WebAPI {
         clickByXpath(howWeWorkXp);
         clickByClass(loadMoreClass);
         sleepFor(5);
-
+    }
+    public void whatisWorkLifeNav() throws InterruptedException {
+        workLifeNav();
+        clickByCss(whatIsWorkLifeCss);
+        sleepFor(3);
+    }
+    public void howWeLiveNav() throws InterruptedException {
+        workLifeNav();
+        clickByXpath(howWeLiveXp);
+        sleepFor(3);
 
     }
+    public void howWeThinkNav() throws InterruptedException {
+        workLifeNav();
+        clickByXpath(howWeThinkXp);
+        sleepFor(3);
+
+    }
+    public void equalityMattersNav() throws InterruptedException {
+        workLifeNav();
+        clickByXpath(equalityMattersXp);
+        sleepFor(3);
+
+    }
+    public void remoteControlNav() throws InterruptedException {
+        workLifeNav();
+        clickByXpath(remoteControlXp);
+        sleepFor(2);
+    }
+    public void clickMoreandClose() throws InterruptedException {
+        workLifeNav();
+        clickByXpath(moreOptionXp);
+        clickByClass(closeXClass);
+
+    }
+
     public void searchBoxNav() throws InterruptedException {
         workLifeNav();
         scrollByXPATH(searchBoxXP);

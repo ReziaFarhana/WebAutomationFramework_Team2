@@ -30,6 +30,14 @@ public class HomePageWebElement {
     public static final String searchBoxXP="//input[@placeholder='Search']";
     public static final String searchValue="tornado";
     public static final String searchInputBoxID="search-input";
+    public static final String whatIsWorkLifeCss="a:nth-child(1) p:nth-child(1)";
+    public static final String howWeLiveXp="//p[normalize-space()='How We Live']";
+    public static final String howWeThinkXp="//p[normalize-space()='How We Think']";
+    public static final String equalityMattersXp="//p[normalize-space()='Equality Matters']";
+    public static final String remoteControlXp="//p[normalize-space()='Remote Control']";
+    public static final String moreOptionXp="//p[normalize-space()='More']";
+    public static final String closeXClass="close-nav__icon gelicon--no";
+    public static final String whatIsWorkLifeTextXp="//div[@class='article-headline__text b-reith-sans-font b-font-weight-300']";
 
 ;
 }
