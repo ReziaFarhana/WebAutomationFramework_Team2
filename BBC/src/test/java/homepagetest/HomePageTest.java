@@ -36,12 +36,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText,"Text doesnt match");
 
     }
-    @Test
+
     public void identitiesOptionCultureNavTest() throws InterruptedException {
         homepage.identitiesOptionCultureNav();
         String expectedText="The gender-fluid look that fans love";
         String actualText= getTextByCss(gettyPgTitleCss);
         Assert.assertEquals(expectedText, actualText, "Text does not match");
+    }
+    @Test
+    public void newsNavBar() throws InterruptedException {
+        homepage.newsNavBar();
+        String expectedText ="Science & Environment - BBC News";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 
 }

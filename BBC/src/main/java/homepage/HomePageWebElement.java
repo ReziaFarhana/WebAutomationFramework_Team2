@@ -17,6 +17,9 @@ public class HomePageWebElement {
     public static final String gettyPgTitleCss="div[class='article-headline__text b-reith-sans-font b-font-weight-300']";
     public static final String newsOptionXp="//div[@class='orb-nav-section orb-nav-links orb-nav-focus']//a[normalize-space()='News']";
     public static final String scienceOptionXp="//li[@class='gs-o-list-ui__item--flush gel-long-primer gs-u-display-block gs-u-float-left nw-c-nav__wide-menuitem-container']//span[contains(text(),'Science')]";
+    public static final String videoPlayBtnXp="//button[@title='Play The Dorset band planting 1000 trees to celebrate the release of their new album']//div[@class='p_iconHolder']//*[local-name()='svg']";
+    public static final String videoiFrameXp="//iframe[@id='smphtml5iframebbcMediaPlayer0']";
+    public static final String ourPlantNowId="nw-c-OurPlanetNow__title";
 
 ;
 }

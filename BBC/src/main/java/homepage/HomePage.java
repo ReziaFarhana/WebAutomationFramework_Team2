@@ -3,10 +3,23 @@ package homepage;
 import common.WebAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import static homepage.HomePageWebElement.*;
 
 public class HomePage extends WebAPI {
+
+    @FindBy(how= How.XPATH, using=videoiFrameXp) public WebElement videoiFrame;
+
+    public void scroll(String Idlocator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.id(Idlocator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
 
     public void weatherOptionnNavBar(){
         clickOnElement(moreOptionClass);
@@ -28,15 +41,17 @@ public class HomePage extends WebAPI {
         clickByXpath(identitiesOptionXp);
         getImage(gettyImgCss,gettyPgTitle);
     }
-    public void newsNavBar(){
+    //scroll by using element; play video, pause video, navigate back to the last page
+    public void newsNavBar() throws InterruptedException {
         clickByXpath(newsOptionXp);
         clickByXpath(scienceOptionXp);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1000);");
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-
-
+        sleepFor(5);
+        scroll(ourPlantNowId);
+        clickByXpath(videoiFrameXp);
+        sleepFor(10);
+        navigateBack();
     }
+
 
 
 
