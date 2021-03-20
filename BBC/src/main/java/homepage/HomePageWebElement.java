@@ -13,7 +13,8 @@ public class HomePageWebElement {
     public static final String culturePageTitle="Music - BBC Culture";
     public static final String identitiesOptionXp="//p[normalize-space()='Identities']";
     public static final String gettyImgCss="img[title='Getty']";
-    public static final String gettyPgTitle="The gender-fluid look that fans love - BBC Culture";
+    public static final String gettyPgTitle="Identities - BBC Culture";
+    public static final String gettyPgTitleCss="div[class='article-headline__text b-reith-sans-font b-font-weight-300']";
     public static final String newsOptionXp="//div[@class='orb-nav-section orb-nav-links orb-nav-focus']//a[normalize-space()='News']";
     public static final String scienceOptionXp="//li[@class='gs-o-list-ui__item--flush gel-long-primer gs-u-display-block gs-u-float-left nw-c-nav__wide-menuitem-container']//span[contains(text(),'Science')]";
 

@@ -28,7 +28,7 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByXpath(weatherPageLogoTitleXp);
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void musicOptionNavBarTest() throws InterruptedException {
         homepage.musicOptionNavBar();
         String expectedText=culturePageTitle;
@@ -36,10 +36,11 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText,"Text doesnt match");
 
     }
+    @Test
     public void identitiesOptionCultureNavTest() throws InterruptedException {
         homepage.identitiesOptionCultureNav();
-        String expectedText=gettyPgTitle;
-        String actualText= driver.getTitle();
+        String expectedText="The gender-fluid look that fans love";
+        String actualText= getTextByCss(gettyPgTitleCss);
         Assert.assertEquals(expectedText, actualText, "Text does not match");
     }
 
