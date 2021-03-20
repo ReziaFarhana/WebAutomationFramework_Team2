@@ -24,6 +24,12 @@ public class HomePageWebElement {
     public static final String soundsNav="//span[normalize-space()='Music']";
     public static final String chillXp="//div[contains(text(),'Chill')]";
     public static final String chillPageTextXp="//h2[normalize-space()='Chill']";
+    public static final String workLifeNavXp="//div[@class='orb-nav-section orb-nav-links orb-nav-focus']//a[normalize-space()='Worklife']";
+    public static final String howWeWorkXp="//p[normalize-space()='How We Work']";
+    public static final String loadMoreClass="basic-button__text";
+    public static final String searchBoxXP="//input[@placeholder='Search']";
+    public static final String searchValue="tornado";
+    public static final String searchInputBoxID="search-input";
 
 ;
 }
