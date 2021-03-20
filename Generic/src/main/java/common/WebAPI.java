@@ -246,7 +246,8 @@ public class WebAPI {
         }
     }
 
-    public static void typeOnElementNEnter(String locator, String value) {
+    public static void
+    nElementNEnter(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         } catch (Exception ex1) {
