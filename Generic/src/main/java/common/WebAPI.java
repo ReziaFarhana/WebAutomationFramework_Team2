@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
@@ -30,10 +32,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
@@ -202,7 +201,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-     //   driver.quit();
+    //    driver.quit();
     }
 
 
@@ -264,6 +263,8 @@ public class WebAPI {
             }
         }
     }
+
+
 
     public static void typeOnElementNEnter(String locator, String value, WebDriver driver1) {
         try {
@@ -426,7 +427,7 @@ public class WebAPI {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
-        // added on hover and crick
+        // added on hover and click
     public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
         Actions selecrMenu = new Actions(driver1);
         selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
@@ -450,7 +451,7 @@ public class WebAPI {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+            action.moveToElement(element).perform(); // Actions hover =
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.xpath(locator));
@@ -777,6 +778,17 @@ public class WebAPI {
         }
     }
 
+    public void windoSwitchHandler(int index) {
+        Set<String> tab = driver.getWindowHandles();
+        List<String> hold = new ArrayList<>(tab);
+        hold.addAll(hold);
+        driver.switchTo().window((hold.get(index)));
+    }
+
+//            String childTab = hold.get(1);
+//            String parentTab = hold.get(0);}
+
+
 
     /**
      * helper method to scroll down fixed amount to the footer Walmart page
@@ -798,7 +810,6 @@ public class WebAPI {
     public void scrollTo(WebElement element){
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true)",element);
-        // scrollIntoView(true)
     }
 
     public void moveAway(int x, int y){

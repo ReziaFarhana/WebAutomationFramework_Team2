@@ -20,7 +20,10 @@ public class BBCWebElement {
     public static final String  lookingForMoreTab = "//p[normalize-space()='More']";
     public static final String  insideMoreTabMusic = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='Music']";
     public static final String  colorInCollection = "//span[contains(text(),'What you didn’t know about colour')]";
-    public static final String  lookingADesignPage = "//div[@data-bbc-title='What you didn’t know about colour']//span[@class='dot-with-label__text']//a";
+    public static final String  lookingForDesign = "/html/body/div[7]/div/div[3]/main/div[1]/div[4]/div/div[5]/div[1]/div/div[1]/div/div/span/a/h2";
+    public static final String  ultimateDiningExperience = "//span[normalize-space()='What is the ultimate dining experience?']";
+    public static final String  ourLoveAffairs = "//h2[normalize-space()='Our love affair with our homes']";
+//    public static final String  lookingForCollectionTab = "";
 //    public static final String  lookingForCollectionTab = "";
 //    public static final String  lookingForCollectionTab = "";
 
@@ -32,7 +35,6 @@ public class BBCWebElement {
     public static final String  artLinkText = "//p[@class='latest-articles__editor b-reith-sans-font latest-articles__editor--desktop']";
     public static final String  textOfdetailMasterpiece = "div[class='article-headline__text b-reith-sans-font b-font-weight-300']";
     public static final String  collectionDisplayed = "div .more-articles__stories";
-    public static final String  lookingForDesign = "//div[@data-bbc-title='What you didn’t know about colour']//span[@class='dot-with-label__text']//a";
 //    public static final String  locatorVariables = "";
 //    public static final String  locatorVariables = "";
 }

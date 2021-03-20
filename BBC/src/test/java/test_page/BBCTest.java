@@ -165,12 +165,28 @@ public class BBCTest extends WebAPI {
         Assert.assertEquals(actual,expected, "Test failed ");
     }
 
-    @Test @Ignore
+    @Test
     public void verifylookingForDisnePageFound() throws InterruptedException {
         home.lookingForDisnePage();
         String expected = "Design - BBC Culture";
         String actual = driver.getTitle();
         Assert.assertEquals(actual, expected, "Test failed ");
+    }
+
+    @Test
+    public void verifyUltimateDiningExperience() throws InterruptedException {
+        home.clickOnUltimateDiningExperience();
+        String expected = "What makes the ultimate dining experience? - BBC Culture";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual,expected, "Test failed ");
+    }
+
+ @Test
+    public void verifyOurLoveAffairsHomesLink() throws InterruptedException {
+        home.clickOnOurLoveAffairsHomes();
+        String expected = "Our love affair with our homes - BBC Culture";
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual,expected, "Test failed ");
     }
 
 

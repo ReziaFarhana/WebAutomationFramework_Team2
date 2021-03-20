@@ -1,2 +1,4 @@
-home_page\BBCHome.class
 home_page\BBCWebElement.class
+home_page\MoreMenuTab\MenuBarMore.class
+home_page\MoreMenuTab\MenuBarMoreWEbElement.class
+home_page\BBCHome.class

@@ -10,19 +10,18 @@
     <parameter name="browserVersion" value="86"/>
     <parameter name="browserName" value="firefox"/>
     <classes>
-      <class name="test_page.BBCTest">
+      <class name="test_page.MoreMenuTabTest.MoreTabTest">
         <methods>
           <include name="afterEachTestMethod"/>
-          <include name="verifyCollectionPageWithText"/>
           <include name="setUp"/>
-          <include name="verifyStyleTab"/>
+          <include name="initializeActionclass"/>
+          <include name="verifyWeatherSearchByCity"/>
           <include name="startExtent"/>
           <include name="generateReport"/>
           <include name="cleanUp"/>
-          <include name="getInIt"/>
           <include name="extentSetup"/>
         </methods>
-      </class> <!-- test_page.BBCTest -->
+      </class> <!-- test_page.MoreMenuTabTest.MoreTabTest -->
     </classes>
   </test> <!-- BBC Automation Test Script using multiple Browser Option(failed) -->
 </suite> <!-- Failed suite [BBC Test Suit] -->

@@ -201,11 +201,25 @@ public class BBCHome extends WebAPI {
      */
     public void lookingForDisnePage() throws InterruptedException {
         openCollectionTab();
-        scrollTo(design);
+        scroll("1500");
         sleepFor(5);
         clickByXpath(lookingForDesign);
         sleepFor(3);
     }
+
+    public void clickOnUltimateDiningExperience() throws InterruptedException {
+        lookingForDisnePage();
+        clickByXpath(ultimateDiningExperience);
+        sleepFor(3);
+    }
+
+    public void clickOnOurLoveAffairsHomes() throws InterruptedException {
+        lookingForDisnePage();
+        clickByXpath(ourLoveAffairs);
+        sleepFor(3);
+    }
+
+
 
 
 
