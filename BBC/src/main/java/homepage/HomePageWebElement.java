@@ -38,6 +38,7 @@ public class HomePageWebElement {
     public static final String moreOptionXp="//p[normalize-space()='More']";
     public static final String closeXClass="close-nav__icon gelicon--no";
     public static final String whatIsWorkLifeTextXp="//div[@class='article-headline__text b-reith-sans-font b-font-weight-300']";
+    public static final String howWeThinkTextXp="//p[@class='latest-articles__editor b-reith-sans-font latest-articles__editor--desktop']";
 
 ;
 }
