@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static home_page.GeicoWebElement.*;
@@ -70,15 +71,20 @@ public class GeicoTest extends WebAPI {
     @Test
     public void verifyStartYourQuoteNowInGeneralIns() throws InterruptedException {
         action.openStartYourQuoteNowInGeneralIns();
-        assertEqualBycssLocator(generalLiabilityText, "General Liability Insurance");
+        sleepFor(2);
+        windoSwitchHandler(1);
+        String expectedTitel = "GEICO and Hiscox";
+        String actualTitel = driver.getTitle();
+        Assert.assertEquals(actualTitel, expectedTitel, "Test failed ");
+
     }
 
     @Test
-    public void verifyStartQuoteGeneralLiabilityInsurance() throws InterruptedException {
-        action.openStartQuoteGeneralLiabilityInsurance();
-        windoSwitchHandler(2);
-        assertEqualBycssLocator(newGeneralInsuranceNewPage, "A trusted partnership");
-
+    public void verifyGEICOAndHiscoxPage() throws InterruptedException {
+        action.workingOnGEICOAndHiscoxPage();
+        boolean found = driver.findElement(By.cssSelector(textVirginia)).isDisplayed();
+        Assert.assertEquals(found,true, "Test failed");
+        System.out.println(found);
     }
 
 

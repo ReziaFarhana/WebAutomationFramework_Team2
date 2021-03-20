@@ -23,15 +23,15 @@
             <class name="test_page.GeicoTest">
                 <methods>
                     <!--               Test case include or exclude-->
-<!--                    <exclude name="VerifyGeicoHomeIsLoaded"/>-->
-<!--                    <exclude name="verifyBusinessOwner"/>-->
-<!--                    <exclude name="verifyGeneralLiabilityIns"/>-->
-<!--                    <exclude name="verifyProfessionalLibilityLink"/>-->
-<!--                    <exclude name="verifyWorkersConpensatinInsLink"/>-->
-<!--                    <exclude name="verifyCyberLiabilityInsLink"/>-->
-<!--                    <exclude name="verifyGetQuoteGeneral"/>-->
-<!--                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>-->
-<!--                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>-->
+                    <exclude name="VerifyGeicoHomeIsLoaded"/>
+                    <exclude name="verifyBusinessOwner"/>
+                    <exclude name="verifyGeneralLiabilityIns"/>
+                    <exclude name="verifyProfessionalLibilityLink"/>
+                    <exclude name="verifyWorkersConpensatinInsLink"/>
+                    <exclude name="verifyCyberLiabilityInsLink"/>
+                    <exclude name="verifyGetQuoteGeneral"/>
+                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>
+
 <!--                                   <include name="testLogin"/>-->
                 </methods>
 

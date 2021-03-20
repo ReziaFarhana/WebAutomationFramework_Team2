@@ -103,9 +103,28 @@ public class GeicoHome extends WebAPI {
         sleepFor(2);
     }
 
+    /**
+     * Method to open START QUOTE in General Liability Insurance page
+     * the link open a new page with a title GEICO and Hiscox (A trusted partnership)
+     * @throws InterruptedException
+     */
     public void openStartQuoteGeneralLiabilityInsurance() throws InterruptedException {
         openStartYourQuoteNowInGeneralIns();
         clickByCss(startQuoteGeneralLiabilityInsurance);
+        sleepFor(3);
+    }
+
+        @FindBy(css = lookingForVirginia)
+        public WebElement selectViginia;
+
+    public void workingOnGEICOAndHiscoxPage() throws InterruptedException {
+        openStartQuoteGeneralLiabilityInsurance();
+        windoSwitchHandler2(1);
+        sleepFor(2);
+        // clickByCss(stateSelection);
+        clickByCss(stateSelection);
+        sleepFor(2);
+        selectOptionByVisibleText(selectViginia, "Virginia");
 
     }
 

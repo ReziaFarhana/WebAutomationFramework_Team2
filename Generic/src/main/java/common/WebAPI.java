@@ -201,7 +201,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-    //    driver.quit();
+//        driver.quit();
     }
 
 
@@ -778,12 +778,7 @@ public class WebAPI {
         }
     }
 
-    public void windoSwitchHandler(int index) {
-        Set<String> tab = driver.getWindowHandles();
-        List<String> hold = new ArrayList<>(tab);
-        hold.addAll(hold);
-        driver.switchTo().window((hold.get(index)));
-    }
+
 
 //            String childTab = hold.get(1);
 //            String parentTab = hold.get(0);}
@@ -822,6 +817,35 @@ public class WebAPI {
      */
     public void scrollToBottomPage(){
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
+    /**
+     * Method just to switch between tabs
+     * @param index
+     */
+    public void windoSwitchHandler(int index) {
+        Set<String> tab = driver.getWindowHandles();
+        List<String> hold = new ArrayList<>(tab);
+        hold.addAll(hold);
+        driver.switchTo().window((hold.get(index)));
+    }
+
+    /**
+     * Method to close the old tab and work on the new tab
+     * @param index
+     */
+    public void windoSwitchHandler2(int index) {
+        Set<String> tab = driver.getWindowHandles();
+        List<String> hold = new ArrayList<>(tab);
+        hold.addAll(hold);
+        try {
+            driver.switchTo().window((hold.get(index - 1))).close();
+            driver.switchTo().window((hold.get(index)));
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Expected index out of bound ");
+        }
+
+
     }
 
 

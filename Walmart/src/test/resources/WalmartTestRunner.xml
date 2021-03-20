@@ -26,19 +26,19 @@
             <class name="test_page.WalmartTest">
                 <methods>
 <!--                                   Test case include or exclude-->
-<!--                           <exclude name="verifyWalmartPlusIsClicked"/>-->
-<!--                           <exclude name="verifyAllBenefitsIsSelected"/>-->
-<!--                           <exclude name="verifyFreeShippingInBenefits"/>-->
-<!--                           <exclude name="verifyMobileScanAndGoLinkInBenefits"/>-->
-<!--                           <exclude name="verifyLandedOnGroceryPickupAndDelivery"/>-->
-<!--                           <exclude name="verifyCreditCardLinkFromMoneyCenterHamburger"/>-->
-<!--                           <exclude name="verifyMoneyCenterLink"/>-->
-<!--                           <exclude name="verifyGiftCardLink"/>-->
-<!--                           <exclude name="verifyWalmartE_GiftCard"/>-->
-<!--                           <exclude name="verifyGiftEligibleIsApplied"/>-->
-<!--                           <exclude name="verifyOccasionFilterIsApplied"/>-->
-<!--                           <exclude name="verifyGiftBrandFilterIsApplied"/>-->
-<!--                           <exclude name="verifyGiftPriceFilterIsApplied"/>-->
+                           <exclude name="verifyWalmartPlusIsClicked"/>
+                           <exclude name="verifyAllBenefitsIsSelected"/>
+                           <exclude name="verifyFreeShippingInBenefits"/>
+                           <exclude name="verifyMobileScanAndGoLinkInBenefits"/>
+                           <exclude name="verifyLandedOnGroceryPickupAndDelivery"/>
+                           <exclude name="verifyCreditCardLinkFromMoneyCenterHamburger"/>
+                           <exclude name="verifyMoneyCenterLink"/>
+                           <exclude name="verifyGiftCardLink"/>
+                           <exclude name="verifyWalmartE_GiftCard"/>
+                           <exclude name="verifyGiftEligibleIsApplied"/>
+                           <exclude name="verifyOccasionFilterIsApplied"/>
+                           <exclude name="verifyGiftBrandFilterIsApplied"/>
+                           <exclude name="verifyGiftPriceFilterIsApplied"/>
 
 <!--                                   <include name="testLogin"></include>-->
                 </methods>

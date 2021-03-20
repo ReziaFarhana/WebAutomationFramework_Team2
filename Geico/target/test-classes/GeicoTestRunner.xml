@@ -31,7 +31,7 @@
                     <exclude name="verifyCyberLiabilityInsLink"/>
                     <exclude name="verifyGetQuoteGeneral"/>
                     <exclude name="verifyStartYourQuoteNowInGeneralIns"/>
-<!--                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>-->
+
 <!--                                   <include name="testLogin"/>-->
                 </methods>
 

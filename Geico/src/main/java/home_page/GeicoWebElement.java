@@ -15,6 +15,8 @@ public class GeicoWebElement {
     public static final String getGeneralQoute = "//a[@href='/general-liability-insurance/'][normalize-space()='Get a Quote']";
     public static final String startGeneralQoute = "//a[normalize-space()='Start your quote now']";
     public static final String startQuoteGeneralLiabilityInsurance = "input[value='Start Quote']";
+    public static final String stateSelection = "span[class='select2 select2-container select2-container--default select2-container--below select2-container--focus'] span[role='presentation']";
+//    public static final String geicoLogo = "";  span[class='select2 select2-container select2-container--default select2-container--focus'] span[role='presentation']
 //    public static final String geicoLogo = "";
 //    public static final String geicoLogo = "";
 
@@ -30,6 +32,9 @@ public class GeicoWebElement {
     public static final String generalLiabilityText = "p[class='h1']";
     public static final String locateNearestToGetQoute = "div.product.col-lg-12 section.product-panel:nth-child(2) div.product-container > div.content-section.overflow-auto";
     public static final String newGeneralInsuranceNewPage = "//h1[normalize-space()='A trusted partnership']";
+    public static final String textVirginia = "span[title='Virginia']";
+
+    public static final String lookingForVirginia = "#select2-state-d1-result-vpyp-VA";
 //    public static final String geicoLogo = "";
 //    public static final String geicoLogo = "";
 

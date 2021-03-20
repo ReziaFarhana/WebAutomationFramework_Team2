@@ -25,29 +25,29 @@
 
             <class name="test_page.BBCTest">
                 <methods>
-<!--                   <exclude name="verifyWeLandedOnBBCHomePage"/>-->
-<!--                   <exclude name="verifyCulturePageIsDisplayed"/>-->
-<!--                   <exclude name="verifyAFilmLinkIsOpened"/>-->
-<!--                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>-->
-<!--                   <exclude name="verifyArtLinkIsPerformed"/>-->
-<!--                   <exclude name="verifyToOpenDetailMasterpiece"/>-->
-<!--                   <exclude name="verifyWhatDoYourDreamMeans"/>-->
-<!--                   <exclude name="verifyLookingForBooks"/>-->
-<!--                   <exclude name="clickOnLiteratureLink"/>-->
-<!--                   <exclude name="verifyClickOnLiteratureLink"/>-->
-<!--                   <exclude name="verifyOpenMoreTab"/>-->
-<!--                   <exclude name="verifyMusicTab"/>-->
-<!--                   <exclude name="verifyTVTab"/>-->
-<!--                   <exclude name="verifyPhotographyTab"/>-->
-<!--                   <exclude name="verifyStyleTab"/>-->
-<!--                   <exclude name="verifyIdentitiesTab"/>-->
-<!--                   <exclude name="verifyCollectionTab"/>-->
-<!--                   <exclude name="verifyCollectionPageWithText"/>-->
-<!--                   <exclude name="verifyWhatYouDidnotKnowAboutColour"/>-->
-<!--                   <exclude name="verifylookingForDisnePageFound"/>-->
-<!--                   <exclude name="verifyUltimateDiningExperience"/>-->
-<!--                   <exclude name="clickOnOurLoveAffairsHomes"/>-->
-<!--                   <exclude name="verifyOurLoveAffairsHomesLink"/>-->
+                   <exclude name="verifyWeLandedOnBBCHomePage"/>
+                   <exclude name="verifyCulturePageIsDisplayed"/>
+                   <exclude name="verifyAFilmLinkIsOpened"/>
+                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>
+                   <exclude name="verifyArtLinkIsPerformed"/>
+                   <exclude name="verifyToOpenDetailMasterpiece"/>
+                   <exclude name="verifyWhatDoYourDreamMeans"/>
+                   <exclude name="verifyLookingForBooks"/>
+                   <exclude name="clickOnLiteratureLink"/>
+                   <exclude name="verifyClickOnLiteratureLink"/>
+                   <exclude name="verifyOpenMoreTab"/>
+                   <exclude name="verifyMusicTab"/>
+                   <exclude name="verifyTVTab"/>
+                   <exclude name="verifyPhotographyTab"/>
+                   <exclude name="verifyStyleTab"/>
+                   <exclude name="verifyIdentitiesTab"/>
+                   <exclude name="verifyCollectionTab"/>
+                   <exclude name="verifyCollectionPageWithText"/>
+                   <exclude name="verifyWhatYouDidnotKnowAboutColour"/>
+                   <exclude name="verifylookingForDisnePageFound"/>
+                   <exclude name="verifyUltimateDiningExperience"/>
+                   <exclude name="clickOnOurLoveAffairsHomes"/>
+                   <exclude name="verifyOurLoveAffairsHomesLink"/>
 
 <!--                                   <include name="testLogin"/>-->
                 </methods>
@@ -55,8 +55,8 @@
 
             <class name="test_page.MoreMenuTabTest.MoreTabTest">
                 <methods>
-<!--                    <exclude name="verifyMoreMenuTabClik"/>-->
-<!--                    <exclude name="verifyWeatherLink"/>-->
+                    <exclude name="verifyMoreMenuTabClik"/>
+                    <exclude name="verifyWeatherLink"/>
                 </methods>
             </class>
 
