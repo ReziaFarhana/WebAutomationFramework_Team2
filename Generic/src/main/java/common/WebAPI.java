@@ -119,15 +119,15 @@ public class WebAPI {
 
     // Browser Setup
     public static WebDriver driver = null;
-    public static String browserStack_userName = "demo579";
-    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
+    public static String browserStack_userName = "mohammadaziz4";
+    public static String browserStack_accessKey = "GTB9YS16yRdzEELBTfms";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
 
     @Parameters({"useCloudEnv", "cloudEnvName", "OS", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("windows") String OS, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.google.com/") String url) throws IOException {
+    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("sauceLabs") String cloudEnvName, @Optional("OS X") String OS, @Optional("Sierra") String os_version, @Optional("firefox") String browserName, @Optional("86") String browserVersion, @Optional("https://www.walmart.com/") String url) throws IOException {
         // Platform: Local Machine/ Cloud Machine
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserStack")) {
