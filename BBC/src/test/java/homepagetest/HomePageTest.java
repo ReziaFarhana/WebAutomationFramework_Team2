@@ -43,12 +43,19 @@ public class HomePageTest extends WebAPI {
         String actualText= getTextByCss(gettyPgTitleCss);
         Assert.assertEquals(expectedText, actualText, "Text does not match");
     }
-    @Test
+
     public void newsNavBar() throws InterruptedException {
         homepage.newsNavBar();
         String expectedText ="Science & Environment - BBC News";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+    @Test
+    public void bbcInOtherLanguagesFooterTest(){
+        homepage.bbcInOtherLanguagesFooter();
+        String expectedText = "Chill";
+        String actualText = getTextByXpath(chillPageTextXp);
+        Assert.assertEquals(actualText, expectedText, "Text not matched");
     }
 
 }

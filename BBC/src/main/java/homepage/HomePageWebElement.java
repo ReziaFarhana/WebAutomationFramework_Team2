@@ -20,6 +20,10 @@ public class HomePageWebElement {
     public static final String videoPlayBtnXp="//button[@title='Play The Dorset band planting 1000 trees to celebrate the release of their new album']//div[@class='p_iconHolder']//*[local-name()='svg']";
     public static final String videoiFrameXp="//iframe[@id='smphtml5iframebbcMediaPlayer0']";
     public static final String ourPlantNowId="nw-c-OurPlanetNow__title";
+    public static final String inOtherLanguagesCss="a[class='module__title__link']";
+    public static final String soundsNav="//span[normalize-space()='Music']";
+    public static final String chillXp="//div[contains(text(),'Chill')]";
+    public static final String chillPageTextXp="//h2[normalize-space()='Chill']";
 
 ;
 }

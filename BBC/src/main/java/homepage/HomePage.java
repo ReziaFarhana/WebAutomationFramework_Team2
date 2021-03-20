@@ -14,12 +14,7 @@ public class HomePage extends WebAPI {
 
     @FindBy(how= How.XPATH, using=videoiFrameXp) public WebElement videoiFrame;
 
-    public void scroll(String Idlocator){
-        JavascriptExecutor executor=(JavascriptExecutor) driver;
-        WebElement element=driver.findElement(By.id(Idlocator));
-        executor.executeScript("arguments[0].scrollIntoView(true);",element);
-        element.click();
-    }
+
 
     public void weatherOptionnNavBar(){
         clickOnElement(moreOptionClass);
@@ -46,10 +41,16 @@ public class HomePage extends WebAPI {
         clickByXpath(newsOptionXp);
         clickByXpath(scienceOptionXp);
         sleepFor(5);
-        scroll(ourPlantNowId);
+        scrollByID(ourPlantNowId);
         clickByXpath(videoiFrameXp);
         sleepFor(10);
         navigateBack();
+    }
+    public void bbcInOtherLanguagesFooter(){
+        scrollbyCSS(inOtherLanguagesCss);
+        clickByXpath(soundsNav);
+        scrollByXPATH(chillXp);
+        clickByXpath(chillXp);
     }
 
 
