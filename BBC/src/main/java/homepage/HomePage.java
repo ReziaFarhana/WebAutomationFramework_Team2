@@ -57,13 +57,14 @@ public class HomePage extends WebAPI {
     }
     public void workLifeNav() throws InterruptedException {
         clickByXpath(workLifeNavXp);
-        clickByXpath(howWeWorkXp);
-        clickByClass(loadMoreClass);
+//        clickByXpath(howWeWorkXp);
+//        clickByClass(loadMoreClass);
         sleepFor(5);
     }
     public void whatisWorkLifeNav() throws InterruptedException {
         workLifeNav();
-        clickByCss(whatIsWorkLifeCss);
+        sleepFor(3);
+        scrollbyCSS(whatIsWorkLifeCss);
         sleepFor(3);
     }
     public void howWeLiveNav() throws InterruptedException {

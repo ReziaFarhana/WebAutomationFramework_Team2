@@ -72,11 +72,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Test failed");
 
     }
-    @Test
-    public void whatisWorkLifeTest() throws InterruptedException {
+
+    public void whatisWorkLifeNavTest() throws InterruptedException {
         homepage.whatisWorkLifeNav();
         String expectedText="What is BBC Worklife?";
         String actualText= getTextByXpath(whatIsWorkLifeTextXp);
+        Assert.assertEquals(actualText, expectedText, "Test failed");
+
+    }
+    @Test
+    public void howWeLiveNavTest() throws InterruptedException {
+        homepage.howWeLiveNav();
+        String expectedText="How We Live - BBC Worklife";
+        String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Test failed");
 
     }
