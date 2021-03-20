@@ -60,6 +60,10 @@ public class WebAPI {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+public void windowsPageScrollToLocator(By locator) {
+        jscript = (JavascriptExecutor) driver;
+        jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
+    }
 
     public void windowTwoThirdPageScroll() {
         jscript = (JavascriptExecutor) driver;
@@ -653,6 +657,11 @@ public class WebAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
+    public static boolean isElementDisplayedByXpath( String locator) {
+        boolean value = driver.findElement(By.xpath(locator)).isDisplayed();
+        return value;
+    }
+
 
     public void typeOnInputBox(String locator, String value) {
         try {

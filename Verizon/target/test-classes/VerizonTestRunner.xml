@@ -21,7 +21,8 @@
     <test name="Verizon Automation Test Script using chrome">
         <classes>
 
-            <class name="topdevicebrandsTest.SamsungTest">
+<!--            <class name="topdevicebrandsTest.SamsungTest">-->
+            <class name="topdevicebrandsTest.AppleTest">
 <!--                <methods>-->
 <!--                                   Test case include or exclude-->
 <!--                                   <exclude name="testSearchbox"></exclude>-->
