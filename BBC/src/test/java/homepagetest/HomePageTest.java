@@ -50,12 +50,23 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void bbcInOtherLanguagesFooterTest(){
         homepage.bbcInOtherLanguagesFooter();
         String expectedText = "Chill";
         String actualText = getTextByXpath(chillPageTextXp);
         Assert.assertEquals(actualText, expectedText, "Text not matched");
     }
+    @Test
+    public void workLifeNavTest() throws InterruptedException {
+        homepage.workLifeNav();
+        String expectedText="How we work - BBC Worklife";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "test failed");
+    }
+    public void searchBoxNavTest() throws InterruptedException {
+        homepage.searchBoxNav();
+    }
+
 
 }

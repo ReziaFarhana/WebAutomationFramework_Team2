@@ -3,6 +3,7 @@ package homepage;
 import common.WebAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +14,8 @@ import static homepage.HomePageWebElement.*;
 public class HomePage extends WebAPI {
 
     @FindBy(how= How.XPATH, using=videoiFrameXp) public WebElement videoiFrame;
+    @FindBy(how= How.ID, using=searchInputBoxID) public WebElement searchInput;
+    @FindBy(how= How.ID, using=searchBoxXP) public WebElement searchBox;
 
 
 
@@ -51,6 +54,22 @@ public class HomePage extends WebAPI {
         clickByXpath(soundsNav);
         scrollByXPATH(chillXp);
         clickByXpath(chillXp);
+    }
+    public void workLifeNav() throws InterruptedException {
+        clickByXpath(workLifeNavXp);
+        clickByXpath(howWeWorkXp);
+        clickByClass(loadMoreClass);
+        sleepFor(5);
+
+
+    }
+    public void searchBoxNav() throws InterruptedException {
+        workLifeNav();
+        scrollByXPATH(searchBoxXP);
+        sleepFor(5);
+        driver.findElement(By.xpath(searchBoxXP)).sendKeys(searchValue, Keys.ENTER);
+        sleepFor(3);
+
     }
 
 
