@@ -22,7 +22,8 @@
         <classes>
 
 <!--            <class name="topdevicebrandsTest.SamsungTest">-->
-            <class name="topdevicebrandsTest.AppleTest">
+<!--            <class name="topdevicebrandsTest.AppleTest">-->
+            <class name="topdevicebrandsTest.LGTest">
 <!--                <methods>-->
 <!--                                   Test case include or exclude-->
 <!--                                   <exclude name="testSearchbox"></exclude>-->

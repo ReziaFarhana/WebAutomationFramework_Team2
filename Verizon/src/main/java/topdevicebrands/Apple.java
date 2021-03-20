@@ -23,18 +23,8 @@ public class Apple extends WebAPI {
         clickByLinkText(appleLocator);
     }
 
-//    public void iPhoneFinancingOptions(){
-//        appleLocator();
-//        clickByXpath(buyButton);
-//        //clickByCss(monthFinance);
-//        clickByXpath(termFinance);
-////        windowsFullPageScrollSideBar(sortBy);
-////        selectOptionByVisibleText(sortBy,reviewsType);
-//    }
-
 public void compareModels(){
         appleLocator();
         hoverAndClick(driver,compare,compareOption);
-
 }
 }

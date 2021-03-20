@@ -35,16 +35,16 @@ public class TopDeviceBrandsWebElements {
     public static final String reviewsType = "//option[normalize-space()='Most helpful']";
     public static final String compareTab = "//a[normalize-space()='Compare']";
     public static final String compareOptions = "//a[contains(@href,'/wireless-devices/tablets/ipad-compare/')]";
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
+    public static final String lGVauleAndPerformanceLocator = "//a[normalize-space()='Value + Performance']";
+    public static final String buyNowButton = "Buy now";
+    public static final String lG = "LG";
+    public static final String fullRetailOption = "//span[normalize-space()='Full retail price']";
+    public static final String continueButton = "//button[@aria-label='Continue']";
+    public static final String zipCodeInputBox = "//*[@aria-label='[object Object] Input Field']";
+    public static final String zipCode = "53224";
+    public static final String confrimLocationButton = "//button[@aria-label='Confirm Location']";
+    public static final String newCustomerButton ="//button[@aria-label='New Customer']";
+    public static  final String feedbackButton = "//button[@id='nebula_div_btn']";
     //public static final String
     //public static final String
     //public static final String
@@ -98,9 +98,9 @@ public class TopDeviceBrandsWebElements {
     public static final String firstItemCompareText = "//strong[normalize-space()='Not available with 2-Year Contract']";
     public static final String getMoreLocator = "section[id='get-more']";
     public static final String reviews = "//span[normalize-space()='Reviews']";
-    public static final String phoneTitle = "//span[contains(text(),'Apple iPhone 12 Pro Max')]";
-    //public static final String
-    //public static final String
+    public static final String phoneHeader = "//*[text()='LG Stylo™ 6']";
+    public static final String pageHeader = "//h1[normalize-space()='Customize your device.']";
+    public static final String surveyHeader = "Thank you for sharing your comments. We will use your input to make the website experience better.";
     //public static final String
     //public static final String
     //public static final String
