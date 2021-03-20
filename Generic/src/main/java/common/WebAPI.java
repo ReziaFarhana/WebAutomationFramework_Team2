@@ -291,9 +291,7 @@ public class WebAPI {
         public void navigateBack() {
         driver.navigate().back();
     }
-    //by easha
-        public void navigateforward() { driver.navigate().forward();
-    }
+
 
     public static void clickOnElement(String locator, WebDriver driver1) {
         try {
