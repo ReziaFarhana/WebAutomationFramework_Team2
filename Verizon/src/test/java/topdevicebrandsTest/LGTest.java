@@ -18,40 +18,39 @@ public class LGTest extends WebAPI {
     public void getInit() {
         lg = PageFactory.initElements(driver, LG.class);
     }
-//
-//    @Test
-//    public void lGTabTest(){
-//        lg.lGTab();
-//        String expectedTitle = "LG 5G & Value Phones, Accessories, Comparisons & More - Verizon";
-//        String actualTitle = driver.getTitle();
-//        Assert.assertEquals(actualTitle,expectedTitle,"Wrong title");
-//    }
-//
-//    @Test
-//    public void lGvalueAndPerformanceTest() {
-//        lg.lGvalueAndPerformance();
-//        String expectedHeader = "LG Stylo™ 6";
-//        String actualHeader = getTextByXpath(phoneHeader);
-//        Assert.assertEquals(actualHeader,expectedHeader,"Wrong header");
-//  }
-//
-//  @Test
-//    public void addToCartTest(){
-//        lg.addToCart();
-//      String expectedHeader = "Customize your device.";
-//      String actualHeader = getTextByXpath(pageHeader);
-//      Assert.assertEquals(actualHeader,expectedHeader,"Wrong header");
-//
-//  }
+
+    @Test
+    public void lGTabTest(){
+        lg.lGTab();
+        String expectedTitle = "LG 5G & Value Phones, Accessories, Comparisons & More - Verizon";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle,expectedTitle,"Wrong title");
+    }
+
+    @Test
+    public void lGvalueAndPerformanceTest() {
+        lg.lGvalueAndPerformance();
+        String expectedHeader = "LG Stylo™ 6";
+        String actualHeader = getTextByXpath(phoneHeader);
+        Assert.assertEquals(actualHeader,expectedHeader,"Wrong header");
+  }
+
+  @Test
+    public void addToCartTest(){
+        lg.addToCart();
+      String expectedHeader = "Customize your device.";
+      String actualHeader = getTextByXpath(pageHeader);
+      Assert.assertEquals(actualHeader,expectedHeader,"Wrong header");
+
+  }
 
 
-
-@Test
-    public void feedbackTest(){
+    @Test
+    public void feedbackTest() throws InterruptedException {
         lg.feedback();
-    String expectedHeader = "Customize your device.";
-    String actualHeader = getTextByXpath(pageHeader);
-    Assert.assertEquals(actualHeader, expectedHeader, "Wrong header");
+        String expectedHeader = "LG Stylo 6 | Find Features, Prices and Reviews | Shop Today";
+        String actualHeader = driver.getTitle();
+        Assert.assertEquals(actualHeader, expectedHeader, "Wrong header");
 
-}
+    }
 }

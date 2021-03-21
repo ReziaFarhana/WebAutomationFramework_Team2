@@ -1,6 +1,9 @@
 package topdevicebrands;
 
 import common.WebAPI;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import static topdevicebrands.TopDeviceBrandsWebElements.*;
 
@@ -27,10 +30,11 @@ public class LG extends WebAPI {
     }
 
     //do feedback , chat box, contact us, log in
-    public void feedback(){
+    public void feedback() throws InterruptedException {
         lGvalueAndPerformance();
         clickByXpath(feedbackButton);
-        //clickByXpath("//iframe[@title='Feedback Survey']");
+        sleepFor(5);
+        windowHandle();
 
     }
 }
