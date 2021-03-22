@@ -7,7 +7,6 @@ public class TopDeviceBrandsWebElements {
     //public static final String topAccessoryBrandsList = "div[class='gnav20-footer-level-one'] div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(2) ul:nth-child(1) li:nth-child(1)";
     public static final String topAccessoryBrandsList = "//*[@class='gnav20-footer-list']";
     public static final String samsungLocator = "Samsung";
-    //public static final String buyButton = "//a[@aria-label='Pre-order Samsung Galaxy S21+ 5g']";
     public static final String saveOnTheLatestButton ="//body/div/div/main[contains(@role,'main')]/div/div/section/div/div/div[contains(@aria-label,'carousel with 4 slides')]/div/div/div[contains(@aria-label,'Slide 1 of 4')]/div/div/div/div/a[1]";
     public static final String addFilterButton = "//button[normalize-space()='Add filters']";
     public static final String brandButton = "//button[normalize-space()='Brand']"; //xpath
@@ -30,7 +29,6 @@ public class TopDeviceBrandsWebElements {
     public static final String buyButton = "//a[@aria-label='Buy iPhone 12 Pro Max']";
     public static final String monthFinance = "body > div:nth-child(34) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(2) > button:nth-child(1)";
     public static final String termFinance = "//body/div[@data-event='load']/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[@role='radiogroup']/div[2]";
-    //public static final String reviewsLocator = "//*[@id=\"page\"]/div/div[5]/div[1]/div/div[1]/div/div[1]/div/div[1]/div[3]/div[1]/a/span/div[1]";
     public static final String sortByRatingOptionDropdown = "//*[@id=\"ckmijr6x4000m3a9homgnpmop\"]";
     public static final String reviewsType = "//option[normalize-space()='Most helpful']";
     public static final String compareTab = "//a[normalize-space()='Compare']";
@@ -48,7 +46,6 @@ public class TopDeviceBrandsWebElements {
     public static final String feedBackHandle = "iframe[@title='Feedback Survey']";
     public static final String motorolaLocator = "Motorola";
     public static final String motorlaPageText = "//h2[normalize-space()='Find your moto.']";
-    //public static final String reviewsLocator = "StyledAnchor-sc-9x52p1-1 jwknxS ReviewsDisplayComponent__StyledTextLink-sc-1ehrj7z-2 hXAHZT";
     public static final String reviewsLocator = "//a[normalize-space()='30 Reviews']";
     public static final String watchVideoLink = "//*[text()='Watch videos']";
     public static final String chatButton = "//div[@aria-label='Click to chat']";
@@ -66,27 +63,11 @@ public class TopDeviceBrandsWebElements {
     public static final String compatibleSearchBox = "Compatiblecheck";
     public static final String SearchItem = "Galaxy s21 5G";
     public static final String compatibleSearchItem = "//li[@class='c-list']";
+    public static final String amazonLocator = "Amazon";
     public static final String nextButton = "//button[@aria-label='next']";
     public static final String checkAvailabilityButton = "//a[normalize-space()='Check availability']";
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
+    public static final String searchAddressBox = "streetLocusAddress";//id
+    public static final String address = "470 Broadway, Berlin, WI, 54923-1320, USA";
 
     //test class webelements
 
@@ -110,22 +91,9 @@ public class TopDeviceBrandsWebElements {
     public static final String accessoriesPageHeader = "//h1[normalize-space()='Phone Accessories - Google']";
     public static final String filterResult = "//div[@role='alert']";
     public static final String compatiblePhoneItemAccessoryHeader = "//h1[normalize-space()='All Accessories for Galaxy S21 5G']";
-    public static final String amazonLocator = "Amazon";
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
-    //public static final String
+    public static final String pageHeaderText = "//h1[contains(text(),'See if your address')]";
+    public static final String emailAddressBox = "//input[@id='optinEmailAddress']";
+    public static final String emailAddress = "moni@gmail.com";
+
 
 }

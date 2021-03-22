@@ -76,43 +76,5 @@ public class BBCWebElements {
     public static final String helpAndFAQTitle = "h1[class='gel-trafalgar']";
     public static final String channelTitle = "//h2[normalize-space()='Featured on BBC Three']";
     public static final String myProgammersTitle = "h1[aria-label='My Programmes - Watching']";
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
+
 }

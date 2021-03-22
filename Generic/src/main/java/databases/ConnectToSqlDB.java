@@ -22,7 +22,7 @@ public class ConnectToSqlDB {
     public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         //InputStream ism = new FileInputStream("/secret.properties");
-        InputStream ism = new FileInputStream("../Generic/src/main/java/secret.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\israt\\IdeaProjects\\WebAutomationFramework_Team2\\Generic\\src\\main\\java\\secret.properties");
         prop.load(ism);
         ism.close();
         return prop;

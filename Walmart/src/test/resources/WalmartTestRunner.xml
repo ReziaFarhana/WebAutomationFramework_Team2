@@ -25,9 +25,10 @@
 <!--                <methods>-->
 <!--                    <include name="storingPersonalCareOptionListsInDatabaseTest"/>-->
 <!--                </methods>-->
-            </class>
+<!--            </class>-->
 
             <class name="pickupanddeliverytest.PickupAndDeliverytest"></class>
+            <class name="signintest.SignInTest"></class>
         </classes>
     </test>
 </suite>

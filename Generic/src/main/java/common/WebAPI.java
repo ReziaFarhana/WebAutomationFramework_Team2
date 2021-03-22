@@ -34,17 +34,17 @@ import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
     public JavascriptExecutor jscript;
-    static Properties properties;
+//    static Properties properties;
 
     // Config class :
 
     //properties class
-    public static Properties loadProperties() throws IOException {
-        properties = new Properties();
-        InputStream inputStream = new FileInputStream("../Generic/src/main/secret.properties");
-        properties.load(inputStream);
-        return properties;
-    }
+//    public static Properties loadProperties() throws IOException {
+//        properties = new Properties();
+//        InputStream inputStream = new FileInputStream("../Generic/src/main/secret.properties");
+//        properties.load(inputStream);
+//        return properties;
+//    }
 
     public void windowsFullPageScrollDown() {
         jscript = (JavascriptExecutor) driver;

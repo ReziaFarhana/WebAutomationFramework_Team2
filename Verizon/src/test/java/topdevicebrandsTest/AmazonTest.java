@@ -28,4 +28,14 @@ public class AmazonTest extends WebAPI {
         Assert.assertEquals(actualTitle,expectedTitle,"Title is not a match");
     }
 
+    @Test
+    public void checkAvailabilityTest(){
+        amazon.checkAvailability();
+        String expectedText = "See if your address\n" +
+                "is qualified for\n" +
+                "5G Home Internet Service.";
+        String actualText = getTextByXpath(pageHeaderText);
+        Assert.assertEquals(actualText,expectedText,"Text does not match");
+    }
+
 }
