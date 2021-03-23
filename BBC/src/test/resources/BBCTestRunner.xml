@@ -22,7 +22,9 @@
 
     <test name="BBC Automation Test Script using chrome">
     <classes>
-        <class name="homepagetest.HomePageTest"></class>
+<!--        <class name="homepagetest.HomePageTest"></class>-->
+        <class name="tvpagetest.TvPageTest"></class>
+
         <!--            <class name = "helpcenterpagetest.HelpCenterPageTest"></class>-->
     </classes>
 </test>
