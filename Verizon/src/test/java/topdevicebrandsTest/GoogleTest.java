@@ -54,7 +54,7 @@ public class GoogleTest extends WebAPI {
     @Test
     public void addFilterFunctionalityTest(){
         google.addFilterFunctionality();
-        String expectedText = "Showing 1 item";
+        String expectedText = "Showing 0 items";
         String actualText = getTextByXpath(filterResult);
         Assert.assertEquals(actualText,expectedText,"Text did not match");
     }

@@ -20,11 +20,11 @@
 
     <test name="Verizon Automation Test Script using chrome">
         <classes>
-<!--            <class name="topdevicebrandsTest.SamsungTest"/>-->
-<!--            <class name="topdevicebrandsTest.AppleTest"/>-->
-<!--            <class name="topdevicebrandsTest.LGTest"/>-->
-<!--            <class name="topdevicebrandsTest.MotorolaTest"/>-->
-<!--            <class name="topdevicebrandsTest.GoogleTest"/>-->
+            <class name="topdevicebrandsTest.SamsungTest"/>
+            <class name="topdevicebrandsTest.AppleTest"/>
+            <class name="topdevicebrandsTest.LGTest"/>
+            <class name="topdevicebrandsTest.MotorolaTest"/>
+            <class name="topdevicebrandsTest.GoogleTest"/>
             <class name="topdevicebrandsTest.AmazonTest">
                 <!--                <methods>-->
                 <!--                                   Test case include or exclude-->

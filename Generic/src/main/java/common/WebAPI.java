@@ -855,6 +855,10 @@ public void windowsPageScrollToLocator(By locator) {
         driver.findElement(By.id(locator)).sendKeys(value,Keys.TAB);
     }
 
+    public void typeOnElementByLinkTextNTab(String locator, String value) {
+        driver.findElement(By.linkText(locator)).sendKeys(value,Keys.TAB);
+    }
+
     public void typeOnElementByIdNEnter(String locator, String value) {
         driver.findElement(By.id(locator)).sendKeys(value,Keys.ENTER);
     }

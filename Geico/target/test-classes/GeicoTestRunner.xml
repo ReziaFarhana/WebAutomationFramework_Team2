@@ -17,7 +17,9 @@
     <test name="Geico Automation Test Script using chrome">
         <classes>
             <class name="autoinsurancetest.AutoInsuranceTest"/>
-            <class name="geicohomepagefootertest.PrivacyPolicyTest">
+            <class name="geicohomepagefootertest.PrivacyPolicyTest"/>
+            <class name="geicohomepagefootertest.NoticeAndPersonalDataRequestTest"/>
+            <class name="geicohomepagefootertest.LegalAndSecurityTest">
 <!--                <methods>-->
 <!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
 <!--                                   <exclude name=""></exclude>-->
