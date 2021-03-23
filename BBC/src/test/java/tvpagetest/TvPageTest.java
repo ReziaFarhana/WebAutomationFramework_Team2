@@ -38,13 +38,14 @@ public class TvPageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
 
     }
-    @Test
+
     public void selectAfricaTest() throws InterruptedException {
         tvpage.selectAfrica();
         String expectedText="BBC WORLD NEWS Africa - Schedules";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
+    @Test
     public void selectMiddleEastTest() throws InterruptedException {
         tvpage.selectMiddleEast();
         String expectedText="BBC WORLD NEWS Middle East - Schedules";
