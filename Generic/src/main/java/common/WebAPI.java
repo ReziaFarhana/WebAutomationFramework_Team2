@@ -34,17 +34,6 @@ import java.util.concurrent.TimeUnit;
 
 public class WebAPI {
     public JavascriptExecutor jscript;
-//    static Properties properties;
-
-    // Config class :
-
-    //properties class
-//    public static Properties loadProperties() throws IOException {
-//        properties = new Properties();
-//        InputStream inputStream = new FileInputStream("../Generic/src/main/secret.properties");
-//        properties.load(inputStream);
-//        return properties;
-//    }
 
     public void windowsFullPageScrollDown() {
         jscript = (JavascriptExecutor) driver;
@@ -382,6 +371,13 @@ public void windowsPageScrollToLocator(By locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
 
+    public void takeEnterKeysByID(String locator) {
+        driver.findElement(By.id(locator)).sendKeys(Keys.ENTER);
+    }
+    public void takeEnterKeysByXpath(String locator) {
+        driver.findElement(By.xpath(locator)).sendKeys(Keys.ENTER);
+    }
+
     public void clearInputField(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
     }
@@ -650,6 +646,7 @@ public void windowsPageScrollToLocator(By locator) {
         List<String> newTabs = new ArrayList<String>(driver1.getWindowHandles());
         newTabs.remove(oldTab);
         driver1.switchTo().window(newTabs.get(0));
+        driver1.manage().window().maximize();
         return driver1;
     }
 
@@ -852,6 +849,24 @@ public void windowsPageScrollToLocator(By locator) {
     }
     public void typeOnElementNew(String locator, String value) {
         driver.findElement(By.id(locator)).sendKeys(value);
+    }
+
+    public void typeOnElementByIdNTab(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value,Keys.TAB);
+    }
+
+    public void typeOnElementByIdNEnter(String locator, String value) {
+        driver.findElement(By.id(locator)).sendKeys(value,Keys.ENTER);
+    }
+
+    public void typeOnElementByXpathNTab(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.TAB);
+    }
+    public void typeOnElementByXpathNEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
+    }
+    public void typeOnElementByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
     }
 
 

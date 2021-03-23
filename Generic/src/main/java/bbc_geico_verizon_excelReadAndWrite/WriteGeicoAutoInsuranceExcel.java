@@ -20,10 +20,10 @@ public class WriteGeicoAutoInsuranceExcel {
             XSSFWorkbook workbook = new XSSFWorkbook();
             XSSFSheet sheet = workbook.createSheet("GeicoRegistrationAccountInfo");
             Object[][] accountDetails = {
-                    { "DateOfBirth","BirthMonth","BirthYear","Email", "Password"},
-                    { "12311985", "12","1987", email,"ABcDe123"},
-                    { "713194", "9","1989", email ,"ABcDe123"},
-                    { "6151989", "6","1980", email,"ABcDe123"},
+                    { "DateOfBirth","FirstName","LastName","Address","Apt#","Email", "Password"},
+                    { "12311985", "Moni","Hashem","1123 Elmont Ave","20" ,email,"ABcDe123"},
+                    { "713194", "Samantha","Brooke","1123 Elmont Ave","21", email ,"ABcDe123"},
+                    { "6151989", "Ilium","Alihandra","1123 Elmont Ave","23", email,"ABcDe123"},
 
             };
             int rowNum = 0;

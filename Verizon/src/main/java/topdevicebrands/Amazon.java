@@ -8,8 +8,6 @@ import org.openqa.selenium.support.How;
 import static topdevicebrands.TopDeviceBrandsWebElements.*;
 
 public class Amazon extends WebAPI {
-//    @FindBy(how = How.ID, using = searchAddressBox)
-//    public WebElement searchAddress;
 
     public void amazonLocator() {
         clickByLinkText(amazonLocator);
@@ -20,8 +18,8 @@ public class Amazon extends WebAPI {
         amazonLocator();
         windowHalfPageScroll();
         clickByXpath(checkAvailabilityButton);
-        typeByIdNEnter(searchAddressBox,address);
-        typeByXpathNEnter(emailAddressBox,emailAddress);
+        typeByIdNEnter(searchAddressBox, address);
+        typeByXpathNEnter(emailAddressBox, emailAddress);
 
     }
 
