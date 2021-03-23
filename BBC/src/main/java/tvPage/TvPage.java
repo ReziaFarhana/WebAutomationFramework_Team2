@@ -15,4 +15,9 @@ public class TvPage extends WebAPI {
         clickByXpath(march21stXp);
         clickByXpath(women100NewsXp);
     }
+    public void selectSouthAsia() throws InterruptedException {
+        clickTvNav();
+        sleepFor(3);
+        scrollByXPATH(southAsiaXp);
+    }
 }

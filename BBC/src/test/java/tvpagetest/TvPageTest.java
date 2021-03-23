@@ -23,11 +23,19 @@ public class TvPageTest extends WebAPI {
         String actualText=getTextByXpath(tvPageTextXp);
         Assert.assertEquals(actualText,expectedText,"Text not matched");
     }
-    @Test
+
     public void selectDateTest(){
         tvpage.selectDate();
         String expectedText = "100 Women";
         String actualText = getTextByCss(women100pagetextCss);
         Assert.assertEquals(actualText,expectedText,"Text doesnt match");
+    }
+    @Test
+    public void selectSouthAsiaTest() throws InterruptedException {
+        tvpage.selectSouthAsia();
+        String expectedText="BBC WORLD NEWS South Asia - Schedules";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+
     }
 }

@@ -7,4 +7,5 @@ public class TvPageWebElement {
     public static final String march21stXp="//span[normalize-space()='21 Mar']";
     public static final String women100NewsXp ="//a[@aria-label='21 Mar 06:30: 100 Women, Life on Thin Ice']";
     public static final String women100pagetextCss="div[class='br-masthead__title'] a";
+    public static final String southAsiaXp="//a[normalize-space()='South Asia']";
 }
