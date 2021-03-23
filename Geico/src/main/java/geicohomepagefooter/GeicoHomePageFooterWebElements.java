@@ -48,52 +48,7 @@ public class GeicoHomePageFooterWebElements {
     public static final String nameInput = "name"; //id
     public static final String email = "email"; //id
     public static final  String statesOfOperationOrderLocator = "//a[normalize-space()='States of operation']";
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
+
 
 
     //Test class webelements
@@ -109,59 +64,5 @@ public class GeicoHomePageFooterWebElements {
     public static final String checkingScamsPageHeader = "//h1[normalize-space()='Sweepstakes Fraudulent Letters And Checks']";
     public static final String contactUsHeader = "//h1[normalize-space()='Contact Our Customer Service Agents By Email']";
     public static final String statesOperationPageTitle = "//*[text()='STATES OF OPERATION']";
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-
-
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
-//    public static final String
 
 }
