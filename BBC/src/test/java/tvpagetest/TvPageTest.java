@@ -16,11 +16,18 @@ public class TvPageTest extends WebAPI {
     @BeforeMethod
     public void init(){ tvpage= PageFactory.initElements(driver, TvPage.class); }
 
-    @Test
+
     public void clickTvNavTest(){
         tvpage.clickTvNav();
         String expectedText="BBC World News";
         String actualText=getTextByXpath(tvPageTextXp);
         Assert.assertEquals(actualText,expectedText,"Text not matched");
+    }
+    @Test
+    public void selectDateTest(){
+        tvpage.selectDate();
+        String expectedText = "100 Women";
+        String actualText = getTextByCss(women100pagetextCss);
+        Assert.assertEquals(actualText,expectedText,"Text doesnt match");
     }
 }
