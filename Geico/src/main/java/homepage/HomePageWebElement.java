@@ -13,5 +13,7 @@ public class HomePageWebElement {
     public static final String getRoadsidehelppageTextXp="//h3[normalize-space()='What is your information?']";
     public static final String reportGlassDamageXp="//a[@data-link-name='primary-navigation:Report Glass Damage']//span[@class='geico-nav-menu-item'][normalize-space()='Report Glass Damage']";
     public static final String catastropheClaimsXp="//a[@data-link-name='primary-navigation:Catastrophe Claims']//span[@class='geico-nav-menu-item'][normalize-space()='Catastrophe Claims']";
+    public static final String estimateAndRepairXp="//a[@data-link-name='primary-navigation:Estimate & Repair " +
+            "Locations']//span[@class='geico-nav-menu-item'][normalize-space()='Estimate & Repair Locations']";
 
 }

@@ -40,6 +40,10 @@ public class HomePage extends WebAPI {
         claimsAndRoadsideHelpNav();
         clickByXpath(catastropheClaimsXp);
     }
+    public void selectEstimateandRepair() throws InterruptedException {
+        claimsAndRoadsideHelpNav();
+        clickByXpath(estimateAndRepairXp);
+    }
 
 
 

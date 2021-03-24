@@ -2,6 +2,7 @@ package homepagetest;
 
 import common.WebAPI;
 import homepage.HomePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -63,11 +64,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
     }
-    @Test
+
     public void selectCatastropheClaimsTest() throws InterruptedException {
         homepage.selectCatastropheClaims();
         String expectedText="GEICO Catastrophe Claims | GEICO";
         String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText, "Text fail");
+
+    }
+    @Test
+    public void selectEstimateandRepairTest() throws InterruptedException {
+        homepage.selectEstimateandRepair();
+        String expectedText="Find Estimate and Repair Locations Near You";
+        String actualText=driver.findElement(By.tagName("h1")).getText();
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
     }
