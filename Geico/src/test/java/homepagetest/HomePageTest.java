@@ -72,12 +72,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
     }
-    @Test
+
     public void selectEstimateandRepairTest() throws InterruptedException {
         homepage.selectEstimateandRepair();
         String expectedText="Find Estimate and Repair Locations Near You";
         String actualText=driver.findElement(By.tagName("h1")).getText();
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
+    }
+    @Test
+    public void selectToolsAndResourcesTest() throws InterruptedException {
+        homepage.selectToolsAndResources();
+        String expectedText = "Tools and Resources";
+        String actualText = getTextByXpath(toolsAndResXp);
+        Assert.assertEquals(actualText, expectedText, "Text not matched");
     }
 }

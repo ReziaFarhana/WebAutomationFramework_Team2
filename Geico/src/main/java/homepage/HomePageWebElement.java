@@ -15,5 +15,8 @@ public class HomePageWebElement {
     public static final String catastropheClaimsXp="//a[@data-link-name='primary-navigation:Catastrophe Claims']//span[@class='geico-nav-menu-item'][normalize-space()='Catastrophe Claims']";
     public static final String estimateAndRepairXp="//a[@data-link-name='primary-navigation:Estimate & Repair " +
             "Locations']//span[@class='geico-nav-menu-item'][normalize-space()='Estimate & Repair Locations']";
+    public static final String toolsAndResXp="//*[@id=\"primary-navigation\"]/div[3]/ul/li[3]/a/span[2]";
+    public static final String coverageCalcXp="//a[@data-link-name='primary-navigation:Coverage " +
+            "Calculator']//span[@class='geico-nav-menu-item'][normalize-space()='Coverage Calculator']";
 
 }

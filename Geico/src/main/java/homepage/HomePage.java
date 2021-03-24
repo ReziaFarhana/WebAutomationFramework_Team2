@@ -10,6 +10,7 @@ import static homepage.HomePageWebElement.*;
 public class HomePage extends WebAPI {
 
     @FindBy(how= How.XPATH, using=claimsAndRoadsideXp) public WebElement claimsAndRoadside;
+    @FindBy(how= How.XPATH, using=toolsAndResXp) public WebElement toolsAndResources;
 
 
     public void informationNav()  {
@@ -43,6 +44,15 @@ public class HomePage extends WebAPI {
     public void selectEstimateandRepair() throws InterruptedException {
         claimsAndRoadsideHelpNav();
         clickByXpath(estimateAndRepairXp);
+    }
+    public void selectToolsAndResources() throws InterruptedException {
+        informationNav();
+        hoverOver(driver, toolsAndResources);
+        sleepFor(4);
+    }
+    public void selectCoverageCalculator() throws InterruptedException {
+        selectToolsAndResources();
+        clickByXpath(coverageCalcXp);
     }
 
 
