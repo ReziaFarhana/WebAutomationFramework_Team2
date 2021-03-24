@@ -47,9 +47,17 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
     }
-    @Test
+
     public void selectgetRoadSideHelpTest() throws InterruptedException {
         homepage.selectgetRoadSideHelp();
+        String expectedText="Report a Claim";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText,expectedText, "Text fail");
+
+    }
+    @Test
+    public void selectReportGlassDamageTest() throws InterruptedException {
+        homepage.selectReportGlassDamage();
         String expectedText="Report a Claim";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText, "Text fail");
