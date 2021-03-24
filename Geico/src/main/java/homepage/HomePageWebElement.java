@@ -10,6 +10,7 @@ public class HomePageWebElement {
     public static final String viewAClaimPageTextXp="//h3[contains(text(),'To locate your claim, please provide the " +
             "following')]";
     public static final String getRoadSideHelpXp="//a[@data-link-name='primary-navigation:Get Roadside Help']//span[@class='geico-nav-menu-item'][normalize-space()='Get Roadside Help']";
+    public static final String getRoadsidehelppageTextXp="//h3[normalize-space()='What is your information?']";
     public static final String reportGlassDamageXp="//a[@data-link-name='primary-navigation:Report Glass Damage']//span[@class='geico-nav-menu-item'][normalize-space()='Report Glass Damage']";
     public static final String catastropheClaimsXp="//a[@data-link-name='primary-navigation:Catastrophe Claims']//span[@class='geico-nav-menu-item'][normalize-space()='Catastrophe Claims']";
 

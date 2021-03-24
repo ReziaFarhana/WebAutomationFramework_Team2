@@ -39,11 +39,19 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText, "Text doesnt match");
     }
 
-    @Test
+
     public void selectViewAClaimTest() throws InterruptedException {
         homepage.selectViewAClaim();
         String expectedText="To locate your claim, please provide the following information.";
         String actualText=getTextByXpath(viewAClaimPageTextXp);
+        Assert.assertEquals(actualText,expectedText, "Text fail");
+
+    }
+    @Test
+    public void selectgetRoadSideHelpTest() throws InterruptedException {
+        homepage.selectgetRoadSideHelp();
+        String expectedText="Report a Claim";
+        String actualText=driver.getTitle();
         Assert.assertEquals(actualText,expectedText, "Text fail");
 
     }
