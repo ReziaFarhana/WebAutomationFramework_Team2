@@ -9,14 +9,22 @@ import static homepage.HomePageWebElement.*;
 
 public class HomePage extends WebAPI {
 
-    @FindBy(how= How.XPATH, using=clainsAndRoadsideXp) public WebElement claimsAndRoadside;
+    @FindBy(how= How.XPATH, using=claimsAndRoadsideXp) public WebElement claimsAndRoadside;
 
 
-    public void informationNav() throws InterruptedException {
-        clickByXpath(informationLinkText);
-        hoverOver(driver,claimsAndRoadside);
-//        clickByXpath(clainsAndRoadsideXp);
+    public void informationNav()  {
+        clickByXpath(informationXp);
+    }
+    public void claimsAndRoadsideHelpNav() throws InterruptedException {
+        informationNav();
+        hoverOver(driver, claimsAndRoadside);
+        sleepFor(4);
+    }
+    public void selectGetRoadSideHelp() throws InterruptedException {
+        informationNav();
+        claimsAndRoadsideHelpNav();
         clickByXpath(getRoadSideHelpXp);
     }
+
 
 }

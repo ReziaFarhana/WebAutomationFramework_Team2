@@ -17,8 +17,22 @@ public class HomePageTest extends WebAPI {
     public void init(){ homepage= PageFactory.initElements(driver, HomePage.class); }
 
     @Test
-    public void informationNavTest() throws InterruptedException {
+    public void informationNavTest(){
         homepage.informationNav();
+        String expectedText = "An Insurance Company For Your Car And More | GEICO";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text does not match");
+    }
+    public void claimsAndRoadsideHelpNav() throws InterruptedException {
+        homepage.claimsAndRoadsideHelpNav();
+        String expectedText="Claims and Roadside Help";
+        String actualText=getTextByXpath(claimsAndRoadsideXp);
+        Assert.assertEquals(actualText, expectedText, "Text does not match");
+    }
+
+
+    public void selectGetRoadsideHelpTest() throws InterruptedException {
+        homepage.selectGetRoadSideHelp();
         String expectedText ="Report a Claim";
         String actualText =driver.getTitle();
         Assert.assertEquals(actualText,expectedText, "Text doesnt match");
