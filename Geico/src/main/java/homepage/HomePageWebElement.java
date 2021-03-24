@@ -19,5 +19,16 @@ public class HomePageWebElement {
     public static final String coverageCalcXp="//a[@data-link-name='primary-navigation:Coverage " +
             "Calculator']//span[@class='geico-nav-menu-item'][normalize-space()='Coverage Calculator']";
     public static final String coverageCalcPageTextXp="//h2[normalize-space()='Car Insurance Coverage Calculator']";
+    public static final String singleRadiobtnXp="//label[normalize-space()='Single']";
+    public static final String nxtBtnCss="div.slick-current .btn";
+    public static final String ageRadioXp="//label[normalize-space()='25 or Older']";
+    public static final String insuranceCovRadioXp="//label[normalize-space()='The Best Protection']";
+    public static final String noRadiobtnxP="//label[normalize-space()='No']";
+    public static final String carOwnershipRadiobtnXp="//label[normalize-space()='Own']";
+    public static final String vehicleValueRadioXp="//label[normalize-space()='More than $40,000']";
+    public static final String timeSpentRadioXp="//label[contains(text(),'Average - I mean, I like my car but sometimes I\n" +
+            "')]";
+
+
 
 }

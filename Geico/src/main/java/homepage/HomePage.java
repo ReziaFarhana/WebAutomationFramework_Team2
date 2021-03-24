@@ -54,6 +54,30 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         clickByXpath(coverageCalcXp);
     }
+    public void doCoverageCalc() throws InterruptedException {
+        selectCoverageCalculator();
+        tryRadioBtn(singleRadiobtnXp);
+        sleepFor(3);
+        clickByCss(nxtBtnCss);
+        tryRadioBtn(ageRadioXp);
+        sleepFor(3);
+        clickByCss(nxtBtnCss);
+        tryRadioBtn(insuranceCovRadioXp);
+        clickByCss(nxtBtnCss);
+        sleepFor(3);
+        tryRadioBtn(noRadiobtnxP);
+        clickByCss(nxtBtnCss);
+        sleepFor(3);
+        tryRadioBtn(carOwnershipRadiobtnXp);
+        clickByCss(nxtBtnCss);
+        sleepFor(3);
+        tryRadioBtn(vehicleValueRadioXp);
+        clickByCss(nxtBtnCss);
+        sleepFor(3);
+        tryRadioBtn(timeSpentRadioXp);
+        clickByCss(nxtBtnCss);
+        sleepFor(3);
+    }
 
 
 

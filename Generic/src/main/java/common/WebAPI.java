@@ -686,6 +686,11 @@ public class WebAPI {
         WebElement checkbox = driver.findElement(By.id(idLocator));
         checkbox.click();
     }
+    //radio button
+    public void tryRadioBtn(String xPLocator){
+        WebElement checkbox = driver.findElement(By.xpath(xPLocator));
+        checkbox.click();
+    }
 
     // Slider Handlaing
     // https://stackoverflow.com/questions/15171745/how-to-slidemove-slider-in-selenium-webdriver
