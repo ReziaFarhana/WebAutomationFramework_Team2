@@ -18,5 +18,6 @@ public class HomePageWebElement {
     public static final String toolsAndResXp="//*[@id=\"primary-navigation\"]/div[3]/ul/li[3]/a/span[2]";
     public static final String coverageCalcXp="//a[@data-link-name='primary-navigation:Coverage " +
             "Calculator']//span[@class='geico-nav-menu-item'][normalize-space()='Coverage Calculator']";
+    public static final String coverageCalcPageTextXp="//h2[normalize-space()='Car Insurance Coverage Calculator']";
 
 }
