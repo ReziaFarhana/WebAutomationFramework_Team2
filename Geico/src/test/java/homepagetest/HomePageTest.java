@@ -16,13 +16,14 @@ public class HomePageTest extends WebAPI {
     @BeforeMethod
     public void init(){ homepage= PageFactory.initElements(driver, HomePage.class); }
 
-    @Test
+
     public void informationNavTest(){
         homepage.informationNav();
         String expectedText = "An Insurance Company For Your Car And More | GEICO";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
+    @Test
     public void claimsAndRoadsideHelpNav() throws InterruptedException {
         homepage.claimsAndRoadsideHelpNav();
         String expectedText="Claims and Roadside Help";
