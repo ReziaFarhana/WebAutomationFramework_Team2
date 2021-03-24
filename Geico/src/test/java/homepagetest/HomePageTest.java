@@ -94,11 +94,18 @@ public class HomePageTest extends WebAPI {
         String actualText = getTextByXpath(coverageCalcPageTextXp);
         Assert.assertEquals(actualText, expectedText, "Text not matched");
     }
-    @Test
+
     public void doCoverageCalcTest() throws InterruptedException {
         homepage.doCoverageCalc();
         String expectedText ="Car Insurance Estimator - Coverage Calculator | GEICO";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Test failed");
+    }
+    @Test
+    public void  selectMilitaryProgramTest() throws InterruptedException {
+        homepage.selectMilitaryProgram();
+        String expectedText="What would you like to protect?";
+        String actualText=getTextByXpath(whatToProtectTitleText);
+        Assert.assertEquals(actualText,expectedText, "Text doesnt match");
     }
 }

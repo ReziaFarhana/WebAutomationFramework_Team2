@@ -28,7 +28,10 @@ public class HomePageWebElement {
     public static final String vehicleValueRadioXp="//label[normalize-space()='More than $40,000']";
     public static final String timeSpentRadioXp="//label[contains(text(),'Average - I mean, I like my car but sometimes I\n" +
             "')]";
-
+    public static final String militaryProgXp="//li[@class='open']//li[2]//span[@class='geico-nav-menu-item']";
+    public static final String zipcodeBoxCss=".zip-code-input";
+    public static final String zipcodeValue="12054";
+    public static final String whatToProtectTitleText="//div[.='What would you like to protect?']";
 
 
 }

@@ -579,6 +579,11 @@ public class WebAPI {
         } catch (Exception ex3) {
             System.out.println("CSS locator didn't work");
         }
+        try {
+            driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex3) {
+            System.out.println("XPATH locator didn't work");
+        }
     }
 
 
@@ -721,7 +726,7 @@ public class WebAPI {
 
     public void waitTimeExplicit(String locator) {
         // Explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 

@@ -1,6 +1,8 @@
 package homepage;
 
 import common.WebAPI;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -11,6 +13,7 @@ public class HomePage extends WebAPI {
 
     @FindBy(how= How.XPATH, using=claimsAndRoadsideXp) public WebElement claimsAndRoadside;
     @FindBy(how= How.XPATH, using=toolsAndResXp) public WebElement toolsAndResources;
+    @FindBy(how= How.CSS, using=zipcodeBoxCss) public WebElement zipcodeBox;
 
 
     public void informationNav()  {
@@ -77,6 +80,19 @@ public class HomePage extends WebAPI {
         tryRadioBtn(timeSpentRadioXp);
         clickByCss(nxtBtnCss);
         sleepFor(3);
+    }
+    public void selectMilitaryProgram() throws InterruptedException {
+        selectToolsAndResources();
+
+        clickByXpath(militaryProgXp);
+//        waitTimeExplicit(zipcodeBoxClass);
+//        inputValueInTextBoxByWebElement(zipcodeBox,zipcodeValue);
+         driver.findElement(By.cssSelector(zipcodeBoxCss)).sendKeys(zipcodeValue, Keys.ENTER);
+         sleepFor(3);
+
+
+
+
     }
 
 
