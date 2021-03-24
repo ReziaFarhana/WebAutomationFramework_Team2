@@ -23,7 +23,7 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-    @Test
+
     public void claimsAndRoadsideHelpNav() throws InterruptedException {
         homepage.claimsAndRoadsideHelpNav();
         String expectedText="Claims and Roadside Help";
@@ -32,11 +32,19 @@ public class HomePageTest extends WebAPI {
     }
 
 
-    public void selectGetRoadsideHelpTest() throws InterruptedException {
-        homepage.selectGetRoadSideHelp();
+    public void selectReportAClaimTest() throws InterruptedException {
+        homepage.selectReportAClaim();
         String expectedText ="Report a Claim";
         String actualText =driver.getTitle();
         Assert.assertEquals(actualText,expectedText, "Text doesnt match");
     }
 
+    @Test
+    public void selectViewAClaimTest() throws InterruptedException {
+        homepage.selectViewAClaim();
+        String expectedText="To locate your claim, please provide the following information.";
+        String actualText=getTextByXpath(viewAClaimPageTextXp);
+        Assert.assertEquals(actualText,expectedText, "Text fail");
+
+    }
 }

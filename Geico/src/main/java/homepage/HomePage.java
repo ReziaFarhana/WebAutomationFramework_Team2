@@ -20,11 +20,27 @@ public class HomePage extends WebAPI {
         hoverOver(driver, claimsAndRoadside);
         sleepFor(4);
     }
-    public void selectGetRoadSideHelp() throws InterruptedException {
-        informationNav();
+    public void selectReportAClaim() throws InterruptedException {
+        claimsAndRoadsideHelpNav();
+        clickByXpath(reportAClaimXp);
+    }
+    public void selectViewAClaim() throws InterruptedException {
+        claimsAndRoadsideHelpNav();
+        clickByXpath(viewAClaimXp);
+
+    } public void selectgetRoadSideHelp() throws InterruptedException {
         claimsAndRoadsideHelpNav();
         clickByXpath(getRoadSideHelpXp);
     }
+    public void selectReportGlassDamage() throws InterruptedException {
+        claimsAndRoadsideHelpNav();
+        clickByXpath(reportGlassDamageXp);
+    }
+    public void selectCatastropheClaims() throws InterruptedException {
+        claimsAndRoadsideHelpNav();
+        clickByXpath(catastropheClaimsXp);
+    }
+
 
 
 }
