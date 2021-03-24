@@ -32,6 +32,14 @@ public class HomePageWebElement {
     public static final String zipcodeBoxCss=".zip-code-input";
     public static final String zipcodeValue="12054";
     public static final String whatToProtectTitleText="//div[.='What would you like to protect?']";
-
+    public static final String fedEmpXp="//li[@class='open']//a[.='Federal Employees']";
+    public static final String rentersXp="//div[@class='card-selections custom-card-selections multiple-selections']/div[2]/label[@class='card-selections-label']";
+    public static final String autoXp="//div[@class='card-selections-card card-selections-selected auto-card " +
+            "small-card']";
+    public static final String dateInputId="Id_GiveDateOfBirth_24007";
+    public static final String firstNameName="Id_GiveDateOfBirth_24007";
+    public static final String lastNameName="Id_GiveName_88511";
+    public static final String needAddressTextXp="Id_GiveName_88511";
+    public static final String nextQuoteCss=".pull-right";
 
 }

@@ -101,11 +101,19 @@ public class HomePageTest extends WebAPI {
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Test failed");
     }
-    @Test
+
     public void  selectMilitaryProgramTest() throws InterruptedException {
         homepage.selectMilitaryProgram();
         String expectedText="What would you like to protect?";
         String actualText=getTextByXpath(whatToProtectTitleText);
         Assert.assertEquals(actualText,expectedText, "Text doesnt match");
     }
+    @Test
+    public void selectFederalEmployees() throws InterruptedException {
+        homepage.clickFederalEmployee();
+        String expectedText="GEICO";
+        String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+
 }

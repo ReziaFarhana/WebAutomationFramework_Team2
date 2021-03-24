@@ -14,6 +14,7 @@ public class HomePage extends WebAPI {
     @FindBy(how= How.XPATH, using=claimsAndRoadsideXp) public WebElement claimsAndRoadside;
     @FindBy(how= How.XPATH, using=toolsAndResXp) public WebElement toolsAndResources;
     @FindBy(how= How.CSS, using=zipcodeBoxCss) public WebElement zipcodeBox;
+    @FindBy(how= How.XPATH, using=rentersXp) public WebElement renters;
 
 
     public void informationNav()  {
@@ -90,7 +91,31 @@ public class HomePage extends WebAPI {
          driver.findElement(By.cssSelector(zipcodeBoxCss)).sendKeys(zipcodeValue, Keys.ENTER);
          sleepFor(3);
 
-
+    }
+    public void selectFederalEmployees() throws InterruptedException {
+        selectMilitaryProgram();
+        clickByXpath(fedEmpXp);
+        driver.findElement(By.cssSelector(zipcodeBoxCss)).sendKeys(zipcodeValue, Keys.ENTER);
+        sleepFor(3);
+    }
+    public void clickFederalEmployee() throws InterruptedException {
+        selectToolsAndResources();
+        sleepFor(4);
+        clickByXpath(fedEmpXp);
+        driver.findElement(By.cssSelector(zipcodeBoxCss)).sendKeys(zipcodeValue, Keys.ENTER);
+        sleepFor(3);
+    }
+    public void clickRenters () throws InterruptedException {
+        clickFederalEmployee();
+        hoverOver(driver,renters);
+        clickByXpath(rentersXp);
+        clickByCss(nextQuoteCss);
+        WebElement dateBox = driver.findElement(By.id(dateInputId));
+        dateBox.sendKeys("09221995");
+        clickByCss(nextQuoteCss);
+        driver.findElement(By.name(firstNameName)).sendKeys("Easha", Keys.ENTER);
+        driver.findElement(By.name(lastNameName)).sendKeys("Khanam", Keys.ENTER);
+        clickByCss(nextQuoteCss);
 
 
     }
