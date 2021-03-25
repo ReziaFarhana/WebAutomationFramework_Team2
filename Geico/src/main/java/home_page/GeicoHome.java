@@ -1,10 +1,12 @@
 package home_page;
 import common.WebAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Ignore;
 
 import static home_page.GeicoWebElement.*;
 
@@ -54,7 +56,7 @@ public class GeicoHome extends WebAPI {
      * Method to open Professional Liability Insurance inside Business Owner page
      * @throws InterruptedException
      */
-    public void openProfessionalLibilityLink() throws InterruptedException {
+    public void openProfessionalLiabilityLink() throws InterruptedException {
         clickOnInsuranceLink();
         scrollTo(locateGeneralLiabilityInsurance);
         sleepFor(2);
@@ -100,31 +102,149 @@ public class GeicoHome extends WebAPI {
     public void openStartYourQuoteNowInGeneralIns() throws InterruptedException {
         openGetQuoteGeneral();
         clickByXpath(startGeneralQoute);
+        windoSwitchHandler(1);
         sleepFor(2);
     }
 
-    /**
-     * Method to open START QUOTE in General Liability Insurance page
-     * the link open a new page with a title GEICO and Hiscox (A trusted partnership)
-     * @throws InterruptedException
-     */
-    public void openStartQuoteGeneralLiabilityInsurance() throws InterruptedException {
-        openStartYourQuoteNowInGeneralIns();
-        clickByCss(startQuoteGeneralLiabilityInsurance);
-        sleepFor(3);
-    }
 
         @FindBy(css = lookingForVirginia)
         public WebElement selectViginia;
 
     public void workingOnGEICOAndHiscoxPage() throws InterruptedException {
-        openStartQuoteGeneralLiabilityInsurance();
-        windoSwitchHandler2(1);
-        sleepFor(2);
+        openStartYourQuoteNowInGeneralIns();
+//        windoSwitchHandler2(1);
+//        sleepFor(2);
         // clickByCss(stateSelection);
         clickByCss(stateSelection);
         sleepFor(2);
         selectOptionByVisibleText(selectViginia, "Virginia");
+
+    }
+
+
+    /**
+     * Method to open Auto insurance from the Insurance dropdown menue
+     * @throws InterruptedException
+     */
+    public void workOnVehicleInsuranceAuto() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(vehicleInsuranceLocator);
+        sleepFor(3);
+        clickByCss(autoInVehicleLocator);
+        sleepFor(3);
+//        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+//        if(found == true){
+//            clickByCss(closeQuestionWindows);
+//        }
+    }
+
+    public void reviewQuoteWithZIP() throws InterruptedException {
+        workOnVehicleInsuranceAuto();
+        typeOnElementNEnter(addZIPLocator,"08608");
+    }
+
+    public void clickOnNextLinkAfterZIPPageLoaded() throws InterruptedException {
+        reviewQuoteWithZIP();
+        clickByXpath(clickOnNext);
+        sleepFor(3);
+    }
+
+    public void updateDateOfBirth() throws InterruptedException {
+        clickOnNextLinkAfterZIPPageLoaded();
+        driver.findElement(By.className(dateOfBirthLocator)).sendKeys("01202001", Keys.ENTER);
+        sleepFor(2);
+    }
+
+    public void updateNameInformation() throws InterruptedException {
+        updateDateOfBirth();
+        driver.findElement(By.xpath(enterFirstNameLocator)).sendKeys("Maria");
+        driver.findElement(By.xpath(enterLastNameLocator)).sendKeys("Bolton", Keys.ENTER);
+
+    }
+
+
+    /**
+     * Method to open Motorcyle insurance from the Insurance dropdown menue
+     * @throws InterruptedException
+     */
+    public void workOnVehicleInsuranceMotorcycle() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(vehicleInsuranceLocator);
+        sleepFor(3);
+        clickByCss(motorcycleInVehicleLocator);
+        sleepFor(3);
+
+    }
+
+    public void reviewMotorInsuranceQuoteWithZIP() throws InterruptedException {
+        workOnVehicleInsuranceMotorcycle();
+        typeOnElementNEnter(addZIPLocator,"08608");
+        sleepFor(3);
+    }
+
+    public void selectNoForAutoInsurance() throws InterruptedException {
+        reviewMotorInsuranceQuoteWithZIP();
+        clickRadio(radioNoLocator);
+        sleepFor(2);
+        clickByXpath(clickOnNext);
+    }
+
+    /**
+     * Method to open Property --> then Homeowners insurance
+     * from the Insurance dropdown menue
+     * @throws InterruptedException
+     */
+    public void workOnPropertyInsuranceMenue() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(propertyInsuranceLocator);
+        sleepFor(3);
+        clickByCss(homeownerInsuranceLocator);
+        sleepFor(3);
+    }
+
+        @FindBy(css = scrollToGetAnswersLocator)
+        public WebElement locateGetAnswers;
+
+    public void clickOnHowToProtectMyHome() throws InterruptedException {
+        workOnPropertyInsuranceMenue();
+        scrollTo(locateGetAnswers);
+        clickByCss(waysToProtectMyHomeLocator);
+    }
+
+    public void clickOnHowMuchCoverage() throws InterruptedException {
+        workOnPropertyInsuranceMenue();
+        scrollTo(locateGetAnswers);
+        clickByCss(howMuchCoverageLocator);
+    }
+
+    public void clickOnContinueQuoteButtonOfHomeInsurance() throws InterruptedException {
+        workOnPropertyInsuranceMenue();
+        clickByXpath(continueQuoteButton);
+    }
+    @Ignore // page seems changed
+    public void loginIntoGeico() throws InterruptedException {
+        clickOnContinueQuoteButtonOfHomeInsurance();
+//        clickByCss(rememberMeLocator);
+        boolean selected = driver.findElement(By.cssSelector(rememberMeLocator)).isSelected();
+        if(selected == true){
+            typeOnInputBox(userNameLocator,"Nemegata");
+            typeByCssNEnter(geicoLoginlocator,"1234");
+        }else {
+            clickByCss(rememberMeLocator);
+            typeOnInputBox(userNameLocator,"Nemegata");
+            typeByCssNEnter(geicoLoginlocator,"1234");
+        }
+    }
+    public void enterInsuraceQuoteInfo() throws InterruptedException {
+        clickOnContinueQuoteButtonOfHomeInsurance();
+        typeByCssNEnter(enterFirstNameLocatorInInsuranceQuote,"Maria");
+        typeByCssNEnter(enterLastNameLocatorInInsuranceQuote,"Bolton");
+        typeByCssNEnter(enterDOBLocatorInInsuranceQuote,"01202001");
+        typeByCssNEnter(enterZIPLocatorInInsuranceQuote,"0826");
+        sleepFor(3);
 
     }
 

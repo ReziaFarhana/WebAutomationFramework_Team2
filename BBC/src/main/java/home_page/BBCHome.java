@@ -199,7 +199,7 @@ public class BBCHome extends WebAPI {
      * Method looking for Design page inside The Collection page
      * @throws InterruptedException
      */
-    public void lookingForDisnePage() throws InterruptedException {
+    public void lookingForDesignPage() throws InterruptedException {
         openCollectionTab();
         scroll("1500");
         sleepFor(5);
@@ -208,13 +208,13 @@ public class BBCHome extends WebAPI {
     }
 
     public void clickOnUltimateDiningExperience() throws InterruptedException {
-        lookingForDisnePage();
+        lookingForDesignPage();
         clickByXpath(ultimateDiningExperience);
         sleepFor(3);
     }
 
     public void clickOnOurLoveAffairsHomes() throws InterruptedException {
-        lookingForDisnePage();
+        lookingForDesignPage();
         clickByXpath(ourLoveAffairs);
         sleepFor(3);
     }

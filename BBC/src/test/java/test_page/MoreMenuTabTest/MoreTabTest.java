@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static home_page.MoreMenuTab.MenuBarMoreWEbElement.*;
@@ -35,7 +36,7 @@ public class MoreTabTest extends WebAPI {
         Assert.assertEquals(weatherLogo, true, "Test failed");
     }
 
-    @Test
+    @Test @Ignore
     public void verifyWeatherSearchByCity(){
         act.weatherSearchByCity();
         assertEqualByXpath(washingtonDC,"Washington DC");

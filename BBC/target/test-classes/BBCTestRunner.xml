@@ -28,7 +28,7 @@
                    <exclude name="verifyWeLandedOnBBCHomePage"/>
                    <exclude name="verifyCulturePageIsDisplayed"/>
                    <exclude name="verifyAFilmLinkIsOpened"/>
-                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>
+<!--                   <exclude name="verifyFilmBrokeSeveralTaboosIsOpened"/>-->
                    <exclude name="verifyArtLinkIsPerformed"/>
                    <exclude name="verifyToOpenDetailMasterpiece"/>
                    <exclude name="verifyWhatDoYourDreamMeans"/>
@@ -42,7 +42,7 @@
                    <exclude name="verifyStyleTab"/>
                    <exclude name="verifyIdentitiesTab"/>
                    <exclude name="verifyCollectionTab"/>
-                   <exclude name="verifyCollectionPageWithText"/>
+<!--                   <exclude name="verifyCollectionPageWithText"/>-->
                    <exclude name="verifyWhatYouDidnotKnowAboutColour"/>
                    <exclude name="verifylookingForDisnePageFound"/>
                    <exclude name="verifyUltimateDiningExperience"/>

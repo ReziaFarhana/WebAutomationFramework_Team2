@@ -4,6 +4,8 @@ package test_page;
 import common.WebAPI;
 import home_page.BBCHome;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -18,36 +20,37 @@ public class BBCTest extends WebAPI {
 
     //Initialize BBC action home page to run tests
     @BeforeMethod
-    public void getInIt(){
-        home = PageFactory.initElements(driver,BBCHome.class);
+    public void getInIt() {
+        home = PageFactory.initElements(driver, BBCHome.class);
     }
 
     /**
      * This test is to verify we have navigated to the BBC home page
      */
     @Test
-    public void verifyWeLandedOnBBCHomePage(){
+    public void verifyWeLandedOnBBCHomePage() {
         String expectedTitle = "BBC - Homepage";
         String actualTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle,expectedTitle, "BBC Home page is missing - Test failed");
+        Assert.assertEquals(actualTitle, expectedTitle, "BBC Home page is missing - Test failed");
     }
+
     @Test
     public void verifyCulturePageIsDisplayed() throws InterruptedException {
         home.clickOnCultureOption();
         boolean displayed = driver.findElement(By.cssSelector(cultureText)).isDisplayed();
-        Assert.assertEquals(true,displayed, "Test failed - Culture page is not found");
+        Assert.assertEquals(true, displayed, "Test failed - Culture page is not found");
     }
 
     @Test
     public void verifyAFilmLinkIsOpened() throws InterruptedException {
         home.useFilmLinkInCultureHomePage();
-        assertEqualByXpath(findTextOfFilm,"FILM");
+        assertEqualByXpath(findTextOfFilm, "FILM");
     }
 
     @Test
     public void verifyFilmBrokeSeveralTaboosIsOpened() throws InterruptedException {
         home.openFilmBrokeSeveralTaboos();
-        assertEqualBycssLocator(brokenSeveralTaboosFilmText,"Harold and Maude: The film that broke several taboos");
+        assertEqualBycssLocator(brokenSeveralTaboosFilmText, "Harold and Maude: The film that broke several taboos");
     }
 
     public void verifyPageLoadedMoreElements() throws InterruptedException {
@@ -58,7 +61,7 @@ public class BBCTest extends WebAPI {
     @Test
     public void verifyArtLinkIsPerformed() throws InterruptedException {
         home.clickOnArtLink();
-        assertEqualByXpath(artLinkText,"ART");
+        assertEqualByXpath(artLinkText, "ART");
     }
 
     @Test
@@ -74,8 +77,8 @@ public class BBCTest extends WebAPI {
         home.openWhatDoOurDreamsMeansLink();
         sleepFor(2);
         String expected = "What do our dreams mean? - BBC Culture";
-        String actual  = driver.getTitle();
-        Assert.assertEquals(actual,expected,"Test failed");
+        String actual = driver.getTitle();
+        Assert.assertEquals(actual, expected, "Test failed");
     }
 
     @Test
@@ -83,7 +86,7 @@ public class BBCTest extends WebAPI {
         home.usingBooksLinkInCulturePage();
         String expected = "Books - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
     @Test
@@ -91,7 +94,7 @@ public class BBCTest extends WebAPI {
         home.clickOnLiteratureLink();
         String expected = "Literature - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
     @Test
@@ -99,7 +102,7 @@ public class BBCTest extends WebAPI {
         home.openMoreTabOption();
         String expected = "Music - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
     @Test
@@ -130,9 +133,11 @@ public class BBCTest extends WebAPI {
     @Test
     public void verifyStyleTab() throws InterruptedException {
         home.openStyleTab();
-        String expected = "Style - BBC Culture";
-        String actual = driver.getTitle();
-        Assert.assertEquals(actual, expected, "Test failed ");
+        waitUntilVisible(By.xpath(locatorStyleText));
+        assertEqualByXpath(locatorStyleText, "Style");
+//        String expected = "Style - BBC Culture";
+//        String actual = driver.getTitle();
+//        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
     @Test
@@ -162,12 +167,12 @@ public class BBCTest extends WebAPI {
         home.openWhatYouDidnotKnowAboutColour();
         String expected = "What you didn’t know about colour - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
     @Test
     public void verifylookingForDisnePageFound() throws InterruptedException {
-        home.lookingForDisnePage();
+        home.lookingForDesignPage();
         String expected = "Design - BBC Culture";
         String actual = driver.getTitle();
         Assert.assertEquals(actual, expected, "Test failed ");
@@ -178,20 +183,16 @@ public class BBCTest extends WebAPI {
         home.clickOnUltimateDiningExperience();
         String expected = "What makes the ultimate dining experience? - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
 
- @Test
+    @Test
     public void verifyOurLoveAffairsHomesLink() throws InterruptedException {
         home.clickOnOurLoveAffairsHomes();
         String expected = "Our love affair with our homes - BBC Culture";
         String actual = driver.getTitle();
-        Assert.assertEquals(actual,expected, "Test failed ");
+        Assert.assertEquals(actual, expected, "Test failed ");
     }
-
-
-
-
 
 
 }

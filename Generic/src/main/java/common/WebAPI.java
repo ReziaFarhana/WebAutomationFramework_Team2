@@ -201,7 +201,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-//        driver.quit();
+        driver.quit();
     }
 
 
@@ -429,8 +429,8 @@ public class WebAPI {
     }
         // added on hover and click
     public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
-        Actions selecrMenu = new Actions(driver1);
-        selecrMenu.moveToElement(elementHover).click(elementClick).build().perform();
+        Actions selectMenu = new Actions(driver1);
+        selectMenu.moveToElement(elementHover).click(elementClick).build().perform();
 
     }
 
@@ -535,6 +535,12 @@ public class WebAPI {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
+
+     public static boolean isItemDisplayed( String locator) {
+        boolean found = driver.findElement(By.cssSelector(locator)).isDisplayed();
+        return found;
+    }
+
 
     public void typeOnInputBox(String locator, String value) {
         try {
@@ -847,6 +853,48 @@ public class WebAPI {
 
 
     }
+
+    /**
+     * Radio button selection
+     * @param loc
+     */
+    public void clickRadio(String loc){
+        try {
+            driver.findElement(By.xpath(loc)).click();
+            driver.findElement(By.xpath(loc)).isSelected();
+            sleepFor(3);
+        }catch (Exception e){
+            try {
+                driver.findElement(By.cssSelector(loc)).click();
+                driver.findElement(By.cssSelector(loc)).isSelected();
+                sleepFor(3);
+            }catch (Exception e2){
+                System.out.println("Unable to select");
+            }
+
+        }
+
+    }
+
+//    public boolean isItemFound(String loc){
+//        boolean found= false;
+//        try {
+//            driver.findElement(By.xpath(loc)).isDisplayed();
+//            sleepFor(2);
+//            return true;
+//        }catch (Exception e){
+//            try {
+//                driver.findElement(By.cssSelector(loc)).isDisplayed();
+//            }catch (Exception e1){
+//                try {
+//                    driver.findElement(By.id(loc)).isDisplayed();
+//                }catch (Exception e2){
+//                    System.out.println("locator by xpath,css and id failed to identify");
+//                }
+//            }
+//
+//        }
+//    }
 
 
 
