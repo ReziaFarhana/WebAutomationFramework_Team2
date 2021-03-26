@@ -144,6 +144,10 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         scrollByXPATH(safetyInfoXp);
     }
+    public void selectLifeEventPlanning() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(lifeEventPlanningXp);
+    }
 
 
 }
