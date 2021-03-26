@@ -23,6 +23,8 @@ public class HomePageWebElements {
     public static final String entertainmentID="gnav20-Shop-L2-6";
     public static final String disneyID="gnav20-Shop-L3-33";
 
-    public static final String dealsID="gnav20-Shop-L2-5";
+    public static final String dealsID="gnav20-Shop-L2-7";
+    public static final String phonesID="gnav20-Shop-L3-40";
+    public static final String phonesPageTextCss="a[href='/deals/upgrades/']";
 
 }
