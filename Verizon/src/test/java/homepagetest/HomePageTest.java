@@ -51,10 +51,17 @@ public class HomePageTest extends WebAPI {
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectMovingTest() throws InterruptedException {
         homepage.selectMoving();
         String expectedText ="Moving Internet to a New Address or Switching to Verizon Fios";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectDisneyTest() throws InterruptedException {
+        homepage.selectDisney();
+        String expectedText ="Disney Plus: First Year, On Us. | Verizon Unlimited & 5G Home Internet";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }

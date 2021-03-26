@@ -65,6 +65,10 @@ public class HomePage extends WebAPI {
         sleepFor(3);
         scrollByID(entertainmentID);
     }
+    public void selectDisney() throws InterruptedException {
+        selectEntertainment();
+        clickById(disneyID);
+    }
     public void selectDeals() throws InterruptedException {
         selectShop();
         sleepFor(3);
