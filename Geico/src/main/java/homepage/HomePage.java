@@ -136,6 +136,10 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         scrollByXPATH(localGasPrices);
     }
+    public void selectStateSpecificInfo() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(stateSpecInfoXp);
+    }
 
 
 }

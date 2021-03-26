@@ -143,7 +143,7 @@ public class HomePageTest extends WebAPI {
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void selectLocalGasPricesTest() throws InterruptedException {
         homepage.selectLocalGasPrices();
         String expectedText="Find Cheap Gas Prices & Stations Near You | GEICO";
@@ -151,4 +151,11 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 
+    @Test
+    public void selectStateSpecificInfoTest() throws InterruptedException {
+        homepage.selectStateSpecificInfo();
+        String expectedText="Car Insurance Requirements And Laws By State | GEICO";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
     }
