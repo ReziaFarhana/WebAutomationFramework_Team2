@@ -29,6 +29,10 @@ public class HomePage extends WebAPI {
         selectDevices();
         clickById(smartPhoneID);
     }
+    public void select5GPhone() throws InterruptedException {
+        selectDevices();
+        clickById(gphoneID);
+    }
     public void selectFeatures() throws InterruptedException {
         selectShop();
         sleepFor(3);
