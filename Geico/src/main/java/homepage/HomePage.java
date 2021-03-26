@@ -140,6 +140,10 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         scrollByXPATH(stateSpecInfoXp);
     }
+    public void selectSafetyInfo() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(safetyInfoXp);
+    }
 
 
 }
