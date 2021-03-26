@@ -127,6 +127,9 @@ public class HomePage extends WebAPI {
     public void selectCommercialAutoFaq() throws InterruptedException {
         selectToolsAndResources();
         scrollByXPATH(commAutoFaqXp);
+    }public void selectCarBuyingResources() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(carBuyingResXp);
     }
 
 
