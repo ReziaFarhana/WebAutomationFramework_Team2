@@ -38,6 +38,10 @@ public class HomePage extends WebAPI {
         sleepFor(3);
         scrollByID(featuresID);
     }
+    public void select5GNationWide() throws InterruptedException {
+        selectFeatures();
+        clickById(gNationWideID);
+    }
     public void selectPlans() throws InterruptedException {
         selectShop();
         sleepFor(3);

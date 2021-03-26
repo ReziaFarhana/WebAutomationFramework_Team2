@@ -12,6 +12,8 @@ public class HomePageWebElements {
     public static final String gphoneID="gnav20-Shop-L3-2";
 
     public static final String featuresID="gnav20-Shop-L2-3";
+    public static final String gNationWideID="gnav20-Shop-L3-14";
+
     public static final String plansID="gnav20-Shop-L2-4";
     public static final String homeID="gnav20-Shop-L2-5";
     public static final String entertainmentID="gnav20-Shop-L2-5";
