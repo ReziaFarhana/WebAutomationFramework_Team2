@@ -165,6 +165,10 @@ public class HomePage extends WebAPI {
         hoverMyAccount();
         scrollByXPATH(makePaymentxP);
     }
+    public void selectGoPaperless() throws InterruptedException {
+        hoverMyAccount();
+        scrollByXPATH(goPaperless);
+    }
 
 
 
