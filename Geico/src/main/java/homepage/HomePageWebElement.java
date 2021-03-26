@@ -36,10 +36,13 @@ public class HomePageWebElement {
     public static final String rentersXp="//div[@class='card-selections custom-card-selections multiple-selections']/div[2]/label[@class='card-selections-label']";
     public static final String autoXp="//div[@class='card-selections-card card-selections-selected auto-card " +
             "small-card']";
-    public static final String dateInputId="Id_GiveDateOfBirth_24007";
+    public static final String dateInputXp="//input[@placeholder='MM/DD/YYYY']";
     public static final String firstNameName="Id_GiveDateOfBirth_24007";
     public static final String lastNameName="Id_GiveName_88511";
     public static final String needAddressTextXp="Id_GiveName_88511";
     public static final String nextQuoteCss=".pull-right";
+    public static final String dobNxtXp="//*[@id=\"Id_NEXT_67456Button\"]";
+    public static final String nmNxtXp="//button[@name='Id_NEXT_77354Button']";
+    //*[@id="Id_NEXT_67456Button"]
 
 }

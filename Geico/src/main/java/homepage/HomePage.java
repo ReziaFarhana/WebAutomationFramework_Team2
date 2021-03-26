@@ -110,12 +110,13 @@ public class HomePage extends WebAPI {
         hoverOver(driver,renters);
         clickByXpath(rentersXp);
         clickByCss(nextQuoteCss);
-        WebElement dateBox = driver.findElement(By.id(dateInputId));
+        WebElement dateBox = driver.findElement(By.xpath(dateInputXp));
         dateBox.sendKeys("09221995");
-        clickByCss(nextQuoteCss);
-        driver.findElement(By.name(firstNameName)).sendKeys("Easha", Keys.ENTER);
-        driver.findElement(By.name(lastNameName)).sendKeys("Khanam", Keys.ENTER);
-        clickByCss(nextQuoteCss);
+//        clickByXpath(dobNxtXp);
+//        driver.findElement(By.name(firstNameName)).sendKeys("Easha", Keys.TAB);
+//        sleepFor(3);
+//        driver.findElement(By.name(lastNameName)).sendKeys("Khanam", Keys.ENTER);
+//        clickByXpath(dobNxtXp);
 
 
     }

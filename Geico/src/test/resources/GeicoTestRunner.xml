@@ -15,8 +15,8 @@
     <!--    <parameter name="os_version" value="Sierra"/>-->
 <!--    <parameter name="browserName" value="chrome"/>-->
 <!--    <parameter name="browserVersion" value="89"/>-->
-    <!--        <parameter name="browserName" value="firefox"/>-->
-    <!--        <parameter name="browserVersion" value="76.0"/>-->
+            <parameter name="browserName" value="firefox"/>
+            <parameter name="browserVersion" value="76.0"/>
     <parameter name="url" value="https://www.geico.com/"/>
 <!--    <parameter name="url" value="https://auto-buy.geico.com/nb#/sale/prelanding/gskmsi?id="/>-->
 
