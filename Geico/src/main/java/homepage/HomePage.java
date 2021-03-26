@@ -152,6 +152,10 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         scrollByXPATH(parkingLocatorXp);
     }
+    public void selectInsuranceTerms() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(insuranceTermsXp);
+    }
 
 
 }
