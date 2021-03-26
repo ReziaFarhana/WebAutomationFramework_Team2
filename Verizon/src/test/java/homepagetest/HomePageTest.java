@@ -16,10 +16,17 @@ public class HomePageTest extends WebAPI {
     @BeforeMethod
     public void init(){ homepage= PageFactory.initElements(driver, HomePage.class); }
 
-    @Test
-    public void selectShopAll() throws InterruptedException {
+
+    public void selectShopAllTest() throws InterruptedException {
         homepage.selectShopAll();
         String expectedText ="Shop Deals on Smartphones, Accessories, Devices & Plans | Verizon";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectDevicesTest() throws InterruptedException {
+        homepage.selectSmartPhones();
+        String expectedText ="Smartphones - Buy The Top Cell Phones | Verizon";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
