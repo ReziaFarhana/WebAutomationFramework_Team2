@@ -44,10 +44,17 @@ public class HomePageTest extends WebAPI {
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectPrepaidTest() throws InterruptedException {
         homepage.selectPrepaid();
         String expectedText ="Verizon Prepaid | Prepaid Phones, Plans, & Hotspot Devices";
+        String actualText=driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectMovingTest() throws InterruptedException {
+        homepage.selectMoving();
+        String expectedText ="Moving Internet to a New Address or Switching to Verizon Fios";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
