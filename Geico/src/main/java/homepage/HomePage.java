@@ -13,7 +13,7 @@ public class HomePage extends WebAPI {
 
     @FindBy(how= How.XPATH, using=claimsAndRoadsideXp) public WebElement claimsAndRoadside;
     @FindBy(how= How.XPATH, using=toolsAndResXp) public WebElement toolsAndResources;
-    @FindBy(how= How.CSS, using=zipcodeBoxCss) public WebElement zipcodeBox;
+    @FindBy(how= How.XPATH, using=accountXp) public WebElement myAccount;
     @FindBy(how= How.XPATH, using=rentersXp) public WebElement renters;
 
 
@@ -156,6 +156,16 @@ public class HomePage extends WebAPI {
         selectToolsAndResources();
         scrollByXPATH(insuranceTermsXp);
     }
+    public void hoverMyAccount() throws InterruptedException {
+        informationNav();
+        hoverOver(driver, myAccount);
+        sleepFor(3);
+    }
+    public void selectMakePayment() throws InterruptedException {
+        hoverMyAccount();
+        scrollByXPATH(makePaymentxP);
+    }
+
 
 
 }

@@ -54,7 +54,10 @@ public class HomePageWebElement {
     public static final String lifeEventPlanningXp="//a[@data-link-name='primary-navigation:Life Event Planning']//span[@class='geico-nav-menu-item'][normalize-space()='Life Event Planning']";
     public static final String parkingLocatorXp="//a[@data-link-name='primary-navigation:Parking Locator']//span[@class='geico-nav-menu-item'][normalize-space()='Parking Locator']";
     public static final String insuranceTermsXp="//a[@data-link-name='primary-navigation:Insurance Terms']//span[@class='geico-nav-menu-item'][normalize-space()='Insurance Terms']";
-
+    public static final String accountXp="/html/body/nav/div[3]/ul/li[1]/a/span[2]";
+    public static final String makePaymentxP="//a[@data-link-name='primary-navigation:Make a Payment']//span[@class='geico-nav-menu-item'][normalize-space()='Make a Payment']";
+    public static final String goPaperless="//a[@data-link-name='primary-navigation:Go Paperless']//span[@class='geico-nav-menu-item'][normalize-space()='Go Paperless']";
+    public static final String getIDCardsXp="//a[@data-link-name='primary-navigation:Get ID Cards']//span[@class='geico-nav-menu-item'][normalize-space()='Get ID Cards']";
 
 
 
