@@ -207,4 +207,5 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByXpath(getIDCardsPageTextXp);
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
+    //completed 25 of 25
     }
