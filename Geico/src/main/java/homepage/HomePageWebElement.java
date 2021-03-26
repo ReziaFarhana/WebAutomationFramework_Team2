@@ -58,7 +58,7 @@ public class HomePageWebElement {
     public static final String makePaymentxP="//a[@data-link-name='primary-navigation:Make a Payment']//span[@class='geico-nav-menu-item'][normalize-space()='Make a Payment']";
     public static final String goPaperless="//a[@data-link-name='primary-navigation:Go Paperless']//span[@class='geico-nav-menu-item'][normalize-space()='Go Paperless']";
     public static final String getIDCardsXp="//a[@data-link-name='primary-navigation:Get ID Cards']//span[@class='geico-nav-menu-item'][normalize-space()='Get ID Cards']";
-
+    public static final String getIDCardsPageTextXp="//h3[contains(.,'Get ID Card')]";
 
 
 }
