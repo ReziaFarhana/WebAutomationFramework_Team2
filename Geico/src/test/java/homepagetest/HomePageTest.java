@@ -115,11 +115,18 @@ public class HomePageTest extends WebAPI {
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-    @Test
+
     public void clickRentersTest() throws InterruptedException {
         homepage.clickRenters();
         String expectedText="GEICO About You";
         String actualText = driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text doesnt match");
+    }
+    @Test
+    public void selectInsuranceDiscountTest() throws InterruptedException {
+        homepage.selectInsuranceDiscount();
+        String expectedText="Learn More About Available Insurance Discounts | GEICO";
+        String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 }

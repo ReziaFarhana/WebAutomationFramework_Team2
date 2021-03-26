@@ -43,6 +43,19 @@ public class HomePageWebElement {
     public static final String nextQuoteCss=".pull-right";
     public static final String dobNxtXp="//*[@id=\"Id_NEXT_67456Button\"]";
     public static final String nmNxtXp="//button[@name='Id_NEXT_77354Button']";
-    //*[@id="Id_NEXT_67456Button"]
+    public static final String insuranceDiscount="//a[@data-link-name='primary-navigation:Insurance Discounts']";
+    public static final String commAutoFaqXp="//a[@data-link-name='primary-navigation:Commercial Auto " +
+            "FAQs']//span[@class='geico-nav-menu-item'][normalize-space()='Commercial Auto FAQs']";
+    public static final String carBuyingResXp="//a[@data-link-name='primary-navigation:Car Buying " +
+            "Resources']//span[@class='geico-nav-menu-item'][normalize-space()='Car Buying Resources']";
+    public static final String localGasPrices="//a[@data-link-name='primary-navigation:Local Gas Prices']//span[@class='geico-nav-menu-item'][normalize-space()='Local Gas Prices']";
+    public static final String stateSpecInfoXp="//a[@data-link-name='primary-navigation:State Specific Info']";
+    public static final String safetyInfoXp ="//a[@data-link-name='primary-navigation:Safety Information']//span[@class='geico-nav-menu-item'][normalize-space()='Safety Information']";
+    public static final String lifeEventPlanningXp="//a[@data-link-name='primary-navigation:Life Event Planning']//span[@class='geico-nav-menu-item'][normalize-space()='Life Event Planning']";
+    public static final String parkingLocatorXp="//a[@data-link-name='primary-navigation:Parking Locator']//span[@class='geico-nav-menu-item'][normalize-space()='Parking Locator']";
+    public static final String insuranceTermsXp="//a[@data-link-name='primary-navigation:Insurance Terms']//span[@class='geico-nav-menu-item'][normalize-space()='Insurance Terms']";
+
+
+
 
 }

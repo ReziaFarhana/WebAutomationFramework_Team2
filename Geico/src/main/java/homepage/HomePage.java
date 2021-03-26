@@ -118,9 +118,12 @@ public class HomePage extends WebAPI {
 //        driver.findElement(By.name(lastNameName)).sendKeys("Khanam", Keys.ENTER);
 //        clickByXpath(dobNxtXp);
 
-
     }
 
+    public void selectInsuranceDiscount() throws InterruptedException {
+        selectToolsAndResources();
+        scrollByXPATH(insuranceDiscount);
+    }
 
 
 }
