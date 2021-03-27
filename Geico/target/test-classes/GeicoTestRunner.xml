@@ -43,7 +43,10 @@
                     <exclude name="verifyHowToProtectMyHome"/>
                     <exclude name="verifyOnHowMuchCoverage"/>
                     <exclude name="verifyContinueQuoteButton"/>
-
+                    <exclude name="verifyUmbrellaIsSelected"/>
+                    <exclude name="verifyLifeInsuranceIsSelected"/>
+                    <exclude name="verifyTravelInsuranceIsSelected"/>
+                    <exclude name="verifyPetInsuranceIsSelected"/>
 
                 </methods>
 

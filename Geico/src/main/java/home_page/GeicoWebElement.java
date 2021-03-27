@@ -76,6 +76,18 @@ public class GeicoWebElement {
     public static final String locatorContinueQuoteText = "div[class='page-header-left'] h2";
     public static final String geicoLoginlocator = "//p[contains(text(),'If you have a GEICO login for your Auto or Motorcy')]";
     public static final String locatorToMaanageYourPolocy = "//h1[normalize-space()='Manage Your Policies']";
+
+
+    public static final String additionalInsuranceOption = "//body[1]/nav[1]/div[2]/ul[1]/li[4]/a[1]/span[2]";
+    public static final String clickOnUmbrella = "a[data-link-name='primary-navigation:Umbrella'] span[class='geico-nav-menu-item']";
+    public static final String clickOnLifeInsurance = "//a[@data-link-name='primary-navigation:Life']";
+    public static final String clickOnTravelInsurance = "a[data-link-name='primary-navigation:Travel']";
+    public static final String lifeInsuranceQuote = "h1[class='h1']";
+    public static final String travelInsuranceVerifyText = "div[id='title-bar'] p[class='h1']";
+    public static final String petInsurance = "a[data-link-name='primary-navigation:Pet']";
+    public static final String verifyPetInsurance = "div[id='title-bar'] p[class='h1']";
+    public static final String jewelryInsurance = "a[data-link-name='primary-navigation:Jewelry']";
+//    public static final String locator = "";  div[id='title-bar'] p[class='h1']
 //    public static final String locator = "";
 //    public static final String locator = "";
 

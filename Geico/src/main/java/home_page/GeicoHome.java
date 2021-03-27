@@ -238,6 +238,7 @@ public class GeicoHome extends WebAPI {
             typeByCssNEnter(geicoLoginlocator,"1234");
         }
     }
+
     public void enterInsuraceQuoteInfo() throws InterruptedException {
         clickOnContinueQuoteButtonOfHomeInsurance();
         typeByCssNEnter(enterFirstNameLocatorInInsuranceQuote,"Maria");
@@ -248,5 +249,69 @@ public class GeicoHome extends WebAPI {
 
     }
 
+    public void workingOnAdditionalInsuranceOption() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(additionalInsuranceOption);
+        sleepFor(3);
+        clickByCss(clickOnUmbrella);
+        sleepFor(3);
+        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+        if(found == true){
+            clickByCss(closeQuestionWindows);
+        }
+    }
+
+    public void workingOnAdditionalInsuranceLife() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(additionalInsuranceOption);
+        sleepFor(3);
+        clickByXpath(clickOnLifeInsurance);
+        sleepFor(3);
+        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+        if(found == true){
+            clickByCss(closeQuestionWindows);
+        }
+    }
+
+    public void workingOnTravelInsuranceOption() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(additionalInsuranceOption);
+        sleepFor(3);
+        clickByCss(clickOnTravelInsurance);
+        sleepFor(3);
+        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+        if(found == true){
+            clickByCss(closeQuestionWindows);
+        }
+    }
+
+    public void selectingPetInsurance() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(additionalInsuranceOption);
+        sleepFor(3);
+        clickByCss(petInsurance);
+        sleepFor(3);
+        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+        if(found == true){
+            clickByCss(closeQuestionWindows);
+        }
+    }
+
+    public void selectJewleryInsurance() throws InterruptedException {
+        clickByXpath(insuranceLink);
+        sleepFor(3);
+        mouseHoverByXpath(additionalInsuranceOption);
+        sleepFor(3);
+        clickByCss(jewelryInsurance);
+        sleepFor(3);
+        boolean found = driver.findElement(By.cssSelector(questionWindows)).isDisplayed();
+        if(found == true){
+            clickByCss(closeQuestionWindows);
+        }
+    }
 
 }

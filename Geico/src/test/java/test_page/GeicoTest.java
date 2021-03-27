@@ -164,19 +164,54 @@ public class GeicoTest extends WebAPI {
     @Test
     public void verifyContinueQuoteButton() throws InterruptedException {
         action.clickOnContinueQuoteButtonOfHomeInsurance();
-        assertEqualBycssLocator(locatorContinueQuoteText,"Insurance Quote");
+        assertEqualBycssLocator(locatorContinueQuoteText, "Insurance Quote");
+    }
+
+    // @Test  page is changed no more available
+    public void verifynsuraceQuoteInfo() throws InterruptedException {
+        action.enterInsuraceQuoteInfo();
+        assertEqualBycssLocator(locatorContinueQuoteText, "Manage Your Policies");
     }
 
     @Test
-    public void verifynsuraceQuoteInfo() throws InterruptedException {
-        action.enterInsuraceQuoteInfo() ;
-        assertEqualByXpath(locatorContinueQuoteText,"Manage Your Policies");
+    public void verifyUmbrellaIsSelected() throws InterruptedException {
+        action.workingOnAdditionalInsuranceOption();
+        String expected = "Umbrella Insurance - Get an Umbrella Insurance Quote | GEICO";
+        String actuel = driver.getTitle();
+        Assert.assertEquals(actuel, expected, "Test failed");
     }
 
+    @Test
+    public void verifyLifeInsuranceIsSelected() throws InterruptedException {
+        action.workingOnAdditionalInsuranceLife();
+        String expected = "Life Insurance Quotes";
+        String actual = driver.findElement(By.cssSelector(lifeInsuranceQuote)).getText();
+        Assert.assertEquals(actual, expected, "Test failed");
+    }
 
+    @Test
+    public void verifyTravelInsuranceIsSelected() throws InterruptedException {
+        action.workingOnTravelInsuranceOption();
+        String expected = "Travel Insurance";
+        String actual = driver.findElement(By.cssSelector(travelInsuranceVerifyText)).getText();
+        Assert.assertEquals(actual, expected, "Test failed");
+    }
 
+    @Test
+    public void verifyPetInsuranceIsSelected() throws InterruptedException {
+        action.selectingPetInsurance();
+        String expected = "Pet Insurance";
+        String actual = driver.findElement(By.cssSelector(verifyPetInsurance)).getText();
+        Assert.assertEquals(actual, expected,"Test failed");
+    }
 
-
+     @Test
+    public void verifyJewelryInsuranceIsSelected() throws InterruptedException {
+        action.selectJewleryInsurance();
+        String expected = "Jewelry Insurance";
+        String actual = driver.findElement(By.cssSelector(verifyPetInsurance)).getText();
+        Assert.assertEquals(actual, expected,"Test failed");
+    }
 
 
 
