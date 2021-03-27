@@ -47,7 +47,7 @@ public class HomePage extends WebAPI {
 
     public void selectAccessories() throws InterruptedException {
         selectDevices();
-        hoverOver(driver,accessories);
+        scrollByID(accessoriesID);
         clickById(accessoriesOverviewID);
     }
     public void selectFeatures() throws InterruptedException {
