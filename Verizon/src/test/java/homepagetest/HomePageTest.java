@@ -93,10 +93,17 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectShopAllPlansTest() throws InterruptedException {
         homepage.selectShopAllPlans();
         String expectedText ="Unlimited Data, Talk & Text Prepaid and Family Wireless Plans";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectUnlimitedTest() throws InterruptedException {
+        homepage.selectUnlimited();
+        String expectedText ="Verizon Unlimited Data Plans for Talk & Text, Now with 5G";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
