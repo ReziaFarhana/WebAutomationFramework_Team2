@@ -23,26 +23,26 @@
             <class name="test_page.GeicoTest">
                 <methods>
 
-                    <exclude name="VerifyGeicoHomeIsLoaded"/>
-                    <exclude name="verifyBusinessOwner"/>
-                    <exclude name="verifyGeneralLiabilityIns"/>
-                    <exclude name="verifyProfessionalLiabilityLink"/>
-                    <exclude name="verifyWorkersConpensatinInsLink"/>
-                    <exclude name="verifyCyberLiabilityInsLink"/>
-                    <exclude name="verifyGetQuoteGeneral"/>
-                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>
-                    <exclude name="verifyAutoInsuranceInVehicle"/>
-                    <exclude name="verifyQuoteWithZIP"/>
-                    <exclude name="verifyOnNextLink"/>
-                    <exclude name="verifyUpdateDateOfBirth"/>
-                    <exclude name="verifyUpdateNameInformation"/>
-                    <exclude name="verifyMotorcycleInsuranceSelected"/>
-                    <exclude name="verifyMotorInsurance"/>
-                    <exclude name="verifyNoForAutoInsurance"/>
-                    <exclude name="verifyPropertyInsurance"/>
-                    <exclude name="verifyHowToProtectMyHome"/>
-                    <exclude name="verifyOnHowMuchCoverage"/>
-                    <exclude name="verifyContinueQuoteButton"/>
+<!--                    <exclude name="VerifyGeicoHomeIsLoaded"/>-->
+<!--                    <exclude name="verifyBusinessOwner"/>-->
+<!--                    <exclude name="verifyGeneralLiabilityIns"/>-->
+<!--                    <exclude name="verifyProfessionalLiabilityLink"/>-->
+<!--                    <exclude name="verifyWorkersConpensatinInsLink"/>-->
+<!--                    <exclude name="verifyCyberLiabilityInsLink"/>-->
+<!--                    <exclude name="verifyGetQuoteGeneral"/>-->
+<!--                    <exclude name="verifyStartYourQuoteNowInGeneralIns"/>-->
+<!--                    <exclude name="verifyAutoInsuranceInVehicle"/>-->
+<!--                    <exclude name="verifyQuoteWithZIP"/>-->
+<!--                    <exclude name="verifyOnNextLink"/>-->
+<!--                    <exclude name="verifyUpdateDateOfBirth"/>-->
+<!--                    <exclude name="verifyUpdateNameInformation"/>-->
+<!--                    <exclude name="verifyMotorcycleInsuranceSelected"/>-->
+<!--                    <exclude name="verifyMotorInsurance"/>-->
+<!--                    <exclude name="verifyNoForAutoInsurance"/>-->
+<!--                    <exclude name="verifyPropertyInsurance"/>-->
+<!--                    <exclude name="verifyHowToProtectMyHome"/>-->
+<!--                    <exclude name="verifyOnHowMuchCoverage"/>-->
+<!--                    <exclude name="verifyContinueQuoteButton"/>-->
 
 
                 </methods>

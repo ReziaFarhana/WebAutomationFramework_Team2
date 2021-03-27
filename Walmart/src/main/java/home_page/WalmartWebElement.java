@@ -1,5 +1,6 @@
 package home_page;
 
+
 public class WalmartWebElement {
 
 
@@ -26,10 +27,11 @@ public class WalmartWebElement {
     public static final String priceInGifrCard="input[id*='$0---$500-0-price']";
     public static final String sortByTopBrands="//button[normalize-space()='Top Brands']";
     public static final String sellecrSamsclaubAsBrand="//*[@id=\"search-util-bar-brand-1\"]";
-//    public static final String x="";
+    public static final String toVerifySamsClub="//button[.=\"Sam's Club\"]";
+    public static final String clickToUnfreez="//*[@id=\"global-search-input\"]";
 
         // looking for texts or title for verification or validation of the page
-    public static final String walmartLogo = "aa_a";//class  walmart main page logo
+
     public static final String walmartPlusText="div[class='Hero__HeroWrapper-ouvz7s-0 tBboS'] span:nth-child(1)";
     public static final String allBenefitsText="//h1[normalize-space()='Explore all benefits']";
     public static final String freeShippingText="//h1[normalize-space()='Free shipping, no order minimum']";
@@ -39,7 +41,31 @@ public class WalmartWebElement {
     public static final String shopWalmartGiftCare="div[class='EditorialPanels-main-title text-center l-margin-top']";
     public static final String e_GiftCardText="h1[class='breadcrumb-leaf heading-a']";
     public static final String itemSelectedDisplayed="button[class*='item' ]";
- //   public static final String filterWalmartSelected="button[class*='item']";
-    public static final String filterGraduationSelected="//button[normalize-space()='Graduation']";
-    public static final String filter0_500Selected="//button[normalize-space()='$0 - $500']";
+
+
+    public static final String walmartPay = "//a[normalize-space()='Walmart Pay']";
+    public static final String verifyWalmartPay = "div[class='Title']";
+    public static final String walmartWeeklyAd = "//a[contains(text(),'Weekly Ad')]";
+    public static final String verifyWalmartWeeklyAd = "//span[@class='breadcrumb-tab']";
+    public static final String findAnotherWalmartStore = "//button[.='Find another store']";
+    public static final String otherServicesOfWalmartFootPage = "//a[.='Other Services']";
+    public static final String walmartHomeServices = "//li[3]//div[1]//button[1]";
+    public static final String linkForHomeServices = "//a[@data-uid='OOzfrg_2']";
+    public static final String filterByCustomerRating = "4---5-Stars-0-customer_rating";
+    public static final String verify4AndUpSelected = "//button[normalize-space()='4 stars & up']";
+    public static final String priceSelection = "//span[text()='Price']";
+    public static final String enterMininumPrice = "input[placeholder='Min']";
+    public static final String minimumPriceEntered = "//button[normalize-space()='$120+']";
+    public static final String maximumPriceEntered = "//input[@placeholder='Max']";
+    public static final String verifyMaxAndMinPrice = "//button[normalize-space()='$120 - $320']";
+    public static final String usingSearchOption = "//input[@placeholder='Search my store']";
+    public static final String footerGroceryAndPickUP = "//a[@data-section-title='Footer - Grocery Pickup & Delivery']";
+    public static final String verifyProductSelection = "//span[.='Tomato']";
+    public static final String addItemToCart = "//button[@aria-label='Add to cart Beefsteak Slicing Tomatoes, each']";
+    public static final String verifySelectedItemAddedToCart = "div[data-automation-id='numberOfItems']";
+    public static final String increasingItemCountInCart = "button[value='1']";
+    public static final String increasingItemByOneCountInCart = "button[aria-label='add 1 item']";
+//    public static final String walmartPay = "//li[.='Walmart Pay']";
+
+
 }

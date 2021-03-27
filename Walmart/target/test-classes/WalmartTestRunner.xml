@@ -39,6 +39,17 @@
                            <exclude name="verifyOccasionFilterIsApplied"/>
                            <exclude name="verifyGiftBrandFilterIsApplied"/>
                            <exclude name="verifyGiftPriceFilterIsApplied"/>
+                           <exclude name="verifySamesClubIsSelected"/>
+                           <exclude name="verifyWalmartPay"/>
+                           <exclude name="verifyWalmartWeeklyAd"/>
+                           <exclude name="verifyFindAnotherStore"/>
+                           <exclude name="verifyWalmartOtherServices"/>
+                           <exclude name="verifyHomeServices"/>
+                           <exclude name="moreThan4Stars"/>
+                           <exclude name="verifyfilterByPrice"/>
+                           <exclude name="verifyMaxPriceFilter"/>
+                           <exclude name="verifyUseTheSearchBox"/>
+                           <exclude name="verifyItemIsAddedToCart"/>
 
 <!--                                   <include name="testLogin"></include>-->
                 </methods>
@@ -50,23 +61,6 @@
         </classes>
 
     </test>
-
-<!--    <test_page name="Walmart Automation Test Script using Firefox">-->
-    <!--                <parameter name="browserName" value="firefox"/>-->
-    <!--                <parameter name="browserVersion" value="86.0"/>-->
-<!--        <classes>-->
-<!--            <class name="homepagetest.HomePageTest">-->
-    <!--                <methods>-->
-                        <!--  Test case include or exclude-->
-                        <!--  <exclude name="testSearchbox"></exclude>-->
-                        <!--  <include name="testLogin"></include>-->
-    <!--                </methods>-->
-
-<!--            </class>-->
-
-
-<!--        </classes>-->
-<!--    </test_page>-->
 
 </suite>
 

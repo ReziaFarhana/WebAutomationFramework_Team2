@@ -27,6 +27,12 @@ public class WalmartHome extends WebAPI {
     @FindBy(css = billPayInmenuButtonInMoneyCenter)
     WebElement billPayLinkForClick;
 
+    @FindBy(xpath = priceSelection)
+    WebElement findPriceSelection;
+
+    @FindBy(xpath = "//span[contains(text(),'Customer Rating')]")
+    public WebElement rating;
+
 
     /**
      * This method will look for Walmart+ form Walmart Services
@@ -119,7 +125,7 @@ public class WalmartHome extends WebAPI {
      * This is a method to open the Walmart gift Cards menu bare list
      * once we landed on new page of the Gift cards link
      */
-    public void useWalmartGiftCardsLink() {
+    public void useWalmartGiftCardsLink() throws InterruptedException {
         useGiftCardLink();
         try {
             sleepFor(2);
@@ -127,13 +133,14 @@ public class WalmartHome extends WebAPI {
             e.printStackTrace();
         }
         clickByXpath(walmartEGiftCard);
+        sleepFor(3);
     }
 
     /**
      * This method will apply the Gift eligible check box filter
      * inside the Walmart Gift Cards - Walmart.com page
      */
-    public void filterByGiftEligible() {
+    public void filterByGiftEligible() throws InterruptedException {
         useWalmartGiftCardsLink();
         clickByCss(giftCheckBox);
     }
@@ -142,7 +149,7 @@ public class WalmartHome extends WebAPI {
      * This method will apply the graduation check box filter under Occasions option
      * inside the Walmart Gift Cards - Walmart.com page
      */
-    public void filterByOccasion() {
+    public void filterByOccasion() throws InterruptedException {
         useWalmartGiftCardsLink();
         scroll("500");
         clickByCss(occasionGraduation);
@@ -152,7 +159,7 @@ public class WalmartHome extends WebAPI {
      * This method will apply the Brand check box filter
      * inside the Walmart Gift Cards - Walmart.com page
      */
-    public void filterByGiftBrandName() {
+    public void filterByGiftBrandName() throws InterruptedException {
         useWalmartGiftCardsLink();
         scroll("500");
         clickByCss(giftCardBrand);
@@ -162,7 +169,7 @@ public class WalmartHome extends WebAPI {
      * This method will apply the price options check box filter
      * inside the Walmart Gift Cards - Walmart.com page
      */
-    public void filterByGiftPrice() {
+    public void filterByGiftPrice() throws InterruptedException {
         useWalmartGiftCardsLink();
         scroll("500");
         clickByCss(priceInGifrCard);
@@ -175,13 +182,81 @@ public class WalmartHome extends WebAPI {
     public void useSortByTopBrand() throws InterruptedException {
         useWalmartGiftCardsLink();
         clickByXpath(sortByTopBrands);
-        sleepFor(3);
+        sleepFor(4);
         clickByXpath(sellecrSamsclaubAsBrand);
-        sleepFor(3);
+        sleepFor(4);
+        clickByXpath(clickToUnfreez);
+    }
+
+    public void walmartPay() throws InterruptedException {
         scrollToBottomPage();
-        scroll("0");
+        sleepFor(3);
+        clickByXpath(walmartPay);
+    }
 
+     public void walmartWeeklyAdy() throws InterruptedException {
+        scrollToBottomPage();
+        sleepFor(3);
+        clickByXpath(walmartWeeklyAd);
+        sleepFor(3);
+    }
 
+    public void findAnotherWalmartStore() throws InterruptedException {
+        walmartWeeklyAdy();
+        clickByXpath(findAnotherWalmartStore);
+    }
+
+    public void WalmartOtherServices() throws InterruptedException {
+        scrollDown();
+        sleepFor(2);
+        clickByXpath(otherServicesOfWalmartFootPage);
+        sleepFor(2);
+    }
+
+    public void homeServices() throws InterruptedException {
+        WalmartOtherServices();
+        clickByXpath(walmartHomeServices);
+        clickByXpath(linkForHomeServices);
+        sleepFor(2);
+    }
+
+    public void filterByCustomerRating() throws InterruptedException {
+        homeServices();
+        scrollTo(rating);
+        clickById(filterByCustomerRating);
+    }
+
+    public void filterByPrice() throws InterruptedException {
+        filterByCustomerRating();
+        scrollTo(findPriceSelection);
+        typeOnElementNEnter(enterMininumPrice,"120");
+    }
+
+    public void filterByMaxPrice() throws InterruptedException {
+        filterByPrice();
+        scrollTo(findPriceSelection);
+        typeOnElementNEnter(maximumPriceEntered, "320");
+    }
+
+    public void useTheSearchBox() throws InterruptedException {
+        scrollToBottomPage();
+        sleepFor(3);
+        clickByXpath(footerGroceryAndPickUP);
+        typeOnElementNEnter(usingSearchOption,"Tomato");
+        sleepFor(2);
+    }
+
+    public void addItemToCart() throws InterruptedException {
+        useTheSearchBox();
+        clickByXpath(addItemToCart);
+        sleepFor(2);
+    }
+
+    public void increaseItemCountInCart() throws InterruptedException {
+        addItemToCart();
+        clickByCss(increasingItemCountInCart);
+        clickByCss(increasingItemByOneCountInCart);
+        sleepFor(2);
     }
 
 

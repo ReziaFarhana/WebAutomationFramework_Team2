@@ -846,7 +846,8 @@ public class WebAPI {
         hold.addAll(hold);
         try {
             driver.switchTo().window((hold.get(index - 1))).close();
-            driver.switchTo().window((hold.get(index)));
+//            driver.switchTo().window((hold.get(index)));
+            driver.switchTo().window(getCurrentUrl());
         }catch (IndexOutOfBoundsException e){
             System.out.println("Expected index out of bound ");
         }
