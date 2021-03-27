@@ -22,7 +22,7 @@
     <test name="Walmart Automation Test Script using chrome">
         <classes>
                 <class name="homepagetest.HomePageTest"></class>
-<!--            <class name = "helpcenterpagetest.HelpCenterPageTest"></class>-->
+            <class name = "helpcenterpagetest.HelpCenterPageTest"></class>
         </classes>
     </test>       
 

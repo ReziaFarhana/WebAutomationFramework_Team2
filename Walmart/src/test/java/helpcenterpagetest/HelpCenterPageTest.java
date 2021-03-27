@@ -21,7 +21,7 @@ public class HelpCenterPageTest extends WebAPI {
         helpcenter = PageFactory.initElements(driver, HelpCenter.class);
     }
 
-
+    @Test
     public void searchBoxHelpTest(){
         helpcenter.searchHelpBox();
         String expectedText = "Refunds";
@@ -30,7 +30,7 @@ public class HelpCenterPageTest extends WebAPI {
 
     }
 
-
+    @Test
     public void frequentlyAskedQuestionsTest(){
     helpcenter.frequentlyAskedQuestions();
     String expectedText = frequentlyAskedQuestionsTitle;
@@ -38,7 +38,7 @@ public class HelpCenterPageTest extends WebAPI {
     Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 
-
+    @Test
     public void wheresMyOrderTest(){
         helpcenter.wheresMyOrder();
         String expectedText ="Where is my order?";
@@ -46,7 +46,7 @@ public class HelpCenterPageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 
-
+    @Test
     public void trackOrderButtonTest(){
         helpcenter.trackOrderButton();
         String expectedText = "Track your order";

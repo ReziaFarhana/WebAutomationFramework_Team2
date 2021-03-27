@@ -20,7 +20,7 @@ public class HomePageTest extends WebAPI {
         homepage = PageFactory.initElements(driver,HomePage.class);
     }
 
-
+    @Test
     public void helpCenterOptionTest(){
         homepage.helpCenterOption();
         String expectedText = "Help - Walmart.com";
@@ -28,6 +28,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Test failed");
     }
 
+    @Test
     public void productRecallsTest() throws InterruptedException {
         homepage.productRecallsOption();
         String expectedText = "Walmart Careers | Submit a Walmart Job Application Online";
@@ -35,6 +36,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text did not match");
     }
 
+    @Test
     public void accessibilityOptionTest(){
         homepage.accessibilityOption();
         String expectedText = "Responsible Disclosure and Accessibility Policies - Walmart.com";
@@ -42,6 +44,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
 
+    @Test
     public void trampolineOptionTest(){
         homepage.trampolineOption();
         String expectedText = "Trampolines - Walmart.com";
@@ -49,6 +52,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text did not match");
     }
 
+    @Test
     public void trampolinePageGiftElibileCheckBoxTest(){
         homepage.trampolinePageGiftElibileCheckBox();
         String expectedText ="Gift eligible";
@@ -56,6 +60,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
 
+    @Test
     public void contactUSOptionTest(){
         homepage.contactUsOption();
         String expectedText ="https://www.walmart.com/help";
@@ -63,6 +68,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text not passed");
     }
 
+    @Test
     public void walmartEBooksLogoTest(){
         homepage.walmartEBooksLogo();
         String expectedText ="Kobo has millions of eBooks. Sign up today and get a $5 acco";
@@ -70,6 +76,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text not match");
     }
 
+    @Test
     public void allswellLogoTest(){
         homepage.allsWellLogo();
         String expectedText="https://allswellhome.com/";
@@ -77,63 +84,63 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text not match");
 
     }
-
+    @Test
     public void feedBackButtonTest() throws InterruptedException {
         homepage.feedBackButton();
         String expectedText="Walmart.com | Save Money. Live Better.";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-
+    @Test
     public void ps4OptionTest(){
         homepage.ps4Option();
         String expectedText="Sign in to your Walmart account";
         String actualText= getTextByXpath(loginInPageTextXp);
         Assert.assertEquals(actualText, expectedText,"Text doesnt match");
     }
-
+    @Test
     public void hamburgerMenuTest() throws InterruptedException {
         homepage.hamburgermenu();
         String expectedText ="Build beautiful baskets";
         String actualText=getTextByXpath(easterpageTextXp);
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void navigateToDecorPageTest() throws InterruptedException {
         homepage.navigateToDecorPage();
         String expectedText="Easter Indoor Decor - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void storePickupOptionTest() throws InterruptedException {
         homepage.storePickupOption();
         String expectedText ="Download the app";
         String actualText=getTextByXpath(storePickupPageTitleXp);
         Assert.assertEquals(actualText, expectedText, "Text does not match");
     }
-
+    @Test
     public void skateboardOptionTest(){
         homepage.skateboardOption();
         String expectedText="Skateboards - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void searchBoxTest(){
         homepage.searchBox();
         String expectedText="mac laptop - Walmart.com";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
-
+    @Test
     public void newsletterSignUp(){
         homepage.newsletterSignUp();
         String expectedText="Thank you for signing up!";
         String actualText=getTextById(signupThankYouPgTitleId);
         Assert.assertEquals(actualText,expectedText,"Test failed");
     }
-
+    @Test
     public void myItemsBtnTest(){
         homepage.myItemsBtn();
         String expectedText = "Login";
@@ -141,7 +148,7 @@ public class HomePageTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Test failed");
 
     }
-
+    @Test
     public void babyOptionTest() throws InterruptedException {
         homepage.babyOption();
         String expectedText = "Strollers - Walmart.com";
@@ -156,7 +163,7 @@ public class HomePageTest extends WebAPI {
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void toyGamesVideoGamesTest() throws InterruptedException {
         homepage.toyGamesVideoGames();
         String expectedText="Outdoor Play - Walmart.com - Walmart.com";
