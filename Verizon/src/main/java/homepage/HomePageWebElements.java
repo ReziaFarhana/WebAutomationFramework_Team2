@@ -26,5 +26,12 @@ public class HomePageWebElements {
     public static final String dealsID="gnav20-Shop-L2-7";
     public static final String phonesID="gnav20-Shop-L3-40";
     public static final String phonesPageTextCss="a[href='/deals/upgrades/']";
+    public static final String prepaidPhoneID="gnav20-Shop-L3-3";
+
+    public static final String otherPhonesID="gnav20-Shop-L3-4";
+    public static final String basicPhonesID="gnav20-Shop-L4-2";
+
+    public static final String accessoriesID="gnav20-Shop-L3-5";
+    public static final String accessoriesOverviewID="gnav20-Shop-L4-5";
 
 }

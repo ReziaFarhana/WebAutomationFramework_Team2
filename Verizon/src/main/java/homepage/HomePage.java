@@ -9,7 +9,8 @@ import static homepage.HomePageWebElements.*;
 
 public class HomePage extends WebAPI {
 
-//    @FindBy(how= How.XPATH, using=rentersXp) public WebElement renters;
+    @FindBy(how= How.ID, using=otherPhonesID) public WebElement otherPhones;
+    @FindBy(how= How.ID, using=accessoriesID) public WebElement accessories;
 
     public void selectShop(){
         clickByXpath(shopXp);
@@ -29,9 +30,25 @@ public class HomePage extends WebAPI {
         selectDevices();
         clickById(smartPhoneID);
     }
+
     public void select5GPhone() throws InterruptedException {
         selectDevices();
         clickById(gphoneID);
+    }
+    public void selectPrepaidPhone() throws InterruptedException {
+        selectDevices();
+        scrollByID(prepaidPhoneID);
+    }
+    public void selectBasicPhones() throws InterruptedException {
+        selectDevices();
+        hoverOver(driver,otherPhones);
+        clickById(basicPhonesID);
+    }
+
+    public void selectAccessories() throws InterruptedException {
+        selectDevices();
+        hoverOver(driver,accessories);
+        clickById(accessoriesOverviewID);
     }
     public void selectFeatures() throws InterruptedException {
         selectShop();
