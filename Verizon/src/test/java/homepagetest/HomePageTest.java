@@ -72,10 +72,17 @@ public class HomePageTest extends WebAPI {
         String actualText=getTextByCss(phonesPageTextCss);
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectPrepaidPhoneTest() throws InterruptedException {
         homepage.selectPrepaidPhone();
         String expectedText ="Prepaid Smartphones | Verizon";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectBasicPhonesTest() throws InterruptedException {
+        homepage.selectBasicPhones();
+        String expectedText ="Basic Phones | Verizon";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }

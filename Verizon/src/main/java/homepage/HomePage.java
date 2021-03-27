@@ -41,7 +41,7 @@ public class HomePage extends WebAPI {
     }
     public void selectBasicPhones() throws InterruptedException {
         selectDevices();
-        hoverOver(driver,otherPhones);
+        scrollByID(otherPhonesID);
         clickById(basicPhonesID);
     }
 
