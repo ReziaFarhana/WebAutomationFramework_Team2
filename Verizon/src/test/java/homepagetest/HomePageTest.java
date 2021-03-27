@@ -156,10 +156,17 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,  expectedText, "Text not same");
     }
-    @Test
+
     public void selectStudentPlansTest() throws InterruptedException {
         homepage.selectStudentPlans();
         String expectedText ="Verizon Plan Discounts for Students";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText,  expectedText, "Text not same");
+    }
+    @Test
+    public void selectInternationalServicesTest() throws InterruptedException {
+        homepage.selectInternationalServices();
+        String expectedText ="International";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,  expectedText, "Text not same");
     }

@@ -104,6 +104,7 @@ public class HomePage extends WebAPI {
     }
     public void selectInternationalServices() throws InterruptedException {
         selectOtherPlans();
+        sleepFor(3);
         scrollByID(internationalServicesID);
     }
     public void selectConnectedCar() throws InterruptedException {
