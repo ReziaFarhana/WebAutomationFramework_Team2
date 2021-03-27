@@ -47,9 +47,9 @@
                     <!-- Test Fail will be Ignored -->
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>
+                    </suiteXmlFiles>
 
 
                 </configuration>

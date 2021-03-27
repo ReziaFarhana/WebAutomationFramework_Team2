@@ -150,7 +150,7 @@
                         <suiteXmlFile>target/test-classes/WalmartTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/BBCTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/GeicoTestRunner.xml</suiteXmlFile>
-
+                        <suiteXmlFile>target/test-classes/VerizonTestRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
 

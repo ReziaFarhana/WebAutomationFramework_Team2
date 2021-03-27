@@ -24,7 +24,7 @@
         <classes>
 
             <class name="test_page.BBCTest">
-<!--                <methods>-->
+                <methods>
 <!--                   <exclude name="verifyWeLandedOnBBCHomePage"/>-->
 <!--                   <exclude name="verifyCulturePageIsDisplayed"/>-->
 <!--                   <exclude name="verifyAFilmLinkIsOpened"/>-->
@@ -49,7 +49,7 @@
 <!--                   <exclude name="clickOnOurLoveAffairsHomes"/>-->
 <!--                   <exclude name="verifyOurLoveAffairsHomesLink"/>-->
 
-<!--                </methods>-->
+                </methods>
             </class>
 
             <class name="test_page.MoreMenuTabTest.MoreTabTest">
@@ -59,14 +59,12 @@
                 </methods>
             </class>
 
-
         </classes>
 
     </test>
 
-
     <test name="new page ">
-<!--        if needed we can add tests -->
+<!--        if needed we can add tests to run in parallel-->
     </test>
 
 </suite>
