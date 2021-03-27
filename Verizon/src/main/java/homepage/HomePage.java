@@ -59,6 +59,7 @@ public class HomePage extends WebAPI {
         selectFeatures();
         clickById(gNationWideID);
     }
+
     public void selectPlans() throws InterruptedException {
         selectShop();
         sleepFor(3);
@@ -68,6 +69,43 @@ public class HomePage extends WebAPI {
         selectPlans();
         scrollByID(prepaidID);
     }
+    public void selectShopAllPlans() throws InterruptedException {
+        selectPlans();
+        scrollByID(shopAllPID);
+    }
+    public void selectUnlimited() throws InterruptedException {
+        selectPlans();
+        scrollByID(unlimitedID);
+    }
+    public void selectSharedData() throws InterruptedException {
+        selectPlans();
+        scrollByID(sharedDataID);
+    }
+    public void selectConnectedDevices() throws InterruptedException {
+        selectPlans();
+        scrollByID(connectedDevicesID);
+    }
+    public void selectThoseWhoServe() throws InterruptedException {
+        selectPlans();
+        scrollByID(thosewhoServeID);
+    }
+    public void selectThoseWhoServeOverview() throws InterruptedException {
+        selectThoseWhoServe();
+        scrollByID(thosewhoServeOverviewID);
+    }
+    public void selectTeacherPlan() throws InterruptedException {
+        selectThoseWhoServe();
+        scrollByID(teacherPlanID);
+    }
+    public void selectNursePlan() throws InterruptedException {
+        selectThoseWhoServe();
+        scrollByID(nursesPlanID);
+    }
+    public void selectFirstResponder() throws InterruptedException {
+        selectThoseWhoServe();
+        scrollByID(firstRespondersID);
+    }
+
     public void selectHome() throws InterruptedException {
         selectShop();
         sleepFor(3);

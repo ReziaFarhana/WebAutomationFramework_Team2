@@ -34,4 +34,22 @@ public class HomePageWebElements {
     public static final String accessoriesID="gnav20-Shop-L3-5";
     public static final String accessoriesOverviewID="gnav20-Shop-L4-5";
 
+    public static final String appleIphoneID="gnav20-Shop-L3-11";
+    public static final String samsungUltraID="gnav20-Shop-L3-12";
+    public static final String googlepixelID="gnav20-Shop-L3-13";
+
+    //plans
+    public static final String shopAllPID="gnav20-Shop-L3-15";
+    public static final String unlimitedID="gnav20-Shop-L3-16";
+    public static final String sharedDataID="gnav20-Shop-L3-17";
+    public static final String connectedDevicesID="gnav20-Shop-L3-19";
+
+    public static final String thosewhoServeID="gnav20-Shop-L3-20";
+    public static final String thosewhoServeOverviewID="gnav20-Shop-L4-14";
+    public static final String teacherPlanID="gnav20-Shop-L4-15";
+    public static final String nursesPlanID="gnav20-Shop-L4-16";
+    public static final String firstRespondersID="gnav20-Shop-L4-17";
+
+
+
 }
