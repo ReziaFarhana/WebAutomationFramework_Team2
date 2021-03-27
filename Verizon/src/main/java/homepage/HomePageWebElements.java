@@ -34,10 +34,6 @@ public class HomePageWebElements {
     public static final String accessoriesID="gnav20-Shop-L3-5";
     public static final String accessoriesOverviewID="gnav20-Shop-L4-5";
 
-    public static final String appleIphoneID="gnav20-Shop-L3-11";
-    public static final String samsungUltraID="gnav20-Shop-L3-12";
-    public static final String googlepixelID="gnav20-Shop-L3-13";
-
     //plans
     public static final String shopAllPID="gnav20-Shop-L3-15";
     public static final String unlimitedID="gnav20-Shop-L3-16";
@@ -56,7 +52,7 @@ public class HomePageWebElements {
     public static final String otherPlansID="gnav20-Shop-L3-23";
     public static final String internationalServicesID="gnav20-Shop-L4-19";
     public static final String connectedCarPID="gnav20-Shop-L4-20";
-    public static final String employeeDisPID="gnav20-Shop-L4-20";
+    public static final String employeeDisPID="gnav20-Shop-L4-21";
 
 
 

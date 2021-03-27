@@ -111,6 +111,10 @@ public class HomePage extends WebAPI {
         selectOtherPlans();
         scrollByID(connectedCarPID);
     }
+    public void selectEmployeeDiscount() throws InterruptedException {
+        selectOtherPlans();
+        scrollByID(employeeDisPID);
+    }
 
 
     public void selectThoseWhoServeOverview() throws InterruptedException {
