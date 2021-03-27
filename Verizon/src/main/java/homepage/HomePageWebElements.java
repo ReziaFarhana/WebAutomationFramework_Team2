@@ -50,6 +50,16 @@ public class HomePageWebElements {
     public static final String nursesPlanID="gnav20-Shop-L4-16";
     public static final String firstRespondersID="gnav20-Shop-L4-17";
 
+    public static final String kidsID="gnav20-Shop-L3-21";
+    public static final String studentPlansID="gnav20-Shop-L3-22";
+
+    public static final String otherPlansID="gnav20-Shop-L3-23";
+    public static final String internationalServicesID="gnav20-Shop-L4-19";
+    public static final String connectedCarPID="gnav20-Shop-L4-20";
+    public static final String employeeDisPID="gnav20-Shop-L4-20";
+
+
+
 
 
 }

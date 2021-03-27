@@ -89,6 +89,29 @@ public class HomePage extends WebAPI {
         selectPlans();
         scrollByID(thosewhoServeID);
     }
+    public void selectKids() throws InterruptedException {
+        selectPlans();
+        sleepFor(3);
+        scrollByID(kidsID);
+    }
+    public void selectStudentPlans() throws InterruptedException {
+        selectPlans();
+        scrollByID(studentPlansID);
+    }
+    public void selectOtherPlans() throws InterruptedException {
+        selectPlans();
+        scrollByID(otherPlansID);
+    }
+    public void selectInternationalServices() throws InterruptedException {
+        selectOtherPlans();
+        scrollByID(internationalServicesID);
+    }
+    public void selectConnectedCar() throws InterruptedException {
+        selectOtherPlans();
+        scrollByID(connectedCarPID);
+    }
+
+
     public void selectThoseWhoServeOverview() throws InterruptedException {
         selectThoseWhoServe();
         scrollByID(thosewhoServeOverviewID);
