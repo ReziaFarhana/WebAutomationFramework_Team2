@@ -121,10 +121,17 @@ public class HomePageTest extends WebAPI {
         String actualText= getTextByXpath("//a[normalize-space()='Connected Devices']");
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectThoseWhoServeOverviewTest() throws InterruptedException {
         homepage.selectThoseWhoServeOverview();
         String expectedText ="Verizon Plan Discounts for those who serve: Teachers. Nurses, First Responders, Military & Veterans";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText,  expectedText, "Text not same");
+    }
+    @Test
+    public void selectTeacherPlanTest() throws InterruptedException {
+        homepage.selectTeacherPlan();
+        String expectedText ="Verizon Plan Discounts for Teachers & Their Families";
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText,  expectedText, "Text not same");
     }
