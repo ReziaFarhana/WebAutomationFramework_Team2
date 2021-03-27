@@ -114,12 +114,19 @@ public class HomePageTest extends WebAPI {
         String actualText= driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text not same");
     }
-    @Test
+
     public void selectConnectedDevicesTest() throws InterruptedException {
         homepage.selectConnectedDevices();
         String expectedText ="Connected Devices";
         String actualText= getTextByXpath("//a[normalize-space()='Connected Devices']");
         Assert.assertEquals(actualText, expectedText, "Text not same");
+    }
+    @Test
+    public void selectThoseWhoServeOverviewTest() throws InterruptedException {
+        homepage.selectThoseWhoServeOverview();
+        String expectedText ="Verizon Plan Discounts for those who serve: Teachers. Nurses, First Responders, Military & Veterans";
+        String actualText= driver.getTitle();
+        Assert.assertEquals(actualText,  expectedText, "Text not same");
     }
 
 
