@@ -640,6 +640,19 @@ public void windowsPageScrollToLocator(By locator) {
         }
     }
 
+    public void changeToOldWindow(){
+        //Store the current window handle
+        String winHandleBefore = driver.getWindowHandle();
+// Perform the click operation that opens new window
+        // Switch to new window opened
+        for(String winHandle : driver.getWindowHandles()){ driver.switchTo().window(winHandle); }
+        // Close the new window, if that window no more required\
+        driver.close();
+// Switch back to original browser (first window)
+        driver.switchTo().window(winHandleBefore);
+        // Continue with original browser (first window)
+    }
+
     //Handling New Tabs
     public static WebDriver handleNewTab(WebDriver driver1) {
         String oldTab = driver1.getWindowHandle();

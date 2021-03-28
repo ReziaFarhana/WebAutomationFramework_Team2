@@ -1,9 +1,15 @@
 package departments;
 
 public class BeautyCategoryWebElement {
-    public static final String homepageDropdown = "//*[@id=\"hf-header\"]/div[2]/div/div[1]/div[1]";
-    public static final String beautyButtonLocator = "//*[@id=\"vh-department-menu\"]/button[14]";
-    public static final String personalCareButton = "//*[@id=\"dept-deKWalqi-children\"]/div[2]/div[2]/div[2]/div/span/a";
+    public static final String homepageDropdown = "//*[@id='hf-header']/div[2]/div/div[1]/div[1]";
+//    public static final String homepageDropdown = "//div[@class='p_a p_ao p_v p_af aw_b']";
+//    public static final String homepageDropdown = "//button[@id='header-Header-sparkButton']/span[@class='g_b']";
+//    public static final String homepageDropdown = "//a[@id='nojs-header-Header-sparkButton']/span[@class='g_b']";
+//    public static final String homepageDropdown = "//*[@aria-label='All Departments Menu']";
+
+
+    public static final String beautyButtonLocator = "//button[14]";
+    public static final String personalCareButton = "//div[@id='dept-deKWalqi-children']//a[@class='j_a j_c'][normalize-space()='Personal Care']";
     public static final String personalCareOptionList = "*[class='CategoryTopNav-nav-button display-inline-block u-text-truncate']";
     public static final String bathAndBodyTabLocator = "//a[@id='Bath&Body-menu-button']";
     public static final String bathShowerAndSpaMenuButton = "//a[@id='Bath,Shower&Spa-menu-button']";

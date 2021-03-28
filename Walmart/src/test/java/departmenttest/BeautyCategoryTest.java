@@ -25,7 +25,7 @@ public class BeautyCategoryTest extends WebAPI {
     }
 
     @Test(priority = 1) //passed
-    public void beautyButtonLocateTest(){
+    public void beautyButtonLocateTest() {
         beautyCategory.beautyButtonLocate();
         String expectedText ="Beauty";
         String actualText = getTextByXpath(buttonTitle);
@@ -44,8 +44,8 @@ public class BeautyCategoryTest extends WebAPI {
     @Test(priority = 3) //passed
     public void shopAllPremiumBeautyTest() {
         beautyCategory.shopAllPremiumBeauty();
-        String expectedText = "Premium Beauty";
-        String actualText = getTextByXpath(pageTitle);
+        String expectedText = "Premium Beauty - Walmart.com - Walmart.com";
+        String actualText = driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text did not match");
 
     }

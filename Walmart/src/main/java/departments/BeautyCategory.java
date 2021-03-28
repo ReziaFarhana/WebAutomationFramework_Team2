@@ -24,7 +24,7 @@ public class BeautyCategory extends WebAPI {
     @FindBy(how = How.XPATH, using = premiumBeauty)
     public WebElement premiumBeautyLocator;
 
-    public void beautyButtonLocate() {
+    public void beautyButtonLocate(){
         clickByXpath(homepageDropdown);
         windowsFullPageScrollSideBar(beautyButton);
         clickByXpath(beautyButtonLocator);
