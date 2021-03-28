@@ -82,7 +82,7 @@ public class WebAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        //driver.close();
+//        driver.close();
     }
 
     @AfterSuite
@@ -202,7 +202,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-//        driver.quit();
+        driver.quit();
     }
 
 

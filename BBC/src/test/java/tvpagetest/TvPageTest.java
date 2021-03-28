@@ -16,21 +16,21 @@ public class TvPageTest extends WebAPI {
     @BeforeMethod
     public void init(){ tvpage= PageFactory.initElements(driver, TvPage.class); }
 
-
+    @Test
     public void clickTvNavTest(){
         tvpage.clickTvNav();
         String expectedText="BBC World News";
         String actualText=getTextByXpath(tvPageTextXp);
         Assert.assertEquals(actualText,expectedText,"Text not matched");
     }
-
+    @Test
     public void selectDateTest(){
         tvpage.selectDate();
         String expectedText = "100 Women";
         String actualText = getTextByCss(women100pagetextCss);
         Assert.assertEquals(actualText,expectedText,"Text doesnt match");
     }
-
+    @Test
     public void selectSouthAsiaTest() throws InterruptedException {
         tvpage.selectSouthAsia();
         String expectedText="BBC WORLD NEWS South Asia - Schedules";
@@ -38,28 +38,28 @@ public class TvPageTest extends WebAPI {
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
 
     }
-
+    @Test
     public void selectAfricaTest() throws InterruptedException {
         tvpage.selectAfrica();
         String expectedText="BBC WORLD NEWS Africa - Schedules";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void selectMiddleEastTest() throws InterruptedException {
         tvpage.selectMiddleEast();
         String expectedText="BBC WORLD NEWS Middle East - Schedules";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void selectEuropeTest() throws InterruptedException {
         tvpage.selectEurope();
         String expectedText="BBC WORLD NEWS Europe - Schedules";
         String actualText=driver.getTitle();
         Assert.assertEquals(actualText, expectedText, "Text doesnt match");
     }
-
+    @Test
     public void selectLatinAmericaTest() throws InterruptedException {
         tvpage.selectLatinAmerica();
         String expectedText="BBC WORLD NEWS Latin America - Schedules";
