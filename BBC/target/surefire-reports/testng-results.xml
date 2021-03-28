@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="25" total="26" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="26" passed="22" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Extent Report DirectoryD:\Automation\WebAutomationFramework_Team2\BBC\target\surefire-reports\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-03-19T15:27:43 EDT" name="BBC Test Suit" finished-at="2021-03-19T15:28:12 EDT" duration-ms="28972">
+  <suite started-at="2021-03-27T19:40:36 EDT" name="BBC Test Suit" finished-at="2021-03-27T19:47:28 EDT" duration-ms="411513">
     <groups>
     </groups>
-    <test started-at="2021-03-19T15:27:43 EDT" name="BBC Automation Test Script using multiple Browser Option" finished-at="2021-03-19T15:28:12 EDT" duration-ms="28928">
+    <test started-at="2021-03-27T19:40:36 EDT" name="BBC Automation Test Script using multiple Browser Option" finished-at="2021-03-27T19:47:28 EDT" duration-ms="411476">
       <class name="test_page.MoreMenuTabTest.MoreTabTest">
-        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:27:43 EDT" name="setUp" finished-at="2021-03-19T15:27:49 EDT" duration-ms="6815" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:09 EDT" name="setUp" finished-at="2021-03-27T19:47:15 EDT" duration-ms="6076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,42 +51,1079 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:27:49 EDT" name="startExtent" finished-at="2021-03-19T15:27:49 EDT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:15 EDT" name="startExtent" finished-at="2021-03-27T19:47:15 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherSearchByCity()]]>
+                <![CDATA[public void test_page.MoreMenuTabTest.MoreTabTest.verifyMoreMenuTabClik()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method is-config="true" signature="initializeActionclass()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:27:49 EDT" name="initializeActionclass" finished-at="2021-03-19T15:27:49 EDT" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="initializeActionclass()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:15 EDT" name="initializeActionclass" finished-at="2021-03-27T19:47:15 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeActionclass -->
-        <test-method signature="verifyWeatherSearchByCity()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:27:49 EDT" name="verifyWeatherSearchByCity" finished-at="2021-03-19T15:28:10 EDT" duration-ms="20446" status="FAIL">
+        <test-method signature="verifyMoreMenuTabClik()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:15 EDT" name="verifyMoreMenuTabClik" finished-at="2021-03-27T19:47:15 EDT" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoreMenuTabClik -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:15 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:47:15 EDT" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMoreMenuTabClik status=SUCCESS method=MoreTabTest.verifyMoreMenuTabClik()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:15 EDT" name="cleanUp" finished-at="2021-03-27T19:47:16 EDT" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:16 EDT" name="setUp" finished-at="2021-03-27T19:47:23 EDT" duration-ms="6749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:23 EDT" name="startExtent" finished-at="2021-03-27T19:47:23 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherLink() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifyWeatherLink()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:23 EDT" name="verifyWeatherLink" finished-at="2021-03-27T19:47:27 EDT" duration-ms="4013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeatherLink -->
+        <test-method is-config="true" signature="initializeActionclass()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:23 EDT" name="initializeActionclass" finished-at="2021-03-27T19:47:23 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeActionclass -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:27 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:47:27 EDT" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWeatherLink status=SUCCESS method=MoreTabTest.verifyWeatherLink()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@5ace1ed4]" started-at="2021-03-27T19:47:27 EDT" name="cleanUp" finished-at="2021-03-27T19:47:28 EDT" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- test_page.MoreMenuTabTest.MoreTabTest -->
+      <class name="test_page.BBCTest">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:36 EDT" name="setUp" finished-at="2021-03-27T19:40:44 EDT" duration-ms="7552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:44 EDT" name="startExtent" finished-at="2021-03-27T19:40:44 EDT" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyAFilmLinkIsOpened() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:44 EDT" name="getInIt" finished-at="2021-03-27T19:40:44 EDT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyAFilmLinkIsOpened()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:44 EDT" name="verifyAFilmLinkIsOpened" finished-at="2021-03-27T19:40:50 EDT" duration-ms="6369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAFilmLinkIsOpened -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:50 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:40:51 EDT" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAFilmLinkIsOpened status=SUCCESS method=BBCTest.verifyAFilmLinkIsOpened()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:51 EDT" name="cleanUp" finished-at="2021-03-27T19:40:52 EDT" duration-ms="1381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:52 EDT" name="setUp" finished-at="2021-03-27T19:40:58 EDT" duration-ms="6185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:58 EDT" name="startExtent" finished-at="2021-03-27T19:40:58 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyArtLinkIsPerformed() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:58 EDT" name="getInIt" finished-at="2021-03-27T19:40:58 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyArtLinkIsPerformed()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:58 EDT" name="verifyArtLinkIsPerformed" finished-at="2021-03-27T19:41:05 EDT" duration-ms="7065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyArtLinkIsPerformed -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:05 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:41:05 EDT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyArtLinkIsPerformed status=SUCCESS method=BBCTest.verifyArtLinkIsPerformed()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:05 EDT" name="cleanUp" finished-at="2021-03-27T19:41:07 EDT" duration-ms="1394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:07 EDT" name="setUp" finished-at="2021-03-27T19:41:17 EDT" duration-ms="9954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:17 EDT" name="startExtent" finished-at="2021-03-27T19:41:17 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyClickOnLiteratureLink() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifyClickOnLiteratureLink()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:17 EDT" name="verifyClickOnLiteratureLink" finished-at="2021-03-27T19:41:29 EDT" duration-ms="12408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnLiteratureLink -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:17 EDT" name="getInIt" finished-at="2021-03-27T19:41:17 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:29 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:41:29 EDT" duration-ms="80" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClickOnLiteratureLink status=SUCCESS method=BBCTest.verifyClickOnLiteratureLink()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:29 EDT" name="cleanUp" finished-at="2021-03-27T19:41:31 EDT" duration-ms="1506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:31 EDT" name="setUp" finished-at="2021-03-27T19:41:37 EDT" duration-ms="6484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCollectionPageWithText()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:37 EDT" name="verifyCollectionPageWithText" finished-at="2021-03-27T19:41:46 EDT" duration-ms="9305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCollectionPageWithText -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:37 EDT" name="startExtent" finished-at="2021-03-27T19:41:37 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyCollectionPageWithText() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:37 EDT" name="getInIt" finished-at="2021-03-27T19:41:37 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:46 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:41:47 EDT" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCollectionPageWithText status=SUCCESS method=BBCTest.verifyCollectionPageWithText()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:47 EDT" name="cleanUp" finished-at="2021-03-27T19:41:48 EDT" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:48 EDT" name="setUp" finished-at="2021-03-27T19:41:54 EDT" duration-ms="6063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:54 EDT" name="startExtent" finished-at="2021-03-27T19:41:54 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyCollectionTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:54 EDT" name="getInIt" finished-at="2021-03-27T19:41:54 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyCollectionTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:41:54 EDT" name="verifyCollectionTab" finished-at="2021-03-27T19:42:03 EDT" duration-ms="8774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCollectionTab -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:03 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:42:03 EDT" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCollectionTab status=SUCCESS method=BBCTest.verifyCollectionTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:03 EDT" name="cleanUp" finished-at="2021-03-27T19:42:04 EDT" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:04 EDT" name="setUp" finished-at="2021-03-27T19:42:10 EDT" duration-ms="6051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:10 EDT" name="startExtent" finished-at="2021-03-27T19:42:10 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyCulturePageIsDisplayed() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:10 EDT" name="getInIt" finished-at="2021-03-27T19:42:10 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyCulturePageIsDisplayed()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:10 EDT" name="verifyCulturePageIsDisplayed" finished-at="2021-03-27T19:42:16 EDT" duration-ms="5558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCulturePageIsDisplayed -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:16 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:42:16 EDT" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCulturePageIsDisplayed status=SUCCESS method=BBCTest.verifyCulturePageIsDisplayed()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:16 EDT" name="cleanUp" finished-at="2021-03-27T19:42:17 EDT" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:17 EDT" name="setUp" finished-at="2021-03-27T19:42:23 EDT" duration-ms="6470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:23 EDT" name="startExtent" finished-at="2021-03-27T19:42:23 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyFilmBrokeSeveralTaboosIsOpened() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:23 EDT" name="getInIt" finished-at="2021-03-27T19:42:23 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyFilmBrokeSeveralTaboosIsOpened()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:23 EDT" name="verifyFilmBrokeSeveralTaboosIsOpened" finished-at="2021-03-27T19:42:30 EDT" duration-ms="6790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilmBrokeSeveralTaboosIsOpened -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:30 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:42:30 EDT" duration-ms="57" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFilmBrokeSeveralTaboosIsOpened status=SUCCESS method=BBCTest.verifyFilmBrokeSeveralTaboosIsOpened()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:30 EDT" name="cleanUp" finished-at="2021-03-27T19:42:32 EDT" duration-ms="1418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:32 EDT" name="setUp" finished-at="2021-03-27T19:42:38 EDT" duration-ms="6036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:38 EDT" name="getInIt" finished-at="2021-03-27T19:42:38 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyIdentitiesTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:38 EDT" name="verifyIdentitiesTab" finished-at="2021-03-27T19:42:46 EDT" duration-ms="7993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIdentitiesTab -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:38 EDT" name="startExtent" finished-at="2021-03-27T19:42:38 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyIdentitiesTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:46 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:42:46 EDT" duration-ms="44" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyIdentitiesTab status=SUCCESS method=BBCTest.verifyIdentitiesTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:46 EDT" name="cleanUp" finished-at="2021-03-27T19:42:47 EDT" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:47 EDT" name="setUp" finished-at="2021-03-27T19:42:54 EDT" duration-ms="7180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:54 EDT" name="startExtent" finished-at="2021-03-27T19:42:54 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyLookingForBooks() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:54 EDT" name="getInIt" finished-at="2021-03-27T19:42:54 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyLookingForBooks()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:42:54 EDT" name="verifyLookingForBooks" finished-at="2021-03-27T19:43:03 EDT" duration-ms="8703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLookingForBooks -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:03 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:43:03 EDT" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLookingForBooks status=SUCCESS method=BBCTest.verifyLookingForBooks()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:03 EDT" name="cleanUp" finished-at="2021-03-27T19:43:04 EDT" duration-ms="1259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:04 EDT" name="setUp" finished-at="2021-03-27T19:43:10 EDT" duration-ms="6030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:10 EDT" name="startExtent" finished-at="2021-03-27T19:43:10 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyMusicTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:10 EDT" name="getInIt" finished-at="2021-03-27T19:43:10 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyMusicTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:10 EDT" name="verifyMusicTab" finished-at="2021-03-27T19:43:18 EDT" duration-ms="7309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMusicTab -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:18 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:43:18 EDT" duration-ms="38" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMusicTab status=SUCCESS method=BBCTest.verifyMusicTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:18 EDT" name="cleanUp" finished-at="2021-03-27T19:43:19 EDT" duration-ms="1304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:19 EDT" name="setUp" finished-at="2021-03-27T19:43:26 EDT" duration-ms="7096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:26 EDT" name="startExtent" finished-at="2021-03-27T19:43:26 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyOpenMoreTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifyOpenMoreTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:26 EDT" name="verifyOpenMoreTab" finished-at="2021-03-27T19:43:37 EDT" duration-ms="11311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenMoreTab -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:26 EDT" name="getInIt" finished-at="2021-03-27T19:43:26 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:37 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:43:37 EDT" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOpenMoreTab status=SUCCESS method=BBCTest.verifyOpenMoreTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:37 EDT" name="cleanUp" finished-at="2021-03-27T19:43:39 EDT" duration-ms="1317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:39 EDT" name="setUp" finished-at="2021-03-27T19:43:45 EDT" duration-ms="6166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:45 EDT" name="startExtent" finished-at="2021-03-27T19:43:45 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyOurLoveAffairsHomesLink() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:45 EDT" name="getInIt" finished-at="2021-03-27T19:43:45 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyOurLoveAffairsHomesLink()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:43:45 EDT" name="verifyOurLoveAffairsHomesLink" finished-at="2021-03-27T19:44:05 EDT" duration-ms="20579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOurLoveAffairsHomesLink -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:05 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:44:06 EDT" duration-ms="32" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOurLoveAffairsHomesLink status=SUCCESS method=BBCTest.verifyOurLoveAffairsHomesLink()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:06 EDT" name="cleanUp" finished-at="2021-03-27T19:44:07 EDT" duration-ms="1454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:07 EDT" name="setUp" finished-at="2021-03-27T19:44:14 EDT" duration-ms="6635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPhotographyTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:14 EDT" name="verifyPhotographyTab" finished-at="2021-03-27T19:44:39 EDT" duration-ms="25505" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: input[id='ls-c-search__input-label']
+              <![CDATA[Unable to locate element: //p[normalize-space()='Photography']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26540, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 693a7467-68ef-44a0-8a5d-c258fb409693
-*** Element info: {Using=css selector, value=input[id='ls-c-search__input-label']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 22908, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b7b0f5d3-8d56-4dee-bfb7-3cf630bde041
+*** Element info: {Using=xpath, value=//p[normalize-space()='Photography']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: input[id='ls-c-search__input-label']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[normalize-space()='Photography']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26540, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 693a7467-68ef-44a0-8a5d-c258fb409693
-*** Element info: {Using=css selector, value=input[id='ls-c-search__input-label']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 22908, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b7b0f5d3-8d56-4dee-bfb7-3cf630bde041
+*** Element info: {Using=xpath, value=//p[normalize-space()='Photography']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,12 +1135,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at common.WebAPI.typeByCss(WebAPI.java:323)
-at home_page.MoreMenuTab.MenuBarMore.weatherSearchByCity(MenuBarMore.java:25)
-at test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherSearchByCity(MoreTabTest.java:40)
+at common.WebAPI.clickByXpath(WebAPI.java:318)
+at home_page.BBCHome.openPhotohraphyTab(BBCHome.java:152)
+at test_page.BBCTest.verifyPhotographyTab(BBCTest.java:127)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,31 +1178,646 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWeatherSearchByCity -->
-        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:28:10 EDT" name="afterEachTestMethod" finished-at="2021-03-19T15:28:10 EDT" duration-ms="528" status="PASS">
+        </test-method> <!-- verifyPhotographyTab -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:14 EDT" name="startExtent" finished-at="2021-03-27T19:44:14 EDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWeatherSearchByCity status=FAILURE method=MoreTabTest.verifyWeatherSearchByCity()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c] output={null}]]]>
+                <![CDATA[public void test_page.BBCTest.verifyPhotographyTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:14 EDT" name="getInIt" finished-at="2021-03-27T19:44:14 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:39 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:44:40 EDT" duration-ms="442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPhotographyTab status=FAILURE method=BBCTest.verifyPhotographyTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.MoreMenuTabTest.MoreTabTest@cad498c]" started-at="2021-03-19T15:28:10 EDT" name="cleanUp" finished-at="2021-03-19T15:28:12 EDT" duration-ms="1082" status="PASS">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:40 EDT" name="cleanUp" finished-at="2021-03-27T19:44:41 EDT" duration-ms="1284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- test_page.MoreMenuTabTest.MoreTabTest -->
-    </test> <!-- BBC Automation Test Script using multiple Browser Option -->
-    <test started-at="2021-03-19T15:28:12 EDT" name="new page " finished-at="2021-03-19T15:28:12 EDT" duration-ms="0">
-      <class name="test_page.BBCTest">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test_page.BBCTest@66498326]" started-at="2021-03-19T15:27:42 EDT" name="extentSetup" finished-at="2021-03-19T15:27:43 EDT" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:41 EDT" name="setUp" finished-at="2021-03-27T19:44:48 EDT" duration-ms="7006" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1931d99]]>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:48 EDT" name="startExtent" finished-at="2021-03-27T19:44:48 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyStyleTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:48 EDT" name="getInIt" finished-at="2021-03-27T19:44:48 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyStyleTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:48 EDT" name="verifyStyleTab" finished-at="2021-03-27T19:44:56 EDT" duration-ms="7773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStyleTab -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:56 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:44:56 EDT" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStyleTab status=SUCCESS method=BBCTest.verifyStyleTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:56 EDT" name="cleanUp" finished-at="2021-03-27T19:44:57 EDT" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:44:57 EDT" name="setUp" finished-at="2021-03-27T19:45:03 EDT" duration-ms="6159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTVTab()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:03 EDT" name="verifyTVTab" finished-at="2021-03-27T19:45:12 EDT" duration-ms="8567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTVTab -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:03 EDT" name="getInIt" finished-at="2021-03-27T19:45:03 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:03 EDT" name="startExtent" finished-at="2021-03-27T19:45:03 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyTVTab() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:12 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:45:12 EDT" duration-ms="35" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTVTab status=SUCCESS method=BBCTest.verifyTVTab()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:12 EDT" name="cleanUp" finished-at="2021-03-27T19:45:13 EDT" duration-ms="1351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:13 EDT" name="setUp" finished-at="2021-03-27T19:45:19 EDT" duration-ms="6076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:19 EDT" name="startExtent" finished-at="2021-03-27T19:45:19 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyToOpenDetailMasterpiece() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:19 EDT" name="getInIt" finished-at="2021-03-27T19:45:19 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyToOpenDetailMasterpiece()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:19 EDT" name="verifyToOpenDetailMasterpiece" finished-at="2021-03-27T19:45:28 EDT" duration-ms="8449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToOpenDetailMasterpiece -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:28 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:45:28 EDT" duration-ms="47" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyToOpenDetailMasterpiece status=SUCCESS method=BBCTest.verifyToOpenDetailMasterpiece()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:28 EDT" name="cleanUp" finished-at="2021-03-27T19:45:29 EDT" duration-ms="1320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:29 EDT" name="setUp" finished-at="2021-03-27T19:45:35 EDT" duration-ms="5837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:35 EDT" name="getInIt" finished-at="2021-03-27T19:45:35 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:35 EDT" name="startExtent" finished-at="2021-03-27T19:45:35 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyUltimateDiningExperience() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifyUltimateDiningExperience()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:35 EDT" name="verifyUltimateDiningExperience" finished-at="2021-03-27T19:45:56 EDT" duration-ms="20712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUltimateDiningExperience -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:56 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:45:56 EDT" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUltimateDiningExperience status=SUCCESS method=BBCTest.verifyUltimateDiningExperience()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:56 EDT" name="cleanUp" finished-at="2021-03-27T19:45:57 EDT" duration-ms="1379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:45:57 EDT" name="setUp" finished-at="2021-03-27T19:46:04 EDT" duration-ms="7120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:04 EDT" name="getInIt" finished-at="2021-03-27T19:46:04 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:04 EDT" name="startExtent" finished-at="2021-03-27T19:46:04 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyWeLandedOnBBCHomePage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifyWeLandedOnBBCHomePage()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:04 EDT" name="verifyWeLandedOnBBCHomePage" finished-at="2021-03-27T19:46:04 EDT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeLandedOnBBCHomePage -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:04 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:46:04 EDT" duration-ms="35" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWeLandedOnBBCHomePage status=SUCCESS method=BBCTest.verifyWeLandedOnBBCHomePage()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:04 EDT" name="cleanUp" finished-at="2021-03-27T19:46:05 EDT" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:05 EDT" name="setUp" finished-at="2021-03-27T19:46:12 EDT" duration-ms="6755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWhatDoYourDreamMeans()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:12 EDT" name="verifyWhatDoYourDreamMeans" finished-at="2021-03-27T19:46:23 EDT" duration-ms="10958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhatDoYourDreamMeans -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:12 EDT" name="startExtent" finished-at="2021-03-27T19:46:12 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyWhatDoYourDreamMeans() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:12 EDT" name="getInIt" finished-at="2021-03-27T19:46:12 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:23 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:46:23 EDT" duration-ms="44" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhatDoYourDreamMeans status=SUCCESS method=BBCTest.verifyWhatDoYourDreamMeans()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:23 EDT" name="cleanUp" finished-at="2021-03-27T19:46:24 EDT" duration-ms="1353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:24 EDT" name="setUp" finished-at="2021-03-27T19:46:30 EDT" duration-ms="6005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:30 EDT" name="startExtent" finished-at="2021-03-27T19:46:30 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifyWhatYouDidnotKnowAboutColour() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:30 EDT" name="getInIt" finished-at="2021-03-27T19:46:30 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method signature="verifyWhatYouDidnotKnowAboutColour()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:30 EDT" name="verifyWhatYouDidnotKnowAboutColour" finished-at="2021-03-27T19:46:43 EDT" duration-ms="12105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhatYouDidnotKnowAboutColour -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:43 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:46:43 EDT" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhatYouDidnotKnowAboutColour status=SUCCESS method=BBCTest.verifyWhatYouDidnotKnowAboutColour()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:43 EDT" name="cleanUp" finished-at="2021-03-27T19:46:44 EDT" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:44 EDT" name="setUp" finished-at="2021-03-27T19:46:50 EDT" duration-ms="6531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserStack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[86]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.bbc.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getInIt()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:50 EDT" name="getInIt" finished-at="2021-03-27T19:46:50 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInIt -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:50 EDT" name="startExtent" finished-at="2021-03-27T19:46:50 EDT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test_page.BBCTest.verifylookingForDisnePageFound() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="verifylookingForDisnePageFound()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:46:50 EDT" name="verifylookingForDisnePageFound" finished-at="2021-03-27T19:47:07 EDT" duration-ms="16646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylookingForDisnePageFound -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:47:07 EDT" name="afterEachTestMethod" finished-at="2021-03-27T19:47:07 EDT" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifylookingForDisnePageFound status=SUCCESS method=BBCTest.verifylookingForDisnePageFound()[pri:0, instance:test_page.BBCTest@6631f5ca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:47:07 EDT" name="cleanUp" finished-at="2021-03-27T19:47:09 EDT" duration-ms="1404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- test_page.BBCTest -->
+    </test> <!-- BBC Automation Test Script using multiple Browser Option -->
+    <test started-at="2021-03-27T19:47:28 EDT" name="new page " finished-at="2021-03-27T19:47:28 EDT" duration-ms="0">
+      <class name="test_page.BBCTest">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:40:36 EDT" name="extentSetup" finished-at="2021-03-27T19:40:36 EDT" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@177ede17]]>
               </value>
             </param>
           </params>
@@ -175,7 +1827,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:test_page.BBCTest@66498326]" started-at="2021-03-19T15:28:12 EDT" name="generateReport" finished-at="2021-03-19T15:28:12 EDT" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:test_page.BBCTest@6631f5ca]" started-at="2021-03-27T19:47:28 EDT" name="generateReport" finished-at="2021-03-27T19:47:28 EDT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

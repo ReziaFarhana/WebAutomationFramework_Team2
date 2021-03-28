@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.943" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="412.55" tests="23" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="sun.java.command" value="C:\Users\Alelign\AppData\Local\Temp\surefire8193829218447838856\surefirebooter12899433649534686183.jar C:\Users\Alelign\AppData\Local\Temp\surefire8193829218447838856 2021-03-19T15-27-35_686-jvmRun1 surefire1470601621519381324tmp surefire_217257335407759877903tmp"/>
+    <property name="sun.java.command" value="C:\Users\Alelign\AppData\Local\Temp\surefire387697999296940776\surefirebooter5260861736331883985.jar C:\Users\Alelign\AppData\Local\Temp\surefire387697999296940776 2021-03-27T19-40-29_520-jvmRun1 surefire15960456469626387798tmp surefire_223340850302277192tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Automation\WebAutomationFramework_Team2\BBC\target\test-classes;D:\Automation\WebAutomationFramework_Team2\BBC\target\classes;D:\Automation\WebAutomationFramework_Team2\Generic\target\classes;C:\Users\Alelign\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\Alelign\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alelign\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Alelign\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Alelign\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Alelign\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Alelign\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Alelign\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Alelign\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Alelign\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Alelign\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Alelign\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Alelign\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Alelign\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\Alelign\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Alelign\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alelign\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\Alelign\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Alelign\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\Alelign\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Alelign\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Alelign\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Alelign\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Alelign\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Alelign\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Alelign\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Alelign\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Alelign\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Alelign\.m2\repository\mysql\mysql-connector-java\8.0.22\mysql-connector-java-8.0.22.jar;C:\Users\Alelign\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongo-java-driver\3.12.7\mongo-java-driver-3.12.7.jar;C:\Users\Alelign\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\Alelign\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Alelign\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Alelign\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Alelign\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Alelign\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Alelign\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Alelign\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Alelign\AppData\Local\Temp\surefire8193829218447838856\surefirebooter12899433649534686183.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alelign\AppData\Local\Temp\surefire387697999296940776\surefirebooter5260861736331883985.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
@@ -62,26 +62,352 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="verifyWeatherSearchByCity" classname="test_page.MoreMenuTabTest.MoreTabTest" time="20.369">
-    <failure message="Unable to locate element: input[id=&apos;ls-c-search__input-label&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ALELIGN&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26540, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 693a7467-68ef-44a0-8a5d-c258fb409693&#10;*** Element info: {Using=css selector, value=input[id=&apos;ls-c-search__input-label&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: input[id='ls-c-search__input-label']
+  <testcase name="verifyAFilmLinkIsOpened" classname="test_page.BBCTest" time="6.314">
+    <system-out><![CDATA[Extent Report DirectoryD:\Automation\WebAutomationFramework_Team2\BBC\target\surefire-reports\html
+]]></system-out>
+    <system-err><![CDATA[1616888437116	geckodriver	INFO	Listening on 127.0.0.1:40985
+1616888437798	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileGmwf4l"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888440949	Marionette	INFO	Listening on port 52321
+1616888441007	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:40:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyArtLinkIsPerformed" classname="test_page.BBCTest" time="7.008">
+    <system-err><![CDATA[1616888451139	Marionette	INFO	Stopped listening on port 52321
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888452564	geckodriver	INFO	Listening on 127.0.0.1:20958
+1616888453060	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileCRvWp1"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888456166	Marionette	INFO	Listening on port 52464
+1616888456259	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:40:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyClickOnLiteratureLink" classname="test_page.BBCTest" time="12.371">
+    <system-err><![CDATA[1616888465871	Marionette	INFO	Stopped listening on port 52464
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888467309	geckodriver	INFO	Listening on 127.0.0.1:25381
+1616888467804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilesRaESN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888470913	Marionette	INFO	Listening on port 52643
+1616888470994	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:41:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCollectionPageWithText" classname="test_page.BBCTest" time="9.262">
+    <system-err><![CDATA[1616888489709	Marionette	INFO	Stopped listening on port 52643
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888491251	geckodriver	INFO	Listening on 127.0.0.1:22119
+1616888491761	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileUXe77Y"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888494941	Marionette	INFO	Listening on port 52787
+1616888494991	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:41:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCollectionTab" classname="test_page.BBCTest" time="8.739">
+    <system-err><![CDATA[1616888507032	Marionette	INFO	Stopped listening on port 52787
+[Child 25816, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888508386	geckodriver	INFO	Listening on 127.0.0.1:9435
+1616888508879	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilezxl2tN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888512049	Marionette	INFO	Listening on port 52941
+1616888512094	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:41:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCulturePageIsDisplayed" classname="test_page.BBCTest" time="5.509">
+    <system-err><![CDATA[1616888523211	Marionette	INFO	Stopped listening on port 52941
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888524585	geckodriver	INFO	Listening on 127.0.0.1:37444
+1616888525087	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofiles75BXA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888528236	Marionette	INFO	Listening on port 53084
+1616888528289	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:42:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyFilmBrokeSeveralTaboosIsOpened" classname="test_page.BBCTest" time="6.741">
+    <system-err><![CDATA[1616888536190	Marionette	INFO	Stopped listening on port 53084
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888537441	geckodriver	INFO	Listening on 127.0.0.1:25617
+1616888537966	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilevYlFcf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888541231	Marionette	INFO	Listening on port 53235
+1616888541685	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:42:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyIdentitiesTab" classname="test_page.BBCTest" time="7.959">
+    <system-err><![CDATA[1616888550710	Marionette	INFO	Stopped listening on port 53235
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888552164	geckodriver	INFO	Listening on 127.0.0.1:40147
+1616888552659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilelDvreQ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888555927	Marionette	INFO	Listening on port 53378
+1616888556357	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:42:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLookingForBooks" classname="test_page.BBCTest" time="8.676">
+    <system-err><![CDATA[1616888566186	Marionette	INFO	Stopped listening on port 53378
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888567657	geckodriver	INFO	Listening on 127.0.0.1:1986
+1616888568153	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile7u5QZS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888571446	Marionette	INFO	Listening on port 53524
+1616888571890	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:42:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyMusicTab" classname="test_page.BBCTest" time="7.268">
+    <system-err><![CDATA[1616888583533	Marionette	INFO	Stopped listening on port 53524
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888584836	geckodriver	INFO	Listening on 127.0.0.1:32569
+1616888585330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile3t2y3D"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888588372	Marionette	INFO	Listening on port 53674
+1616888588525	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:43:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1616888597964	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOpenMoreTab" classname="test_page.BBCTest" time="11.275">
+    <system-err><![CDATA[1616888598184	Marionette	INFO	Stopped listening on port 53674
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888599513	geckodriver	INFO	Listening on 127.0.0.1:10750
+1616888599995	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofilev6GsaD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888603522	Marionette	INFO	Listening on port 53836
+1616888603692	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:43:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOurLoveAffairsHomesLink" classname="test_page.BBCTest" time="20.532">
+    <system-err><![CDATA[1616888617913	Marionette	INFO	Stopped listening on port 53836
+1616888619276	geckodriver	INFO	Listening on 127.0.0.1:8088
+1616888619764	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofiler4RNeO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888622768	Marionette	INFO	Listening on port 53995
+1616888622975	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:43:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPhotographyTab" classname="test_page.BBCTest" time="25.46">
+    <failure message="Unable to locate element: //p[normalize-space()=&apos;Photography&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ALELIGN&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 22908, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b7b0f5d3-8d56-4dee-bfb7-3cf630bde041&#10;*** Element info: {Using=xpath, value=//p[normalize-space()=&apos;Photography&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //p[normalize-space()='Photography']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26540, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 693a7467-68ef-44a0-8a5d-c258fb409693
-*** Element info: {Using=css selector, value=input[id='ls-c-search__input-label']}
-	at test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherSearchByCity(MoreTabTest.java:40)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 22908, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b7b0f5d3-8d56-4dee-bfb7-3cf630bde041
+*** Element info: {Using=xpath, value=//p[normalize-space()='Photography']}
+	at test_page.BBCTest.verifyPhotographyTab(BBCTest.java:127)
 ]]></failure>
-    <system-out><![CDATA[Extent Report DirectoryD:\Automation\WebAutomationFramework_Team2\BBC\target\surefire-reports\html
-]]></system-out>
-    <system-err><![CDATA[1616182063458	geckodriver	INFO	Listening on 127.0.0.1:35405
-1616182064164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileuqVPiT"
+    <system-err><![CDATA[1616888646017	Marionette	INFO	Stopped listening on port 53995
+1616888647541	geckodriver	INFO	Listening on 127.0.0.1:24454
+1616888648035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofiledMyHGE"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1616182067052	Marionette	INFO	Listening on port 62698
-1616182067346	Marionette	WARN	TLS certificate errors will be ignored for this session
-Mar 19, 2021 3:27:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1616888651049	Marionette	INFO	Listening on port 54169
+1616888651231	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:44:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyStyleTab" classname="test_page.BBCTest" time="7.746">
+    <system-out><![CDATA[Screenshot captured
+]]></system-out>
+    <system-err><![CDATA[1616888680069	Marionette	INFO	Stopped listening on port 54169
+1616888681387	geckodriver	INFO	Listening on 127.0.0.1:16150
+1616888681886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileeWNLTA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888685178	Marionette	INFO	Listening on port 54311
+1616888685602	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:44:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTVTab" classname="test_page.BBCTest" time="8.501">
+    <system-err><![CDATA[1616888696168	Marionette	INFO	Stopped listening on port 54311
+[Child 26836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 26836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888697559	geckodriver	INFO	Listening on 127.0.0.1:23000
+1616888698051	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileduSca7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888701126	Marionette	INFO	Listening on port 54447
+1616888701254	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:45:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: , line 0: uncaught exception: undefined
+]]></system-err>
+  </testcase>
+  <testcase name="verifyToOpenDetailMasterpiece" classname="test_page.BBCTest" time="8.419">
+    <system-err><![CDATA[1616888712284	Marionette	INFO	Stopped listening on port 54447
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888713680	geckodriver	INFO	Listening on 127.0.0.1:6094
+1616888714169	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileFl1X0L"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888717055	Marionette	INFO	Listening on port 54602
+1616888717374	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:45:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "jquery-1.9", needed by: lib/core, lib/module/manager
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUltimateDiningExperience" classname="test_page.BBCTest" time="20.677">
+    <system-err><![CDATA[1616888728222	Marionette	INFO	Stopped listening on port 54602
+JavaScript error: , line 0: NetworkError: FetchEvent.respondWith() Promise rejected
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888729577	geckodriver	INFO	Listening on 127.0.0.1:4854
+1616888730072	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileAuaxXc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888733315	Marionette	INFO	Listening on port 54756
+1616888733777	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:45:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "mybbc/notifications/NotificationsMain"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "idcta-v2/config", needed by: idcta-v2/analytics, idcta-v2/id-config
+http://requirejs.org/docs/errors.html#scripterror
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWeLandedOnBBCHomePage" classname="test_page.BBCTest" time="0">
+    <system-err><![CDATA[1616888756101	Marionette	INFO	Stopped listening on port 54756
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888757528	geckodriver	INFO	Listening on 127.0.0.1:44545
+1616888758017	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileDpGdFR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888761414	Marionette	INFO	Listening on port 54900
+1616888761711	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:46:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWhatDoYourDreamMeans" classname="test_page.BBCTest" time="10.885">
+    <system-err><![CDATA[1616888764654	Marionette	INFO	Stopped listening on port 54900
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888765840	geckodriver	INFO	Listening on 127.0.0.1:41098
+1616888766313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileRUx0Ty"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888769683	Marionette	INFO	Listening on port 55020
+1616888770025	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:46:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWhatYouDidnotKnowAboutColour" classname="test_page.BBCTest" time="12.059">
+    <system-err><![CDATA[1616888783551	Marionette	INFO	Stopped listening on port 55020
+1616888784940	geckodriver	INFO	Listening on 127.0.0.1:26821
+1616888785445	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofile1StOpI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888788591	Marionette	INFO	Listening on port 55162
+1616888788652	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:46:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifylookingForDisnePageFound" classname="test_page.BBCTest" time="16.597">
+    <system-err><![CDATA[1616888803033	Marionette	INFO	Stopped listening on port 55162
+1616888804475	geckodriver	INFO	Listening on 127.0.0.1:3591
+1616888804967	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileETA3JL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888807978	Marionette	INFO	Listening on port 55308
+1616888808176	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:46:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyMoreMenuTabClik" classname="test_page.MoreMenuTabTest.MoreTabTest" time="0.314">
+    <system-err><![CDATA[1616888827626	Marionette	INFO	Stopped listening on port 55308
+1616888829084	geckodriver	INFO	Listening on 127.0.0.1:22166
+1616888829563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileouHCBS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888832590	Marionette	INFO	Listening on port 55457
+1616888832744	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:47:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyWeatherLink" classname="test_page.MoreMenuTabTest.MoreTabTest" time="3.981">
+    <system-err><![CDATA[1616888835503	Marionette	INFO	Stopped listening on port 55457
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: https://static.files.bbci.co.uk/orbit/6c469625ea67ff58fb0dc6b5bb6bae47/js/require.min.js, line 1: Error: Script error for "echo-12.16.0"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://emp.bbci.co.uk/emp/bump-3/bump-3.js, line 5: NS_ERROR_UNEXPECTED: 
+JavaScript error: https://emp.bbci.co.uk/emp/bump-3/bump-3.js, line 5: NS_ERROR_UNEXPECTED: 
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616888836473	geckodriver	INFO	Listening on 127.0.0.1:48429
+1616888836961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Alelign\\AppData\\Local\\Temp\\rust_mozprofileIzm8Gg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616888840162	Marionette	INFO	Listening on port 55585
+1616888840672	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 27, 2021 7:47:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

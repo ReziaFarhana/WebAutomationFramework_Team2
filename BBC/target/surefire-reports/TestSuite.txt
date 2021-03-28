@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.943 s <<< FAILURE! - in TestSuite
-test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherSearchByCity  Time elapsed: 20.369 s  <<< FAILURE!
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 412.55 s <<< FAILURE! - in TestSuite
+test_page.BBCTest.verifyPhotographyTab  Time elapsed: 25.46 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: input[id='ls-c-search__input-label']
+Unable to locate element: //p[normalize-space()='Photography']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ALELIGN', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 26540, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 693a7467-68ef-44a0-8a5d-c258fb409693
-*** Element info: {Using=css selector, value=input[id='ls-c-search__input-label']}
-	at test_page.MoreMenuTabTest.MoreTabTest.verifyWeatherSearchByCity(MoreTabTest.java:40)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 22908, moz:profile: C:\Users\Alelign\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b7b0f5d3-8d56-4dee-bfb7-3cf630bde041
+*** Element info: {Using=xpath, value=//p[normalize-space()='Photography']}
+	at test_page.BBCTest.verifyPhotographyTab(BBCTest.java:127)
 

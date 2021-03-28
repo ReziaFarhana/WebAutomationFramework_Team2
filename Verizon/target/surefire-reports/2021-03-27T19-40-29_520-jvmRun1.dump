@@ -1,5 +1,5 @@
-# Created at 2021-03-19T15:28:14.136
-org.apache.maven.surefire.api.testset.TestSetFailedException: Suite file D:\Automation\WebAutomationFramework_Team2\Geico\target\test-classes\WalmartTestRunner.xml is not a valid file
+# Created at 2021-03-27T19:47:33.082
+org.apache.maven.surefire.api.testset.TestSetFailedException: Suite file D:\Automation\WebAutomationFramework_Team2\Verizon\target\test_page-classes\VerizonTestRunner.xml is not a valid file
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.locateTestSets(TestNGXmlTestSuite.java:99)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:118)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)

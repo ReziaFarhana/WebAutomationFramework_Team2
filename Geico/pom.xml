@@ -11,10 +11,6 @@
 
     <artifactId>Geico</artifactId>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -48,7 +44,8 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>-->
+                        <suiteXmlFile>target/test-classes/GeicoTestRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
 
