@@ -213,7 +213,7 @@ public class WebAPI {
         Thread.sleep(seconds * 1000);
     }
 
-    public void clickOnElement(String locator) {
+    public String clickOnElement(String locator) {
         try {
             driver.findElement(By.cssSelector(locator)).click();
         } catch (Exception ex) {
@@ -222,12 +222,15 @@ public class WebAPI {
             } catch (Exception ex2) {
                 try {
                     driver.findElement(By.id(locator)).click();
-                } catch (Exception ex3) {
+                     } catch (Exception ex3) {
                     driver.findElement(By.xpath(locator)).click();
                 }
             }
         }
+        return locator;
     }
+
+
 
     public void typeOnElement(String locator, String value) {
         try {
