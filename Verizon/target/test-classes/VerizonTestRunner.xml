@@ -21,11 +21,11 @@
         <classes>
             <class name="test_page.VerizonTest">
                 <methods>
-<!--                                   <exclude name="verifyLandingOnVerizonHomePage"/>-->
-<!--                                   <exclude name="verifyShopLinkLaunched"/>-->
-<!--                                   <exclude name="verifyClickOnDeviceOption"/>-->
-<!--                                   <exclude name="verifySmartphoneIsOpened"/>-->
-<!--                                   <exclude name="verifyFilterButtonIsSelected"/>-->
+                                   <exclude name="verifyLandingOnVerizonHomePage"/>
+                                   <exclude name="verifyShopLinkLaunched"/>
+                                   <exclude name="verifyClickOnDeviceOption"/>
+                                   <exclude name="verifySmartphoneIsOpened"/>
+                                   <exclude name="verifyFilterButtonIsSelected"/>
 
                 </methods>
 

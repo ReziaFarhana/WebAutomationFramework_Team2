@@ -1,6 +1,8 @@
 package home_page;
 
 import common.WebAPI;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import static home_page.VerizonWebElement.*;
 
@@ -45,23 +47,25 @@ public class VerizonHome extends WebAPI {
      */
     public void applyFilterOnSmartphone() throws InterruptedException {
         clickOnSmartphones();
-        clickByCss(locatorToAddFilter);
+        clickByXpath(locatorToAddFilter);
       //  boolean displayed = isPopUpWindowDisplayed(driver,locatorToWorkOnPopup);
-        if(isPopUpWindowDisplayed(driver,locatorToWorkOnPopup)){
-            clickByCss(locatorToClosePopup);
-        }
         sleepFor(3);
+        if(isPopUpWindowDisplayed(driver,locatorToWorkOnPopup)){
+            clickByXpath(locatorToClosePopup);
+        }
     }
+        @FindBy(xpath = locatorToSamsung) public WebElement samsung;
 
     public void selectSamsungBrand() throws InterruptedException {
         applyFilterOnSmartphone();
-        if(isPopUpWindowDisplayed(driver,locatorToSelectBrandSamsung)){
-            clickByCss(locatorToSelectBrandSamsung);
-            clickByCss(locatorToApplyTheSelectedProduct);
+        clickByXpath(locatorToClickOnBrand);
+        if(isItemDisplayed(findYourIdealPopup)){
+            clickByXpath(clickOnNotNowlocator);
+            scrollTo(samsung);
+            clickByXpath(locatorToSamsung);
         }else {
-            clickByXpath(locator);
-            clickByCss(locatorToSelectBrandSamsung);
-            clickByCss(locatorToApplyTheSelectedProduct);
+            scrollTo(samsung);
+            clickByXpath(locatorToSamsung);
         }
         sleepFor(2);
     }

@@ -56,8 +56,8 @@ public class VerizonTest extends WebAPI {
     @Test
     public void verifySamsungBrandIsSelected() throws InterruptedException {
         action.selectSamsungBrand();
-        String expected = "Samsung";
-        String actual = driver.findElement(By.cssSelector(locatorToVerifyTheSelectedItemIsDisplayed)).getText();
-        Assert.assertEquals(actual,expected,"Test faild");
+        String expected = "Samsung Smartphones";
+        String actual = driver.findElement(By.xpath(locatorToVerifySamsungIsSelected)).getText();
+        Assert.assertEquals(actual,expected,"Test failed");
     }
 }
