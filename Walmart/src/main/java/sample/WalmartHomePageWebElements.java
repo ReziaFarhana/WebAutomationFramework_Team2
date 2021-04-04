@@ -5,7 +5,6 @@ import common.WebAPI;
 public class WalmartHomePageWebElements extends WebAPI {
 
 
-
     public static final String productName = "tv";
     public static final String searchBoxLocator = "//input[@id='global-search-input']";
     public static final String searchButtonLocator = "//*[@id=\"global-search-submit\"]/span/img";
@@ -24,10 +23,17 @@ public class WalmartHomePageWebElements extends WebAPI {
     public static final String walmrtplusText1 = " //*[@id=\"MainContent\"]/div[2]/div/h1";
     public static final String fifteendaysoff = " //*[@id=\"signup-top\"]";
 
- public static final String allcareerarea = " /html/body/main/section[1]/div[2]/div/form/div[1]/div[1]/div/span";
-
-public static final String jobTitle= " //input[@id='search']";
-public static final String jobtitle1= " cashier";
-
+    public static final String allcareerarea = " /html/body/main/section[1]/div[2]/div/form/div[1]/div[1]/div/span";
+    public static final String jobTitle = " //input[@id='search']";
+    public static final String menutab= "//*[@id=\"nojs-header-Header-sparkButton\"]/span/img";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//public static final String jobtitle1= " cashier";
+//
 
 }

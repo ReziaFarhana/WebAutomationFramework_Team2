@@ -22,75 +22,74 @@ public class WalmartHomePageTest extends WebAPI {
 
     }
 
-    @Test@Ignore
+    @Test(priority = 1)
+    @Ignore
     public void testSearchBox() throws InterruptedException {
         walmarthome.searchBox();
 
     }
-    @Test@Ignore
+
+    @Test(priority = 2)
+    @Ignore
     public void testCareers() throws InterruptedException {
         walmarthome.Careers();
 
     }
-    @Test@Ignore
+
+    @Test(priority = 3)
+    @Ignore
     public void testCareersLocations() throws InterruptedException {
         walmarthome.Careers();
         walmarthome.CareersLocations();
-
     }
-//    @Test@Ignore
-//    public void testBrokenLink() throws IOException {
-//        walmarthome.brockenlink();
 
+    @Test(priority = 4)
 
-    @Test@Ignore
-    public void testWlamrtplus() throws IOException ,IOException{
+    public void testWlamrtplus() throws IOException, IOException {
         clickOnElement(walmartplus);
     }
 
 
-   /* @Test
-    public void testGetWalmartPlusText () throws InterruptedException {
-        getwalmartplustext();
-
-
-
-    }*/
-
-
-@Test
+    @Test(priority = 5)
+    @Ignore
     public void testWalmartplus() throws InterruptedException {
-    walmarthome.wlamrtplusTab();
-    String exResult="Free shipping, no order minimum";
-    String acResult=   walmarthome. wlmplus1.getText();
-    Assert.assertEquals(acResult,exResult,"text does not match");
-}
+        walmarthome.wlamrtplusTab();
+        String exResult = "Free shipping, no order minimum";
+        String acResult = walmarthome.wlmplus1.getText();
+        Assert.assertEquals(acResult, exResult, "text does not match");
+    }
 
-@Test@Ignore
+    @Test(priority = 6)
+    @Ignore
     public void testfifteendaysofftab() throws InterruptedException {
-    walmarthome.fifteendaysofftab();
+        walmarthome.fifteendaysofftab();
 
     }
-@Test@Ignore
+
+    @Test(priority = 7)
+    @Ignore
     public void testAllCareerAreaTab() throws InterruptedException {
-    walmarthome.allCarreerArea();
-    String exResult="";
-    String acResult=   walmarthome.allCareerArea.getText();
-    Assert.assertEquals(acResult,exResult,"text does not match");
-}
-@Test
+        walmarthome.allCarreerArea();
+        String exResult = "";
+        String acResult = walmarthome.allCareerArea.getText();
+        Assert.assertEquals(acResult, exResult, "text does not match");
+    }
+
+    @Test(priority = 8)
+    @Ignore
     public void testJobTitle() throws InterruptedException {
-    walmarthome.Jobtitle();
+        walmarthome.Jobtitle();
+
+    }
+
+    @Test(priority = 9)@Ignore
+    public void testMenuTab() throws InterruptedException {
+
+        walmarthome.menuTab();
+
+
+    }
+
 
 }
-
-
-
-
-
-}
-
-
-
-
 

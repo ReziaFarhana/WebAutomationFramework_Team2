@@ -40,8 +40,8 @@ public class WlamartHomePage extends WebAPI {
     public WebElement allCareerArea;
     @FindBy(xpath = jobTitle)
     public WebElement jobtitle;
-    @FindBy(xpath = jobtitle1)
-    public WebElement jobtitle2;
+      @FindBy(xpath = menutab)
+    public WebElement menutab1;
 
 
     //  @FindBy (how = How.XPATH, using =searchTextLocator ) public WebElement searchText;
@@ -107,10 +107,6 @@ public class WlamartHomePage extends WebAPI {
             }*/
 
 
-    public void samsclub() {
-
-    }
-
     public void brockenlink() throws IOException {
         WebAPI wp = new WebAPI();
         wp.brokenLink();
@@ -144,6 +140,15 @@ public class WlamartHomePage extends WebAPI {
 
 
     }
+
+
+    public void menuTab(){
+        menutab1.click();
+    }
+
+
+
+
 
 }
 

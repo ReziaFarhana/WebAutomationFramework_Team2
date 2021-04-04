@@ -4,7 +4,6 @@ import common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import sample.VerizonHomeRoom;
 
@@ -18,21 +17,20 @@ public class VerizonHomePageTest extends WebAPI {
     }
 
 
-    @Test
-    @Ignore
+    @Test(priority = 1)
     public void testHomeInternet() {
         verizonhomeroom.HomeInternet();
 
     }
 
-    @Test@Ignore
+    @Test(priority = 2)
     public void testhomeInternetAva() {
         verizonhomeroom.homeInternetAva();
 
     }
 
 
-    @Test@Ignore
+    @Test(priority = 3)
     public void testfiveG() {
         verizonhomeroom.fiveGhomeInternet();
         String expectedResult="Experience the power of Verizon 5G\n" +
@@ -42,7 +40,7 @@ public class VerizonHomePageTest extends WebAPI {
         Assert.assertEquals(actualResult,expectedResult,"Text Not found ");
     }
 
-    @Test
+    @Test(priority = 4)
     public void testChatTab(){
         verizonhomeroom.ChatTab();
         String expectedResult="Get a $100 Verizon Gift Card and discovery+ with your order today. Chat now to see if you qualify!";
@@ -50,7 +48,7 @@ public class VerizonHomePageTest extends WebAPI {
         Assert.assertEquals(actualResult,expectedResult,"Text Not found ");
 
     }
-        @Test
+        @Test(priority = 5)
         public void testLanguageSwitch() throws InterruptedException {
         verizonhomeroom.lgeSwitch();
         String expectedResult="English";
