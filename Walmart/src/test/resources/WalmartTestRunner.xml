@@ -21,8 +21,11 @@
 
     <test name="Walmart Automation Test Script using chrome">
         <classes>
-                <class name="homepagetest.HomePageTest"></class>
-            <class name = "helpcenterpagetest.HelpCenterPageTest"></class>
+<!--            <class name="homepagetest.HomePageTest"/>-->
+<!--            <class name="helpcenterpagetest.HelpCenterPageTest"/>-->
+<!--            <class name="helpcenterpagetest.HelpCenterPageTest"/>-->
+<!--            <class name="registrationPageTest.RegistrationPageTest"/>-->
+            <class name="searchboxtest.SearchBoxTest"/>
         </classes>
     </test>       
 

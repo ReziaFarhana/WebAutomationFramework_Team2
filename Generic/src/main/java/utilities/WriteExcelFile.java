@@ -14,14 +14,20 @@ public class WriteExcelFile {
     private static final String FILE_NAME = System.getProperty("user.dir") + "/DataTest/TestExcelFile.xlsx";
     //private static final String FILE_NAME = "DataTest/myFile.xlsx";
 
+    static int min = 0;
+    static int max = 100;
+
+    static int random_integer = (int) (Math.random() * (max - min + 1) + min);
+    static String email =   "2021" + random_integer + "dingdong"+ "@yahoo.com";
+    static String password =   "TesTPassWord" + random_integer ;
+
     public static void writeExcel(String fileName) {
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("studentList");
+        XSSFSheet sheet = workbook.createSheet("WalmartReg");
         Object[][] stDetails = {
-                {"Sl", "FirstName", "LastName", "ContactNumber"},
-                {"1", "Anika", "islam", "897598759"},
-                {"2", "Mahid", "Samad", "997598759"},
-                {"2", "Mezba", "Ahmed", "797598759"},
+                {"firstName", "lastName", "email", "password"},
+                { "Ting", "Tong", email,password},
+
         };
         int rowNum = 0;
         System.out.println("Excel file Created");

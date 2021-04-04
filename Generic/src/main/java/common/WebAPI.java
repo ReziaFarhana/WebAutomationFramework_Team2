@@ -199,11 +199,11 @@ public class WebAPI {
         return driver;
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void cleanUp() {
-        //driver.close();
-        driver.quit();
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void cleanUp() {
+//        //driver.close();
+//        driver.quit();
+//    }
 
 
 // Helper Method
@@ -477,12 +477,12 @@ public class WebAPI {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
-    //new window handle
-    public void windowHandle(){
-        String parentHandle = driver.getWindowHandle();
-        for (String winHandle : driver.getWindowHandles()) {
-            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
-        }
+        //new window handle
+        public void windowHandle(){
+            String parentHandle = driver.getWindowHandle();
+            for (String winHandle : driver.getWindowHandles()) {
+                driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+            }
     }
     //clicking images using cssSelector- by easha
     public void getImage(String cssLocator, String pgTitle) {
@@ -764,7 +764,9 @@ public class WebAPI {
         }
     }
 
-
+    public void typeOnElementByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
+    }
     public void typeOnElement1(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
