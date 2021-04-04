@@ -13,7 +13,7 @@ import static sample.WalmartHomePageWebElements.*;
 public class WlamartHomePage extends WebAPI {
 
     WebAPI wa = new WebAPI();
-    // Find By Annotation: First Approach
+
     @FindBy(how = How.XPATH, using = searchBoxLocator)
     public WebElement searchBox;
     @FindBy(how = How.XPATH, using = searchButtonLocator)
@@ -40,18 +40,40 @@ public class WlamartHomePage extends WebAPI {
     public WebElement allCareerArea;
     @FindBy(xpath = jobTitle)
     public WebElement jobtitle;
-      @FindBy(xpath = menutab)
-    public WebElement menutab1;
+    @FindBy(xpath = menu)
+    public WebElement menu1;
+    @FindBy(xpath = homeImprovment)
+    public WebElement homeImprovment1;
+    @FindBy(xpath = doorsandGates)
+    public WebElement doorsandGates1;
+    @FindBy(xpath = Benefits)
+    public WebElement Benifits1;
+    @FindBy(xpath = allBenefits)
+    public WebElement allBenefits1;
+    @FindBy(xpath = getWalmartplusbenifits)
+    public WebElement getWalmartplusbenifits1;
+    @FindBy(xpath = getFifteendaysoff)
+    public WebElement getFifteendaysoff1;
+    @FindBy(xpath = searchMyStore)
+    public WebElement searchMyStore1;
+    @FindBy(xpath = searchButtontrial)
+    public WebElement searchButtontrial1;
+    @FindBy(xpath = vase)
+    public WebElement vase1;
+    @FindBy(xpath = cart)
+    public WebElement cart1;
+    @FindBy(xpath = addMoreItems)
+    public WebElement addMoreItems1;
+    @FindBy(xpath = SignInToCreateAnAccount)
+    public WebElement SignInToCreateAnAccount1;
+    @FindBy(xpath = CreateAnAccount)
+    public WebElement CreateAnAccount1;
+    @FindBy(xpath = CreateWalmartAccount)
+    public WebElement CreateWalmartAccount1;
 
-
-    //  @FindBy (how = How.XPATH, using =searchTextLocator ) public WebElement searchText;
-
-    // Action Method
     public void searchBox() throws InterruptedException {
-        // Enter productName
         searchBox.sendKeys(productName);
         Thread.sleep(3000);
-        // Click on searchButton
         searchButton.click();
 
     }
@@ -99,23 +121,14 @@ public class WlamartHomePage extends WebAPI {
         }
     }
 
-  /*      public void typeOnElement1(WebElement locator, String value) {
-            try {
-                Accountabb.sendKeys("mariaamiar90@gmail.com");
-            } catch (Exception ex) {
-                walmartplus.sendKeys(value);
-            }*/
-
-
     public void brockenlink() throws IOException {
         WebAPI wp = new WebAPI();
-        wp.brokenLink();
+        wa.brokenLink();
     }
 
     public void wlamrtplusTab() throws InterruptedException {
         wlmplus.click();
         wait(10);
-        wlmplus1.getText();
     }
 
     public void fifteendaysofftab() throws InterruptedException {
@@ -135,19 +148,46 @@ public class WlamartHomePage extends WebAPI {
     }
 
     public void Jobtitle() throws InterruptedException {
-        allCarreerArea();
-        jobtitle.sendKeys("cashier");
+        career.click();
+        sleepFor(5);
+        allCareers.click();
+    }
+
+    public void menuTab() throws InterruptedException {
+        menu1.click();
+        mouseHoverByXpath(homeImprovment);
+        Thread.sleep(5000);
+
+    }
+
+    public void walmartPlusBenifits() throws InterruptedException {
+        getWalmartplusbenifits1.click();
+        sleepFor(5);
+        getFifteendaysoff1.click();
+        sleepFor(5);
+        searchMyStore1.sendKeys("vase");
+        searchButtontrial1.click();
 
 
     }
 
-
-    public void menuTab(){
-        menutab1.click();
+    public void inputBox() {
+        typeOnInputBox(searchButtontrial, "vase");
     }
 
+    public void freeTrial() throws InterruptedException {
+
+        getWalmartplusbenifits1.click();
+        sleepFor(5);
+        getFifteendaysoff1.click();
+        sleepFor(5);
+        cart1.click();
+        addMoreItems1.click();
+        SignInToCreateAnAccount1.click();
+        CreateAnAccount1.click();
 
 
+    }
 
 
 }

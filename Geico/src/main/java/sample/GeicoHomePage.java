@@ -12,17 +12,42 @@ public class GeicoHomePage extends WebAPI {
     public WebElement geicozipcode;
     @FindBy(xpath = GeicoZipCodeSubmitbutton)
     public WebElement geicoZipcodeSubmiButton;
-    @FindBy(xpath = infoTab)
-    public WebElement infotab;
+    @FindBy(xpath = information)
+    public WebElement information1;
     @FindBy(xpath = autoInsuranceText)
     public WebElement autoinsurancegettext;
     @FindBy(xpath = webandMobile)
     public WebElement webandmobile;
     @FindBy(xpath = geicoMobileApp)
     public WebElement geicomobileapp;
- @FindBy(xpath = MobileAppTab)
-    public WebElement mobileapptab;
-
+    @FindBy(xpath = MobileAppText)
+    public WebElement MobileAppText1;
+    @FindBy(xpath = webandMobileTitle)
+    public WebElement webandMobileTitle1;
+    @FindBy(xpath = expressServices)
+    public WebElement expressServices1;
+    @FindBy(xpath = expressServicesText)
+    public WebElement expressServicesText1;
+    @FindBy(xpath = amazonAlexa)
+    public WebElement amazonAlexa1;
+    @FindBy(xpath = amazonAlexaText)
+    public WebElement amazonAlexaText1;
+    @FindBy(xpath = geicoLiving)
+    public WebElement geicoLiving1;
+    @FindBy(xpath = geicoLivingtext)
+    public WebElement geicoLivingtext1;
+    @FindBy(xpath = socialMedia)
+    public WebElement socialMedia1;
+    @FindBy(xpath = socialMediaText)
+    public WebElement socialMediaText1;
+    @FindBy(css = geicoFacebook)
+    public WebElement geicoFacebook1;
+    @FindBy(css = geicoFacebookText)
+    public WebElement geicoFacebookText1;
+    @FindBy(css = geicoTweeter)
+    public WebElement geicoTweeter1;
+    @FindBy(xpath = Questions)
+    public WebElement Questions1;
 
     public void Geicozipcode() throws InterruptedException {
         geicozipcode.sendKeys(zipcode);
@@ -35,25 +60,53 @@ public class GeicoHomePage extends WebAPI {
 
     }
 
-    public void infoTab() throws InterruptedException {
-        infotab.click();
-    }
-
-
     public void infoTabMobileapp() throws InterruptedException {
-        infoTab();
+        information1.click();
         webandmobile.click();
         Thread.sleep(5000);
-        geicomobileapp.click();
-
     }
 
     public void mobileApp() throws InterruptedException {
         infoTabMobileapp();
-        Thread.sleep(5000);
         geicomobileapp.click();
         Thread.sleep(5000);
-        mobileapptab.click();
 
     }
+
+    public void ExpressServices() throws InterruptedException {
+        infoTabMobileapp();
+        expressServices1.click();
+    }
+
+
+    public void amazonAlexa() throws InterruptedException {
+        infoTabMobileapp();
+        amazonAlexa1.click();
+    }
+
+
+    public void geicoLiving() throws InterruptedException {
+        infoTabMobileapp();
+        geicoLiving1.click();
+    }
+
+    public void SocialMedia() throws InterruptedException {
+        infoTabMobileapp();
+        socialMedia1.click();
+    }
+
+    public void geicoFacebook() throws InterruptedException {
+        infoTabMobileapp();
+        socialMedia1.click();
+        geicoFacebook1.click();
+    }
+
+    public void GeicoTweeter() throws InterruptedException {
+        infoTabMobileapp();
+        Thread.sleep(5000);
+        mouseHoverByXpath(Questions);
+
+    }
+
+
 }

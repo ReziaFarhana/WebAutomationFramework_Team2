@@ -124,7 +124,7 @@ bbcFuture.FutureTabMenu();
         Assert.assertEquals(acResult,exResult,"test failed ");
     }
 
-@Test
+@Test(priority = 15)
     public void testspaceTab() throws InterruptedException {
         bbcFuture.spacetab();
 }
