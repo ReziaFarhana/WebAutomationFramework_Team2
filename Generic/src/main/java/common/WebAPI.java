@@ -82,7 +82,7 @@ public class WebAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        //driver.close();
+//        driver.close();
     }
 
     @AfterSuite
@@ -119,8 +119,8 @@ public class WebAPI {
 
     // Browser Setup
     public static WebDriver driver = null;
-    public static String browserStack_userName = "demo579";
-    public static String browserStack_accessKey = "s8gx9NYyS3zW9kLcbmcH";
+    public static String browserStack_userName = "eashakhanam1";
+    public static String browserStack_accessKey = "krpxyDYbciNw3h89gnkK";
     public static String sauceLabs_userName = "";
     public static String sauceLabs_accessKey = "";
 
@@ -199,11 +199,11 @@ public class WebAPI {
         return driver;
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void cleanUp() {
-        //driver.close();
-        driver.quit();
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void cleanUp() {
+//        //driver.close();
+//        driver.quit();
+//    }
 
 
 // Helper Method
@@ -288,9 +288,10 @@ public class WebAPI {
         driver.findElement(By.id(locator)).clear();
     }
 
-    public void navigateBack() {
+        public void navigateBack() {
         driver.navigate().back();
     }
+
 
     public static void clickOnElement(String locator, WebDriver driver1) {
         try {
@@ -408,6 +409,10 @@ public class WebAPI {
         return driver.findElement(By.id(locator)).getText();
     }
 
+    public String getTextByClass(String locator) {
+        return driver.findElement(By.className(locator)).getText();
+    }
+
     public String getTextByName(String locator) {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
@@ -422,11 +427,20 @@ public class WebAPI {
         return items;
     }
 
-    public void selectOptionByVisibleText(WebElement element, String value) {
-        Select select = new Select(element);
+    //DROPDOWN
+    public void selectOptionByVisibleText(WebElement locator, String value) {
+        Select select = new Select(locator);
         select.selectByVisibleText(value);
     }
-
+    public void dropDown(String locator, String value){
+        Select select = new Select(driver.findElement(By.cssSelector(locator)));
+        select.selectByValue(value);
+    }
+    public void hoverOver(WebDriver drive, WebElement elementHover) throws InterruptedException {
+        Actions selectToHover = new Actions(drive);
+        selectToHover.moveToElement(elementHover).build().perform();
+        Thread.sleep(3000);
+    }
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -463,10 +477,27 @@ public class WebAPI {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
+        //new window handle
+        public void windowHandle(){
+            String parentHandle = driver.getWindowHandle();
+            for (String winHandle : driver.getWindowHandles()) {
+                driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+            }
+    }
+    //clicking images using cssSelector- by easha
+    public void getImage(String cssLocator, String pgTitle) {
+        driver.findElement(By.cssSelector(cssLocator)).click();
+        if (driver.getTitle().equals(pgTitle)) {
+            System.out.println("We are on image page");
+        } else {
+            System.out.println("We are not on image page");
+        }
+    }
 
     //iFrame Handle
     public void iframeHandle(WebElement element) {
         driver.switchTo().frame(element);
+        element.click();
     }
 
     public void goBackToHomeWindow() {
@@ -494,6 +525,9 @@ public class WebAPI {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+
+
 
     public void waitUntilSelectable(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -544,6 +578,11 @@ public class WebAPI {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         } catch (Exception ex3) {
             System.out.println("CSS locator didn't work");
+        }
+        try {
+            driver.findElement(By.xpath(locator)).sendKeys(value, Keys.ENTER);
+        } catch (Exception ex3) {
+            System.out.println("XPATH locator didn't work");
         }
     }
 
@@ -627,6 +666,10 @@ public class WebAPI {
     public void clickById(String loc) {
         driver.findElement(By.id(loc)).click();
     }
+    //click by class by easha
+    public void clickByClass(String loc) {
+        driver.findElement(By.className(loc)).click();
+    }
 
     public void clickByName(String loc) {
         driver.findElement(By.name(loc)).click();
@@ -643,13 +686,47 @@ public class WebAPI {
         String exp = expValue; // exp is coming from Requirement or Mock-up
         Assert.assertEquals(act, exp);
     }
+    //CHECKBOX- by easha
+    public void tryCheckbox(String idLocator){
+        WebElement checkbox = driver.findElement(By.id(idLocator));
+        checkbox.click();
+    }
+    //radio button
+    public void tryRadioBtn(String xPLocator){
+        WebElement checkbox = driver.findElement(By.xpath(xPLocator));
+        checkbox.click();
+    }
 
     // Slider Handlaing
     // https://stackoverflow.com/questions/15171745/how-to-slidemove-slider-in-selenium-webdriver
 
+    //SCROLL && Click METHODS - by easha
+    public void scrollByID(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.id(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }public void scrollByXPATH(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }public void scrollbyCSS(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.cssSelector(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyClass(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.className(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+
     public void waitTimeExplicit(String locator) {
         // Explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
@@ -687,7 +764,9 @@ public class WebAPI {
         }
     }
 
-
+    public void typeOnElementByXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
+    }
     public void typeOnElement1(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
