@@ -466,6 +466,23 @@ public class WebAPI {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
+    //    **********************   YASMINA      **********************************************
+    public void scrollTo(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public void scrollTO(String loc){
+        WebElement element = driver.findElement(By.xpath(loc));
+        scrollTo(element);
+    }
+    //***********************     YASMINA   ********************
+    public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
+        Actions selectMenu = new Actions(driver1);
+        selectMenu.moveToElement(elementHover).click(elementClick).build().perform();
+    }
+
+
 
     //iFrame Handle
     public void iframeHandle(WebElement element) {
@@ -753,7 +770,7 @@ public class WebAPI {
     }
 
 
-    public String getCurrentUrl() {
+    public String getCurrentUrl(String bbcUrl) {
         String url = driver.getCurrentUrl();
         return url;
     }
