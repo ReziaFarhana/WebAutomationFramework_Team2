@@ -23,6 +23,10 @@ public class GeicoWebElement {
     public static final String geicoFacebookText = "#facebook > div > p:nth-child(1)";
     public static final String geicoTweeter = "//body/div[@id='wrapper']/div[@id='main']/div[@id='accessibility-main-content']/div[@class='container']/div[@class='row']/div[@id='content']/div[@class='row']/ul[@id='social-accordion']/li[1]/div[1]";
     public static final String Questions = "//p[contains(text(),'You do not need to set up a separate account to se')]";
+    public static final String contactUs = "[data-side-panel='information'] [href='/contact-us/']";
+    public static final String Quotes = "//label[.='Quotes']";
+public static final String Auto = "//label[.='Auto']";
+public static final String Continue = "//span[@id='btn_continue']";
 
 
 }

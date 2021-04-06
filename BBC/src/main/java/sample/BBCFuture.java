@@ -10,9 +10,6 @@ import static sample.BBCFutureWebElements.*;
 
 public class BBCFuture extends WebAPI {
 
-
-    //Home Page***********************************
-
     @FindBy(xpath = BBCHomeTab)
     public WebElement bbchome;
     @FindBy(xpath = BBCHomePageWeather)
@@ -27,6 +24,8 @@ public class BBCFuture extends WebAPI {
     public WebElement signinbuttom;
     @FindBy(xpath = WhatIsBBCFuture1)
     public WebElement whatisbbcfuture1;
+    @FindBy(xpath = searchButton)
+    public WebElement searchButton1;
 
 
     public void homePage() throws InterruptedException {
@@ -34,16 +33,11 @@ public class BBCFuture extends WebAPI {
         wait(10);
 //        bbchomepageweather.click();
 //        Thread.sleep(5000);
-//
-
-
     }
 
     public void BBCSignIn() throws InterruptedException {
         BBCsignin.click();
-
     }
-
 
     public void signIn() throws InterruptedException {
         BBCSignIn();
@@ -83,12 +77,22 @@ public class BBCFuture extends WebAPI {
     public WebElement welcometobbc;
     @FindBy(xpath = roadToRecovery)
     public WebElement roadtorecovery;
-
-     @FindBy(xpath = MadeOnEarthTitle)
+    @FindBy(xpath = MadeOnEarthTitle)
     public WebElement madeonearthtitle;
     @FindBy(xpath = space)
-    public WebElement space1 ;
-
+    public WebElement space1;
+    @FindBy(xpath = searchOkButton)
+    public WebElement searchOkButton1;
+    @FindBy(xpath = More)
+    public WebElement More1;
+    @FindBy(xpath = Music)
+    public WebElement Music1;
+    @FindBy(xpath = TopBBCMusic)
+    public WebElement TopBBCMusic1;
+    @FindBy(xpath = BestSongs)
+    public WebElement BestSongs1;
+    @FindBy(xpath = Tv)
+    public WebElement Tv1;
 
 
     public void madeOnEarthTab() throws InterruptedException {
@@ -118,7 +122,6 @@ public class BBCFuture extends WebAPI {
 
     }
 
-
     public void BBCMoreWhatIsBBCFuture() throws InterruptedException {
         FutureTab1.click();
         sleepFor(10);
@@ -127,7 +130,6 @@ public class BBCFuture extends WebAPI {
         BBCmorewhatisbbcFuture.click();
         sleepFor(20);
     }
-
 
     public void BBCMoreWhatIsBBCGetText() throws InterruptedException {
         FutureTab1.click();
@@ -145,12 +147,9 @@ public class BBCFuture extends WebAPI {
         sleepFor(10);
         FollowTheFoodta.click();
         Thread.sleep(2000);
-
-
     }
 
     public void FollowTheFood() throws InterruptedException {
-
         FutureTab1.click();
         sleepFor(10);
         FollowTheFoodta.click();
@@ -170,13 +169,11 @@ public class BBCFuture extends WebAPI {
     }
 
 
-
-
     public void madeOnEarth() throws InterruptedException {
-       FutureTab();
-       sleepFor(5);
-       madeonearth.click();
-       Thread.sleep(200);
+        FutureTab();
+        sleepFor(5);
+        madeonearth.click();
+        Thread.sleep(200);
 
 
     }
@@ -187,8 +184,45 @@ public class BBCFuture extends WebAPI {
         sleepFor(5);
         space1.click();
         Thread.sleep(200);
+    }
 
-}
+
+    public void searchButton() throws InterruptedException {
+        typeByXpath(searchButton, "News");
+        Thread.sleep(2000);
+        searchOkButton1.click();
+
+    }
+
+    public void moreButton() throws InterruptedException {
+        More1.click();
+        sleepFor(10);
+        Music1.click();
+        Thread.sleep(2000);
+        TopBBCMusic1.click();
+    }
+
+    public void musicButton() throws InterruptedException {
+        moreButton();
+        navigateBack();
+        clickByXpath(BestSongs);
+    }
+
+    public void TVButton() throws InterruptedException {
+        musicButton();
+        Tv1.click();
+    }
+
+
+    public void TVBBCNews() throws InterruptedException {
+       TVButton();
+       clickByXpath(BBCWordNews);
+        Thread.sleep(2000);
+       clickByXpath(BBCWordNewsLunch);
+       Thread.sleep(6000);
+    }
+
+
 }
 
 

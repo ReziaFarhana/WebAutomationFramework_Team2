@@ -48,6 +48,10 @@ public class GeicoHomePage extends WebAPI {
     public WebElement geicoTweeter1;
     @FindBy(xpath = Questions)
     public WebElement Questions1;
+    @FindBy(css = contactUs)
+    public WebElement contactUs1;
+    @FindBy(css = Continue)
+    public WebElement Continue1;
 
     public void Geicozipcode() throws InterruptedException {
         geicozipcode.sendKeys(zipcode);
@@ -101,10 +105,13 @@ public class GeicoHomePage extends WebAPI {
         geicoFacebook1.click();
     }
 
-    public void GeicoTweeter() throws InterruptedException {
-        infoTabMobileapp();
+    public void geicoContactUs() throws InterruptedException {
+        information1.click();
         Thread.sleep(5000);
-        mouseHoverByXpath(Questions);
+        contactUs1.click();
+        clickByXpath(Quotes);
+      Thread.sleep(2000);
+
 
     }
 

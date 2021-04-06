@@ -26,22 +26,33 @@ public class WalmartHomePageTest extends WebAPI {
     @Ignore
     public void testSearchBox() throws InterruptedException {
         walmarthome.searchBox();
-
+        String exResult = "tv - Walmart.com";
+        String acResult = driver.getTitle();
+        Assert.assertEquals(acResult, exResult, "Text not found ");
     }
+
+
 
     @Test(priority = 2)
     @Ignore
     public void testCareers() throws InterruptedException {
         walmarthome.Careers();
-
+        String exResult = "tv - Walmart.com";
+        String acResult = driver.getTitle();
+        Assert.assertEquals(acResult, exResult, "Text not found ");
     }
 
+
     @Test(priority = 3)
-    @Ignore
+
     public void testCareersLocations() throws InterruptedException {
         walmarthome.Careers();
         walmarthome.CareersLocations();
+        String exResult = "tv - Walmart.com";
+        String acResult = driver.getTitle();
+        Assert.assertEquals(acResult, exResult, "Text not found ");
     }
+
 
     @Test(priority = 4)
     @Ignore
