@@ -2,12 +2,16 @@ package utilities;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 
 public class ReadExcel {
 
@@ -21,6 +25,7 @@ public class ReadExcel {
             FileInputStream inputStream = new FileInputStream(new File(fileName));
             Workbook workbook = new XSSFWorkbook(inputStream);
             Sheet dataTypeSheet = workbook.getSheetAt(sheetNumber);
+
             Iterator<Row> rowIterator = dataTypeSheet.iterator();
             while (rowIterator.hasNext()) {
                 Row currentRow = rowIterator.next();
@@ -48,7 +53,28 @@ public class ReadExcel {
 
     }
 
+    @Test
+    public void searchOnBBCUsingExcelData() throws IOException, InterruptedException {
+//        path = new File("../File_Cabinet/BBCHeadLists.xlsx");  (File path, int sheetIndex)
+        File path = new File("../File_Cabinet/BBCHeadLists.xlsx");
+        FileInputStream input = new FileInputStream(path);
+        Workbook book = WorkbookFactory.create(input);
+        Sheet sheet = book.getSheetAt(0);
+        for (Row row : sheet) {
+            for (Cell cell : row) {
+                if (cell.getCellType() == CellType.STRING) {
+                    cell.getStringCellValue();
+                } else if ((cell.getCellType() == CellType.NUMERIC)) {
+                    cell.getNumericCellValue();
+                } else if ((cell.getCellType() == CellType.BLANK)) {
+                    cell.getCellStyle();// not sure
+                }
 
+            }
+        }
 
-
+    }
 }
+
+
+

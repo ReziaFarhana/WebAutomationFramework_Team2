@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 import static home_page.MoreMenuTab.MenuBarMoreWEbElement.*;
 
 public class MoreTabTest extends WebAPI {
@@ -42,6 +44,15 @@ public class MoreTabTest extends WebAPI {
         assertEqualByXpath(washingtonDC,"Washington DC");
     }
 
+    @Test @Ignore
+    public void searchingOnBBCUsingDB () throws Exception {
+        act.searchWithSearchInputBox();
+    }
+
+    @Test
+    public void searchingOnBBCUsingExcel() throws IOException, InterruptedException {
+        act.searchOnBBCUsingExcelData();
+    }
 
 
 }

@@ -1,5 +1,7 @@
 package databases;
 
+import org.testng.annotations.Test;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,7 +24,7 @@ public class ConnectToSqlDB {
     public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         //InputStream ism = new FileInputStream("/secret.properties");
-        InputStream ism = new FileInputStream("../Generic/src/main/secret.properties");
+        InputStream ism = new FileInputStream("../Generic/src/main/java/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -238,4 +240,17 @@ public class ConnectToSqlDB {
             System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
         }
     }
+
+    @Test
+    public void readWrite() throws Exception {
+       List<String> read = readDataBase("bbc_search","Lists");
+       for (String list: read){
+           System.out.println(list);
+       }
+//       for (int i = 0;i<read.size();i++){
+//           System.out.println(read.get(i));
+//       }
+        System.out.println(read.get(0));
+    }
+
 }

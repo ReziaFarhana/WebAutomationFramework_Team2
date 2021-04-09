@@ -201,7 +201,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         //driver.close();
-        driver.quit();
+//        driver.quit();
     }
 
 
@@ -351,6 +351,7 @@ public class WebAPI {
         for (WebElement web : element) {
             String st = web.getText();
             text.add(st);
+            System.out.println();
         }
         return text;
     }

@@ -13,7 +13,16 @@ public class MenuBarMoreWEbElement {
     public static final String moreClickText= "#orb-panel-more-title";
     public static final String weatherText= "wr-c-weather-logo__svg";
     public static final String washingtonDC= "//h1[@id='wr-location-name-id']";
+
+
+
+    public static final String searchBareLocator= "#orb-search-q";
+    public static final String BBCHomePageHeaders = "div[id='orb-nav-links'] ul";
+//    public static final String verifyBBCHomeHeader= "#search-input";
+    public static final String verifyBBCHomeHeader= "//*[@id=\"search-input\"]";
 //    public static final String sss= "";
+
+
 
 
 
