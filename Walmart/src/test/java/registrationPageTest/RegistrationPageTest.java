@@ -5,18 +5,18 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import registration.RegistrationPage;
+import registration.RegistrationPageWithExcel;
 
 import java.io.IOException;
 
 import static registration.RegistrationPageWebElements.*;
 
 public class RegistrationPageTest extends WebAPI {
-    RegistrationPage regpage;
+    RegistrationPageWithExcel regpage;
 
     @BeforeMethod
     public void initialization() {
-        regpage = PageFactory.initElements(driver, RegistrationPage.class);
+        regpage = PageFactory.initElements(driver, RegistrationPageWithExcel.class);
     }
 
 //@Test(priority = 2)
@@ -29,7 +29,7 @@ public class RegistrationPageTest extends WebAPI {
 
     @Test(priority = 1)
     public void registrationTest() throws InterruptedException, IOException {
-        regpage.register();
+        regpage.registerWithExcel();
         String expectedText = "Login";
         String actualText = driver.getTitle();
         Assert.assertEquals(actualText,expectedText,"Text did not match");

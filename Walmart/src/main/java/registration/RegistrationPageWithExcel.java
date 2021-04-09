@@ -3,6 +3,8 @@ package registration;
 import common.WebAPI;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utilities.WriteExcelFile;
 
@@ -13,29 +15,33 @@ import java.io.IOException;
 
 import static registration.RegistrationPageWebElements.*;
 
-public class RegistrationPage extends WebAPI {
+public class RegistrationPageWithExcel extends WebAPI {
 
     public static String filePath ="../Walmart/WalmartDataTest/WalmartReg.xlsx";
     public static File file = new File(filePath);
     public static FileInputStream inputStream;
     public static XSSFWorkbook workbook;
     public static XSSFSheet sheet;
+    public static String sheetWalmart = "WalmartReg";
+    public static String sheetWalmartLogin = "WalmartLogin";
 
     public static void readFile() throws IOException {
         inputStream = new FileInputStream(file);
         workbook = new XSSFWorkbook(inputStream);
-        sheet = workbook.getSheet("WalmartReg");
+        sheet = workbook.getSheet(sheetWalmart);
 
     }
 
-    public void createAccountPage() throws InterruptedException {
+    public  void createAccountPage() throws InterruptedException {
         clickByXpath(accountBtn);
         sleepFor(4);
         clickByXpath(signInBtn);
     }
 
-    @Test
-    public void register() throws InterruptedException, IOException {
+
+
+
+    public void registerWithExcel() throws InterruptedException, IOException {
         WriteExcelFile.writeExcel(filePath);
         readFile();
         createAccountPage();
@@ -52,5 +58,8 @@ public class RegistrationPage extends WebAPI {
         clickByXpath(showPasswrdBtn);
         Thread.sleep(5);
         scrollByXPATH(createAccountBtn2);
+        String expectedTitle = "Account";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle, "Title doesnt match my guy");
     }
 }
