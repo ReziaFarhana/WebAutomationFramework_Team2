@@ -6,6 +6,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -69,7 +70,11 @@ public class LoginPageTest extends WebAPI {
 
         //click sign in
         clickByXpath(signInButtonCusXp);
+        sleepFor(4);
 
+        String expectedTitle = "Account";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle, "Titles dont match");
 
     }
 
