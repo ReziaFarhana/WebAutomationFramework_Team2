@@ -20,7 +20,7 @@ public class Motorola extends WebAPI {
     public void motorolaPhoneSelection() {
         motorolaTab();
         windowHalfPageScrollUp();
-        clickByLinkText(buyNowButton);
+        clickByXpath(buyNowButton);
 
     }
 

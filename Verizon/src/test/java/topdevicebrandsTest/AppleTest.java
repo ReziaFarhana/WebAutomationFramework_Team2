@@ -24,7 +24,7 @@ public class AppleTest extends WebAPI {
     }
 
     @Test
-    public void compareModelsTest(){
+    public void compareModelsTest() throws InterruptedException {
         apple.compareModels();
         String expectedTitle = "Compare Apple iPads | New iPad (8th Gen) 10.2, Air, Pro & More | Verizon";
         String actualTitle = driver.getTitle();

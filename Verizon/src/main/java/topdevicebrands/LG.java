@@ -17,15 +17,16 @@ public class LG extends WebAPI {
     public void lGvalueAndPerformance() {
         lGTab();
         clickByXpath(lGVauleAndPerformanceLocator);
-        clickByLinkText(buyNowButton);
+        clickByXpath(buyNowButton);
     }
 
-    public void addToCart(){
+    public void addToCart() throws InterruptedException {
         lGvalueAndPerformance();
         clickByXpath(fullRetailOption);
         clickByXpath(continueButton);
         typeByXpath(zipCodeInputBox,zipCode);
         clickByXpath(confrimLocationButton);
+        sleepFor(5);
         clickByXpath(newCustomerButton);
     }
 

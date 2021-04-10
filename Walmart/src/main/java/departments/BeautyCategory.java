@@ -84,35 +84,36 @@ public class BeautyCategory extends WebAPI {
         DataSource.getItemsListFromDB("personalCare","Options");
     }
 
-    public void personalCareByBrandFindYourHappyPlace() {
+    public void personalCareByBrandFindYourHappyPlace() throws InterruptedException {
         personalCareOption();
         windowHalfPageScroll();
         clickByXpath(findYourHappyPlaceLocator);
         clickByCss(genderSelection);
         //dropdown
         selectOptionByVisibleText(sortBy, priceLowToHight);
-        clickByLinkText(lotionItemSelect);
+        sleepFor(3);
+        clickByXpath(lotionItemSelect);
     }
 
-    public void addingLotionToCart() {
+    public void addingLotionToCart() throws InterruptedException {
         personalCareByBrandFindYourHappyPlace();
         selectOptionByVisibleText(increasingQuantity, quantityAmmount);
         clickByXpath(addingLotionToCart);
     }
 
-    public void updatingItemQuantityFromShoppingCart() {
+    public void updatingItemQuantityFromShoppingCart() throws InterruptedException {
         addingLotionToCart();
         //clickByCss(captchaCheckBox);
         clickByXpath(viewCart);
         selectOptionByVisibleText(increasingQuantityFromCart, cartQuantityAmmount);
     }
 
-    public void removingItemFromShoppingCart() {
+    public void removingItemFromShoppingCart() throws InterruptedException {
         updatingItemQuantityFromShoppingCart();
         clickByXpath(removeItemFromCart);
     }
 
-    public void undoRemovingItem() {
+    public void undoRemovingItem() throws InterruptedException {
         removingItemFromShoppingCart();
         clickByXpath(undoRemove);
     }

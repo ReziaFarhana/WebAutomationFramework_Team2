@@ -7,7 +7,8 @@ public class TopDeviceBrandsWebElements {
     //public static final String topAccessoryBrandsList = "div[class='gnav20-footer-level-one'] div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(2) ul:nth-child(1) li:nth-child(1)";
     public static final String topAccessoryBrandsList = "//*[@class='gnav20-footer-list']";
     public static final String samsungLocator = "Samsung";
-    public static final String saveOnTheLatestButton ="//body/div/div/main[contains(@role,'main')]/div/div/section/div/div/div[contains(@aria-label,'carousel with 4 slides')]/div/div/div[contains(@aria-label,'Slide 1 of 4')]/div/div/div/div/a[1]";
+    //public static final String saveOnTheLatestButton ="//body/div/div/main[contains(@role,'main')]/div/div/section/div/div/div[contains(@aria-label,'carousel with 4 slides')]/div/div/div[contains(@aria-label,'Slide 1 of 4')]/div/div/div/div/a[1]";
+    public static final String saveOnTheLatestButton ="//div[@aria-label='Slide 1 of 4']//div[2]";
     public static final String addFilterButton = "//button[normalize-space()='Add filters']";
     public static final String brandButton = "//button[normalize-space()='Brand']"; //xpath
     public static final String brandOption = "label[for='Brand0']"; //css
@@ -33,15 +34,18 @@ public class TopDeviceBrandsWebElements {
     public static final String reviewsType = "//option[normalize-space()='Most helpful']";
     public static final String compareTab = "//a[normalize-space()='Compare']";
     public static final String compareOptions = "//a[contains(@href,'/wireless-devices/tablets/ipad-compare/')]";
-    public static final String lGVauleAndPerformanceLocator = "//a[normalize-space()='Value + Performance']";
+    //public static final String lGVauleAndPerformanceLocator = "//a[normalize-space()='Value + Performance']";
+    public static final String lGVauleAndPerformanceLocator = "//a[@href='/wireless-devices/smartphones/lg-affordable-phones/']";
     public static final String buyNowButton = "//a[normalize-space()='Buy now']";
+    //public static final String buyNowButton = "//body//div//main[@role='main']//main//section[1]//div[1]//div[1]//div[1]//a[1]";
     public static final String lG = "LG";
     public static final String fullRetailOption = "//span[normalize-space()='Full retail price']";
     public static final String continueButton = "//button[@aria-label='Continue']";
     public static final String zipCodeInputBox = "//*[@aria-label='[object Object] Input Field']";
     public static final String zipCode = "53224";
     public static final String confrimLocationButton = "//button[@aria-label='Confirm Location']";
-    public static final String newCustomerButton ="//button[@aria-label='New Customer']";
+    //public static final String newCustomerButton ="//button[@aria-label='New Customer']";
+    public static final String newCustomerButton ="//*[@id='customer-overlay']/div[3]/div/div/div/div/span/div/div/div/div/div/div[1]/button";
     public static  final String feedbackButton = "//button[@id='nebula_div_btn']";
     public static final String feedBackHandle = "iframe[@title='Feedback Survey']";
     public static final String motorolaLocator = "Motorola";

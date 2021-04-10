@@ -15,6 +15,8 @@
 <!--    <parameter name="os_version" value="10"></parameter>-->
     <parameter name="browserName" value="firefox"></parameter>
     <parameter name="browserVersion" value="86.0"></parameter>
+<!--        <parameter name="browserName" value="chrome"></parameter>-->
+<!--        <parameter name="browserVersion" value="89"></parameter>-->
     <parameter name="url" value="https://www.walmart.com/"></parameter>
 
 <!--    <parameter name="OS" value="OS X"/>-->
@@ -28,7 +30,7 @@
         <classes>
             <class name="departmenttest.BeautyCategoryTest">
                 <methods>
-<!--                    <include name="storingPersonalCareOptionListsInDatabaseTest"/>-->
+<!--                    <include name="personalCareByBrandFindYourHappyPlaceTest"/>-->
 <!--                    <include name="beautyButtonLocateTest"/>-->
 <!--                    <include name="shopAllPremiumBeautyTest"/>-->
 

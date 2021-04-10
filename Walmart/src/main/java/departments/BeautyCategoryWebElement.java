@@ -9,7 +9,8 @@ public class BeautyCategoryWebElement {
 
 
     public static final String beautyButtonLocator = "//button[14]";
-    public static final String personalCareButton = "//div[@id='dept-deKWalqi-children']//a[@class='j_a j_c'][normalize-space()='Personal Care']";
+    //public static final String personalCareButton = "//div[@id='dept-deKWalqi-children']//a[@class='j_a j_c'][normalize-space()='Personal Care']";
+    public static final String personalCareButton = "//div[@id='dept-KfsRJwiG-children']//a[@class='j_a j_c'][normalize-space()='Personal Care']";
     public static final String personalCareOptionList = "*[class='CategoryTopNav-nav-button display-inline-block u-text-truncate']";
     public static final String bathAndBodyTabLocator = "//a[@id='Bath&Body-menu-button']";
     public static final String bathShowerAndSpaMenuButton = "//a[@id='Bath,Shower&Spa-menu-button']";
@@ -24,7 +25,9 @@ public class BeautyCategoryWebElement {
     public static final String genderSelection = "#Female-0-gender";
     public static final String sortByLocator = "//*[@class='field-input field-input--secondary']";
     public static final String priceLowToHight = "Price: low to high";
-    public static final String lotionItemSelect = "Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz";
+//    public static final String lotionItemSelect = "//*[text()='Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz']";
+    public static final String lotionItemSelect = "//*[@href='/ip/Find-Your-Happy-Place-Home-For-The-Holidays-Nutmeg-and-Sweet-Cream-Body-Lotion-10-fl-oz/990494942']//*[text()='Find Your Happy Place Home For The Holidays Nutmeg and Sweet Cream Body Lotion 10 fl oz']";
+    //public static final String lotionItemSelect = "//*[@id='searchProductResult']/ul/li[1]/div/div[2]/div[5]/div";
     public static final String increasingQuantityBox = "//select[@aria-label='Quantity']";
     public static final String quantityAmmount = "3";
     public static final String addingLotionToCart = "//button[@class='button spin-button prod-ProductCTA--primary button--primary']";
@@ -56,7 +59,8 @@ public class BeautyCategoryWebElement {
     public static final String beautyTutorialTab="//a[normalize-space()='Trending in Beauty']";
     public static final String premiumBeauty = "//a[normalize-space()='Premium Beauty']";
     public static final String premiumBeautyListOfCategory = "//*[@class='CategoryTopNav-nav-button display-inline-block u-text-truncate']";
-    public static final String removeItemFromCart = "//button[@aria-label='Remove Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz from cart']//span[@class='button-wrapper']//span[contains(text(),'Remove')]";
+   // public static final String removeItemFromCart = "//button[@aria-label='Remove Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz from cart']//span[@class='button-wrapper']//span[contains(text(),'Remove')]";
+    public static final String removeItemFromCart = "//button[@aria-label='Remove Find Your Happy Place Home For The Holidays Nutmeg and Sweet Cream Body Lotion 10 fl oz from cart']//span//span[contains(text(),'Remove')]";
     public static final String undoRemove = "//span[normalize-space()='Undo']";
 
     //Test Webelements
@@ -65,7 +69,7 @@ public class BeautyCategoryWebElement {
     public static final String pageTitle = "//h1[normalize-space()='Premium Beauty']" ;
     public static final String pageTitle1 ="//h1[normalize-space()='Black Owned Hair Products']";
     public static final String headerText = "//h1[normalize-space()='Personal Care']";
-    public static final String productTitle = "//*[text()='Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz']";
+    public static final String productTitle = "//h1[contains(text(),'Find Your Happy Place Home For The Holidays Nutmeg')]";
     public static final String option = "//*[text()='See gift option in cart']";
     public static final String giftingFilter = "//*[text()='Gifting']";
     public static final String ratingsCount = "//*[@class='reviews-sort-bar-label-text-wrapper']";

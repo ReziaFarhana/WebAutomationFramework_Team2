@@ -23,8 +23,9 @@ public class Apple extends WebAPI {
         clickByLinkText(appleLocator);
     }
 
-public void compareModels(){
+public void compareModels() throws InterruptedException {
         appleLocator();
         hoverAndClick(driver,compare,compareOption);
+        sleepFor(3);
 }
 }

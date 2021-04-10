@@ -49,9 +49,9 @@ public class WebAPI {
         jscript = (JavascriptExecutor) driver;
         jscript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
-public void windowsPageScrollToLocator(By locator) {
+public void windowsPageScrollToLocator(WebElement element) {
         jscript = (JavascriptExecutor) driver;
-        jscript.executeScript("arguments[0].scrollIntoView(true);", locator);
+        jscript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     public void windowTwoThirdPageScroll() {
@@ -860,8 +860,20 @@ public void windowsPageScrollToLocator(By locator) {
             }
         }
     }
+
+    public void closeTheOldWindow() {
+        String winHandleBefore = driver.getWindowHandle();
+        driver.switchTo().window(winHandleBefore);
+        driver.close();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
+    }
     public void typeOnElementNew(String locator, String value) {
         driver.findElement(By.id(locator)).sendKeys(value);
+    }
+    public void typeOnElementWithInteger(String locator, int value) {
+        driver.findElement(By.id(locator)).sendKeys(String.valueOf(value));
     }
 
     public void typeOnElementByIdNTab(String locator, String value) {

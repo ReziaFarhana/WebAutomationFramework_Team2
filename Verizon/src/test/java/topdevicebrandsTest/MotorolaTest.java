@@ -34,7 +34,7 @@ public class MotorolaTest extends WebAPI {
     @Test
     public void motorolaPhoneSelectionTest(){
         motorola.motorolaPhoneSelection();
-        String expectedTitle = "motorola one 5G UW: Features, Price & Reviews | Get It Today";
+        String expectedTitle = "Motorola razr: Colors, Features & Reviews | Get It Today";
         String actualTtile = driver.getTitle();
         Assert.assertEquals(actualTtile,expectedTitle,"Wrong title appeared");
     }

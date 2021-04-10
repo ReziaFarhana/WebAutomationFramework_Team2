@@ -9,7 +9,8 @@ import org.openqa.selenium.support.How;
 import static topdevicebrands.TopDeviceBrandsWebElements.*;
 
 public class Samsung extends WebAPI {
-
+    @FindBy(how = How.XPATH, using = saveOnTheLatestButton)
+    public WebElement saveOnTheLatest;
     @FindBy(how = How.XPATH, using = hoverFirstItemImage)
     public WebElement hoverFirstItem;
     @FindBy(how = How.XPATH, using = firstItemAddToCompareButton)
@@ -32,14 +33,15 @@ public class Samsung extends WebAPI {
         clickByLinkText(samsungLocator);
     }
 
-    public void saveOnTheLatestGalaxyDevicePage() {
+    public void saveOnTheLatestGalaxyDevicePage() throws InterruptedException {
         samsungTab();
         windowHalfPageScroll();
+        sleepFor(5);
         clickByXpath(saveOnTheLatestButton);
 
     }
 
-    public void filterFunctionalitySaveOnSamsungPhonesPage() {
+    public void filterFunctionalitySaveOnSamsungPhonesPage() throws InterruptedException {
         saveOnTheLatestGalaxyDevicePage();
         waitUntilClickAble(By.xpath(addFilterButton));
         clickByXpath(addFilterButton);
@@ -50,7 +52,7 @@ public class Samsung extends WebAPI {
         clickByXpath(closeFilterButton);
     }
 
-    public void sortAndPricingOnSaveOnSamsungPhonePage() {
+    public void sortAndPricingOnSaveOnSamsungPhonePage() throws InterruptedException {
         filterFunctionalitySaveOnSamsungPhonesPage();
         clickById(pricingDropdown);
         clickByXpath(paymentOption);
@@ -58,13 +60,13 @@ public class Samsung extends WebAPI {
         clickByXpath(sortByOptions);
     }
 
-    public void addToCompareFunctionality(){
+    public void addToCompareFunctionality() throws InterruptedException {
        sortAndPricingOnSaveOnSamsungPhonePage();
         hoverAndClick(driver,hoverSecondItem,secondItemAddToCompare);
         clickByXpath(closeButton);
     }
 
-    public void quickViewFunctionality(){
+    public void quickViewFunctionality() throws InterruptedException {
         sortAndPricingOnSaveOnSamsungPhonePage();
         hoverAndClick(driver,hoverFirstItem,quickViewFirstItem);
     }

@@ -14,7 +14,8 @@ public class PickupAndDelivery extends WebAPI {
         clickByXpath(pickupAndDeliveryTab);
         clickByXpath(popUp);
         //handling new tab
-        handleNewTab(driver);
+        //handleNewTab(driver);
+        closeTheOldWindow();
     }
 
     public void quickIntro() throws InterruptedException {

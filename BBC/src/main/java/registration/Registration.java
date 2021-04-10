@@ -41,15 +41,14 @@ public class Registration extends WebAPI {
         clickByXpath(registerNowLink);
         Thread.sleep(5000);
         clickByXpath(age);
-        typeOnElementNew(dayInput, sheet.getRow(1).getCell(0).getStringCellValue());
-        typeOnElementNew(monthInput, sheet.getRow(1).getCell(1).getStringCellValue());
-        typeOnElementNew(yearInput, sheet.getRow(1).getCell(2).getStringCellValue());
+        typeOnElementWithInteger(dayInput, (int) sheet.getRow(1).getCell(0).getNumericCellValue());
+        typeOnElementWithInteger(monthInput,(int) sheet.getRow(1).getCell(1).getNumericCellValue());
+        typeOnElementWithInteger(yearInput,(int) sheet.getRow(1).getCell(2).getNumericCellValue());
         clickById(continueButton);
         typeOnElementNew(emailAddress, sheet.getRow(1).getCell(3).getStringCellValue());
         typeOnElementNew(passwordField, sheet.getRow(1).getCell(4).getStringCellValue());
         clickById(showPassword);
+        sleepFor(3);
         clickById(continueButton);
     }
-
-
 }

@@ -2,7 +2,7 @@ package bbchomepageheader;
 
 public class BBCWebElements {
 
-    public static final String reelLocator = "//div[@id='orb-nav-links']//a[normalize-space()='Reel']";
+    public static final String reelLocator = "//div[@class='orb-nav-section orb-nav-links orb-nav-focus']//a[normalize-space()='Reel']";
     public static final String editorsPickVideo = "li[class='css-a8e17q-ItemWrapper e14k3tna1'] a[aria-label='Play video The nuclear lighthouses of the Arctic'] div[class='css-1avwjo0-BottomWrapper exmhqpn7']";
     public static final String playlistButton = "//a[normalize-space()='Playlists']";
     public static final String playlistTitle = "a[aria-label=\"Play video Tomorrow's India\"] div[class='css-luy3e1-Gradient exmhqpn3']";
@@ -15,7 +15,8 @@ public class BBCWebElements {
     public static final String hamburgerMenu = "//div[@class='burger-nav gelicon--menu burger-nav--worklife']";
     public static final String howWeThink = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='How We Think']";
     //public static final String equalityMatters = "//p[@class='nav-label b-reith-sans-font'][normalize-space()='Equality Matters']";
-    public static final String equalityMatters = "//p[normalize-space()='Equality Matters']";
+    //public static final String equalityMatters = "//p[normalize-space()='Equality Matters']";
+    public static final String equalityMatters = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='Equality Matters']";
     //    public static final String remoteControl = "//a[@href='/worklife/remote-control/']";
     public static final String remoteControl = "//p[@class='nav-label b-reith-sans-font nav-label--menu'][normalize-space()='Remote Control']";
     public static final String readMore = "//a[normalize-space()='Read More']";

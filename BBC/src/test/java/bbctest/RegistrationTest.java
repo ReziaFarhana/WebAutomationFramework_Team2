@@ -17,7 +17,7 @@ public class RegistrationTest extends WebAPI {
         registration = PageFactory.initElements(driver, Registration.class);
     }
 
-    @Test
+   // @Test
     public void signInPageVerifyTest(){
         registration.signInPageVerify();
         String expectedText = "Sign in";

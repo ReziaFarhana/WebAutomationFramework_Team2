@@ -38,7 +38,7 @@ public class SamsungTest extends WebAPI {
     }
 
     @Test(priority = 2)//passed
-    public void saveOnTheLatestGalaxyDevicePageTest(){
+    public void saveOnTheLatestGalaxyDevicePageTest() throws InterruptedException {
         samsung.saveOnTheLatestGalaxyDevicePage();
         String expectedTitle = "Save on Samsung Galaxy Phones | Shop Today";
         String actualTitle = getTextByXpath(saveOnSamsungPageHeader);
@@ -46,7 +46,7 @@ public class SamsungTest extends WebAPI {
     }
 
     @Test(priority = 3)//passed
-    public void brandFilterTest(){
+    public void brandFilterTest() throws InterruptedException {
         samsung.filterFunctionalitySaveOnSamsungPhonesPage();
         String expectedOption = "Samsung";
         String actualOption = getTextByXpath(brandOptionDisplayed);
@@ -54,7 +54,7 @@ public class SamsungTest extends WebAPI {
     }
 
     @Test(priority = 4)//passed
-    public void colorFilterTest(){
+    public void colorFilterTest() throws InterruptedException {
         samsung.filterFunctionalitySaveOnSamsungPhonesPage();
         String expectedOption = "Purple";
         String actualOption = getTextByXpath(colorOptionDisplayed);
@@ -62,7 +62,7 @@ public class SamsungTest extends WebAPI {
     }
 
     @Test(priority = 5)//passed
-    public void pricingDropdownTest(){
+    public void pricingDropdownTest() throws InterruptedException {
         samsung.sortAndPricingOnSaveOnSamsungPhonePage();
         String expectedOption = "2-Year Contract";
         String actualOption = getTextByXpath(paymentOption);
@@ -70,7 +70,7 @@ public class SamsungTest extends WebAPI {
     }
 
     @Test(priority = 6)//passed
-    public void sortByDropdownTest(){
+    public void sortByDropdownTest() throws InterruptedException {
         samsung.sortAndPricingOnSaveOnSamsungPhonePage();
         String expectedOption = "Featured";
         String actualOption = getTextByXpath(sortByOptions);

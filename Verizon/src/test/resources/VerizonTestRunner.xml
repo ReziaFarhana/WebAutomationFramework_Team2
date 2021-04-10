@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="VerizonTestSuit" parallel="none" thread-count="2">
-<!--    parallel="none"  Working Fine-->
-<!--    parallel="classes"  Working Fine-->
-<!--    parallel="tests"  Working Fine but have issue-->
+    <!--    parallel="none"  Working Fine-->
+    <!--    parallel="classes"  Working Fine-->
+    <!--    parallel="tests"  Working Fine but have issue-->
 
 
     <parameter name="useCloudEnv" value="false"/>
@@ -20,17 +20,19 @@
 
     <test name="Verizon Automation Test Script using chrome">
         <classes>
-            <class name="topdevicebrandsTest.SamsungTest"/>
-            <class name="topdevicebrandsTest.AppleTest"/>
-            <class name="topdevicebrandsTest.LGTest"/>
-            <class name="topdevicebrandsTest.MotorolaTest"/>
-            <class name="topdevicebrandsTest.GoogleTest"/>
-            <class name="topdevicebrandsTest.AmazonTest">
-                <!--                <methods>-->
-                <!--                                   Test case include or exclude-->
-                <!--                                   <exclude name="testSearchbox"></exclude>-->
-                <!--                                   <include name="testLogin"></include>-->
-                <!--                </methods>-->
+<!--            <class name="topdevicebrandsTest.SamsungTest"/>-->
+<!--                            <class name="topdevicebrandsTest.AppleTest"/>-->
+<!--                            <class name="topdevicebrandsTest.LGTest"/>-->
+<!--                            <class name="topdevicebrandsTest.MotorolaTest"/>-->
+<!--                            <class name="topdevicebrandsTest.GoogleTest"/>-->
+<!--                            <class name="topdevicebrandsTest.AmazonTest"/>-->
+<!--                                <methods>-->
+<!--&lt;!&ndash;                                    <include name="appleLocatorTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="compareModelsTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="addToCartTest"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <include name="motorolaPhoneSelectionTest"></include>&ndash;&gt;-->
+
+<!--                                </methods>-->
 
             </class>
 

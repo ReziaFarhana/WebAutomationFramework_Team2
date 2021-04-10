@@ -11,18 +11,20 @@ import java.io.IOException;
 
 public class WriteBBCRegistrationExcel {
     static int min = 50;
-    static int max = 100;
+    static int max = 500;
     //Generate random integer value from 50 to 100
     static int random_integer = (int) (Math.random() * (max - min + 1) + min);
-    static String email = "yinyan" + random_integer + "@gmail.com";
-    public static void writeExcel(String fileName) {
+    static String email = "yinyanxe" + random_integer + "@gmail.com";
+    static String email2 = "akash" + random_integer + "@gmail.com";
+    static String email3 = "akashbatash" + random_integer + "@gmail.com";
+    public static Object[][] writeExcel(String fileName) {
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("BBCRegistrationAccountInfo");
         Object[][] accountDetails = {
-                { "BirthDay","BirthMonth","BirthYear","Email", "Password"},
-                { "24", "12","1987", email,"ABcDe123"},
-                { "7", "9","1989", email ,"ABcDe123"},
-                { "13", "6","1980", email,"ABcDe123"},
+                { "birthDay","birthMonth","birthYear","email", "password"},
+                { 24, 12,1987, email,"ABcDe123"},
+                { 7, 9,1989, email2 ,"ABcDe123"},
+                { 13, 6,1980, email3,"ABcDe123"},
 
         };
         int rowNum = 0;
@@ -52,7 +54,9 @@ public class WriteBBCRegistrationExcel {
             io.printStackTrace();
         }
         System.out.println("Done");
+        return accountDetails;
     }
+
 
 
 }

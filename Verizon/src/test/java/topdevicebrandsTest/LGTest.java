@@ -36,7 +36,7 @@ public class LGTest extends WebAPI {
   }
 
   @Test
-    public void addToCartTest(){
+    public void addToCartTest() throws InterruptedException {
         lg.addToCart();
       String expectedHeader = "Customize your device.";
       String actualHeader = getTextByXpath(pageHeader);

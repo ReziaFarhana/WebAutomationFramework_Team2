@@ -82,15 +82,15 @@ public class BeautyCategoryTest extends WebAPI {
     }
 
     @Test(priority = 8)//passed
-    public void personalCareByBrandFindYourHappyPlaceTest(){
+    public void personalCareByBrandFindYourHappyPlaceTest() throws InterruptedException {
         beautyCategory.personalCareByBrandFindYourHappyPlace();
-        String expectedTitle = "Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz";
+        String expectedTitle = "Find Your Happy Place Home For The Holidays Nutmeg and Sweet Cream Body Lotion 10 fl oz";
         String actaulTitle = getTextByXpath(productTitle);
         Assert.assertEquals(actaulTitle,expectedTitle,"Title did not match");
     }
 
     @Test(priority = 9)//passed
-    public void addingLotionToCartTest() {
+    public void addingLotionToCartTest() throws InterruptedException {
         beautyCategory.addingLotionToCart();
         String expectedText = "See gift option in cart";
         String actualText = getTextByXpath(option);
@@ -98,7 +98,7 @@ public class BeautyCategoryTest extends WebAPI {
     }
 
     @Test(priority = 10)//passed
-    public void UpdatingItemQuantityFromShoppingCartTest() {
+    public void UpdatingItemQuantityFromShoppingCartTest() throws InterruptedException {
         beautyCategory.updatingItemQuantityFromShoppingCart();
         String expectedText = "Your cart: 3 items";
         String actualText = getTextById(cartUpdate);
@@ -106,7 +106,7 @@ public class BeautyCategoryTest extends WebAPI {
     }
 
     @Test(priority = 11)//passed
-    public void removingItemFromShoppingCartTest() {
+    public void removingItemFromShoppingCartTest() throws InterruptedException {
         beautyCategory.removingItemFromShoppingCart();
         String expectedText = "0 items in your cart";
         String actualText = getTextByXpath(cartUpdateAfterRemovingItem);
@@ -114,7 +114,7 @@ public class BeautyCategoryTest extends WebAPI {
     }
 
     @Test(priority = 12)//passed
-    public void undoRemovingItemFromShoppingCartTest() {
+    public void undoRemovingItemFromShoppingCartTest() throws InterruptedException {
         beautyCategory.undoRemovingItem();
         String expectedText = "Find Your Happy Place Moisturizing Body Lotion, Home For The Holidays, Nutmeg And Sweet Cream, For Dry Skin, 10 fl oz";
         String actualText = getTextByXpath(undoItemTitle);
@@ -190,6 +190,6 @@ public class BeautyCategoryTest extends WebAPI {
     public void readPersonalCareTableFromDBTest() throws Exception {
         beautyCategory.readPersonalCareTableFromDB();
     }
-
+//
 
     }
