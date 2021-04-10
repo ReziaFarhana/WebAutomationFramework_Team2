@@ -28,47 +28,60 @@ public class ContactUs extends WebAPI {
 
     public void contactUsPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
 
     }
 
     public void getIdCardsPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(getIdCardTab);
         clickByXpath(getIdCardTab);
 
     }
 
     public void trackaClaimPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(trackaClaimTab);
         clickByXpath(trackaClaimTab);
 
     }
 
     public void autoInsurancePage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(autoInsuranceTab);
         clickByXpath(autoInsuranceTab);
 
     }
 
     public void policyDocsPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(policyDocsTab);
         clickByXpath(policyDocsTab);
 
     }
 
     public void makePaymentPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(makePaymentTab);
         clickByXpath(makePaymentTab);
 
     }
     public void goPaperlessPage() throws InterruptedException {
         scrollDown();
+        waitTimeExplicit(contactUsTab);
         clickByXpath(contactUsTab);
+        waitTimeExplicit(goPaperlessTab);
         clickByXpath(goPaperlessTab);
 
     }

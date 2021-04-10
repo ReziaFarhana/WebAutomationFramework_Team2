@@ -20,13 +20,16 @@ public class Weather extends WebAPI {
 
 
     public void weatherPage() {
+        waitTimeExplicit(dropDown);
         clickByXpath(dropDown);
+        waitTimeExplicit(weatherTab);
         clickByXpath(weatherTab);
 
 
     }
 
     public void openDropDown() {
+        waitTimeExplicit(dropDown);
         clickByXpath(dropDown);
 
 
@@ -35,7 +38,9 @@ public class Weather extends WebAPI {
     public void searchPhil() {
         weatherPage();
         searchBox.sendKeys(location);
+        waitTimeExplicit(searchButtonLocator);
         searchButton.click();
+        waitTimeExplicit(philButtonLocator);
         philButton.click();
 
 
@@ -48,7 +53,9 @@ public class Weather extends WebAPI {
     }
 
     public void weatherPageSettings() throws InterruptedException {
+        waitTimeExplicit(dropDown);
         clickByXpath(dropDown);
+        waitTimeExplicit(dropDown);
         clickByXpath(weatherTab);
         scrollDown();
 
@@ -57,12 +64,14 @@ public class Weather extends WebAPI {
 
     public void weatherWarningsPage() throws InterruptedException {
         weatherPageSettings();
+        waitTimeExplicit(weatherWarningsTab);
         clickByXpath(weatherWarningsTab);
 
 
     }
     public void floodWarningsPage() throws InterruptedException {
         weatherPageSettings();
+        waitTimeExplicit(floodWarningsTab);
         clickByXpath(floodWarningsTab);
 
 
@@ -70,6 +79,7 @@ public class Weather extends WebAPI {
 
     public void monthlyOutlookPage() throws InterruptedException {
         weatherPageSettings();
+        waitTimeExplicit(monthlyOutlookTab);
         clickByXpath(monthlyOutlookTab);
 
 
@@ -77,6 +87,7 @@ public class Weather extends WebAPI {
 
     public void coastAndSeaPage() throws InterruptedException {
         weatherPageSettings();
+        waitTimeExplicit(coastAndSeaTab);
         clickByXpath(coastAndSeaTab);
 
 

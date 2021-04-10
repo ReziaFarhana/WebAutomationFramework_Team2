@@ -6,21 +6,20 @@ import static music.MusicWebElement.*;
 
 public class Music extends WebAPI {
 
-    public void musicPage(){
-    clickByXpath(dropDown);
-    clickByXpath(musicTab);
+    public void musicPage() {
+        waitTimeExplicit(dropDown);
+        clickByXpath(dropDown);
+        waitTimeExplicit(musicTab);
+        clickByXpath(musicTab);
 
     }
 
-    public void openDropDown(){
+    public void openDropDown() {
+        waitTimeExplicit(dropDown);
         clickByXpath(dropDown);
 
 
-
     }
-
-
-
 
 
 }
