@@ -155,10 +155,10 @@
                         <suiteXmlFile>target/test-classes/GeicoTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/VerizonTestRunner.xml</suiteXmlFile>
 
-                        <suiteXmlFile>Walmart/src/test/resources/WalmartTestRunner.xml</suiteXmlFile>
-                        <suiteXmlFile>Verizon/src/test/resources/VerizonTestRunner.xml</suiteXmlFile>
-                        <suiteXmlFile>Geico/src/test/resources/GeicoTestRunner.xml</suiteXmlFile>
-                        <suiteXmlFile>BBC/src/test/resources/BBCTestRunner.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>Walmart/src/test/resources/WalmartTestRunner.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>Verizon/src/test/resources/VerizonTestRunner.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>Geico/src/test/resources/GeicoTestRunner.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>BBC/src/test/resources/BBCTestRunner.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
 
 

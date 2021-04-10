@@ -46,7 +46,7 @@
                     <suiteXmlFiles>
 <!--                        <suiteXmlFile>target/test_page-classes/GeicoTestRunner.xml</suiteXmlFile>-->
                         <suiteXmlFile>target/test-classes/GeicoTestRunner.xml</suiteXmlFile>
-                        <suiteXmlFile>Geico/src/test/resources/GeicoTestRunner.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>Geico/src/test/resources/GeicoTestRunner.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
 
 
