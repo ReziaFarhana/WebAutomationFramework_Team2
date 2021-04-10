@@ -98,6 +98,10 @@ public class TopDeviceBrandsWebElements {
     public static final String pageHeaderText = "//h1[contains(text(),'See if your address')]";
     public static final String emailAddressBox = "//input[@id='optinEmailAddress']";
     public static final String emailAddress = "moni@gmail.com";
+    public static final String searchBoxLocator = "//div[@item-title='all']//div//div//div//div[@item-title='search']";
+    public static final String searchBoxItem = "//input[@title='search']";
+    public static final String searchBoxInputBox = "//div[@item-title='all']//div//div//div//div[@item-title='search']//div//div[@searchdata='results']//div//input[@name='q']";
+
 
 
 }

@@ -23,12 +23,7 @@ public class RegistrationWithDataProviderTestNGTest extends WebAPI {
         registration = PageFactory.initElements(driver, RegistrationWithDataProviderTestNG.class);
     }
 
-    @DataProvider
-    public Object[][] getRegistrationDataFromExcel(){
-        return ReadBBCRegistrationExcel.getRegistrationTestData("BBCRegistrationAccountInfo");
-    }
-
-    @Test(dataProvider = "getRegistrationDataFromExcel")
+    @Test(dataProvider = "RegistrationDataFromExcel", dataProviderClass = RegistrationWithDataProviderTestNG.class)
     public void registrationTest(int birthDay, int birthMonth, int birthYear, String email, String password) throws InterruptedException {
         registration.registrationWithDataProvider(birthDay,birthMonth,birthYear,email,password);
         String expectedText = "OK you’re signed in. Now, want to keep up to date?";

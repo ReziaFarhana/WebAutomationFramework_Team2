@@ -1,13 +1,20 @@
 package registration;
 
+import bbc_geico_verizon_excelReadAndWrite.ReadBBCRegistrationExcel;
 import bbc_geico_verizon_excelReadAndWrite.WriteBBCRegistrationExcel;
 import common.WebAPI;
+import org.testng.annotations.DataProvider;
 
 import static bbc_geico_verizon_excelReadAndWrite.ReadBBCRegistrationExcel.filePath;
 import static bbchomepageheader.BBCWebElements.*;
 
 
 public class RegistrationWithDataProviderTestNG extends WebAPI {
+
+    @DataProvider(name = "RegistrationDataFromExcel")
+    public Object[][] getRegistrationDataFromExcel(){
+        return ReadBBCRegistrationExcel.getRegistrationTestData("BBCRegistrationAccountInfo");
+    }
 
     public void registrationWithDataProvider(int day, int month, int year, String email, String password ) throws InterruptedException {
         WriteBBCRegistrationExcel.writeExcel(filePath);
@@ -23,8 +30,9 @@ public class RegistrationWithDataProviderTestNG extends WebAPI {
         typeOnElementNew(emailAddress, email);
         typeOnElementNew(passwordField, password);
         clickById(showPassword);
-        sleepFor(3);
+        sleepFor(5);
         clickById(continueButton);
+        sleepFor(3);
 
 
     }
