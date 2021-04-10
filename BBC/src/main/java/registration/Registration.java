@@ -12,7 +12,7 @@ import java.io.IOException;
 import static bbchomepageheader.BBCWebElements.*;
 
 public class Registration extends WebAPI {
-    public static String filePath ="../BBC/BBCExcelData/BBCRegister.xlsx";
+    public static String filePath = "../BBC/BBCExcelData/BBCRegister.xlsx";
     public static File file = new File(filePath);
     public static FileInputStream inputStream;
     public static XSSFWorkbook workbook;
@@ -42,8 +42,8 @@ public class Registration extends WebAPI {
         Thread.sleep(5000);
         clickByXpath(age);
         typeOnElementWithInteger(dayInput, (int) sheet.getRow(1).getCell(0).getNumericCellValue());
-        typeOnElementWithInteger(monthInput,(int) sheet.getRow(1).getCell(1).getNumericCellValue());
-        typeOnElementWithInteger(yearInput,(int) sheet.getRow(1).getCell(2).getNumericCellValue());
+        typeOnElementWithInteger(monthInput, (int) sheet.getRow(1).getCell(1).getNumericCellValue());
+        typeOnElementWithInteger(yearInput, (int) sheet.getRow(1).getCell(2).getNumericCellValue());
         clickById(continueButton);
         typeOnElementNew(emailAddress, sheet.getRow(1).getCell(3).getStringCellValue());
         typeOnElementNew(passwordField, sheet.getRow(1).getCell(4).getStringCellValue());

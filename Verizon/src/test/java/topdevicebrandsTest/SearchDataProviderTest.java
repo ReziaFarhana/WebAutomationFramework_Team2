@@ -1,26 +1,25 @@
 package topdevicebrandsTest;
 
 import common.WebAPI;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import topdevicebrands.SearchBoxDataProvider;
 
-import static topdevicebrands.TopDeviceBrandsWebElements.*;
-
 public class SearchDataProviderTest extends WebAPI {
-    @FindBy(how = How.XPATH,using = searchBoxLocator)public WebElement searchBox;
+    SearchBoxDataProvider searchBox;
 
-    @Test(dataProvider = "SearchItems",dataProviderClass = SearchBoxDataProvider.class)
+    @BeforeMethod
+    public void initialization() {
+        searchBox = PageFactory.initElements(driver, SearchBoxDataProvider.class);
+    }
+
+    @Test(dataProvider = "SearchItems", dataProviderClass = SearchBoxDataProvider.class)
     public void testSearchBoxFunctionality(String item) throws InterruptedException {
-        String expectedItem = "Search Results for "+item+" at Verizon";
-        clickByXpath(searchBoxLocator);
-        sleepFor(3);
-        typeByXpathNEnter(searchBoxInputBox,item);
-        sleepFor(3);
-        String actualItem =driver.getTitle();
-        Assert.assertEquals(actualItem,expectedItem, "Title is not a match");
+        searchBox.searchBoxFunctionality(item);
+        String expectedItem = "Search Results for " + item + " at Verizon";
+        String actualItem = driver.getTitle();
+        Assert.assertEquals(actualItem, expectedItem, "Title is not a match");
     }
 }
