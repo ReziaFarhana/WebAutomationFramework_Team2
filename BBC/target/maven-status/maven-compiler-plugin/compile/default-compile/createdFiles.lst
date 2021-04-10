@@ -1,1 +1,4 @@
-sample\sample.class
+music\MusicWebElement.class
+weather\WeatherWebElement.class
+music\Music.class
+weather\Weather.class

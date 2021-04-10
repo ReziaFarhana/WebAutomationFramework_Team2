@@ -41,9 +41,7 @@
           <include name="taxNameTest"/>
           <include name="taxPageTest"/>
           <include name="termUrlTest"/>
-          <include name="adTitleTest"/>
           <include name="reqPersonalPageTest"/>
-          <include name="adNameTest"/>
         </methods>
       </class> <!-- footertest.FooterTest -->
     </classes>

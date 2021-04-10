@@ -19,6 +19,13 @@ public class Weather extends WebAPI {
     public WebElement philButton;
 
 
+    public void openDropDown() {
+        waitTimeExplicit(dropDown);
+        clickByXpath(dropDown);
+
+
+    }
+
     public void weatherPage() {
         waitTimeExplicit(dropDown);
         clickByXpath(dropDown);
@@ -28,12 +35,6 @@ public class Weather extends WebAPI {
 
     }
 
-    public void openDropDown() {
-        waitTimeExplicit(dropDown);
-        clickByXpath(dropDown);
-
-
-    }
 
     public void searchPhil() {
         weatherPage();
@@ -69,6 +70,7 @@ public class Weather extends WebAPI {
 
 
     }
+
     public void floodWarningsPage() throws InterruptedException {
         weatherPageSettings();
         waitTimeExplicit(floodWarningsTab);
@@ -92,7 +94,6 @@ public class Weather extends WebAPI {
 
 
     }
-
 
 
 }
