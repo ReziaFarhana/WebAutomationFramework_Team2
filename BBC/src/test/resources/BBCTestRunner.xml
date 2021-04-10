@@ -4,8 +4,8 @@
 <suite name="BBCTestSuit" parallel="none" thread-count="2">
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserStack"/>
-<!--    <parameter name="OS" value="windows"/>-->
-<!--    <parameter name="os_version" value="10"/>-->
+    <parameter name="OS" value="windows"/>
+    <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="89"/>
 

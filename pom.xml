@@ -144,31 +144,30 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--Test Runner Files-->
                     <includes>
-                        <include>**/AutoInsuranceTest.java</include>
-                        <include>**/LegalAndSecurityTestTest.java</include>
-                        <include>**/NoticeAndPersonalDataRequestTest.java</include>
-                        <include>**/PrivacyPolicyTest.java</include>
-                        <include>**/AccessibilityHelpTest.java</include>
-                        <include>**/ReelTest.java</include>
-                        <include>**/RegistrationTest.java</include>
-                        <include>**/TermsOfUseTest.java</include>
-                        <include>**/WorklifeTest.java</include>
-                        <include>**/BeautyCategoryTest.java</include>
-                        <include>**/PickupAndDeliverytest.java</include>
-                        <include>**/SignInTest.java</include>
-                        <include>**/AmazonTest.java</include>
-                        <include>**/AppleTest.java</include>
-                        <include>**/GoogleTest.java</include>
-                        <include>**/LGTest.java</include>
-                        <include>**/MotorolaTest.java</include>
-                        <include>**/SamsungTest.java</include>
+<!--                        <include>**/AutoInsuranceTest.java</include>-->
+<!--                        <include>**/LegalAndSecurityTestTest.java</include>-->
+<!--                        <include>**/NoticeAndPersonalDataRequestTest.java</include>-->
+<!--                        <include>**/PrivacyPolicyTest.java</include>-->
+<!--                        <include>**/AccessibilityHelpTest.java</include>-->
+<!--                        <include>**/ReelTest.java</include>-->
+<!--                        <include>**/RegistrationTest.java</include>-->
+<!--                        <include>**/TermsOfUseTest.java</include>-->
+<!--                        <include>**/WorklifeTest.java</include>-->
+<!--                        <include>**/BeautyCategoryTest.java</include>-->
+<!--                        <include>**/PickupAndDeliverytest.java</include>-->
+<!--                        <include>**/SignInTest.java</include>-->
+<!--                        <include>**/AmazonTest.java</include>-->
+<!--                        <include>**/AppleTest.java</include>-->
+<!--                        <include>**/GoogleTest.java</include>-->
+<!--                        <include>**/LGTest.java</include>-->
+<!--                        <include>**/MotorolaTest.java</include>-->
+<!--                        <include>**/SamsungTest.java</include>-->
                     </includes>
                     <suiteXmlFiles>
                         <suiteXmlFile>target/test-classes/BBCTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/GeicoTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/VerizonTestRunner.xml</suiteXmlFile>
                         <suiteXmlFile>target/test-classes/WalmartTestRunner.xml</suiteXmlFile>
-
 
                     </suiteXmlFiles>
 
