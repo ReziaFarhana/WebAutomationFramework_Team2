@@ -16,12 +16,12 @@ public class WriteExcelFile {
 
     public static void writeExcel(String fileName) {
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("studentList");
+        XSSFSheet sheet = workbook.createSheet("newWalmartAccount");
         Object[][] stDetails = {
-                {"Sl", "FirstName", "LastName", "ContactNumber"},
-                {"1", "Anika", "islam", "897598759"},
-                {"2", "Mahid", "Samad", "997598759"},
-                {"2", "Mezba", "Ahmed", "797598759"},
+                {"FirstName", "LastName", "Email","11111"},
+                {"Tara", "Bugra", "Bugra@gmail.com","22222"},
+                {"Sanjana", "Joshi", "Joshi@gmail.com","33333"},
+                {"Priyanka", "Kholi", "Kholi@gmail.com","44444"},
         };
         int rowNum = 0;
         System.out.println("Excel file Created");

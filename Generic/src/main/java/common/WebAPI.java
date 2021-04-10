@@ -756,4 +756,31 @@ public class WebAPI {
         return url;
     }
 
+    //HoverOver
+    public void hoverOverElement(String locator1, String locator2) throws InterruptedException {
+
+        WebElement web =driver.findElement(By.xpath(locator1));
+        WebElement element=driver.findElement(By.xpath(locator2));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(web).click().build().perform();
+        actions.moveToElement(element).build().perform();
+    }
+   // public void dropDown(String locator, String value)
+
+    public void tryCheckBox(String idLocator){
+        WebElement checkbox=driver.findElement(By.id(idLocator));
+        checkbox.click();
+    }
+    public void tryCheckBoxXpath(String xpathLocator){
+        WebElement checkbox=driver.findElement(By.xpath(xpathLocator));
+        checkbox.click();
+    }
+    //switch to new window handle
+    public void windowHandle(){
+        String parentHandle = driver.getWindowHandle();
+        for (String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+        }
+    }
+
 }

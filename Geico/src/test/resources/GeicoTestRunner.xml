@@ -20,42 +20,19 @@
     <parameter name="url" value="https://www.geico.com/"/>
 
 
-<!--    <test name="Geico Automation Test Script using chrome">-->
-<!--        <parameter name="browserName" value="chrome"/>-->
-<!--        <parameter name="browserVersion" value="89"/>-->
-<!--        <classes>-->
-            <!--        Calling Test class-->
-<!--            <class name="homepagetest.HomePageTest">-->
-<!--                <methods>-->
-<!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
-                    <!--               <exclude name="testSearchbox"></exclude>-->
-                    <!--               <include name="testLogin"></include>-->
-<!--                </methods>-->
+  <test name="Geico Automation Test Script using chrome">
 
-<!--            </class>-->
+       <classes>
 
-            <!--        Add more Test classes-->
-
-<!--        </classes>-->
-
-<!--    </test>-->
-
-<!--    <test name="Geico Automation Test Script using Firefox">-->
-<!--                <parameter name="browserName" value="firefox"/>-->
-<!--                <parameter name="browserVersion" value="86.0"/>-->
-<!--        <classes>-->
-<!--            <class name="homepagetest.HomePageTest">-->
-<!--                <methods>-->
-<!--                    &lt;!&ndash;               Test case include or exclude&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <exclude name="testSearchbox"></exclude>&ndash;&gt;-->
-<!--                    &lt;!&ndash;               <include name="testLogin"></include>&ndash;&gt;-->
-<!--                </methods>-->
-
-<!--            </class>-->
+           <class name="geicoTestPage.GeicoTest"></class>
 
 
-<!--        </classes>-->
-<!--    </test>-->
+
+      </classes>
+
+   </test>
+
+
 
 </suite>
 
