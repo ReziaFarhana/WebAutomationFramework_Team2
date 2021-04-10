@@ -46,6 +46,7 @@
                     <suiteXmlFiles>
 <!--                        <suiteXmlFile>target/test_page-classes/VerizonTestRunner.xml</suiteXmlFile>-->
                         <suiteXmlFile>target/test-classes/VerizonTestRunner.xml</suiteXmlFile>
+                        <suiteXmlFile>Verizon/src/test/resources/VerizonTestRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
 

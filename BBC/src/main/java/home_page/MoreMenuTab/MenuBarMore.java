@@ -4,6 +4,7 @@ import common.WebAPI;
 import databases.ConnectToSqlDB;
 import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -42,7 +43,7 @@ public class MenuBarMore extends WebAPI {
     }
 
     public void searchWithSearchInputBox() throws Exception {
-        List<String> items = getTextFromWebElements(BBCHomePageHeaders);
+        List<String> items = getTextFromWebElementsByCss(BBCHomePageHeaders);
 //        List<String> add = new ArrayList<>();
 //        for (int i = 0;i<items.size();i++){
 //            add.add(items.get(i));
@@ -72,6 +73,25 @@ public class MenuBarMore extends WebAPI {
         return text;
     }
 
+    /**
+     * from Reto
+     * @param locator
+     * @return
+     */
+    public static List<String> getTextFromWebElementsByCss(String locator) {
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.cssSelector(locator));
+        for (WebElement web : element) {
+            String st = web.getText();
+            text.add(st);
+
+        }
+        System.out.println(text);
+        System.out.println(text.size());
+        return text;
+    }
+
     public void searchOnBBCUsingExcelData() throws IOException, InterruptedException {
         File path = new File("../File_Cabinet/BBCHeadLists.xlsx");
         FileInputStream input = new FileInputStream(path);
@@ -86,6 +106,22 @@ public class MenuBarMore extends WebAPI {
                 Assert.assertTrue(actual,"Test failed");
                 sleepFor(2);
                 navigateBack();
+            }
+        }
+
+    }
+
+    public void readFromExcelData(String loc) throws IOException, InterruptedException {
+        File path = new File("../File_Cabinet/BBCHeadLists.xlsx");
+        FileInputStream input = new FileInputStream(path);
+        Workbook book = WorkbookFactory.create(input);
+        Sheet sheet = book.getSheetAt(0);
+        for (Row row: sheet){
+            for (Cell cell: row){
+                String search =  cell.getStringCellValue();
+                driver.findElement(By.cssSelector(loc)).sendKeys(search, Keys.ENTER);
+                sleepFor(3);
+
             }
         }
 

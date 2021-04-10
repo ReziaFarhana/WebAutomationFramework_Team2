@@ -46,6 +46,7 @@
                     <suiteXmlFiles>
 <!--                        <suiteXmlFile>target/test_page-classes/WalmartTestRunner.xml</suiteXmlFile>-->
                         <suiteXmlFile>target/test-classes/WalmartTestRunner.xml</suiteXmlFile>
+                        <suiteXmlFile>Walmart/src/test/resources/WalmartTestRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
 

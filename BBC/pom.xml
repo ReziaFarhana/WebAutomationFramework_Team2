@@ -45,6 +45,7 @@
                     <!--Test Runner Files-->
                     <suiteXmlFiles>
                         <suiteXmlFile>target/test-classes/BBCTestRunner.xml</suiteXmlFile>
+                        <suiteXmlFile>BBC/src/test/resources/BBCTestRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
 
