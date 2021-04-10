@@ -1,5 +1,6 @@
 package testGeicoHomePage;
 
+
 import common.WebAPI;
 import geicoHomePage.GeicoHomePage;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +13,7 @@ public class TestGeicoCareerPage  extends WebAPI {
 
     @BeforeMethod
     public void runBeforeEachTest(){
+
         geicoHomePage= PageFactory.initElements(driver,GeicoHomePage.class);
     }
 
@@ -34,8 +36,9 @@ public class TestGeicoCareerPage  extends WebAPI {
     }
 
     @Test
-    private void validateCareerOpportunitiesText(){
 
+    private void validateCareerOpportunitiesText()
+    {
         geicoHomePage.verifyCareerOpportunitiesText();
     }
 
@@ -47,11 +50,8 @@ public class TestGeicoCareerPage  extends WebAPI {
 
     @Ignore
     @Test
+
     private void validateCustomerServiceIsClickable() throws InterruptedException {
         geicoHomePage.verifyCustomerServiceIsClickable();
     }
-
-
 }
-
-

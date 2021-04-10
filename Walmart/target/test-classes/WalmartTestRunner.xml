@@ -7,15 +7,15 @@
 <!--    parallel="tests"  Working Fine but have issue-->
 
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserStack"/>
     <parameter name="OS" value="OS X"/>
-    <parameter name="os_version" value="Sierra"/>
+    <parameter name="os_version" value="Big Sur"/>
     <!--    <parameter name="OS" value="OS X"/>-->
     <!--    <parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
-   <parameter name="browserVersion" value="80"/>
-    <!--        <parameter name="browserName" value="firefox"/>-->
+    <!-- <parameter name="browserVersion" value="89"/>
+    <!-        <parameter name="browserName" value="firefox"/>-->
     <!--        <parameter name="browserVersion" value="76.0"/>-->
     <parameter name="url" value="https://www.walmart.com/"/>
 
@@ -25,7 +25,7 @@
 <!--        <parameter name="browserVersion" value="89"/>-->
         <classes>
             <!--        Calling Test class-->
-            <class name="verizonHomePage.testWalmart">
+            <class name="testWalmartHomePage.testWalmart">
 <!--                <methods>-->
                     <!--               Test case include or exclude-->
                     <!--               <exclude name="testSearchbox"></exclude>-->
