@@ -34,14 +34,12 @@ public class WalmartHomePageWebElements extends WebAPI {
     public static final String searchMyStore = " //input[@placeholder='Search my store']";
     public static final String searchButtontrial = "//button[@aria-label='Perform Search']";
     public static final String vase = "//span[@title='Libbey 7\" Belly Glass Vase, 1 Each']";
-    public static final String car= "cartoy";
-    public static final String cart= "//div[@class='styles__itemBadge___21UZM']";
-
-    public static final String addMoreItems= "/html/body/div/div[1]/div/div/header/div[2]/div[3]/aside/div/div/div/div/div/button";
- public static final String SignInToCreateAnAccount= "//button[normalize-space()='Sign in or create account']";
-public static final String CreateAnAccount= "//button[@type='button'][normalize-space()='Create account']";
-
-public static final String CreateWalmartAccount= "//input[@id='first-name-su']";
+    public static final String car = "cartoy";
+    public static final String cart = "//div[@class='styles__itemBadge___21UZM']";
+    public static final String addMoreItems = "/html/body/div/div[1]/div/div/header/div[2]/div[3]/aside/div/div/div/div/div/button";
+    public static final String SignInToCreateAnAccount = "//button[normalize-space()='Sign in or create account']";
+    public static final String CreateAnAccount = "//button[@type='button'][normalize-space()='Create account']";
+    public static final String CreateWalmartAccount = "//input[@id='first-name-su']";
 
 
 

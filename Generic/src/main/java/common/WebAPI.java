@@ -755,4 +755,21 @@ public class WebAPI {
         return url;
     }
 
+    //    **********************   YASMINA      **********************************************
+    public void scrollTo(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+
+    public void scrollTO(String loc){
+        WebElement element = driver.findElement(By.xpath(loc));
+        scrollTo(element);
+    }
+    //***********************     YASMINA   ********************
+    public void hoverAndClick(WebDriver driver1, WebElement elementHover, WebElement elementClick) {
+        Actions selectMenu = new Actions(driver1);
+        selectMenu.moveToElement(elementHover).click(elementClick).build().perform();
+    }
+
+
 }
