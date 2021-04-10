@@ -286,7 +286,7 @@ public class WebAPI {
     }
 
     public void clearField(String locator) {
-        driver.findElement(By.id(locator)).clear();
+        driver.findElement(By.xpath(locator)).clear();
     }
 
     public void navigateBack() {
@@ -782,5 +782,30 @@ public class WebAPI {
             driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
         }
     }
+    public void scrollByID(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.id(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollByXPATH(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.xpath(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyCSS(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.cssSelector(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+    public void scrollbyClass(String locator){
+        JavascriptExecutor executor=(JavascriptExecutor) driver;
+        WebElement element=driver.findElement(By.className(locator));
+        executor.executeScript("arguments[0].scrollIntoView(true);",element);
+        element.click();
+    }
+
 
 }

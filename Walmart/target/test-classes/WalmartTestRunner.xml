@@ -20,11 +20,18 @@
     <test name="Walmart Automation Test Script using chrome">
         <classes>
 
-            <class name="walmartTest.WalmartToysTest"></class>
+<!--            <class name="walmartTest.WalmartToysTest"></class>-->
 
 
 
-            <class name="walmartTest.AccountTest"></class>
+            <class name="walmartTest.AccountTest">
+                <methods>
+                    <include name="readExcelSearch">
+
+                    </include>
+                </methods>
+            </class>
+
         </classes>
 
     </test>

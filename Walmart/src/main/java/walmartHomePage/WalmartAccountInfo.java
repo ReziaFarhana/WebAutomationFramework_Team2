@@ -1,9 +1,18 @@
 package walmartHomePage;
 
 import common.WebAPI;
+import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import static walmartHomePage.WebElement.searchBAr;
 
 
 public class WalmartAccountInfo extends WebAPI {
@@ -62,7 +71,23 @@ public class WalmartAccountInfo extends WebAPI {
 
     }
 
-    public void readDataFromExcel(){
+    public void readDataToSearchBox() throws IOException, InterruptedException {
+        File path= new File("../Walmart/src/test/java/dataTest/WalmartReadExcel.xlsx");
+        FileInputStream input=new FileInputStream(path);
+        Workbook workbook= WorkbookFactory.create(input);
+        Sheet sheet= workbook.getSheetAt(0);
+        for(Row row :sheet){
+            for (Cell cell:row){
+                String search=cell.getStringCellValue();
+                typeOnElementNEnter(searchBAr,search,driver);
+                sleepFor(2);
+                clearField(searchBAr);
+//                boolean actual=driver.findElement(By.xpath()).isDisplayed();
+//                Assert.assertTrue(actual,"Test failed");
+//                sleepFor(2);
+//                navigateBack();
+            }
+        }
 
 
 

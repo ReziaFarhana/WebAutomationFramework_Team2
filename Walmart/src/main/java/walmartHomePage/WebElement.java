@@ -7,6 +7,7 @@ public class WebElement  {
 
     //Walmart Account
     public static final String urlWalmart = "https://www.walmart.com/";
+    public static final String searchBAr="//input[@aria-controls='global-search-dropdown']";
 
     //best seller dropdown
     public static final String bestSellerDD = "//select[@aria-label='Sort Filter']";

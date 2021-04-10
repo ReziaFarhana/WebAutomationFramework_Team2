@@ -3,11 +3,13 @@ package geicoHomePage;
 import common.WebAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import static geicoHomePage.WebElement.*;
 
 
-public class PropertyInsurance extends WebAPI {
+public class Insurance extends WebAPI {
 
 
     public void propertyInsurancePage() throws InterruptedException {
@@ -55,6 +57,36 @@ public class PropertyInsurance extends WebAPI {
         clickByXpath(policyUpdateContinue);
 
     }
+    //--Hover Over
+    public void businessInsurance() throws InterruptedException {
+        WebElement geicoInsurance =driver.findElement(By.xpath(insurance));
+        WebElement business=driver.findElement(By.xpath(businessInsurance));
+        WebElement owner=driver.findElement(By.xpath(businessOwner));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(geicoInsurance).click().build().perform();
+        sleepFor(3);
+        actions.moveToElement(business).build().perform();
+        sleepFor(3);
+        actions.moveToElement(owner).click().build().perform();
+        sleepFor(3);
+    }
+
+    public void getQuote() throws InterruptedException {
+        businessInsurance();
+        //windowHandle();
+        scrollByXPATH(("//h3[text()='Commercial Auto Insurance']"));
+        sleepFor(3);
+        clickByXpath(commercialQuote);
+        typeOnElement(zipcode,"11590");
+        Select businessType=new Select(driver.findElement(By.xpath(businessDescription)));
+        businessType.selectByVisibleText("Other Common Businesses");
+        Select businessOption=new Select(driver.findElement(By.xpath(businessDescription)));
+        businessOption.selectByVisibleText("Wholesale & Manufacturing Businesses");
+        clickByXpath(continueButton2);
+
+    }
+
+
 
 
 

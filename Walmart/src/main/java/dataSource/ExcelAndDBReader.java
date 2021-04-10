@@ -46,15 +46,15 @@ public class ExcelAndDBReader {
     //Excel file
     public static List<String> getItemsListFromExcel() throws Exception, IOException, SQLException, ClassNotFoundException{
         String path = "../walmartHomePage/WalmartReadexcel.exe.xlsx";
-        String[] myStringArray = excelReader.fileReader2(path, 0);
-        for(int i=1;i<myStringArray.length; i++)
-            System.out.println(myStringArray[i] + " ");
+        String[] walmart = excelReader.fileReader2(path, 1);
+        for(int i=1;i<walmart.length; i++)
+            System.out.println(walmart[i] + " ");
         ArrayList<String> list = new ArrayList<String>();
 
         // Using add() method to add elements in array_list
         //System.out.println();
-        for (int i = 0; i < myStringArray.length; i++) {
-            list.add(myStringArray[i]);
+        for (int i = 0; i < walmart.length; i++) {
+            list.add(walmart[i]);
             //System.out.print(list.get(i+1) + " ");
         }
         return list;

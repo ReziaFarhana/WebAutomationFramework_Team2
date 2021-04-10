@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import walmartHomePage.*;
 
+import java.io.IOException;
+
 public class AccountTest extends WebAPI {
 
 
@@ -54,6 +56,11 @@ public class AccountTest extends WebAPI {
         Assert.assertEquals(actualText,expectedText,"Text didn't match");
 
 
+    }
+    @Test
+    public void readExcelSearch() throws IOException, InterruptedException {
+
+        account.readDataToSearchBox();
     }
 
 
