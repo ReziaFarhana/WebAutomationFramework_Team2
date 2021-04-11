@@ -43,7 +43,9 @@ public class Support extends WebAPI {
         //my verizon
         clickByXpath(myVerizonButton);
         typeByXpath("//*[@id=\"IDToken1\"]","Simar");
+        sleepFor(2);
         typeByXpath("//*[@id=\"IDToken2\"]","12456");
+        sleepFor(2);
         clickByXpath("//*[@id=\"login-submit\"]");
     }
 
