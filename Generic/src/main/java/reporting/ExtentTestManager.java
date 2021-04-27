@@ -2,6 +2,8 @@ package reporting;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.testng.Reporter;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,5 +33,10 @@ public class ExtentTestManager {
         ExtentTest test = extentUpdate.startTest(testName, desc);
         extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
         return test;
+    }
+    //logging to report
+    public static void log(String message) {
+        Reporter.log(message + "<br>", true);
+        ExtentTestManager.getTest().log(LogStatus.INFO, message );
     }
 }
