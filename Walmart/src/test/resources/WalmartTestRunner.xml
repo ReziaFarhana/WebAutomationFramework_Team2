@@ -25,7 +25,8 @@
 <!--        <parameter name="browserVersion" value="89"/>-->
 <!--        <classes>-->
             <!--        Calling Test class-->
-<!--            <class name="homepagetest.HomePageTest">-->
+<!--            <class name="testSignInPage.TestSignInPage">-->
+<!--            <class name="testWalmartHomePage.TestWalmartHomePage">-->
 <!--                <methods>-->
                     <!--               Test case include or exclude-->
                     <!--               <exclude name="testSearchbox"></exclude>-->
